@@ -1,5 +1,5 @@
 const Hero = ({children}) => {
-    return ( <header className="relative z-[1] min-h-screen overflow-hidden pt-44 bg-gradient-to-b from-bg-600 to-bg-900">
+    return ( <header className="relative z-[1] min-h-[1024px] overflow-hidden pt-44 bg-gradient-to-b from-bg-600 to-bg-900">
         
         <svg className="absolute z-[-1] top-0 left-0 w-screen" width="1440" height="1100" viewBox="0 0 1440 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_220_2024)">

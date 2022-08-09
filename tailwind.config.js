@@ -156,9 +156,12 @@ module.exports = {
       'dark-80': '0px 0px 1px rgba(13, 13, 13, 0.9), 0px 8px 16px #0D0D0D',
       'dark-100': '0px 0px 1px rgba(13, 13, 13, 0.9), 0px 16px 24px #0D0D0D',
 
+      'glow': '0px 0px 20px rgba(255, 218, 25, 0.24)'
+
     },
       fontFamily: {
         sans: ['Brandon Grotesque', 'sans-serif'],
+        teko: ['Teko', 'sans-serif']
       },
       
       width: {

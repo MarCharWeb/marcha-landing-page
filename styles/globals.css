@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
 @tailwind base;
 @layer base{
   @font-face {
@@ -15,6 +16,11 @@
     font-family: Brandon Grotesque;
     src: url('../fonts/brandon-grotesque-medium.otf') format('opentype');
     font-weight: medium;
+  }
+  @font-face {
+    font-family: Brandon Grotesque;
+    src: url('../fonts/brandon-grotesque-black.otf') format('opentype');
+    font-weight: 900;
   }
 
   button{
@@ -43,12 +49,18 @@
   }
 
   .media-padding-left {
-    @apply md:pl-6 lg:pl-12 pl-4 xl:pl-[80px] 2xl:pl-[calc((100vw_-_1280px)_/_2)] 3xl:px-[calc((100vw_-_1440px)_/_2)];
+    @apply md:pl-6 lg:pl-12 pl-4 xl:pl-[80px] 2xl:pl-[calc((100vw_-_1280px)_/_2)] 3xl:pl-[calc((100vw_-_1440px)_/_2)];
   }
+    .media-padding-right{
+      @apply md:pr-6 lg:pr-12 pr-4 xl:pr-[80px] 2xl:pr-[calc((100vw_-_1280px)_/_2)] 3xl:pr-[calc((100vw_-_1440px)_/_2)];
+    }
 
   .triangle {
     clip-path: polygon(100% 0, 35% 100%, 100% 100%);
   }
+   .vertical-rl {
+      writing-mode: vertical-rl;
+    }
 
 
 }
