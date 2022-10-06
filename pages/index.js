@@ -2,32 +2,40 @@ import Button from '../components/Button'
 import Hero from '../components/Hero'
 import ImageHolder from '../components/ImageHolder'
 import PageTitle from '../components/PageTitle'
-import RegisterStats from '../components/RegisterStats'
 import SectionTitle from '../components/SectionTitle'
-import AboutUsImg from '../assets/about-us.jpg'
+import AboutUsImg from '../assets/about-us.png'
 import Timeline from '../components/Timeline'
 import Award from '../components/Award'
 import Sponsor from '../components/Sponsor'
 import CallToAction from '../components/CallToAction'
+import ValueProps from '../components/ValueProps'
+import HeroText from '../assets/hero-text.png'
+import { sanityClient } from '../config/sanity';
+
+
 import News from '../components/News'
-export default function Home() {
+export default function Home({data}) {
+  console.log(data)
   return (
     <main >
         <Hero>
-          <PageTitle type={2} title='Marketing Challengers'></PageTitle>
-          <p className='mt-8 text-center mb-14 text-headline-31'>The go-to Marketing playground for Creative Seekers </p>
-
-          <div className='flex items-center justify-center gap-5'>
-           <div className='flex items-center gap-3'><RegisterStats number={70}></RegisterStats> contestants have been on board <p></p></div>
-            {/* Decorating line */}
-            <div className='w-[100px] h-[1px] bg-gradient-to-r from-[#F9FDFE]/0 to-[#F9FDFE]/70'></div>
-  
-            <Button isGlow={true} type='primary' text={'Grab your spark now!'} size='large'></Button>
+          <div className='absolute flex flex-col pt-20 xl:pt-[150px] 2xl:pt-40 items-center w-full '>
+            <div>
+                <PageTitle type={2} title='Marketing Challengers'></PageTitle>
+                <ImageHolder src={HeroText} alt="marketing-challengers-ss11-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20'}></ImageHolder>
+                <div className='relative flex justify-center -top-16 lg:-top-20 xl:-top-32'>
+                  <Button  isGlow={true}  type='primary' text={'Grab your spark now!'} size='large'></Button>
+                </div>
+                
+            </div>
+            
           </div>
+          
         </Hero>
 
+        <ValueProps></ValueProps>
         {/* About Us  */}
-        <section id='about-marketing-challengers' className='relative z-[1] grid items-center grid-cols-2 mt-10 2xl:mt-20 mb-28 media-padding-right'>
+        <section id='about-marketing-challengers' className='relative z-10 grid items-center grid-cols-1 mt-10 lg:-mt-10 2xl:-mt-40 xl:-mt-20 lg:grid-cols-2 mb-28 media-padding-right'>
 
             {/* Glow Effect in background  */}
             <svg className='absolute top-0 right-0 transform -translate-y-1/2' width="700" height="1400" viewBox="0 0 700 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,23 +52,23 @@ export default function Home() {
             </defs>
             </svg>
 
-            <ImageHolder src={AboutUsImg} alt='about-marketing-challengers' className={'aspect-[1/1.2] before:absolute before:inset-0 before:z-[1] before:bg-bg-900/20 rounded overflow-hidden'}></ImageHolder>
-            <div className='pl-[120px]'>
-              <SectionTitle className={'mb-6 text-left'} text='About Us'></SectionTitle>
+            <ImageHolder src={AboutUsImg} alt='about-marketing-challengers' className={'hidden lg:block lg:aspect-square xl:aspect-4/3 before:absolute before:inset-0 before:z-[1] before:bg-bg-900/20 rounded overflow-hidden'}></ImageHolder>
+            <div className='pl-4 md:pl-10 xl:pl-[133px] 2xl:pl-[200px]'>
+              <SectionTitle className={'mb-3 xl:mb-6 text-left'} type='left' text='About Us'></SectionTitle>
 
-              <div className='mb-10 space-y-3'>
-                <h4 className='font-bold text-headline-37 '>Introduction</h4>
-                <p>Marketing Challengers is a nationwide marketing competition organized by Business Club of RMIT University Vietnam (SGS).</p>
+              <div className='space-y-0 lg:space-y-1 xl:space-y-2.5 mb-4 xl:mb-7'>
+                <h4 className='font-bold text-headline-31 lg:text-headline-37 '>Introduction</h4>
+                <p className=' max-w-prose'>Marketing Challengers is a nationwide marketing competition organized by Business Club of RMIT University Vietnam (SGS).</p>
               </div>
 
-              <div className='mb-10 space-y-3'>
-                <h4 className='font-bold text-headline-37 '>Vision</h4>
+              <div className='space-y-0 lg:space-y-1 xl:space-y-2.5 mb-4 xl:mb-7'>
+                <h4 className='font-bold text-headline-31 lg:text-headline-37 '>Vision</h4>
                 <p>To become the best student-run marketing competition for students.</p>
               </div>
               
-              <div className='space-y-3'>
-                <h4 className='font-bold text-headline-37 '>Mission</h4>
-                <p>To provide students, regardless of their marketing foundation, a practical playground to develop an Integrated Marketing Communication (IMC) Plan and an opportunity to pitch their ideas to real famous client brands.</p>
+              <div className='space-y-0 lg:space-y-1 xl:space-y-2.5'>
+                <h4 className='font-bold text-headline-31 lg:text-headline-37 '>Mission</h4>
+                <p className=' max-w-prose'>To provide students, regardless of their marketing foundation, a practical playground to develop an Integrated Marketing Communication (IMC) Plan and an opportunity to pitch their ideas to real famous client brands.</p>
               </div>
 
             </div>
@@ -68,11 +76,28 @@ export default function Home() {
 
         <Timeline></Timeline>
 
-        <Award></Award>
+        {/* <Award></Award> */}
         <Sponsor></Sponsor>
         <CallToAction></CallToAction>
-        <News></News>
+        <News featurePosts={data}></News>
         
     </main>
   )
+}
+
+const featurePostQuery = `*[_type == "post" && featured == true]{
+    title,
+    slug,
+    thumbnail,
+}
+`
+
+
+export async function getServerSideProps(context) {
+  let data = await sanityClient.fetch(featurePostQuery);
+
+  return {
+    props: {data}, // will be passed to the page component as props
+    
+  }
 }

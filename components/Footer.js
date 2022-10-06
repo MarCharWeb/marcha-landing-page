@@ -1,8 +1,8 @@
 
 const Footer = () => {
-    return ( <section className="flex items-center justify-between pb-10 pt-36 container-media-padding">
-        <p>©2022 Marketing Challengers. All rights reserved.</p>
-        <div className="flex items-center gap-3">
+    return ( <section className="flex items-center justify-between pt-10 pb-10 text-XSmall-12 md:text-small-16 lg:text-headline-21 lg:pt-28 container-media-padding">
+        <p >©2022 Marketing Challengers. All rights reserved.</p>
+        <div className="flex flex-col gap-1 lg:items-center md:gap-2 lg:gap-3 md:flex-row">
             <p>Follow us on:</p>
             <div className="flex items-center gap-4">
                  <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/company/marketing-challengers/" >

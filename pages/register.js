@@ -35,8 +35,8 @@ const Register = () => {
       },
     ]);
     const [currentStep, setCurrentStep] = useState(0);
-    const [slot, setSlot] = useState(null);
-    const [slotType, setSlotType] = useState(null);
+    //const [slot, setSlot] = useState(null);
+    //const [slotType, setSlotType] = useState(null);
     const [cardUploadingMess, setCardUploadingMess] = useState(null);
     const [idUploadingMess, setIdUploadingMess] = useState(null);
     const [isSubmitted, setIsSumitted] = useState(false);
@@ -127,28 +127,29 @@ const Register = () => {
         await updateDoc(doc(db, "metadata", "stats"), {openClicks: increment(1)})
       }
 
-      //updateOpenStats();
+      updateOpenStats();
     }, [])
 
-    const fetchSlots = async () => {
-          console.log('fetching slot...')
-          const slotSnap =  await getDoc(doc(db, "metadata", "slots"));
-          if (slotSnap.exists()) {
-            if (slotSnap.data().slot1 <= slotSnap.data().slot2){
+    // const fetchSlots = async () => {
+          
+    //       const slotSnap =  await getDoc(doc(db, "metadata", "slots"));
+    //       if (slotSnap.exists()) {
+    //           console.log(typeof slotSnap.data()["slot1"])
+    //         if (slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]){
 
-              //pick slot 1 : 1/7/2022
-              setSlot(new Date(2022, 6, 1));
-              setSlotType('slot1')
-            }else{
-              //pick slot 2
-              setSlot(new Date(2022, 6, 2));
-              setSlotType('slot2')
-            }    
-          } else {
-            // doc.data() will be undefined in this case
-            console.log("Cannot get slot time info!");
-          }
-      }
+    //           //pick slot 1 : 1/7/2022
+    //           setSlot(new Date(2022, 6, 1));
+    //           setSlotType('slot1')
+    //         }else{
+    //           //pick slot 2
+    //           setSlot(new Date(2022, 6, 2));
+    //           setSlotType('slot2')
+    //         }    
+    //       } else {
+    //         // doc.data() will be undefined in this case
+    //         console.log("Cannot get slot time info!");
+    //       }
+    //   }
 
     const formik = useFormik({
     initialValues: {
@@ -201,7 +202,23 @@ const Register = () => {
            
              const idPhotoUrl =  await getDownloadURL(ref(storage, values.idPhoto));
              const studentPhotoUrl = await getDownloadURL(ref(storage, values.studentPhoto));
-             await fetchSlots();
+             //await fetchSlots();
+
+             const slotSnap =  await getDoc(doc(db, "metadata", "slots"));
+            if (slotSnap.exists()) {
+               let slot = new Date(2022, 6, 1);
+               let slotType = 'slot1';
+               console.log(slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]);
+              if (slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]){
+
+                //pick slot 1 : 1/7/2022
+                slot = new Date(2022, 6, 1);
+                slotType = 'slot1'
+              }else{
+                //pick slot 2
+                slot = new Date(2022, 6, 1);
+                slotType = 'slot2'
+              }
               await setDoc(doc(db, "users", values.email), {
                 email: values.email,
                 name: values.name,
@@ -216,13 +233,23 @@ const Register = () => {
                 timeCompleted: 0,
                 slot: slot
                 
-              });
+              });    
+              await updateDoc(doc(db, "metadata", "slots"), {[slotType]: increment(1)})
+            } else {
+              // doc.data() will be undefined in this case
+              console.log("Cannot get slot time info!");
+
+              setErrorOnSubmit("Sorry we cannot assign your slot. Please contact us for assistance")
+            }
+
+            
+              
             
             
             
           
             await updateDoc(doc(db, "metadata", "stats"), {submissions: increment(1)})
-            await updateDoc(doc(db, "metadata", "slots"), {[slotType]: increment(1)})
+            
             await updateAvgTimeCompleted(Date.now() - startTime.current);
           
             formik.setSubmitting(false);
@@ -238,14 +265,15 @@ const Register = () => {
     }
     })
     return ( <section className="relative ">
-        <Hero>
-            <PageTitle type={2} title='Individual Register'></PageTitle>
-            <div  className="w-90vw xl:w-1/2 mx-auto mt-10 xl:mt-20 bg-bg-100 rounded-2xl py-10 xl:py-14 min-h-[850px]  2xl:min-h-[900px]">
+        <Hero >
+          <div className='absolute flex flex-col pt-20 xl:pt-[150px] items-center w-full '>
+               <PageTitle type={2} title='Individual Register'></PageTitle>
+            <div  className="w-90vw xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl py-5 xl:py-14 min-h-[850px]  2xl:min-h-[900px]">
                 {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
                   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to your email shortly.</p>
                   <InternalLink></InternalLink> 
                   </div> : 
-                  <form className="w-10/12 mx-auto space-y-4 md:space-y-8 md:w-2/3 text-headline-21 md:text-body-18 text-bg-950" onSubmit={formik.handleSubmit}>
+                  <form className="w-11/12 mx-auto space-y-1 md:space-y-8 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
                     <h2 ref={formTitleRef} className="font-bold text-primary-600 text-headline-26 md:text-lead-24">Step {currentStep + 1}/{formStep.length}: {formStep[currentStep].stepDesc}</h2>
 
                     {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
@@ -338,6 +366,8 @@ const Register = () => {
                     </div>
                 </form>}
             </div>
+          </div>
+           
         </Hero>
     </section> );
 }

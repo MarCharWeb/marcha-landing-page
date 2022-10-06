@@ -2,27 +2,27 @@
 @tailwind base;
 @layer base{
   @font-face {
-      font-family: Brandon Grotesque;
-      src: url('../fonts/brandon-grotesque-reg.otf') format('opentype');
-      font-weight: normal;
+      font-family: Agrandir;
+      src: url('../fonts/Agrandir-Regular.otf') format('opentype');
+      font-weight: 400;
     }
   @font-face {
-      font-family: Brandon Grotesque;
-      src: url('../fonts/brandon-grotesque-bold.otf') format('opentype');
+      font-family: Agrandir;
+      src: url('../fonts/Agrandir-TextBold.otf') format('opentype');
       font-weight: bold;
     }
 
   @font-face {
-    font-family: Brandon Grotesque;
-    src: url('../fonts/brandon-grotesque-medium.otf') format('opentype');
-    font-weight: medium;
-  }
-  @font-face {
-    font-family: Brandon Grotesque;
-    src: url('../fonts/brandon-grotesque-black.otf') format('opentype');
+    font-family: Agrandir;
+    src: url('../fonts/Agrandir-GrandHeavy.otf') format('opentype');
     font-weight: 900;
   }
-
+  @font-face {
+    font-family: Agrandir;
+    src: url('../fonts/Agrandir-GrandLight.otf') format('opentype');
+    font-weight: 300;
+  }
+ 
   button{
     padding-top: 0;
     padding-bottom: 0;
@@ -35,14 +35,27 @@
 
   body,
   html {
-    @apply scroll-p-[10%] font-sans text-headline-21 text-grey-900;
+    @apply font-sans scroll-p-28 text-headline-21 text-grey-900;
+
+    scroll-behavior: smooth;
   }
 
   .active-link {
     @apply font-bold text-primary-500;
   }
 
+  .border-text{
+    -webkit-text-stroke: 4px #E24A13;
+   
+  }
 
+  .text-glow-strong{
+    text-shadow: 1px 1px 20px #F49402;
+  }
+
+  .text-glow-normal{
+    text-shadow: 1px 1px 10px rgba(244, 148, 2, 0.52);
+  }
 
   .container-media-padding {
     @apply md:px-6 lg:px-12 px-4 xl:px-[80px] 2xl:px-[calc((100vw_-_1280px)_/_2)] 3xl:px-[calc((100vw_-_1440px)_/_2)];

@@ -73,17 +73,13 @@ module.exports = {
 
         },
         bg: {
-          '500': '#3d067d',
-          '700': '#310564',
-          '600': '#370571',
-          '800': '#1f033f',
-          '900': '#180232',
-          '950': '#06010c',
-          '400': '#501f8a',
-          '300': '#7751a4',
-          '200': '#9e83be',
-          '100': '#d8cde5',
-          '50': '#f9fdfe'
+          'black': '#000000',
+          '500': '#18162B',
+      
+          '400': '#201E34',
+          '300': '#2E2C47',
+          
+          '50': '#e8e8ea'
         },
         success: {
           '100': '#E8F6EE',
@@ -160,7 +156,7 @@ module.exports = {
 
     },
       fontFamily: {
-        sans: ['Brandon Grotesque', 'sans-serif'],
+        sans: ['Agrandir', 'sans-serif'],
         teko: ['Teko', 'sans-serif']
       },
       
@@ -199,11 +195,16 @@ module.exports = {
       screens: {
         '3xl': '1920px'
       },
-      
+      backgroundImage: {
+        'hero-bg': "url('../assets/hero-bg-1.png')",
+        
+      },
 
     },
 
     
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

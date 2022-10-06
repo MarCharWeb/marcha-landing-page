@@ -1,19 +1,15 @@
-const TimePanel = ({className}) => {
-    return ( <div className={"flex gap-6 items-center " + className}>
-        <svg className="flex-shrink-0" width="72" height="343" viewBox="0 0 72 343" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M46.464 322.92H72V342.52H0.0959978L0.0959978 309.256C0.0959978 298.28 4.72533 292.792 13.984 292.792H32.576C39.6693 292.792 44.0373 296.003 45.68 302.424L72 289.208V310.264L46.464 321.688V322.92ZM14.096 315.192L14.096 322.92H33.136V315.192C33.136 313.325 32.3147 312.392 30.672 312.392H16.56C14.9173 312.392 14.096 313.325 14.096 315.192ZM0.0959978 268.861V252.285C0.0959978 241.309 4.72533 235.821 13.984 235.821H58.112C67.3707 235.821 72 241.309 72 252.285V268.861C72 279.837 67.3707 285.325 58.112 285.325H13.984C4.72533 285.325 0.0959978 279.837 0.0959978 268.861ZM55.536 255.421H16.56C14.9173 255.421 14.096 256.354 14.096 258.221L14.096 262.925C14.096 264.791 14.9173 265.725 16.56 265.725H55.536C57.1787 265.725 58 264.791 58 262.925V258.221C58 256.354 57.1787 255.421 55.536 255.421ZM0.0959978 197.335L0.0959978 177.735H58.112C67.3707 177.735 72 183.223 72 194.199V210.775C72 221.751 67.3707 227.239 58.112 227.239H0.0959978L0.0959978 207.639H55.536C57.1787 207.639 58 206.705 58 204.839V200.135C58 198.268 57.1787 197.335 55.536 197.335H0.0959978ZM0.0959978 135.907L0.0959978 117.987H72V134.787L34.256 150.803H72V168.723H0.0959978L0.0959978 151.923L38.512 135.907H0.0959978ZM0.0959978 107.884L0.0959978 74.8444C0.0959978 63.8684 4.72533 58.3804 13.984 58.3804H58.112C67.3707 58.3804 72 63.8684 72 74.8444V107.884H0.0959978ZM56.656 77.9804H15.44C13.7973 77.9804 12.976 78.9137 12.976 80.7804L12.976 88.2844H59.12V80.7804C59.12 78.9137 58.2987 77.9804 56.656 77.9804ZM0.0959978 0.0852475H72V19.6852H14.096L14.096 29.7652H0.0959978L0.0959978 0.0852475Z" fill="white" fill-opacity="0.16"/>
-            </svg>
+const TimePanel = ({className, roundIcon, roundName, roundNameIcon}) => {
+    return ( <div className={"flex gap-8 lg:gap-4 xl:gap-6  " + className}>
+       {roundIcon}
 
         <div>
-            <h4 className="flex items-center gap-2 font-bold text-headline-37 mb-2.5">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3905 6.39048C20.384 4.39702 23.616 4.39702 25.6095 6.39048C27.5342 8.3152 27.6006 11.3945 25.8086 13.3989L25.6095 13.6094L24.2761 14.9428L11.6095 27.6094C11.4011 27.8178 11.1309 27.9501 10.8419 27.9884L10.6667 28H5.33333C4.64955 28 4.08599 27.4852 4.00897 26.8221L4 26.6666V21.3333C4 21.0386 4.09755 20.754 4.27477 20.5226L4.39052 20.3905L17.0561 7.72494C17.0564 7.72456 17.0568 7.72419 17.0572 7.72381C17.0576 7.72344 17.0579 7.72306 17.0583 7.72269L18.3905 6.39048ZM18 10.5522L6.66667 21.8853V25.332H10.1133L21.4475 13.9998L18 10.5522ZM23.3333 12.1143L19.8856 8.66662L20.2761 8.2761L20.4401 8.12624C21.3979 7.32698 22.8247 7.37693 23.7239 8.2761L23.8737 8.44005C24.673 9.39784 24.623 10.8246 23.7239 11.7238L23.3333 12.1143Z" fill="#F9FDFE"/>
-            </svg>
-            Individual Online Test
+            <h4 className="flex gap-2 font-bold text-lead-24 lg:text-headline-37 mb-1.5 lg:mb-2.5">
+            {roundNameIcon}
+            {roundName}
             </h4>
 
-        <p className="px-3 py-2.5 bg-bg-700/[72] w-fit">27/09/2022 - 03/10/2022 </p>
-        <p className="w-4/5 mt-6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus sit sit leo. Pharetra venenatis, tortor, pellentesque hac dignissim amet, tellus. Dignissim at varius tellus sollicitudin egestas viverra.</p>
+        <p className="px-1.5 lg:px-3 py-2 lg:py-2.5 bg-bg-300 rounded-sm text-small-16 w-fit">27/09/2022 - 03/10/2022 </p>
+        <p className="w-full mt-2 xl:mt-6 text-body-18 lg:text-headline-21 xl:w-4/5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus sit sit leo. Pharetra venenatis, tortor, pellentesque hac dignissim amet, tellus. Dignissim at varius tellus sollicitudin egestas viverra.</p>
         </div>
             
         

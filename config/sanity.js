@@ -5,10 +5,10 @@ import {
 } from "next-sanity";
 import createImageUrlBuilder from '@sanity/image-url'
 const config = {
-  projectId: `${process.env.SANITY_PROJECT_ID}`,
+  projectId: `sqy1n4ej`,
   dataset: "production",
   apiVersion: "2021-10-21",
-  useCdn: true,
+  useCdn: false,
 };
 
 export const sanityClient = createClient(config);
