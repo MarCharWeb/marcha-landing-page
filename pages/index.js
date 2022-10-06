@@ -15,7 +15,7 @@ import { sanityClient } from '../config/sanity';
 
 import News from '../components/News'
 export default function Home({data}) {
-  console.log(data)
+  // console.log(data)
   return (
     <main >
         <Hero>
