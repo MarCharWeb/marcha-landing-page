@@ -1,7 +1,6 @@
 import { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import SponsorTag from "./SponsorTag";
-import Logo from '../assets/logo-example.png'
 import SponsorDisplay from "./SponsorDisplay";
 import { sponsorLogo } from "../assets/sponsorLogo";
 
