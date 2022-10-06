@@ -16,7 +16,7 @@ import Media4Ss10 from './season10/media-4.png'
 import Media5Ss10 from './season10/media-5.png'
 
 import Strategic1Ss10 from './season10/strategic-1.png'
-import Strategic2Ss10 from './season10/strategic-2.png'
+import Strategic2Ss10 from './season10/strategic2.png'
 import Strategic3Ss10 from './season10/strategic-3.png'
 import Strategic4Ss10 from './season10/strategic-4.png'
 import Strategic5Ss10 from './season10/strategic-5.png'
