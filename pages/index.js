@@ -44,8 +44,8 @@ export default function Home({data}) {
             <rect x="500.5" y="500.5" width="399" height="399" rx="199.5" stroke="#7751A4"/>
             </g>
             <defs>
-            <filter id="filter0_f_232_2027" x="0" y="0" width="1400" height="1400" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_f_232_2027" x="0" y="0" width="1400" height="1400" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
             <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_232_2027"/>
             </filter>
