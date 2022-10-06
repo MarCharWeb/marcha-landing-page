@@ -75,5 +75,8 @@
       writing-mode: vertical-rl;
     }
 
+  .hero-bg{
+    background-image: url('../assets/hero-bg-1.png')
+  }
 
 }
