@@ -22,7 +22,7 @@ export default function Home({data}) {
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] 2xl:pt-40 items-center w-full '>
             <div>
                 <PageTitle type={2} title='Marketing Challengers'></PageTitle>
-                <ImageHolder src={HeroText} alt="marketing-challengers-ss11-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20'}></ImageHolder>
+                <ImageHolder priority={true} src={HeroText} alt="marketing-challengers-ss11-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20'}></ImageHolder>
                 <div className='relative flex justify-center -top-16 lg:-top-20 xl:-top-32'>
                   <Button  isGlow={true}  type='primary' text={'Grab your spark now!'} size='large'></Button>
                 </div>
