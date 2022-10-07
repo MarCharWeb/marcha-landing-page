@@ -26,7 +26,7 @@ const Navigation = () => {
             window.removeEventListener('scroll', observeNavScroll)
         }
     }, [])
-    return ( <nav ref={navRef} className={"fixed top-0 h-[120px] z-50 container-media-padding flex w-full items-center justify-between " + (isScroll ? 'bg-bg-black ': '')}>
+    return ( <nav ref={navRef} className={"fixed top-0 h-[90px] xl:h-[110px] z-50 container-media-padding flex w-full items-center justify-between " + (isScroll ? 'bg-bg-black ': '')}>
         {/* Logo */}
         <Link href="/"><a ><ImageHolder src={Logo} alt='logo-marcha' className={'w-[100px] h-[100px] xl:w-[150px] xl:h-[150px]'}></ImageHolder></a></Link> 
         

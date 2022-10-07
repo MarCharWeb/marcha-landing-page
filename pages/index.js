@@ -52,7 +52,7 @@ export default function Home({data}) {
             </defs>
             </svg>
 
-            <ImageHolder src={AboutUsImg} alt='about-marketing-challengers' className={'hidden lg:block lg:aspect-square xl:aspect-4/3 before:absolute before:inset-0 before:z-[1] before:bg-bg-900/20 rounded overflow-hidden'}></ImageHolder>
+            <ImageHolder src={AboutUsImg} alt='about-marketing-challengers' className={'hidden lg:block lg:aspect-square xl:aspect-4/3 rounded overflow-hidden'}></ImageHolder>
             <div className='pl-4 md:pl-10 xl:pl-[133px] 2xl:pl-[200px]'>
               <SectionTitle className={'mb-3 xl:mb-6 text-left'} type='left' text='About Us'></SectionTitle>
 

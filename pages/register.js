@@ -117,7 +117,7 @@ const Register = () => {
 
     useEffect(() => {
       if (isSubmitted){
-        console.log('hey')
+        // console.log('hey')
         successMessRef.current.scrollIntoView({ behavior: 'smooth' })
       }  
     }, [isSubmitted])
@@ -211,12 +211,12 @@ const Register = () => {
                console.log(slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]);
               if (slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]){
 
-                //pick slot 1 : 1/7/2022
-                slot = new Date(2022, 6, 1);
+                //pick slot 1 : 11/2/2022
+                slot = new Date(2022, 10, 2);
                 slotType = 'slot1'
               }else{
                 //pick slot 2
-                slot = new Date(2022, 6, 1);
+                slot = new Date(2022, 10, 3);
                 slotType = 'slot2'
               }
               await setDoc(doc(db, "users", values.email), {
@@ -268,13 +268,13 @@ const Register = () => {
         <Hero >
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] items-center w-full '>
                <PageTitle type={2} title='Individual Register'></PageTitle>
-            <div  className="w-90vw xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl py-5 xl:py-14 min-h-[850px]  2xl:min-h-[900px]">
+            <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[850px]  2xl:min-h-[900px]">
                 {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
                   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to your email shortly.</p>
                   <InternalLink></InternalLink> 
                   </div> : 
-                  <form className="w-11/12 mx-auto space-y-1 md:space-y-8 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
-                    <h2 ref={formTitleRef} className="font-bold text-primary-600 text-headline-26 md:text-lead-24">Step {currentStep + 1}/{formStep.length}: {formStep[currentStep].stepDesc}</h2>
+                  <form className="w-10/12 mx-auto space-y-2 md:space-y-4 lg:space-y-8 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
+                    <h2 ref={formTitleRef} className="font-bold text-primary-600 text-lead-24">Step {currentStep + 1}/{formStep.length}: {formStep[currentStep].stepDesc}</h2>
 
                     {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
                     {!formik.isValid && currentStep == 2 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check all the steps again</p>}
@@ -360,7 +360,7 @@ const Register = () => {
                     </div>}
                     
                     {/* Button list */}
-                    <div className='flex justify-between'>
+                    <div className='flex justify-between pt-2 lg:pt-0'>
                         <Button onClick={handleBack} text={'Back'} isPrimary={false}/>
                         <Button loadingText='Signing up...' isLoading={formik.isSubmitting}  type={currentStep == 2 ? 'submit' : 'button'} onClick={currentStep == 2 ? formik.handleSubmit : handleNext} className={!formik.isValid && currentStep == 2 ? 'opacity-50 pointer-events-none' : ''} text={currentStep === 2 ? 'Register' : 'Next'} />
                     </div>

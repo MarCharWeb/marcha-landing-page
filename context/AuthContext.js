@@ -61,16 +61,17 @@ export const AuthContextProvider = ({
     
   }
 
-  // const login = async (email, password) => {
-  //   try {
-  //     await signInWithEmailAndPassword(auth, email, password);
+  const login = async (email, password) => {
+    try {
+      await setPersistence(auth, inMemoryPersistence);
+      await signInWithEmailAndPassword(auth, email, password);
       
-  //   } catch (error) {
-  //     return error;
-  //   }
+    } catch (error) {
+      return error;
+    }
     
     
-  // }
+  }
 
   // const logout = async () => {
   //   setUser(null)
