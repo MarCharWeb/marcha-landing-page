@@ -134,11 +134,10 @@ module.exports = {
 
     
     extend: {
-      keyframes: {
-      ping: {
-        '75%, 100%': { transform: 'scale(1.2)',opacity: 0}
-      }
-    },
+      animation: {
+        'bounce-slow': 'bounce 3s ease-in-out infinite',
+      },
+      
       boxShadow: {
       'light-20': '0px 0px 1px rgba(48, 49, 51, 0.05), 0px 1px 3px rgba(48, 49, 51, 0.1)',
       'light-40': '0px 0px 1px rgba(48, 49, 51, 0.05), 0px 2px 4px rgba(48, 49, 51, 0.1)',

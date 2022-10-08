@@ -11,20 +11,31 @@ import CallToAction from '../components/CallToAction'
 import ValueProps from '../components/ValueProps'
 import HeroText from '../assets/hero-text.png'
 import { sanityClient } from '../config/sanity';
-
-
+import { gsap } from "gsap";
+import { useLayoutEffect, useRef } from "react";
 import News from '../components/News'
+
+
+
 export default function Home({data}) {
-  // console.log(data)
+
+  const heroTextRef = useRef(null);
+  const heroBtn = useRef(null);
+  useLayoutEffect(()=>{
+    gsap.from(heroTextRef.current, {opacity:0, duration: 2, ease: "bounce.out", autoAlpha: 0, delay: 1})
+    gsap.from(heroBtn.current, {opacity:0, autoAlpha: 0, duration: 1, delay:1.5})
+
+  },[])
+
   return (
     <main >
         <Hero>
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] 2xl:pt-40 items-center w-full '>
             <div>
                 <PageTitle type={2} title='Marketing Challengers'></PageTitle>
-                <ImageHolder priority={true} src={HeroText} alt="marketing-challengers-ss11-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20'}></ImageHolder>
+                <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss11-slogan" className={'w-56 invisible h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20'}></ImageHolder>
                 <div className='relative flex justify-center -top-16 lg:-top-20 xl:-top-32'>
-                  <Button  isGlow={true}  type='primary' text={'Grab your spark now!'} size='large'></Button>
+                  <Button ref={heroBtn} isGlow={true}  type='primary' className='invisible animate-bounce-slow' text={'Grab your spark now!'} size='large'></Button>
                 </div>
                 
             </div>
@@ -79,7 +90,7 @@ export default function Home({data}) {
         {/* <Award></Award> */}
         <Sponsor></Sponsor>
         <CallToAction></CallToAction>
-        <News featurePosts={data}></News>
+        {/* <News featurePosts={data}></News> */}
         
     </main>
   )
@@ -93,11 +104,11 @@ const featurePostQuery = `*[_type == "post" && featured == true]{
 `
 
 
-export async function getServerSideProps(context) {
-  let data = await sanityClient.fetch(featurePostQuery);
+// export async function getServerSideProps(context) {
+//   let data = await sanityClient.fetch(featurePostQuery);
 
-  return {
-    props: {data}, // will be passed to the page component as props
+//   return {
+//     props: {data}, // will be passed to the page component as props
     
-  }
-}
+//   }
+//}
