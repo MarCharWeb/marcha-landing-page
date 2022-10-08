@@ -17,7 +17,7 @@ const Sponsor = () => {
 
         setSponsorData(updateSponsorData)
     }
-    return (<section className="py-10 mt-20 xl:mt-24 xl:py-16 bg-bg-400">
+    return (<section className="py-10 mt-36 xl:mt-24 xl:py-16 bg-bg-400">
         <SectionTitle text={'Sponsors'}></SectionTitle>
 
         {/* Sponsor Tag List */}

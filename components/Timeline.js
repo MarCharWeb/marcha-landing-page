@@ -15,7 +15,7 @@ const Timeline = () => {
         
         
         {/* Timeline container */}
-        <div className="relative z-[1] container-media-padding w-full grid grid-cols-1 xl:w-11/12 lg:grid-cols-2 xl:mx-auto mt-5 gap-y-7 md:gap-12 lg:gap-y-6 xl:gap-y-10 gap-x-20">
+        <div className="relative z-[1] container-media-padding w-full grid grid-cols-1 xl:w-11/12 lg:grid-cols-2 xl:mx-auto mt-4 gap-y-7 md:gap-12 lg:gap-y-6 xl:gap-y-10 gap-x-20">
             <svg className="absolute transform translate-x-1/2 left-[23%] md:left-[13%] lg:left-[48%] xl:left-[48%]  w-[22px] h-[1227px] lg:w-[21px] lg:h-[1172px]  " viewBox="0 0 21 1172" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line x1="10.5" y1="9" x2="10.5" y2="1172" stroke="#F9FDFE"/>
             <circle cx="10.5" cy="10.5" r="10.5" fill="#F59F1B" fillOpacity="0.42"/>

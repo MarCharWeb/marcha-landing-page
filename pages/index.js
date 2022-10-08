@@ -35,7 +35,7 @@ export default function Home({data}) {
 
         <ValueProps></ValueProps>
         {/* About Us  */}
-        <section id='about-marketing-challengers' className='relative z-10 grid items-center grid-cols-1 mt-10 lg:-mt-10 2xl:-mt-40 xl:-mt-20 lg:grid-cols-2 mb-28 media-padding-right'>
+        <section id='about-marketing-challengers' className='relative z-10 grid items-center grid-cols-1 mt-10 mb-10 lg:-mt-10 2xl:-mt-40 xl:-mt-20 lg:grid-cols-2 xl:mb-28 media-padding-right'>
 
             {/* Glow Effect in background  */}
             <svg className='absolute top-0 right-0 transform -translate-y-1/2' width="700" height="1400" viewBox="0 0 700 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
