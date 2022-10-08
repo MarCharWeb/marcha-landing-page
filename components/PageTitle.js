@@ -1,3 +1,6 @@
+import { gsap } from "gsap";
+
+
 const PageTitle = ({type, title, subTitle = 'season 11'}) => {
     return ( <div className="space-y-1 font-black text-center xl:space-y-3 2xl:space-y-4">
         {type === 2 ? <h3 className="tracking-[0.07em] uppercase xl:text-headline-26 text-tertiary-500">{subTitle}</h3> : null}
