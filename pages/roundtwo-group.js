@@ -109,7 +109,6 @@ const Register = () => {
     })
     ,
     onSubmit: async (values) => {
-         console.log(values.round2Topic);
         if (formik.isValid){
             setErrorOnSubmit(null);
             formik.setSubmitting(true);
@@ -212,12 +211,14 @@ const Register = () => {
 
                     // Commit the batch
                     await batch.commit();
-                
                     formik.setSubmitting(false);
                     setIsSumitted(true);
+                
+                    
                     
                 }
                 
+                formik.setSubmitting(false);
 
             } catch (error) {
               console.log(error);
@@ -236,7 +237,7 @@ const Register = () => {
     return ( <section className="relative ">
         <Hero >
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] items-center w-full '>
-               <PageTitle type={2} subTitle='round 2' title='Group Formation'></PageTitle>
+               <PageTitle type={2} subTitle='round 2' title='Group Pick'></PageTitle>
             <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[850px]  2xl:min-h-[900px]">
                 {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
                   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered group!</p>
@@ -246,7 +247,7 @@ const Register = () => {
                     <h2 ref={formTitleRef} className="font-bold text-primary-600 text-lead-24">Step {currentStep + 1}/{formStep.length}: {formStep[currentStep].stepDesc}</h2>
 
                     {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
-                    {!formik.isValid && currentStep == 2 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check all the steps again</p>}
+                    {!formik.isValid && currentStep == 1 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check all the steps again</p>}
 
                     {/* Step 1: Personal Input */}
                     {currentStep == 0 && <div className='space-y-7 md:space-y-4'>
@@ -312,7 +313,7 @@ const Register = () => {
                     {/* Button list */}
                     <div className='flex justify-between pt-4 md:pt-2 lg:pt-0'>
                         <Button onClick={handleBack} text={'Back'} isPrimary={false}/>
-                        <Button loadingText='Signing up...' isLoading={formik.isSubmitting}  type={currentStep == 1 ? 'submit' : 'button'} onClick={currentStep == 1 ? formik.handleSubmit : handleNext} className={!formik.isValid && currentStep == 1 ? 'opacity-50 pointer-events-none' : ''} text={currentStep === 2 ? 'Submit' : 'Next'} />
+                        <Button loadingText='Picking...' isLoading={formik.isSubmitting}  type={currentStep == 1 ? 'submit' : 'button'} onClick={currentStep == 1 ? formik.handleSubmit : handleNext} className={!formik.isValid && currentStep == 1 ? 'opacity-50 pointer-events-none' : ''} text={currentStep === 1 ? 'Submit' : 'Next'} />
                     </div>
                 </form>}
             </div>

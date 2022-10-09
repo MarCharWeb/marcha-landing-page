@@ -61,7 +61,7 @@ const ValueProps = () => {
             </div>
 
             <div className="flex justify-center mt-7">
-                <Button text={'Register Now!'} isGlow={true} size='large'></Button>
+                <Button text={'Register Now!'} isGlow={true} className='animate-bounce-slow' size='large'></Button>
             </div>
         </div>
        

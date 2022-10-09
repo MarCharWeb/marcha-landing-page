@@ -235,6 +235,12 @@ const Register = () => {
                 
               });    
               await updateDoc(doc(db, "metadata", "slots"), {[slotType]: increment(1)})
+              await updateDoc(doc(db, "metadata", "stats"), {submissions: increment(1)})
+            
+              await updateAvgTimeCompleted(Date.now() - startTime.current);
+          
+              formik.setSubmitting(false);
+              setIsSumitted(true)
             } else {
               // doc.data() will be undefined in this case
               console.log("Cannot get slot time info!");
@@ -248,13 +254,8 @@ const Register = () => {
             
             
           
-            await updateDoc(doc(db, "metadata", "stats"), {submissions: increment(1)})
             
-            await updateAvgTimeCompleted(Date.now() - startTime.current);
-          
             formik.setSubmitting(false);
-            setIsSumitted(true)
-            
               
         }else{
           setErrorOnSubmit("Some fields have not been properly inputted or been missed. Please check again to continue the registration!");
