@@ -4,7 +4,7 @@ const Button =forwardRef( ({type ='button', className, onClick, text, isPrimary 
     return ( <button 
             ref={ref}
             type={type}
-            className={'font-bold text-secondary-900 rounded-full flex justify-center items-center ' + (isPrimary ? 'bg-gradient-to-r from-[#FFDA19] to-[#CC7B00]  ': 'border border-secondary-600 ') 
+            className={'font-bold text-secondary-900 rounded-full flex justify-center items-center  hover:text-primary-500 duration-300 ' + (isPrimary ? 'bg-gradient-to-r from-[#FFDA19] to-[#CC7B00] hover:from-bg-black hover:to-bg-black ': 'border border-secondary-600 ') 
             + (size == 'small' ? 'px-6 py-0.5 text-body-18 ' : size == 'large' ? 'px-6 py-3 text-headline-26 ':'') + (isLoading ? 'opacity-50 pointer-events-none': '') 
             + (isGlow ? 'shadow-glow ': '') + className}
             onMouseDown={onClick}>

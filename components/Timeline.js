@@ -5,7 +5,7 @@ import TimelinePattern2 from '../assets/timeline-pattern-2.png';
 import ImageHolder from "./ImageHolder";
 
 const Timeline = () => {
-    return ( <section className="relative z-[5] ">
+    return ( <section className="relative ">
         <SectionTitle text={'Timeline'} ></SectionTitle>
         
         
