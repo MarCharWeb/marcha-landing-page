@@ -3,7 +3,7 @@ const Footer = () => {
     return ( <section className="flex flex-col items-start justify-between gap-4 pt-6 pb-10 lg:gap-0 lg:items-end lg:flex-row text-small-16 md:text-headline-21 xl:pt-12 container-media-padding">
         <div>
         <p className="mb-1 font-bold">©2022 Marketing Challengers. All rights reserved.</p>
-        <p className="text-small-16"><span className="font-bold">Contact:</span> marketingchallengers.s10@gmail.com</p>
+        <p className="text-small-16"><span className="font-bold">Contact:</span> rmitbcmarketingchallengers@gmail.com</p>
         <p className="text-small-16"><span className="font-bold">Sponsor Partnership:</span> marketingchallengers.sponsor@gmail.com</p>
         <p className="text-small-16"><span className="font-bold">Media Partnership:</span> marketingchallengers.media@gmail.com</p>
         </div>

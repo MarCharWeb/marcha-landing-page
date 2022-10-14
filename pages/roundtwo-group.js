@@ -188,8 +188,8 @@ const Register = () => {
                 
 
                 if (allMailsValid && groupNameValid){
-                    console.log(listMailsValid)
-                    console.log(values.round2Topic)
+                    // console.log(listMailsValid)
+                    // console.log(values.round2Topic)
                     const batch = writeBatch(db);
 
                     if (values.email1 !== ''){
