@@ -14,7 +14,7 @@ import { sanityClient } from '../config/sanity';
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
 import News from '../components/News'
-
+import Head from 'next/head'
 
 
 export default function Home({data}) {
@@ -27,8 +27,19 @@ export default function Home({data}) {
 
   },[])
 
+  
+
   return (
     <main >
+      <Head>
+        <title>Marketing Challengers Season 11</title>
+        <link rel="icon" type="image/png" sizes='16x16' href="/favi.png"></link>
+        <link rel="icon" type="image/png" sizes='32x32' href="/favi-lg.png"></link>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Marketing Challengers is a nationwide marketing competition for undergraduate students in Vietnam organized by RMIT Vietnam Business Club (SGS)" />
+
+      </Head>
+      
         <Hero>
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] 2xl:pt-40 items-center w-full '>
             <div>
