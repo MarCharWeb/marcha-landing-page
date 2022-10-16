@@ -10,10 +10,11 @@ import * as Yup from 'yup';
 import Button from "../components/Button";
 import { useRouter } from "next/router";
 import InternalLink from "../components/InternalLink";
+import Head from "next/head";
 
 
 const Register = () => {
-    const router = useRouter()
+
     const {signup} = useAuth()
     const [errorOnSubmit, setErrorOnSubmit] = useState(null);
     const startTime = useRef(Date.now());
@@ -285,12 +286,19 @@ const Register = () => {
     }
     })
     return ( <section className="relative ">
+        <Head>
+          <title>Marketing Challengers Season 11</title>
+          <link rel="icon" type="image/png" sizes='16x16' href="/favi.png"></link>
+          <link rel="icon" type="image/png" sizes='32x32' href="/favi-lg.png"></link>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          
+        </Head>
         <Hero >
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] items-center w-full '>
                <PageTitle type={2} title='Individual Register'></PageTitle>
             <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[850px]  2xl:min-h-[900px]">
                 {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
-                  <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to your email shortly within 2 hours. If not, please contact us for assistance.</p>
+                  <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to you shortly within 2 hours. Please check your Inbox and Spam folder.<br/>If not, please contact us for assistance.</p>
                   <InternalLink></InternalLink> 
                   </div> : 
                   <form className="w-10/12 mx-auto space-y-2 md:space-y-4 lg:space-y-8 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>

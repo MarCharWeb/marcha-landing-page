@@ -5,6 +5,7 @@ import { sanityClient } from '../../config/sanity';
 import BlogCard from "../../components/BlogCard";
 import Button from "../../components/Button";
 import { useState, useEffect } from "react";
+import Head from "next/head";
 
 
 const News = ({data}) => {
@@ -44,6 +45,14 @@ const News = ({data}) => {
     }, [showList])
 
     return ( <main className="relative z-[5] pt-28 xl:pt-32 container-media-padding">
+            <Head>
+                <title>Marketing Challengers Season 11</title>
+                <link rel="icon" type="image/png" sizes='16x16' href="/favi.png"></link>
+                <link rel="icon" type="image/png" sizes='32x32' href="/favi-lg.png"></link>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Marketing Challengers is a nationwide marketing competition for undergraduate students in Vietnam organized by RMIT Vietnam Business Club (SGS)" />
+
+            </Head>
             <ImageHolder src={NewsBg} alt='marketing-challengers-season11-news' style={{position: 'absolute'}} className={'w-[125vw] z-[-1] h-screen top-0 left-0 '}/>
             <PageTitle type={1} title='News'></PageTitle>
             
