@@ -212,12 +212,12 @@ const Register = () => {
                console.log(slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]);
               if (slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]){
 
-                //pick slot 1 : 11/2/2022
-                slot = new Date(2022, 10, 2);
+                //pick slot 1 : 11/16/2022
+                slot = new Date(2022, 10, 16);
                 slotType = 'slot1'
               }else{
                 //pick slot 2
-                slot = new Date(2022, 10, 3);
+                slot = new Date(2022, 10, 17);
                 slotType = 'slot2'
               }
               await setDoc(doc(db, "users", values.email), {
