@@ -23,7 +23,7 @@ export default async function handler(req, res) {
           <br/>
           <p>Please use the competition account you have just created to login the below link and get the detailed information about your assigned time slot for the online test in Round 1:
           </p>
-          <a href="https://marcha-prototype.vercel.app/login" target="_blank">Round 1 Online Assessment Dashboard</a>
+          <a href="https://round1.marketingchallengers.org/login" target="_blank">Round 1 Online Assessment Dashboard</a>
           <br/>
           <br/>
           <p>Before Round 1 begins, we have plenty of exclusive information and updates that we would like to share with you - our valuable participant. If you are interested to find out more about us, please visit us at the below platforms:</p>
