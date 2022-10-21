@@ -82,20 +82,20 @@ const Register = () => {
         name: 'is-school-email',
         test: (value) => value == null || !value.includes("edu.vn"), 
         message: "School email (example@school.edu.vn) is not allowed!"
-      }),
+      }).required("Email of member 1 is required!"),
       // password1: Yup.string().min(8, "Password must have at least 8 characters").required("Password is required"),
       
       email2: Yup.string().trim().email("Invalid email address").test({
         name: 'is-school-email',
         test: (value) => value == null || !value.includes("edu.vn"), 
         message: "School email (example@school.edu.vn) is not allowed!"
-      }),
+      }).required("Email of member 2 is required!"),
       
       email3: Yup.string().trim().email("Invalid email address").test({
         name: 'is-school-email',
         test: (value) => value == null || !value.includes("edu.vn"), 
         message: "School email (example@school.edu.vn) is not allowed!"
-      }),
+      }).required("Email of member 3 is required!"),
       
       email4: Yup.string().trim().email("Invalid email address").test({
         name: 'is-school-email',
@@ -254,7 +254,7 @@ const Register = () => {
 
                         {/* Email of member 1 */}
                         <div className='space-y-1.5 lg:space-y-0.5'>
-                          <label className='block font-bold text-bg-950' htmlFor="email1">Email of Member 1:</label>
+                          <label className='block font-bold text-bg-950' htmlFor="email1">Email of Member 1*:</label>
                           <p className='text-grey-950 text-small-16'>Please enter the registered email</p> 
                           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="email" name='email1' value={formik.values.email1} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='mem1@gmail.com'/>
                         {formik.touched.email1 && formik.errors.email1 && <p className='text-small-16 text-error-500 '>{formik.errors.email1}</p> }
@@ -262,7 +262,7 @@ const Register = () => {
 
                          {/* Email of member 2 */}
                          <div className='space-y-1.5 lg:space-y-0.5'>
-                          <label className='block font-bold text-bg-950' htmlFor="email2">Email of Member 2:</label>
+                          <label className='block font-bold text-bg-950' htmlFor="email2">Email of Member 2*:</label>
                          <p className='text-grey-950 text-small-16'>Please enter the registered email</p> 
                           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="email" name='email2' value={formik.values.email2} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='mem2@gmail.com'/>
                         {formik.touched.email2 && formik.errors.email2 && <p className='text-small-16 text-error-500 '>{formik.errors.email2}</p> }
@@ -270,7 +270,7 @@ const Register = () => {
 
                         {/* Email of member 3 */}
                          <div className='space-y-1.5 lg:space-y-0.5'>
-                          <label className='block font-bold text-bg-950' htmlFor="email3">Email of Member 3:</label>
+                          <label className='block font-bold text-bg-950' htmlFor="email3">Email of Member 3*:</label>
                           <p className='text-grey-950 text-small-16'>Please enter the registered email</p> 
                           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="email" name='email3' value={formik.values.email3} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='mem3@gmail.com'/>
                         {formik.touched.email3 && formik.errors.email3 && <p className='text-small-16 text-error-500 '>{formik.errors.email3}</p> }
