@@ -296,46 +296,46 @@ const Register = () => {
         <Hero >
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] items-center w-full '>
                <PageTitle type={2} title='Individual Register'></PageTitle>
-            <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[850px]  2xl:min-h-[900px]">
+            <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[850px]  md:min-h-[900px]">
                 {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
                   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to you shortly (please check your Inbox and Spam folder).<br/>If you have not received it within 1 hour, please contact us for assistance.</p>
                   <InternalLink></InternalLink> 
                   </div> : 
-                  <form className="w-10/12 mx-auto space-y-2 md:space-y-4 lg:space-y-8 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
+                  <form className="w-10/12 mx-auto space-y-2 md:space-y-3 lg:space-y-5 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
                     <h2 ref={formTitleRef} className="font-bold text-primary-600 text-lead-24">Step {currentStep + 1}/{formStep.length}: {formStep[currentStep].stepDesc}</h2>
 
                     {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
                     {!formik.isValid && currentStep == 2 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check all the steps again</p>}
 
                     {/* Step 1: Personal Input */}
-                    {currentStep == 0 && <div className='space-y-7 md:space-y-4'>
-                        <div className='space-y-1.5 lg:space-y-0.5'>
+                    {currentStep == 0 && <div className='space-y-4'>
+                        <div className='space-y-1 lg:space-y-0.5'>
                           <label className='block font-bold' htmlFor="name">Full Name*</label>
                           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='name' value={formik.values.name} onBlur={formik.handleBlur} onChange={formik.handleChange} placeholder='name'/>
-                          {formik.touched.name && formik.errors.name && <p className='font-medium text-small-16 text-error-500 '>{formik.errors.name}</p> }
+                          {formik.touched.name && formik.errors.name && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.name}</p> }
                         </div>
-                      <div className='space-y-1.5 lg:space-y-0.5'>
+                      <div className='space-y-1 lg:space-y-0.5'>
                         <label className='block font-bold text-bg-950' htmlFor="dob">Date of Birth*</label>
                         <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="date" name='dob'  value={formik.values.dob} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='01/01/2000'/>
-                        {formik.touched.dob && formik.errors.dob && <p className='font-medium text-small-16 text-error-500 '>{formik.errors.dob}</p> }
+                        {formik.touched.dob && formik.errors.dob && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.dob}</p> }
 
                       </div>
-                    <div  className='space-y-1.5 lg:space-y-0.5'>
+                    <div  className='space-y-1 lg:space-y-0.5'>
                       <label className='block font-bold text-bg-950' htmlFor="phone">Phone Number*</label>
                       <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='phone'  value={formik.values.phone} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='0999999999'/>
-                      {formik.touched.phone && formik.errors.phone && <p className='font-medium text-small-16 text-error-500 '>{formik.errors.phone}</p> }
+                      {formik.touched.phone && formik.errors.phone && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.phone}</p> }
 
                     </div>
-                    <div  className='space-y-1.5 lg:space-y-0.5'>
+                    <div  className='space-y-1 lg:space-y-0.5'>
                       <label className='block font-bold text-bg-950' htmlFor="major">Major*</label>
                       <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='major'  value={formik.values.major} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='Digital Marketing'/>
-                              {formik.touched.major && formik.errors.major && <p className='font-medium text-small-16 text-error-500 '>{formik.errors.major}</p> }
+                              {formik.touched.major && formik.errors.major && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.major}</p> }
 
                     </div>
-                    <div  className='space-y-1.5 lg:space-y-0.5'>
+                    <div  className='space-y-1 lg:space-y-0.5'>
                       <label className='block font-bold text-bg-950' htmlFor="university">University*</label>
                       <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='university'  value={formik.values.university} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='RMIT'/>
-                      {formik.touched.university && formik.errors.university && <p className='font-medium text-small-16 text-error-500 '>{formik.errors.university}</p> }
+                      {formik.touched.university && formik.errors.university && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.university}</p> }
 
 
                     </div>
@@ -388,7 +388,7 @@ const Register = () => {
                     </div>}
                     
                     {/* Button list */}
-                    <div className='flex justify-between pt-2 lg:pt-0'>
+                    <div className='flex justify-between pt-2 md:pt-0'>
                         <Button onClick={handleBack} text={'Back'} isPrimary={false}/>
                         <Button loadingText='Signing up...' isLoading={formik.isSubmitting}  type={currentStep == 2 ? 'submit' : 'button'} onClick={currentStep == 2 ? formik.handleSubmit : handleNext} className={!formik.isValid && currentStep == 2 ? 'opacity-50 pointer-events-none' : ''} text={currentStep === 2 ? 'Register' : 'Next'} />
                     </div>

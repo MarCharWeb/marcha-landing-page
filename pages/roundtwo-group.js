@@ -243,45 +243,45 @@ const Register = () => {
                   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered group!</p>
                   <InternalLink></InternalLink> 
                   </div> : 
-                  <form className="w-10/12 mx-auto space-y-2 md:space-y-4 lg:space-y-8 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
+                  <form className="w-10/12 mx-auto space-y-2 md:space-y-3 lg:space-y-5 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
                     <h2 ref={formTitleRef} className="font-bold text-primary-600 text-lead-24">Step {currentStep + 1}/{formStep.length}: {formStep[currentStep].stepDesc}</h2>
 
                     {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
                     {!formik.isValid && currentStep == 1 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check all the steps again</p>}
 
                     {/* Step 1: Personal Input */}
-                    {currentStep == 0 && <div className='space-y-7 md:space-y-4'>
+                    {currentStep == 0 && <div className='space-y-5 md:space-y-4'>
 
                         {/* Email of member 1 */}
-                        <div className='space-y-1.5 lg:space-y-0.5'>
+                        <div className='space-y-1 lg:space-y-0.5'>
                           <label className='block font-bold text-bg-950' htmlFor="email1">Email of Member 1*:</label>
                           <p className='text-grey-950 text-small-16'>Please enter the registered email</p> 
                           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="email" name='email1' value={formik.values.email1} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='mem1@gmail.com'/>
-                        {formik.touched.email1 && formik.errors.email1 && <p className='text-small-16 text-error-500 '>{formik.errors.email1}</p> }
+                        {formik.touched.email1 && formik.errors.email1 && <p className='text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.email1}</p> }
                         </div>
 
                          {/* Email of member 2 */}
-                         <div className='space-y-1.5 lg:space-y-0.5'>
+                         <div className='space-y-1 lg:space-y-0.5'>
                           <label className='block font-bold text-bg-950' htmlFor="email2">Email of Member 2*:</label>
                          <p className='text-grey-950 text-small-16'>Please enter the registered email</p> 
                           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="email" name='email2' value={formik.values.email2} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='mem2@gmail.com'/>
-                        {formik.touched.email2 && formik.errors.email2 && <p className='text-small-16 text-error-500 '>{formik.errors.email2}</p> }
+                        {formik.touched.email2 && formik.errors.email2 && <p className='text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.email2}</p> }
                         </div>
 
                         {/* Email of member 3 */}
-                         <div className='space-y-1.5 lg:space-y-0.5'>
+                         <div className='space-y-1 lg:space-y-0.5'>
                           <label className='block font-bold text-bg-950' htmlFor="email3">Email of Member 3*:</label>
                           <p className='text-grey-950 text-small-16'>Please enter the registered email</p> 
                           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="email" name='email3' value={formik.values.email3} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='mem3@gmail.com'/>
-                        {formik.touched.email3 && formik.errors.email3 && <p className='text-small-16 text-error-500 '>{formik.errors.email3}</p> }
+                        {formik.touched.email3 && formik.errors.email3 && <p className='text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.email3}</p> }
                         </div>
                         
                         {/* Email of member 4 */}
-                         <div className='space-y-1.5 lg:space-y-0.5'>
+                         <div className='space-y-1 lg:space-y-0.5'>
                           <label className='block font-bold text-bg-950' htmlFor="email4">Email of Member 4:</label>
                           <p className='text-grey-950 text-small-16'>Please enter the registered email</p>  
                           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="email" name='email4' value={formik.values.email4} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='mem4@gmail.com'/>
-                        {formik.touched.email4 && formik.errors.email4 && <p className='text-small-16 text-error-500 '>{formik.errors.email4}</p> }
+                        {formik.touched.email4 && formik.errors.email4 && <p className='text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.email4}</p> }
                         </div>
                     
                     </div>}
@@ -292,7 +292,7 @@ const Register = () => {
                         <div className='space-y-1.5 lg:space-y-0.5'>
                             <label className='block font-bold text-bg-950' htmlFor="groupName">Group Name*</label>
                             <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='groupName' value={formik.values.groupName} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-                            {formik.touched.groupName && formik.errors.groupName && <p className='text-small-16 text-error-500 '>{formik.errors.groupName}</p> }
+                            {formik.touched.groupName && formik.errors.groupName && <p className='text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.groupName}</p> }
                         </div>
 
                         <div className='space-y-2 lg:space-y-0.5'>
@@ -311,7 +311,7 @@ const Register = () => {
                     </div>}
                     
                     {/* Button list */}
-                    <div className='flex justify-between pt-4 md:pt-2 lg:pt-0'>
+                    <div className='flex justify-between pt-2 lg:pt-0'>
                         <Button onClick={handleBack} text={'Back'} isPrimary={false}/>
                         <Button loadingText='Picking...' isLoading={formik.isSubmitting}  type={currentStep == 1 ? 'submit' : 'button'} onClick={currentStep == 1 ? formik.handleSubmit : handleNext} className={!formik.isValid && currentStep == 1 ? 'opacity-50 pointer-events-none' : ''} text={currentStep === 1 ? 'Submit' : 'Next'} />
                     </div>

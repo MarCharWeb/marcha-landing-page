@@ -41,7 +41,7 @@ export const AuthContextProvider = ({
       }
       setLoading(false)
     })
-    console.log(user);
+    // console.log(user);
 
     return () => unsubscribe()
   }, [])
