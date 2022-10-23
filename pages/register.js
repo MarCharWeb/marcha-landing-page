@@ -207,9 +207,9 @@ const Register = () => {
 
              const slotSnap =  await getDoc(doc(db, "metadata", "slots"));
             if (slotSnap.exists()) {
-               let slot = new Date(2022, 6, 1);
+               let slot = new Date(2022, 10, 16);
                let slotType = 'slot1';
-               console.log(slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]);
+               
               if (slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]){
 
                 //pick slot 1 : 11/16/2022
@@ -298,7 +298,7 @@ const Register = () => {
                <PageTitle type={2} title='Individual Register'></PageTitle>
             <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[850px]  md:min-h-[900px]">
                 {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
-                  <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to you shortly (please check your Inbox and Spam folder).<br/>If you have not received it within 1 hour, please contact us for assistance.</p>
+                  <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to you shortly (please check your Inbox and Spam folder). If you have not received it within 1 hour, please contact us for assistance. <br/> You have also received a gift from our Diamond Sponsor - Fonos: <a target={'_blank'} className='italic underline hover:text-primary-500' rel="noreferrer" href='https://fonos.vn/marketing-challengers-11'>https://fonos.vn/marketing-challengers-11</a></p>
                   <InternalLink></InternalLink> 
                   </div> : 
                   <form className="w-10/12 mx-auto space-y-2 md:space-y-3 lg:space-y-5 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
