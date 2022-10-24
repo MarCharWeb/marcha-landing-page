@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import ImageHolder from '../components/ImageHolder'
 import PageTitle from '../components/PageTitle'
 import SectionTitle from '../components/SectionTitle'
-import AboutUsImg from '../assets/about-us.png'
+import AboutUsImg from '../assets/about-us.jpg'
 import Timeline from '../components/Timeline'
 import Award from '../components/Award'
 import Sponsor from '../components/Sponsor'
@@ -15,6 +15,7 @@ import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
 import News from '../components/News'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 
 export default function Home({data}) {
@@ -27,6 +28,7 @@ export default function Home({data}) {
 
   },[])
 
+  const route = useRouter();
   
 
   return (
@@ -46,7 +48,7 @@ export default function Home({data}) {
                 <PageTitle type={2} title='Marketing Challengers'></PageTitle>
                 <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss11-slogan" className={'w-56 invisible h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20'}></ImageHolder>
                 <div className='relative flex justify-center -top-16 lg:-top-20 xl:-top-32'>
-                  <Button ref={heroBtn} isGlow={true}  type='primary' className=' animate-bounce-slow' text={'Grab your spark now!'} size='large'></Button>
+                  <Button ref={heroBtn} onClick={() => {route.push('/register')}} isGlow={true}  type='primary' className=' animate-bounce-slow' text={'Grab your spark now!'} size='large'></Button>
                 </div>
                 
             </div>

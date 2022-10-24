@@ -8,11 +8,13 @@ import Trophy from '../assets/trophy.png'
 import Button from './Button'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"; 
+import { useRouter } from "next/router";
 
 import { useLayoutEffect, useRef } from "react";
 
 
 const ValueProps = () => {
+    const route = useRouter();
     const valuePropsContainerRef = useRef(null);
     const valuePropsContentRef = useRef(null);
     const valuePropsContentGsapRef = gsap.utils.selector(valuePropsContentRef);
@@ -61,7 +63,7 @@ const ValueProps = () => {
             </div>
 
             <div className="flex justify-center mt-7">
-                <Button text={'Register Now!'} isGlow={true} className='animate-bounce-slow' size='large'></Button>
+                <Button text={'Register Now!'} onClick={() => {route.push('/register')}} isGlow={true} className='animate-bounce-slow' size='large'></Button>
             </div>
         </div>
        
