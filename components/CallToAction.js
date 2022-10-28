@@ -16,7 +16,7 @@ const CallToAction = () => {
                 <Button size="large" onClick={() => {route.push('/register')}} isGlow={true} text={'Register Now!'}></Button>
             </div>
 
-            <ImageHolder src={CtaIllus} alt="marketing-challengers-season11-register" style={{position: 'absolute'}}  className={'w-[450px] lg:w-[500px] xl:w-[725px] -top-1/4 md:-top-full right-0 aspect-[1/1.8]'}></ImageHolder>
+            <ImageHolder src={CtaIllus} alt="marketing-challengers-season11-register" style={{position: 'absolute'}}  className={'w-[450px] lg:w-[500px] xl:w-[725px] -top-1/4 md:-top-full right-0  aspect-[1/1.8]'}></ImageHolder>
     </section> );
 }
  

@@ -1,3 +1,22 @@
+//Season 11 Logos Import
+import DiamondSs11 from './season11/diamond.png'
+import ExclusiveSs11 from './season11/exclusive.png'
+import Executive1Ss11 from './season11/executive-1.png'
+import Executive2Ss11 from './season11/executive-2.png'
+import Executive3Ss11 from './season11/executive-3.png'
+import Executive4Ss11 from './season11/executive-4.png'
+import Academic1Ss11 from './season11/academic-1.png'
+import Silver1Ss11 from './season11/silver-1.png'
+import Silver2Ss11 from './season11/silver-2.png'
+import Bronze1Ss11 from './season11/bronze-1.jpg'
+import Bronze2Ss11 from './season11/bronze-2.png'
+import StreamingSs11 from './season11/streaming.jpg'
+import Media1Ss11 from './season11/media-1.png'
+import Media2Ss11 from './season11/media-2.png'
+
+
+
+//Season 10 Logos Import
 import ExclusiveSs10 from './season10/exclusive.png'
 
 import InKind1Ss10 from './season10/in-kind-1.png'
@@ -88,10 +107,50 @@ export const sponsorLogo = () => {
         {
             year: 'Sponsor 11',
             sponsorLogos: [
-                
+                {
+                    categoryName: 'Exclusive Sponsor',
+                    logoList: [ExclusiveSs11]
+
+                },
+                {
+                    categoryName: 'Diamond Sponsor',
+                    logoList: [DiamondSs11]
+
+                },
+                {
+                    categoryName: 'Executive Sponsors',
+                    logoList: [Executive1Ss11, Executive2Ss11, Executive3Ss11, Executive4Ss11]
+
+                },
+                {
+                    categoryName: 'Academic Sponsors',
+                    logoList: [Academic1Ss11, Media2Ss10]
+
+                },
+                {
+                    categoryName: 'Silver Sponsors',
+                    logoList: [Silver1Ss11, Silver2Ss11]
+
+                },
+                {
+                    categoryName: 'Bronze Sponsors',
+                    logoList: [Bronze1Ss11, Bronze2Ss11, InKind4Ss10, Strategic1Ss8]
+
+                },
+                {
+                    categoryName: 'Streaming Sponsor',
+                    logoList: [StreamingSs11]
+
+                },
+                {
+                    categoryName: 'Media Sponsors',
+                    logoList: [Media1Ss11, Media2Ss10, Media1Ss10, Strategic5Ss10, Media2Ss11]
+
+                },
+
 
             ],
-            isActive: false
+            isActive: true
         },
         {
             year: 'Sponsor 10',
@@ -117,7 +176,7 @@ export const sponsorLogo = () => {
 
                 },
             ],
-            isActive: true
+            isActive: false
         },
         {
             year: 'Sponsor 09',
