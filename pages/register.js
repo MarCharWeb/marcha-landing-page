@@ -346,7 +346,7 @@ const Register = () => {
                     {currentStep == 1 && <div className='space-y-7 md:space-y-4'>
                         <div  className='space-y-1.5 lg:space-y-0.5'>
                           <label className='block font-bold text-bg-950' htmlFor="id-card-img">01 photo of your Idetification Card (CMND)*</label>
-                          <p className='text-grey-950 text-body-18 lg:text-small-16'>File size is no larger than 4MB. File name is set in the following format: name-id.png (ex: nguyenvanminh-id.png)</p>
+                          <p className='text-grey-950 text-body-18 lg:text-small-16'>File size is no larger than 3MB. File name is set in the following format: name-id.png (ex: nguyenvanminh-id.png)</p>
                           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="file" name='id-card-img'  onChange={(e) => {uploadStorage(e)}} />
                           {formik.touched.idPhoto && formik.errors.idPhoto && <p className='text-small-16 text-error-500 '>{formik.errors.idPhoto}</p>}
                           {idUploadingMess && <p className='text-success-500 text-small-16 '>{idUploadingMess}</p>}
@@ -355,7 +355,7 @@ const Register = () => {
                         </div>
                       <div  className='space-y-1.5 lg:space-y-0.5'>
                         <label className='block font-bold text-bg-950' htmlFor="student-card-img">01 photo of your Student Card*</label>
-                        <p className='text-grey-950 text-body-18 lg:text-small-16'>File size is no larger than 4MB. File name is set in the following format: name-card.png (ex: nguyenvanminh-card.png)</p>
+                        <p className='text-grey-950 text-body-18 lg:text-small-16'>File size is no larger than 3MB. File name is set in the following format: name-card.png (ex: nguyenvanminh-card.png)</p>
                         <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="file" name='student-card-img' onChange={(e) => {uploadStorage(e)}}/>
                         {formik.touched.studentPhoto && formik.errors.studentPhoto && <p className='text-small-16 text-error-500 '>{formik.errors.studentPhoto}</p>}
                         {cardUploadingMess && <p className='text-success-500 text-small-16 '>{cardUploadingMess}</p>}
