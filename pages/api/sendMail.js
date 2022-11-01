@@ -29,7 +29,7 @@ export default async function handler(req, res) {
           <p>Before Round 1 begins, we have plenty of exclusive information and updates that we would like to share with you - our valuable participant. If you are interested to find out more about us, please visit us at the below platforms:</p>
           <p>Website: <a href="https://www.marketingchallengers.org/" rel="noreferrer" target="_blank">https://www.marketingchallengers.org </a> </p>
           <p>Facebook Group: <a href="https://www.facebook.com/groups/marketingchallengers/?ref=share" rel="noreferrer" target="_blank">https://www.facebook.com/groups/marketingchallengers/?ref=share </a> </p>
-          <p>TiTok: <a href="https://www.tiktok.com/@marketingchallengers" rel="noreferrer" target="_blank">https://www.tiktok.com/@marketingchallengers </a></p>
+          <p>TikTok: <a href="https://www.tiktok.com/@marketingchallengers" rel="noreferrer" target="_blank">https://www.tiktok.com/@marketingchallengers </a></p>
           <br/>
           <p>If you have any further issues or questions about the competition that you would like to ask us, please feel free to contact us via:</p>
           <p>Email: rmitbcmarketingchallengers@gmail.com</p>
