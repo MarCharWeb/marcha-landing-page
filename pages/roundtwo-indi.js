@@ -5,52 +5,27 @@ import { useState, useEffect, useRef} from "react";
 import { doc,  serverTimestamp, getDoc, writeBatch, updateDoc } from "firebase/firestore";
 import {auth, db, storage} from '../config/firebase'
 
-import { useAuth } from "../context/AuthContext";
 import * as Yup from 'yup';
 import Button from "../components/Button";
 
 import InternalLink from "../components/InternalLink";
+import { useRouter } from "next/router";
 
 
 const Register = () => {
     
     const [errorOnSubmit, setErrorOnSubmit] = useState(null);
-
+     const route = useRouter();
     
-    // const [formStep] = useState([
-    
-    //   {
-    //     stepNumber: '01',
-    //     stepDesc: "Enter Your Email & Topic",
-    //     isActive: true,
-    //   },
-    //   {
-    //     stepNumber: '02',
-    //     stepDesc: 'Pick Group Name & Round 2 Topic',
-    //     isActive : false,
-    //   },
-    // ]);
     const [currentStep, setCurrentStep] = useState(0);
     const [isSubmitted, setIsSumitted] = useState(false);
     const successMessRef = useRef()
-    // const formTitleRef = useRef()
-    // const handleNext = () =>{
-    //   if (currentStep < 0){
-    //     setCurrentStep(step => step+=1);
-    //     formTitleRef.current.scrollIntoView({ behavior: 'smooth' })
-
-        
-    //   }
     
-    // }
-    // const handleBack = () =>{
+    const handleBack = () =>{
 
-    //   if (currentStep > 0 ){
-    //     setCurrentStep(step => step-=1);
-    //     formTitleRef.current.scrollIntoView({ behavior: 'smooth' })
-    //   }
+       route.push('/roundtwo');
       
-    // }
+    }
 
 
     useEffect(() => {
@@ -66,7 +41,7 @@ const Register = () => {
     initialValues: {
       
       email: '',
-      round2Topic:'',
+      // round2Topic:'',
     
     },
     validationSchema: Yup.object({
@@ -76,7 +51,7 @@ const Register = () => {
         message: "School email (example@school.edu.vn) is not allowed!"
       }).required("Email is required"),
       
-      round2Topic: Yup.string().trim().required("Please pick a topic for Round 2"),
+      // round2Topic: Yup.string().trim().required("Please pick a topic for Round 2"),
 
     })
     ,
@@ -90,16 +65,16 @@ const Register = () => {
                 const emailSnap =  await getDoc(doc(db, "users", values.email));
                 const isPicked = true;
                 if (emailSnap.exists()) {
-                    if (emailSnap.data().rank <= 400 && !emailSnap.data().hasOwnProperty("round2Topic")){
-                      await updateDoc(doc(db, "users", values.email), {"round2Topic": values.round2Topic, "round2PickAt": serverTimestamp()})
+                    if (emailSnap.data().rank <= 400 && !emailSnap.data().hasOwnProperty("round2PickAt")){
+                      await updateDoc(doc(db, "users", values.email), {"round2PickAt": serverTimestamp()})
                       formik.setSubmitting(false);
                       setIsSumitted(true);
                       console.log("done")
                        
-                    } else if (emailSnap.data().rank <= 400 &&  emailSnap.data().hasOwnProperty("round2Topic")){
-                        setErrorOnSubmit("You already chose the topic");
+                    } else if (emailSnap.data().rank <= 400 &&  emailSnap.data().hasOwnProperty("round2PickAt")){
+                        setErrorOnSubmit("You already registered for round 2");
                     }else{
-                      setErrorOnSubmit("Invalid Email");
+                      setErrorOnSubmit("Invalid Account");
                     }
 
                 } else{
@@ -145,7 +120,7 @@ const Register = () => {
                         {formik.touched.email && formik.errors.email && <p className='text-small-16 text-error-500 '>{formik.errors.email}</p> }
                         </div>
                         
-                        <div className='space-y-2 lg:space-y-0.5'>
+                        {/* <div className='space-y-2 lg:space-y-0.5'>
                             <label className='block font-bold text-bg-950'>Topic for Round 2*</label>
                             
 
@@ -157,12 +132,12 @@ const Register = () => {
                            
                             
                             
-                        </div>
+                        </div> */}
                     </div>
                     
                     {/* Button list */}
                     <div className='flex justify-between pt-4 md:pt-2 lg:pt-0'>
-                        {/* <Button onClick={handleBack} text={'Back'} isPrimary={false}/> */}
+                        <Button onClick={handleBack} text={'Back'} isPrimary={false}/>
                         <Button loadingText='Picking...' isLoading={formik.isSubmitting}  type={'submit' } onClick={formik.handleSubmit} className={!formik.isValid ? 'opacity-50 pointer-events-none' : ''} text={'Submit'} />
                     </div>
                 </form>}

@@ -10,13 +10,14 @@ import * as Yup from 'yup';
 import Button from "../components/Button";
 
 import InternalLink from "../components/InternalLink";
+import { useRouter } from "next/router";
 
 
 const Register = () => {
     
     const [errorOnSubmit, setErrorOnSubmit] = useState(null);
 
-    
+     const route = useRouter();
     const [formStep] = useState([
     
       {
@@ -48,6 +49,8 @@ const Register = () => {
       if (currentStep > 0 ){
         setCurrentStep(step => step-=1);
         formTitleRef.current.scrollIntoView({ behavior: 'smooth' })
+      }else{
+        route.push('/roundtwo');
       }
       
     }
@@ -74,7 +77,7 @@ const Register = () => {
       
       email4: '',
       groupName:'',
-      round2Topic:'',
+      // round2Topic:'',
     
     },
     validationSchema: Yup.object({
@@ -104,7 +107,7 @@ const Register = () => {
       }),
 
       groupName: Yup.string().trim().required("Group Name is required"),
-      round2Topic: Yup.string().trim().required("Please pick a topic for Round 2"),
+      //round2Topic: Yup.string().trim().required("Please pick a topic for Round 2"),
 
     })
     ,
@@ -193,19 +196,19 @@ const Register = () => {
                     const batch = writeBatch(db);
 
                     if (values.email1 !== ''){
-                        batch.update(doc(db, "users", values.email1), {"group": values.groupName, "round2Topic": values.round2Topic, "round2PickAt": serverTimestamp()});
+                        batch.update(doc(db, "users", values.email1), {"group": values.groupName, "round2PickAt": serverTimestamp()});
                     }
                     
                     if (values.email2 !== ''){
-                       batch.update(doc(db, "users", values.email2), {"group": values.groupName, "round2Topic": values.round2Topic, "round2PickAt": serverTimestamp()});
+                       batch.update(doc(db, "users", values.email2), {"group": values.groupName, "round2PickAt": serverTimestamp()});
                     }
 
                     if (values.email3 !== ''){
-                       batch.update(doc(db, "users", values.email3), {"group": values.groupName, "round2Topic": values.round2Topic, "round2PickAt": serverTimestamp()});
+                       batch.update(doc(db, "users", values.email3), {"group": values.groupName, "round2PickAt": serverTimestamp()});
                     }
                    
                    if (values.email4 !== ''){
-                      batch.update(doc(db, "users", values.email4), {"group": values.groupName, "round2Topic": values.round2Topic, "round2PickAt": serverTimestamp()});
+                      batch.update(doc(db, "users", values.email4), {"group": values.groupName,  "round2PickAt": serverTimestamp()});
                    }
                     
 
@@ -245,6 +248,7 @@ const Register = () => {
                   </div> : 
                   <form className="w-10/12 mx-auto space-y-2 md:space-y-3 lg:space-y-5 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
                     <h2 ref={formTitleRef} className="font-bold text-primary-600 text-lead-24">Step {currentStep + 1}/{formStep.length}: {formStep[currentStep].stepDesc}</h2>
+                    <p>Only one member is required to register for the whole group!</p>
 
                     {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
                     {!formik.isValid && currentStep == 1 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check all the steps again</p>}
@@ -295,7 +299,7 @@ const Register = () => {
                             {formik.touched.groupName && formik.errors.groupName && <p className='text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.groupName}</p> }
                         </div>
 
-                        <div className='space-y-2 lg:space-y-0.5'>
+                        {/* <div className='space-y-2 lg:space-y-0.5'>
                             <label className='block font-bold text-bg-950'>Topic for Round 2*</label>
                             
 
@@ -307,7 +311,7 @@ const Register = () => {
                            
                             
                             
-                        </div>
+                        </div> */}
                     </div>}
                     
                     {/* Button list */}
