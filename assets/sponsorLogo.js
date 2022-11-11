@@ -135,6 +135,7 @@ export const sponsorLogo = () => {
                         {
                            logoImg: Executive1Ss11,
                            logoLink: "https://wisdom.com.vn/",
+                           logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         }, 
                         {
                            logoImg:Executive2Ss11,
@@ -144,7 +145,7 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Executive3Ss11,
                             logoLink: "https://www.zee.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[130px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[100px]"
                         }, 
                         {
                             logoImg: Executive4Ss11,
@@ -172,7 +173,7 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Silver1Ss11,
                             logoLink: "https://ubl.vn/",
-                             logoClassName: "w-16 md:w-20 xl:w-[177px]",
+                             logoClassName: "w-16 md:w-20 xl:w-[220px]",
                         }, 
                         {
                             logoImg: Silver2Ss11,
@@ -193,7 +194,7 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Bronze2Ss11,
                             logoLink: "https://motdoigiay.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px] bg-bg-50",
                             
                         }, 
                         {
