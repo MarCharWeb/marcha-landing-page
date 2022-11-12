@@ -17,6 +17,7 @@ const Register = () => {
 
     const {signup} = useAuth()
     const [errorOnSubmit, setErrorOnSubmit] = useState(null);
+    const [overDue, setOverDue] = useState(false);
     const startTime = useRef(Date.now());
     const [formStep] = useState([
       {
@@ -131,26 +132,14 @@ const Register = () => {
       updateOpenStats();
     }, [])
 
-    // const fetchSlots = async () => {
-          
-    //       const slotSnap =  await getDoc(doc(db, "metadata", "slots"));
-    //       if (slotSnap.exists()) {
-    //           console.log(typeof slotSnap.data()["slot1"])
-    //         if (slotSnap.data()["slot1"] <= slotSnap.data()["slot2"]){
+    useEffect(() => {
+        let today = new Date();
+        let deadline = new Date(2022, 10, 15);
 
-    //           //pick slot 1 : 1/7/2022
-    //           setSlot(new Date(2022, 6, 1));
-    //           setSlotType('slot1')
-    //         }else{
-    //           //pick slot 2
-    //           setSlot(new Date(2022, 6, 2));
-    //           setSlotType('slot2')
-    //         }    
-    //       } else {
-    //         // doc.data() will be undefined in this case
-    //         console.log("Cannot get slot time info!");
-    //       }
-    //   }
+        if (today.getTime() >= deadline.getTime()){
+          setOverDue(true);
+        }
+    }, [])
 
     const formik = useFormik({
     initialValues: {
@@ -297,7 +286,11 @@ const Register = () => {
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] items-center w-full '>
                <PageTitle type={2} title='Individual Register'></PageTitle>
             <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[850px]  md:min-h-[900px]">
-                {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
+                { overDue ? <div className="w-3/4 p-2 mx-auto"> 
+                  <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Form has been closed!</p>
+                  <InternalLink className={'mt-4'}></InternalLink> 
+                  </div> :
+                isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
                   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to you shortly (please check your Inbox and Spam folder). If you have not received it within 1 hour, please contact us for assistance. <br/> Congratulations! By registering, you have also received a gift from our Diamond Sponsor - Fonos, which is an audiobook named “Tuần làm việc 4H”, valuing at 129,000 VND. Please click the following link to receive ❤️: <a target={'_blank'} className='italic underline hover:text-primary-500' rel="noreferrer" href='https://fonos.vn/marketing-challengers-11'>https://fonos.vn/marketing-challengers-11</a></p>
                   <InternalLink className={'mt-4'}></InternalLink> 
                   </div> : 
