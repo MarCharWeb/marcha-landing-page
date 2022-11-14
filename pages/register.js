@@ -132,14 +132,14 @@ const Register = () => {
       updateOpenStats();
     }, [])
 
-    // useEffect(() => {
-    //     let today = new Date();
-    //     let deadline = new Date(2022, 10, 15);
+    useEffect(() => {
+        let today = new Date();
+        let deadline = new Date(2022, 10, 15, 12, 5);
 
-    //     if (today.getTime() >= deadline.getTime()){
-    //       setOverDue(true);
-    //     }
-    // }, [])
+        if (today.getTime() >= deadline.getTime()){
+          setOverDue(true);
+        }
+    }, [])
 
     const formik = useFormik({
     initialValues: {
