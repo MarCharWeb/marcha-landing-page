@@ -17,7 +17,7 @@ const Register = () => {
 
     const {signup} = useAuth()
     const [errorOnSubmit, setErrorOnSubmit] = useState(null);
-    const [overDue, setOverDue] = useState(false);
+    const [overDue, setOverDue] = useState(true);
     const startTime = useRef(Date.now());
     const [formStep] = useState([
       {
@@ -117,20 +117,20 @@ const Register = () => {
       
     }
 
-    useEffect(() => {
-      if (isSubmitted){
-        // console.log('hey')
-        successMessRef.current.scrollIntoView({ behavior: 'smooth' })
-      }  
-    }, [isSubmitted])
+    // useEffect(() => {
+    //   if (isSubmitted){
+    //     // console.log('hey')
+    //     successMessRef.current.scrollIntoView({ behavior: 'smooth' })
+    //   }  
+    // }, [isSubmitted])
 
-    useEffect(() => {
-      const updateOpenStats = async () => {
-        await updateDoc(doc(db, "metadata", "stats"), {openClicks: increment(1)})
-      }
+    // useEffect(() => {
+    //   const updateOpenStats = async () => {
+    //     await updateDoc(doc(db, "metadata", "stats"), {openClicks: increment(1)})
+    //   }
 
-      updateOpenStats();
-    }, [])
+    //   updateOpenStats();
+    // }, [])
 
     useEffect(() => {
         let today = new Date();
@@ -289,103 +289,104 @@ const Register = () => {
                 { overDue ? <div className="w-3/4 p-2 mx-auto"> 
                   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Form has been closed!</p>
                   <InternalLink className={'mt-4'}></InternalLink> 
-                  </div> :
-                isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
-                  <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to you shortly (please check your Inbox and Spam folder). If you have not received it within 1 hour, please contact us for assistance. <br/> Congratulations! By registering, you have also received a gift from our Diamond Sponsor - Fonos, which is an audiobook named “Tuần làm việc 4H”, valuing at 129,000 VND. Please click the following link to receive ❤️: <a target={'_blank'} className='italic underline hover:text-primary-500' rel="noreferrer" href='https://fonos.vn/marketing-challengers-11'>https://fonos.vn/marketing-challengers-11</a></p>
-                  <InternalLink className={'mt-4'}></InternalLink> 
-                  </div> : 
-                  <form className="w-10/12 mx-auto space-y-2 md:space-y-3 lg:space-y-5 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
-                    <h2 ref={formTitleRef} className="font-bold text-primary-600 text-lead-24">Step {currentStep + 1}/{formStep.length}: {formStep[currentStep].stepDesc}</h2>
+                  </div> : null
+                // isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
+                //   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered! A confirmation email with Round 1 information will be sent to you shortly (please check your Inbox and Spam folder). If you have not received it within 1 hour, please contact us for assistance. <br/> Congratulations! By registering, you have also received a gift from our Diamond Sponsor - Fonos, which is an audiobook named “Tuần làm việc 4H”, valuing at 129,000 VND. Please click the following link to receive ❤️: <a target={'_blank'} className='italic underline hover:text-primary-500' rel="noreferrer" href='https://fonos.vn/marketing-challengers-11'>https://fonos.vn/marketing-challengers-11</a></p>
+                //   <InternalLink className={'mt-4'}></InternalLink> 
+                //   </div> : 
+                //   <form className="w-10/12 mx-auto space-y-2 md:space-y-3 lg:space-y-5 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
+                //     <h2 ref={formTitleRef} className="font-bold text-primary-600 text-lead-24">Step {currentStep + 1}/{formStep.length}: {formStep[currentStep].stepDesc}</h2>
 
-                    {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
-                    {!formik.isValid && currentStep == 2 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check all the steps again</p>}
+                //     {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
+                //     {!formik.isValid && currentStep == 2 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check all the steps again</p>}
 
-                    {/* Step 1: Personal Input */}
-                    {currentStep == 0 && <div className='space-y-4'>
-                        <div className='space-y-1 lg:space-y-0.5'>
-                          <label className='block font-bold' htmlFor="name">Full Name*</label>
-                          <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='name' value={formik.values.name} onBlur={formik.handleBlur} onChange={formik.handleChange} placeholder='name'/>
-                          {formik.touched.name && formik.errors.name && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.name}</p> }
-                        </div>
-                      <div className='space-y-1 lg:space-y-0.5'>
-                        <label className='block font-bold text-bg-950' htmlFor="dob">Date of Birth*</label>
-                        <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="date" name='dob'  value={formik.values.dob} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='01/01/2000'/>
-                        {formik.touched.dob && formik.errors.dob && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.dob}</p> }
+                //     {/* Step 1: Personal Input */}
+                //     {currentStep == 0 && <div className='space-y-4'>
+                //         <div className='space-y-1 lg:space-y-0.5'>
+                //           <label className='block font-bold' htmlFor="name">Full Name*</label>
+                //           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='name' value={formik.values.name} onBlur={formik.handleBlur} onChange={formik.handleChange} placeholder='name'/>
+                //           {formik.touched.name && formik.errors.name && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.name}</p> }
+                //         </div>
+                //       <div className='space-y-1 lg:space-y-0.5'>
+                //         <label className='block font-bold text-bg-950' htmlFor="dob">Date of Birth*</label>
+                //         <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="date" name='dob'  value={formik.values.dob} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='01/01/2000'/>
+                //         {formik.touched.dob && formik.errors.dob && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.dob}</p> }
 
-                      </div>
-                    <div  className='space-y-1 lg:space-y-0.5'>
-                      <label className='block font-bold text-bg-950' htmlFor="phone">Phone Number*</label>
-                      <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='phone'  value={formik.values.phone} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='0999999999'/>
-                      {formik.touched.phone && formik.errors.phone && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.phone}</p> }
+                //       </div>
+                //     <div  className='space-y-1 lg:space-y-0.5'>
+                //       <label className='block font-bold text-bg-950' htmlFor="phone">Phone Number*</label>
+                //       <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='phone'  value={formik.values.phone} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='0999999999'/>
+                //       {formik.touched.phone && formik.errors.phone && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.phone}</p> }
 
-                    </div>
-                    <div  className='space-y-1 lg:space-y-0.5'>
-                      <label className='block font-bold text-bg-950' htmlFor="major">Major*</label>
-                      <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='major'  value={formik.values.major} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='Digital Marketing'/>
-                              {formik.touched.major && formik.errors.major && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.major}</p> }
+                //     </div>
+                //     <div  className='space-y-1 lg:space-y-0.5'>
+                //       <label className='block font-bold text-bg-950' htmlFor="major">Major*</label>
+                //       <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='major'  value={formik.values.major} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='Digital Marketing'/>
+                //               {formik.touched.major && formik.errors.major && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.major}</p> }
 
-                    </div>
-                    <div  className='space-y-1 lg:space-y-0.5'>
-                      <label className='block font-bold text-bg-950' htmlFor="university">University*</label>
-                      <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='university'  value={formik.values.university} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='RMIT'/>
-                      {formik.touched.university && formik.errors.university && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.university}</p> }
-
-
-                    </div>
-                    </div>}
+                //     </div>
+                //     <div  className='space-y-1 lg:space-y-0.5'>
+                //       <label className='block font-bold text-bg-950' htmlFor="university">University*</label>
+                //       <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="text" name='university'  value={formik.values.university} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='RMIT'/>
+                //       {formik.touched.university && formik.errors.university && <p className='font-medium text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.university}</p> }
 
 
-                    {/* Step 2: File Upload */}
-                    {currentStep == 1 && <div className='space-y-7 md:space-y-4'>
-                        <div  className='space-y-1.5 lg:space-y-0.5'>
-                          <label className='block font-bold text-bg-950' htmlFor="id-card-img">01 photo of your Idetification Card (CMND)*</label>
-                          <p className='text-grey-950 text-body-18 lg:text-small-16'>File size is no larger than 3MB. File name is set in the following format: name-id.png (ex: nguyenvanminh-id.png)</p>
-                          <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="file" name='id-card-img'  onChange={(e) => {uploadStorage(e)}} />
-                          {formik.touched.idPhoto && formik.errors.idPhoto && <p className='text-small-16 text-error-500 '>{formik.errors.idPhoto}</p>}
-                          {idUploadingMess && <p className='text-success-500 text-small-16 '>{idUploadingMess}</p>}
-                          {formik.values.idPhoto && <p className='text-success-500 text-small-16 '>Uploaded {formik.values.idPhoto} successfully!</p>}
+                //     </div>
+                //     </div>}
 
-                        </div>
-                      <div  className='space-y-1.5 lg:space-y-0.5'>
-                        <label className='block font-bold text-bg-950' htmlFor="student-card-img">01 photo of your Student Card*</label>
-                        <p className='text-grey-950 text-body-18 lg:text-small-16'>File size is no larger than 3MB. File name is set in the following format: name-card.png (ex: nguyenvanminh-card.png)</p>
-                        <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="file" name='student-card-img' onChange={(e) => {uploadStorage(e)}}/>
-                        {formik.touched.studentPhoto && formik.errors.studentPhoto && <p className='text-small-16 text-error-500 '>{formik.errors.studentPhoto}</p>}
-                        {cardUploadingMess && <p className='text-success-500 text-small-16 '>{cardUploadingMess}</p>}
-                        {formik.values.studentPhoto && <p className='text-success-500 text-small-16 '>Uploaded {formik.values.studentPhoto} successfully!</p>}
 
-                      </div>
-                    </div>}
+                //     {/* Step 2: File Upload */}
+                //     {currentStep == 1 && <div className='space-y-7 md:space-y-4'>
+                //         <div  className='space-y-1.5 lg:space-y-0.5'>
+                //           <label className='block font-bold text-bg-950' htmlFor="id-card-img">01 photo of your Idetification Card (CMND)*</label>
+                //           <p className='text-grey-950 text-body-18 lg:text-small-16'>File size is no larger than 3MB. File name is set in the following format: name-id.png (ex: nguyenvanminh-id.png)</p>
+                //           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="file" name='id-card-img'  onChange={(e) => {uploadStorage(e)}} />
+                //           {formik.touched.idPhoto && formik.errors.idPhoto && <p className='text-small-16 text-error-500 '>{formik.errors.idPhoto}</p>}
+                //           {idUploadingMess && <p className='text-success-500 text-small-16 '>{idUploadingMess}</p>}
+                //           {formik.values.idPhoto && <p className='text-success-500 text-small-16 '>Uploaded {formik.values.idPhoto} successfully!</p>}
 
-                    {/* Step 3: Account set up */}
-                    {currentStep == 2 && <div className='space-y-7 md:space-y-4'>
-                        <div  className='space-y-1.5 lg:space-y-0.5'>
-                          <label className='block font-bold text-bg-950' htmlFor="email">Email*</label>
-                          <p className='text-grey-950 text-small-16'>Please your personal email to register. School email is not allowed</p> 
-                          <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="email" name='email' value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='johndoe@gmail.com'/>
-                        {formik.touched.email && formik.errors.email && <p className='text-small-16 text-error-500 '>{formik.errors.email}</p> }
+                //         </div>
+                //       <div  className='space-y-1.5 lg:space-y-0.5'>
+                //         <label className='block font-bold text-bg-950' htmlFor="student-card-img">01 photo of your Student Card*</label>
+                //         <p className='text-grey-950 text-body-18 lg:text-small-16'>File size is no larger than 3MB. File name is set in the following format: name-card.png (ex: nguyenvanminh-card.png)</p>
+                //         <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="file" name='student-card-img' onChange={(e) => {uploadStorage(e)}}/>
+                //         {formik.touched.studentPhoto && formik.errors.studentPhoto && <p className='text-small-16 text-error-500 '>{formik.errors.studentPhoto}</p>}
+                //         {cardUploadingMess && <p className='text-success-500 text-small-16 '>{cardUploadingMess}</p>}
+                //         {formik.values.studentPhoto && <p className='text-success-500 text-small-16 '>Uploaded {formik.values.studentPhoto} successfully!</p>}
 
-                        </div>
+                //       </div>
+                //     </div>}
+
+                //     {/* Step 3: Account set up */}
+                //     {currentStep == 2 && <div className='space-y-7 md:space-y-4'>
+                //         <div  className='space-y-1.5 lg:space-y-0.5'>
+                //           <label className='block font-bold text-bg-950' htmlFor="email">Email*</label>
+                //           <p className='text-grey-950 text-small-16'>Please your personal email to register. School email is not allowed</p> 
+                //           <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="email" name='email' value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder='johndoe@gmail.com'/>
+                //         {formik.touched.email && formik.errors.email && <p className='text-small-16 text-error-500 '>{formik.errors.email}</p> }
+
+                //         </div>
                         
-                        <div className='space-y-1.5 lg:space-y-0.5'>
-                            <label className='block font-bold text-bg-950' htmlFor="password">Password*</label>
-                            <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="password" name='password'  value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-                            {formik.touched.password && formik.errors.password && <p className='text-small-16 text-error-500 '>{formik.errors.password}</p> }
-                        </div>
+                //         <div className='space-y-1.5 lg:space-y-0.5'>
+                //             <label className='block font-bold text-bg-950' htmlFor="password">Password*</label>
+                //             <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="password" name='password'  value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+                //             {formik.touched.password && formik.errors.password && <p className='text-small-16 text-error-500 '>{formik.errors.password}</p> }
+                //         </div>
 
-                        <div className='space-y-1.5 lg:space-y-0.5'>
-                            <label className='block font-bold text-bg-950' htmlFor="confirmPassword">Confirm Password*</label>
-                            <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="password" name='confirmPassword' onBlur={formik.handleBlur}  value={formik.values.confirmPassword} onChange={formik.handleChange}  />
-                            {formik.touched.confirmPassword && formik.errors.confirmPassword && <p className='text-small-16 text-error-500 '>{formik.errors.confirmPassword}</p> }
-                        </div>
-                    </div>}
+                //         <div className='space-y-1.5 lg:space-y-0.5'>
+                //             <label className='block font-bold text-bg-950' htmlFor="confirmPassword">Confirm Password*</label>
+                //             <input className='w-full px-4 py-2 bg-[#E9DCF9]  rounded' type="password" name='confirmPassword' onBlur={formik.handleBlur}  value={formik.values.confirmPassword} onChange={formik.handleChange}  />
+                //             {formik.touched.confirmPassword && formik.errors.confirmPassword && <p className='text-small-16 text-error-500 '>{formik.errors.confirmPassword}</p> }
+                //         </div>
+                //     </div>}
                     
-                    {/* Button list */}
-                    <div className='flex justify-between pt-2 md:pt-0'>
-                        <Button onClick={handleBack} text={'Back'} isPrimary={false}/>
-                        <Button loadingText='Signing up...' isLoading={formik.isSubmitting}  type={currentStep == 2 ? 'submit' : 'button'} onClick={currentStep == 2 ? formik.handleSubmit : handleNext} className={!formik.isValid && currentStep == 2 ? 'opacity-50 pointer-events-none' : ''} text={currentStep === 2 ? 'Register' : 'Next'} />
-                    </div>
-                </form>}
+                //     {/* Button list */}
+                //     <div className='flex justify-between pt-2 md:pt-0'>
+                //         <Button onClick={handleBack} text={'Back'} isPrimary={false}/>
+                //         <Button loadingText='Signing up...' isLoading={formik.isSubmitting}  type={currentStep == 2 ? 'submit' : 'button'} onClick={currentStep == 2 ? formik.handleSubmit : handleNext} className={!formik.isValid && currentStep == 2 ? 'opacity-50 pointer-events-none' : ''} text={currentStep === 2 ? 'Register' : 'Next'} />
+                //     </div>
+                // </form>
+                }
             </div>
           </div>
            
