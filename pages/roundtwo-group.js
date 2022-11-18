@@ -241,7 +241,7 @@ const Register = () => {
         <Hero >
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] items-center w-full '>
                <PageTitle type={2} subTitle='round 2' title='Group Pick'></PageTitle>
-            <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[850px]  2xl:min-h-[900px]">
+            <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[1000px]  ">
                 {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
                   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered group!</p>
                   <InternalLink></InternalLink> 
