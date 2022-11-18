@@ -127,7 +127,7 @@ const Register = () => {
                 const groupNameSnap =  await getDoc(doc(db, "users", values.groupName));
 
                 if (email1Snap && email1Snap.exists()) {
-                    if (email1Snap.data().rank <= 400){
+                    if (email1Snap.data().rank <= 600){
                       listMailsValid[0] = true;
                     }else{
                       listMailsValid[0] = false;
@@ -138,7 +138,7 @@ const Register = () => {
                 }
 
                 if (email2Snap &&email2Snap.exists()) {
-                    if (email2Snap.data().rank <= 400){
+                    if (email2Snap.data().rank <= 600){
                       listMailsValid[1] = true;
                     }else{
                       listMailsValid[1] = false;
@@ -149,7 +149,7 @@ const Register = () => {
                 } 
 
                 if (email3Snap && email3Snap.exists()) {
-                  if (email3Snap.data().rank <= 400){
+                  if (email3Snap.data().rank <= 600){
                       listMailsValid[2] = true;
                   }else {
                     listMailsValid[2] = false;
@@ -160,7 +160,7 @@ const Register = () => {
                 }
 
                 if (email4Snap && email4Snap.exists()) {
-                    if (email4Snap.data().rank <= 400){
+                    if (email4Snap.data().rank <= 600){
                       listMailsValid[3] = true;
                     } else{
                        listMailsValid[3] = false;
@@ -251,7 +251,7 @@ const Register = () => {
                     <p>Only one member is required to register for the whole group!</p>
 
                     {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
-                    {!formik.isValid && currentStep == 1 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check all the steps again</p>}
+                    {!formik.isValid && currentStep == 1 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted or missed! Please check all the steps again</p>}
 
                     {/* Step 1: Personal Input */}
                     {currentStep == 0 && <div className='space-y-5 md:space-y-4'>
@@ -299,19 +299,7 @@ const Register = () => {
                             {formik.touched.groupName && formik.errors.groupName && <p className='text-XSmall-12 md:text-small-16 text-error-500 '>{formik.errors.groupName}</p> }
                         </div>
 
-                        {/* <div className='space-y-2 lg:space-y-0.5'>
-                            <label className='block font-bold text-bg-950'>Topic for Round 2*</label>
-                            
-
-                            <div className="space-y-5 md:space-y-4 lg:space-y-2 xl:space-y-1.5">
-                                <label className="block" ><input type="radio" name="round2Topic" value="topic1" onChange={formik.getFieldProps("round2Topic").onChange} /> Topic 1</label>
-                                <label className="block" ><input type="radio" name="round2Topic" value="topic2" onChange={formik.getFieldProps("round2Topic").onChange} /> Topic 2</label>
-                            </div>
-                            
-                           
-                            
-                            
-                        </div> */}
+                        
                     </div>}
                     
                     {/* Button list */}

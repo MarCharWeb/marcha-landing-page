@@ -65,13 +65,13 @@ const Register = () => {
                 const emailSnap =  await getDoc(doc(db, "users", values.email));
                 const isPicked = true;
                 if (emailSnap.exists()) {
-                    if (emailSnap.data().rank <= 400 && !emailSnap.data().hasOwnProperty("round2PickAt")){
+                    if (emailSnap.data().rank <= 600 && !emailSnap.data().hasOwnProperty("round2PickAt")){
                       await updateDoc(doc(db, "users", values.email), {"round2PickAt": serverTimestamp()})
                       formik.setSubmitting(false);
                       setIsSumitted(true);
                       console.log("done")
                        
-                    } else if (emailSnap.data().rank <= 400 &&  emailSnap.data().hasOwnProperty("round2PickAt")){
+                    } else if (emailSnap.data().rank <= 600 &&  emailSnap.data().hasOwnProperty("round2PickAt")){
                         setErrorOnSubmit("You already registered for round 2");
                     }else{
                       setErrorOnSubmit("Invalid Account");
