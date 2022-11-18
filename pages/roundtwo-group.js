@@ -243,7 +243,7 @@ const Register = () => {
                <PageTitle type={2} subTitle='round 2' title='Group Pick'></PageTitle>
             <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[1000px]  ">
                 {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
-                  <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered group!</p>
+                  <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered group for Round 2!</p>
                   <InternalLink></InternalLink> 
                   </div> : 
                   <form className="w-10/12 mx-auto space-y-2 md:space-y-3 lg:space-y-5 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
