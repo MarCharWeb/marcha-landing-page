@@ -107,7 +107,7 @@ const Register = () => {
                   <InternalLink></InternalLink> 
                   </div> : 
                   <form className="w-10/12 mx-auto space-y-2 md:space-y-4 lg:space-y-8 md:w-2/3 text-headline-21 md:text-body-18 text-bg-500" onSubmit={formik.handleSubmit}>
-                    <h2 className="font-bold text-primary-600 text-lead-24">Enter Your Email & Topic</h2>
+                    <h2 className="font-bold text-primary-600 text-lead-24">Enter Your Email</h2>
 
                     {errorOnSubmit !== null && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>{errorOnSubmit}</p>}
                     {/* {!formik.isValid && currentStep == 0 && <p className='p-2 mb-2 font-bold rounded text-headline-21 lg:text-small-16 bg-error-500 text-error-100'>Some fields have not been properly inputted! Please check again</p>} */}
