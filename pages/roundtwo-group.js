@@ -16,8 +16,8 @@ import { useRouter } from "next/router";
 const Register = () => {
     
     const [errorOnSubmit, setErrorOnSubmit] = useState(null);
-
-     const route = useRouter();
+    const [overDue, setOverDue] = useState(false);
+    const route = useRouter();
     const [formStep] = useState([
     
       {
@@ -62,6 +62,15 @@ const Register = () => {
         successMessRef.current.scrollIntoView({ behavior: 'smooth' })
       }  
     }, [isSubmitted])
+
+    useEffect(() => {
+        let today = new Date();
+        let deadline = new Date(2022, 10, 22);
+
+        if (today.getTime() >= deadline.getTime()){
+          setOverDue(true);
+        }
+    }, [])
 
 
 
@@ -242,7 +251,11 @@ const Register = () => {
           <div className='absolute flex flex-col pt-20 xl:pt-[150px] items-center w-full '>
                <PageTitle type={2} subTitle='round 2' title='Group Pick'></PageTitle>
             <div  className="w-[95vw] xl:w-1/2 mx-auto mt-4 xl:mt-10 bg-bg-50 rounded-2xl pt-6 md:pt-10 xl:pt-14 min-h-[1000px]  ">
-                {isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
+                { overDue ? <div className="w-3/4 p-2 mx-auto"> 
+                  <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Form has been closed!</p>
+                  <InternalLink className={'mt-4'}></InternalLink> 
+                  </div> :
+                  isSubmitted ? <div className="w-3/4 p-2 mx-auto"> 
                   <p ref={successMessRef}  className='mb-2 font-bold rounded text-headline-21 text-success-900'>Successfully registered group for Round 2!</p>
                   <InternalLink></InternalLink> 
                   </div> : 
