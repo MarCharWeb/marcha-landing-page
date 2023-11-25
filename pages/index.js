@@ -16,6 +16,7 @@ import { useLayoutEffect, useRef } from "react";
 import News from '../components/News'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import Script from 'next/script'
 
 
 export default function Home({data}) {
@@ -33,6 +34,16 @@ export default function Home({data}) {
 
   return (
     <main >
+      <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-PKTX2148C4');
+        `}
+      </Script>
       <Head>
         <title>Marketing Challengers Season 11</title>
         <link rel="icon" type="image/png" sizes='16x16' href="/favi.png"></link>

@@ -63,14 +63,14 @@ const Register = () => {
       }  
     }, [isSubmitted])
 
-    useEffect(() => {
-        let today = new Date();
-        let deadline = new Date(2022, 10, 22);
+    // useEffect(() => {
+    //     let today = new Date();
+    //     let deadline = new Date(2022, 10, 22);
 
-        if (today.getTime() >= deadline.getTime()){
-          setOverDue(true);
-        }
-    }, [])
+    //     if (today.getTime() >= deadline.getTime()){
+    //       setOverDue(true);
+    //     }
+    // }, [])
 
 
 
