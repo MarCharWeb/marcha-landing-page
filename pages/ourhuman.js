@@ -17,7 +17,7 @@ const Ourhuman = () => {
         backgroundPosition: '0% 0%',
         zIndex: 2,
     }}>
-        {/* <div className="">
+        <div className="">
             <PageTitle className="" title={'OUR HUMAN'} type={2}></PageTitle>
             <h4 className="pt-10 flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Leader Board</h4>
             <div className="w-screen flex items-center justify-center pb-5">
@@ -83,7 +83,7 @@ const Ourhuman = () => {
                     &quot;Our team is the pivotal force in ensuring the smooth execution of the all events. We are responsible for orchestrating the finer details like paperwork, venue preparation, and on-site coordination. Our focus on logistics and on-the-ground management is the key bringing the event to life, guaranteeing a memorable and well-organised experience for all.&quot;
                 </div>            
                 </div>
-        </div> */}
+        </div>
         <Footer></Footer>
     </main>);
 }
