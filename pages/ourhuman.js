@@ -1,12 +1,13 @@
 import PageTitle from "../components/PageTitle";
 import Image from 'next/image';
+import Footer from "../components/Footer";
 {/* import Leaderboardimg from '../assets/TeamImage/Leaderboard.jpg';
  import Marketingimg from '../assets/TeamImage/Marketing-Team.jpg';
  import Mediaimg from '../assets/TeamImage/Media-Team.jpg';
  import Operationsimg from '../assets/TeamImage/Operations-Team.jpg';
  import Programimg from '../assets/TeamImage/Program-Team.jpg';
  import Sponsorimg from '../assets/TeamImage/Team-Sponsor.jpg';
-import Footer from "../components/Footer";
+
 import Avabg from '../assets/Ava-background.png';*/}
 
 const Ourhuman = () => {
@@ -21,7 +22,6 @@ const Ourhuman = () => {
             <PageTitle className="" title={'OUR HUMAN'} type={2}></PageTitle>
             <h4 className="pt-10 flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Leader Board</h4>
             <div className="w-screen flex items-center justify-center pb-5">
-                // <Image className="flex items-center justify-center h-screen bg-gray-300 p-4 object-center lg:w-[500px] lg:h-auto" src={Leaderboardimg} alt="Leader Board Image"  width={650} height={390} />
             </div>
             <div className="lg:flex lg:items-center mx-5 py-5">
                 <div className="lg:w-1/2 w-full bg-gray-300 ">
