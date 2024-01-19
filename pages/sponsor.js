@@ -1,17 +1,14 @@
 import { useState } from "react";
-import SponsorDisplay from "./SponsorDisplay";
+import SponsorDisplay from "../components/SponsorDisplay";
 import { sponsorLogo } from "../assets/sponsorLogo";
 import PageTitle from "../components/PageTitle";
-import Button from '../components/Button'
-import { useRouter } from 'next/router';
+import Birdbg from "../assets/bird-bg.png"
+import SponsorTag from "../components/SponsorTag";
+import Footer from "../components/Footer";
+import Avabg from '../assets/Ava-background.png'
+
 
 const Sponsor = () => {
-
-    const router = useRouter();
-
-    const handleClick = () => {
-        router.push('/sponsor');
-    };
 
     const [sponsorData, setSponsorData] = useState(sponsorLogo());
     const handleTagClick = (sponsorYear) => {
@@ -25,11 +22,17 @@ const Sponsor = () => {
 
         setSponsorData(updateSponsorData)
     }
-    return (<section className="py-10 mt-36 xl:mt-24 relative z-[1] xl:py-16" id="sponsorship">
-        <PageTitle title={'SPONSORSHIP'}></PageTitle>
+    return (<section className="py-10 relative z-[1] xl:py-16" style={{
+        backgroundImage: `url(${Avabg.src})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: '0% 0%',
+        zIndex: 2,
+    }}>
+        <PageTitle className="mt-10" title={'SPONSORSHIP'}></PageTitle>
         {/* Sponsor Tag List */}
 
-        {/* <div className="flex flex-wrap justify-center w-11/12 gap-4 pt-4 pb-8 mx-auto xl:w-10/12 xl:pt-6 xl:gap-6 2xl:w-8/12"
+        <div className="flex flex-wrap justify-center w-11/12 gap-4 pt-4 pb-8 mx-auto xl:w-10/12 xl:pt-6 xl:gap-6 2xl:w-8/12"
             style={{
                 backgroundImage: `url(${Birdbg.src})`,
                 backgroundRepeat: 'no-repeat',
@@ -39,9 +42,9 @@ const Sponsor = () => {
             }
             }>
             {sponsorData.map((sps, index) => <SponsorTag key={index} handleTagClick={handleTagClick} text={sps.year} isActive={sps.isActive} />)}
-        </div> */}
+        </div>
 
-        <div className="w-10/12 mx-auto space-y-2.5 2xl:w-8/12 pt-4">
+        <div className="w-10/12 mx-auto space-y-2.5 2xl:w-8/12">
 
             {sponsorData.find(sps => sps.isActive).sponsorLogos.length > 0 ? sponsorData.find(sps => sps.isActive).sponsorLogos?.map((logoCategory, index) => <SponsorDisplay key={index} categoryName={logoCategory.categoryName} logoList={logoCategory.logoList} />)
                 :
@@ -49,17 +52,8 @@ const Sponsor = () => {
             }
 
         </div>
-        <div className="flex items-center justify-center">
-        <Button 
-            onClick={handleClick}
-            isGlow={true}
-            type='primary'
-            className='animate-bounce-slow font-bold mt-10 mb-20 '
-            text={'Learn More'}
-            size='large'
-        />
-        </div>
-        
+        <Footer></Footer>
+
     </section>);
 }
 
