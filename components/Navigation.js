@@ -68,9 +68,9 @@ const Navigation = () => {
                     <a className={router.asPath == '/news' ? 'active-link' : ''}>BLOG</a>
                 </Link>            
                 </li>
-            <li className={'px-4 py-2 rounded '}>
+            {/* <li className={'px-4 py-2 rounded '}>
                 <Link href={'/ourhuman'}><a className={router.asPath == '/ourhuman' ? 'active-link' : ''}>OUR HUMAN</a></Link>
-            </li>
+            </li>*/}
             <li className='px-4 py-2 rounded'>
                 <Link href={'/rules'}>
                     <a className={router.asPath == '/rules' ? 'active-link' : ''}>RULES &#38; REGULATIONS</a>
@@ -120,9 +120,9 @@ const Navigation = () => {
                         <Link href="/news">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center" onClick={closeMenu}>BLOG</a>
                         </Link>
-                        <Link href="/ourhuman">
+                        {/*<Link href="/ourhuman">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center" onClick={closeMenu}>OUR HUMAN</a>
-                        </Link>
+                        </Link>*/}
                         <Link href="/rules">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center" onClick={closeMenu}>RULES & REGULATIONS</a>
                         </Link>
