@@ -3,6 +3,7 @@ import { sanityClient, urlFor } from '../../config/sanity';
 import ImageHolder from '../../components/ImageHolder'
 import BlogCard from '../../components/BlogCard'
 import {PortableText} from '@portabletext/react'
+import Footer from "../../components/Footer";
 
 
 const Post = ({data:{title, abstract, headerImage, facebookLink, body, relatedPosts}}) => {
@@ -58,7 +59,8 @@ const Post = ({data:{title, abstract, headerImage, facebookLink, body, relatedPo
                 
              </div>
           </section>
-         
+          <Footer></Footer>
+
         </main>
      );
 }
