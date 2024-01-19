@@ -17,7 +17,6 @@ import News from '../components/News'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Script from 'next/script'
-import Ourhumanlp from '../components/Ourhuman-lp'
 import Whocanjoin from '../components/Whocanjoin'
 import Avabg from '../assets/Ava-background.png'
 import Footer from "../components/Footer";
@@ -93,7 +92,6 @@ export default function Home({ data }) {
       {/* <Award></Award> */}
       {/* <CallToAction></CallToAction> */}
       <News featurePosts={data}></News>
-      <Ourhumanlp></Ourhumanlp>
       <Whocanjoin></Whocanjoin>
       {/* <Rules></Rules> */}
       <Footer></Footer>
