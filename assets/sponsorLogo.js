@@ -1,19 +1,31 @@
 //Season 11 Logos Import
 import DiamondSs11 from './season11/diamond.png'
+
+import Academic1Ss11 from './season11/academic-1.png'
+import Academic2Ss11 from './season11/academic-2.png'
+
 import ExclusiveSs11 from './season11/exclusive.png'
 import Executive1Ss11 from './season11/executive-1.png'
 import Executive2Ss11 from './season11/executive-2.png'
 import Executive3Ss11 from './season11/executive-3.png'
 import Executive4Ss11 from './season11/executive-4.png'
-import Academic1Ss11 from './season11/academic-1.png'
+
 import Silver1Ss11 from './season11/silver-1.png'
 import Silver2Ss11 from './season11/silver-2.png'
-import Bronze1Ss11 from './season11/bronze-1.jpg'
+
+import Bronze1Ss11 from './season11/bronze-1.png'
 import Bronze2Ss11 from './season11/bronze-2.png'
-import StreamingSs11 from './season11/streaming.jpg'
+import Bronze3Ss11 from './season11/bronze-3.png'
+import Bronze4Ss11 from './season11/bronze-4.png'
+
+import StreamingSs11 from './season11/streaming.png'
+
 import Media1Ss11 from './season11/media-1.png'
 import Media2Ss11 from './season11/media-2.png'
 import Media3Ss11 from './season11/media-3.png'
+import Media4Ss11 from './season11/media-4.png'
+import Media5Ss11 from './season11/media-5.png'
+import Media6Ss11 from './season11/media-6.png'
 
 
 
@@ -21,7 +33,7 @@ import Media3Ss11 from './season11/media-3.png'
 import ExclusiveSs10 from './season10/exclusive.png'
 
 import InKind1Ss10 from './season10/in-kind-1.png'
-import InKind2Ss10 from './season10/in-kind-2.jpg'
+import InKind2Ss10 from './season10/in-kind-2.png'
 import InKind3Ss10 from './season10/in-kind-3.png'
 import InKind4Ss10 from './season10/in-kind-4.png'
 import InKind5Ss10 from './season10/in-kind-5.png'
@@ -36,7 +48,7 @@ import Media4Ss10 from './season10/media-4.png'
 import Media5Ss10 from './season10/media-5.png'
 
 import Strategic1Ss10 from './season10/strategic-1.png'
-import Strategic2Ss10 from './season10/strategic2.png'
+import Strategic2Ss10 from './season10/strategic-2.png'
 import Strategic3Ss10 from './season10/strategic-3.png'
 import Strategic4Ss10 from './season10/strategic-4.png'
 import Strategic5Ss10 from './season10/strategic-5.png'
@@ -50,12 +62,15 @@ import Strategic1Ss9 from './season9/strategic-1.png'
 import Strategic2Ss9 from './season9/strategic-2.png'
 import Strategic3Ss9 from './season9/strategic-3.png'
 import Strategic4Ss9 from './season9/strategic-4.png'
-import Strategic5Ss9 from './season9/strategic-5.png'
-import Strategic6Ss9 from './season9/strategic-6.webp'
 
 import InKind1Ss9 from './season9/in-kind-1.png'
 import InKind2Ss9 from './season9/in-kind-2.png'
 import InKind3Ss9 from './season9/in-kind-3.png'
+import InKind4Ss9 from './season9/in-kind-4.png'
+import InKind5Ss9 from './season9/in-kind-5.png'
+import InKind6Ss9 from './season9/in-kind-6.png'
+import InKind7Ss9 from './season9/in-kind-7.png'
+import InKind8Ss9 from './season9/in-kind-8.png'
 
 
 //Season 8 Logos Import
@@ -66,8 +81,13 @@ import InKind2Ss8 from './season8/in-kind-2.png'
 import InKind3Ss8 from './season8/in-kind-3.png'
 
 import Media1Ss8 from './season8/media-1.png'
+import Media2Ss8 from './season8/media-2.png'
+import Media3Ss8 from './season8/media-3.png'
+
 
 import Strategic1Ss8 from './season8/strategic-1.png'
+import Strategic2Ss8 from './season8/strategic-2.png'
+import Strategic3Ss8 from './season8/strategic-3.png'
 
 
 //Season 7 Logos Import
@@ -77,19 +97,32 @@ import InKind1Ss7 from './season7/in-kind-1.png'
 import InKind2Ss7 from './season7/in-kind-2.png'
 
 import Media1Ss7 from './season7/media-1.png'
+import Media2Ss7 from './season7/media-2.png'
+import Media3Ss7 from './season7/media-3.png'
+
 
 import Strategic1Ss7 from './season7/strategic-1.png'
+import Strategic2Ss7 from './season7/strategic-2.png'
+
 
 //Season 6 Logos Import
 import ExclusiveSs6 from './season6/exclusive.png'
+
+import Media1Ss6 from './season6/media-1.png'
+import Media2Ss6 from './season6/media-2.png'
 
 //Season 5 Logos Import
 import ExclusiveSs5 from './season5/exclusive.png'
 
 import Media1Ss5 from './season5/media-1.png'
 import Media2Ss5 from './season5/media-2.png'
+import Media3Ss5 from './season5/media-3.png'
+import Media4Ss5 from './season5/media-4.png'
 
 import Strategic1Ss5 from './season5/strategic-1.png'
+import Strategic2Ss5 from './season5/strategic-2.png'
+import Strategic3Ss5 from './season5/strategic-3.png'
+
 
 //Season 4 Logos Import
 import ExclusiveSs4 from './season4/exclusive.png'
@@ -109,15 +142,16 @@ export const sponsorLogo = () => {
             year: 'Sponsor 11',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsor',
+                    categoryName: 'Exclusive Sponsors',
                     logoList: [
                         {
                             logoImg: ExclusiveSs11,
-                            logoLink: "https://www.nestle.com.vn/vi",
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         }
                     ]
 
-                },
+                }, 
                 {
                     categoryName: 'Diamond Sponsor',
                     logoList: [
@@ -133,36 +167,39 @@ export const sponsorLogo = () => {
                     categoryName: 'Executive Sponsors',
                     logoList: [
                         {
-                           logoImg: Executive1Ss11,
-                           logoLink: "https://wisdom.com.vn/",
-                           logoClassName: "w-16 md:w-20 xl:w-[150px]"
-                        }, 
+                            logoImg: Executive1Ss11,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                        },
                         {
-                           logoImg:Executive2Ss11,
-                           logoLink: "https://www.dna.vn/",
-                            
-                        }, 
+                            logoImg: Executive2Ss11,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                        },
                         {
                             logoImg: Executive3Ss11,
-                            logoLink: "https://www.zee.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[100px]"
-                        }, 
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                        },
                         {
                             logoImg: Executive4Ss11,
-                            logoLink: "https://www.buzzmetrics.com/"
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         }
                     ]
 
-                },
+                }, 
+                
+
                 {
                     categoryName: 'Academic Sponsors',
                     logoList: [
                         {
                             logoImg: Academic1Ss11,
                             logoLink: "https://eqvn.net/"
-                        }, 
+                        },
                         {
-                            logoImg: Media2Ss10,
+                            logoImg: Academic2Ss11,
                             logoLink: "https://www.brandsvietnam.com/"
                         }]
 
@@ -173,8 +210,8 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Silver1Ss11,
                             logoLink: "https://ubl.vn/",
-                             logoClassName: "w-16 md:w-20 xl:w-[220px]",
-                        }, 
+                            logoClassName: "w-16 md:w-20 xl:w-[220px]",
+                        },
                         {
                             logoImg: Silver2Ss11,
                             logoLink: "https://www.facebook.com/rmitstudentlifesgs",
@@ -190,21 +227,21 @@ export const sponsorLogo = () => {
                             logoImg: Bronze1Ss11,
                             logoLink: "https://www.facebook.com/fairesoapworks",
                             logoClassName: "w-16 md:w-20 xl:w-[150px]"
-                        }, 
+                        },
                         {
                             logoImg: Bronze2Ss11,
                             logoLink: "https://motdoigiay.vn/",
                             logoClassName: "w-16 md:w-20 xl:w-[150px] bg-bg-50",
-                            
-                        }, 
+
+                        },
                         {
-                            logoImg: InKind4Ss10,
+                            logoImg: Bronze3Ss11,
                             logoLink: "https://suntorypepsico.vn/",
                             logoClassName: "w-16 md:w-20 xl:w-[277px]",
 
-                        }, 
+                        },
                         {
-                            logoImg: Strategic1Ss8,
+                            logoImg: Bronze4Ss11,
                             logoLink: "https://www.facebook.com/rmitvn.sc.sgs"
                         }]
 
@@ -225,28 +262,28 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Media1Ss11,
                             logoLink: "https://adsangtao.com/"
-                        }, 
+                        },
                         {
                             logoImg: Media2Ss10,
                             logoLink: "https://www.brandsvietnam.com/"
-                        }, 
+                        },
                         {
-                            logoImg: Media1Ss10,
+                            logoImg: Media3Ss11,
                             logoLink: "https://advertisingvietnam.com/"
-                        }, 
+                        },
                         {
-                            logoImg: Strategic5Ss10,
+                            logoImg: Media4Ss11,
                             logoLink: "https://aimacademy.vn/vi",
-                        }, 
+                        },
                         {
-                            logoImg: Media2Ss11,
+                            logoImg: Media5Ss11,
                             logoLink: "https://www.yan.vn/",
                             logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         },
                         {
-                            logoImg: Media3Ss11,
+                            logoImg: Media6Ss11,
                             logoLink: "https://marketingworks.vn/",
-                           logoClassName: "w-20 md:w-28 xl:w-[300px]"
+                            logoClassName: "w-20 md:w-28 xl:w-[300px]"
                         },
                     ]
 
@@ -261,22 +298,22 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs10}]
+                    logoList: [{ logoImg: ExclusiveSs10 }]
 
                 },
                 {
                     categoryName: 'In-kind Sponsors',
-                    logoList: [{logoImg: InKind2Ss10}, {logoImg: InKind3Ss10}, {logoImg: InKind4Ss10}, {logoImg: InKind5Ss10}, {logoImg: InKind6Ss10}, {logoImg: InKind1Ss10}, {logoImg: InKind7Ss10}, {logoImg: InKind8Ss10}]
+                    logoList: [{ logoImg: InKind1Ss10 }, { logoImg: InKind2Ss10 }, { logoImg: InKind3Ss10 }, { logoImg: InKind4Ss10 }, { logoImg: InKind5Ss10 }, { logoImg: InKind6Ss10 }, { logoImg: InKind7Ss10 }, { logoImg: InKind8Ss10 }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{logoImg: Media1Ss10}, {logoImg: Media2Ss10}, {logoImg: Media3Ss10}, {logoImg: Media4Ss10}, {logoImg: Media5Ss10}]
+                    logoList: [{ logoImg: Media1Ss10 }, { logoImg: Media2Ss10 }, { logoImg: Media3Ss10 }, { logoImg: Media4Ss10 }, { logoImg: Media5Ss10 }]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{logoImg: Strategic1Ss10}, {logoImg: Strategic2Ss10}, {logoImg: Strategic3Ss10}, {logoImg: Strategic4Ss10}, {logoImg: Strategic5Ss10}, {logoImg: Strategic6Ss10}]
+                    logoList: [{ logoImg: Strategic1Ss10 }, { logoImg: Strategic2Ss10 }, { logoImg: Strategic3Ss10 }, { logoImg: Strategic4Ss10 }, { logoImg: Strategic5Ss10 }, { logoImg: Strategic6Ss10 }]
 
                 },
             ],
@@ -287,17 +324,17 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs9}]
+                    logoList: [{ logoImg: ExclusiveSs9 }]
 
                 },
                 {
                     categoryName: 'In-kind Sponsors',
-                    logoList: [{logoImg: InKind2Ss9}, {logoImg: InKind3Ss9}, {logoImg: InKind1Ss10}, {logoImg: InKind1Ss9}, ]
+                    logoList: [{ logoImg: InKind1Ss9 }, { logoImg: InKind2Ss9 }, { logoImg: InKind3Ss10 }, { logoImg: InKind4Ss9 }, { logoImg: InKind5Ss9 }, { logoImg: InKind6Ss9 }, { logoImg: InKind7Ss9 }, { logoImg: InKind8Ss9 }]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{logoImg: Strategic1Ss9}, {logoImg: Strategic2Ss9}, {logoImg: Strategic3Ss9}, {logoImg: Strategic4Ss9}, {logoImg: Strategic5Ss9}, {logoImg: Strategic6Ss9}, {logoImg: Strategic5Ss10}, {logoImg: Strategic6Ss10}]
+                    logoList: [{ logoImg: Strategic1Ss9 }, { logoImg: Strategic2Ss9 }, { logoImg: Strategic3Ss9 }, { logoImg: Strategic4Ss9 }]
 
                 },
             ],
@@ -308,22 +345,22 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs8}]
+                    logoList: [{ logoImg: ExclusiveSs8 }]
 
                 },
                 {
                     categoryName: 'In-kind Sponsors',
-                    logoList: [{logoImg: InKind2Ss8}, {logoImg: InKind3Ss8}, {logoImg: InKind1Ss8}, ]
+                    logoList: [{ logoImg: InKind1Ss8 }, { logoImg: InKind2Ss8 }, { logoImg: InKind3Ss8 },]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{logoImg: Strategic1Ss8},{logoImg: Strategic1Ss10}, {logoImg: Strategic4Ss9}]
+                    logoList: [{ logoImg: Strategic1Ss8 }, { logoImg: Strategic2Ss10 }, { logoImg: Strategic3Ss8 }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{logoImg: Media1Ss8}, {logoImg: Media2Ss10}, {logoImg: Media4Ss10}]
+                    logoList: [{ logoImg: Media1Ss8 }, { logoImg: Media2Ss8 }, { logoImg: Media3Ss8 }]
 
                 },
             ],
@@ -334,22 +371,22 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs7}]
+                    logoList: [{ logoImg: ExclusiveSs7 }]
 
                 },
                 {
                     categoryName: 'In-kind Sponsors',
-                    logoList: [{logoImg: InKind2Ss8}, {logoImg: InKind1Ss7}, ]
+                    logoList: [{ logoImg: InKind1Ss7 }, { logoImg: InKind2Ss7 },]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{logoImg: Strategic1Ss7},{logoImg: Strategic3Ss10}]
+                    logoList: [{ logoImg: Strategic1Ss7 }, { logoImg: Strategic2Ss7 }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{logoImg: Media1Ss7}, {logoImg: Media4Ss10}, {logoImg: Media2Ss10}]
+                    logoList: [{ logoImg: Media1Ss7 }, { logoImg: Media2Ss7 }, { logoImg: Media3Ss7 }]
 
                 },
             ],
@@ -360,12 +397,12 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs6}]
+                    logoList: [{ logoImg: ExclusiveSs6 }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{logoImg: Media1Ss7}, {logoImg: Media2Ss10}]
+                    logoList: [{ logoImg: Media1Ss6 }, { logoImg: Media2Ss6 }]
 
                 },
             ],
@@ -376,17 +413,17 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs5}]
+                    logoList: [{ logoImg: ExclusiveSs5 }]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{logoImg: Strategic1Ss5}, {logoImg: Strategic5Ss10}, {logoImg: Strategic1Ss8}]
+                    logoList: [{ logoImg: Strategic1Ss5 }, { logoImg: Strategic2Ss5 }, { logoImg: Strategic3Ss5 }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{logoImg: Media1Ss5}, {logoImg: Media1Ss7}, {logoImg: Media2Ss5}, {logoImg: Media2Ss10}]
+                    logoList: [{ logoImg: Media1Ss5 }, { logoImg: Media2Ss5 }, { logoImg: Media3Ss5 }, { logoImg: Media4Ss5 }]
 
                 },
             ],
@@ -397,7 +434,7 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs4}]
+                    logoList: [{ logoImg: ExclusiveSs4 }]
 
                 },
             ],
@@ -408,7 +445,7 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs3}]
+                    logoList: [{ logoImg: ExclusiveSs3 }]
 
                 },
             ],
@@ -419,7 +456,7 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs2}]
+                    logoList: [{ logoImg: ExclusiveSs2 }]
 
                 },
             ],
@@ -430,7 +467,7 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsors',
-                    logoList: [{logoImg: ExclusiveSs1}]
+                    logoList: [{ logoImg: ExclusiveSs1 }]
 
                 },
             ],
