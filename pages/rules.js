@@ -1,4 +1,4 @@
-import PageTitle from "../components/PageTitle";
+import PageTitleRules from "../components/PageTitleRules";
 import WhiteLight from '../assets/Logolight-white.png'
 import Value from "../components/Value";
 import Birdbg from "../assets/bird-bg.png"
@@ -14,7 +14,7 @@ const Rules = () => {
         zIndex: 2,
     }}>
         <div id="rules&regulations"/>
-        <PageTitle title={'RULES AND REGULATIONS'} type={2}></PageTitle>
+        <PageTitleRules title={'RULES AND REGULATIONS'} type={2}></PageTitleRules>
         <section className="py-10 space-y-6"
         style={{
             backgroundImage: `url(${Birdbg.src})`,
@@ -142,7 +142,7 @@ const Rules = () => {
                    <li><p>The Organising Team cannot be held responsible for lost, delayed, mislaid entries or any technical failure of online submission. A confirmation email will be sent if a team’s submission for every round is successful.</p></li> 
                    <li><p>The Organising Team reserves the right to prohibit entry or exclude any teams from the competition who we believe that they violated the rules and regulation listed above (will communicate to the recipients <strong>at least 24 hours before finalising this decision</strong>).</p></li> 
                    <li><p>These rules are subject to change without notice.</p></li> 
-                   <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-primary-500">rmitbcmarketingchallengers@gmail.com</strong></p></li> 
+                   <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-primary-500">marketingchallengers.rmitbc@gmail.com</strong></p></li> 
                     
                 </ul>
                 
@@ -150,7 +150,7 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-primary-500 ">COPYRIGHTS OF MARKETING CHALLENGERS</h4>
+                    <h4 className="font-bold uppercase text-primary-500 ">COPYRIGHTS OF MARKETING CHALLENGER</h4>
                 </div>    
                 
                 <ul className="pl-4 space-y-1 list-disc">
