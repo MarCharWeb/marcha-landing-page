@@ -25,7 +25,7 @@ const Sponsor = () => {
 
         setSponsorData(updateSponsorData)
     }
-    return (<section className="py-10 mt-36 xl:mt-24 relative z-[1] xl:py-16" id="sponsorship">
+    return (<section className="py-10 xl:mt-24 relative z-[1] xl:py-16" id="sponsorship">
         <PageTitle title={'SPONSORSHIP'}></PageTitle>
         {/* Sponsor Tag List */}
 
@@ -54,7 +54,7 @@ const Sponsor = () => {
             onClick={handleClick}
             isGlow={true}
             type='primary'
-            className='animate-bounce-slow font-bold mt-10 mb-20 '
+            className='animate-bounce-slow font-bold mt-10'
             text={'Learn More'}
             size='large'
         />
