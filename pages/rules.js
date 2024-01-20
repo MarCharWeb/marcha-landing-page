@@ -150,7 +150,7 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-primary-500 ">COPYRIGHTS OF MARKETING CHALLENGER</h4>
+                    <h4 className="font-bold uppercase text-primary-500 ">COPYRIGHTS OF MARKETING CHALLENGERS</h4>
                 </div>    
                 
                 <ul className="pl-4 space-y-1 list-disc">
