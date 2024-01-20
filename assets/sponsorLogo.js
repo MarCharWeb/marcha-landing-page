@@ -142,7 +142,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 11',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [
                         {
                             logoImg: ExclusiveSs11,
@@ -297,7 +297,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 10',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs10 }]
 
                 },
@@ -323,7 +323,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 09',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs9 }]
 
                 },
@@ -344,7 +344,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 08',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs8 }]
 
                 },
@@ -370,7 +370,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 07',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs7 }]
 
                 },
@@ -396,7 +396,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 06',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs6 }]
 
                 },
@@ -412,7 +412,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 05',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs5 }]
 
                 },
@@ -433,7 +433,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 04',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs4 }]
 
                 },
@@ -444,7 +444,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 03',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs3 }]
 
                 },
@@ -455,7 +455,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 02',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs2 }]
 
                 },
@@ -466,7 +466,7 @@ export const sponsorLogo = () => {
             year: 'Sponsor 01',
             sponsorLogos: [
                 {
-                    categoryName: 'Exclusive Sponsors',
+                    categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs1 }]
 
                 },
