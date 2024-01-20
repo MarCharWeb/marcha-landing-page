@@ -142,7 +142,7 @@ const Rules = () => {
                    <li><p>The Organising Team cannot be held responsible for lost, delayed, mislaid entries or any technical failure of online submission. A confirmation email will be sent if a team’s submission for every round is successful.</p></li> 
                    <li><p>The Organising Team reserves the right to prohibit entry or exclude any teams from the competition who we believe that they violated the rules and regulation listed above (will communicate to the recipients <strong>at least 24 hours before finalising this decision</strong>).</p></li> 
                    <li><p>These rules are subject to change without notice.</p></li> 
-                   <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-primary-500">marketingchallengers.rmitbc@gmail.com</strong></p></li> 
+                   <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-primary-500">rmitbcmarketingchallengers@gmail.com</strong></p></li> 
                     
                 </ul>
                 
