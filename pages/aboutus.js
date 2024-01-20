@@ -55,7 +55,7 @@ const AboutUs = () => {
                         <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss11-slogan" className={'mx-auto xl:mt-10 w-56 h-56 lg:w-64 lg:h-64 xl:w-[350px] xl:h-[350px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 pt-2'}></ImageHolder>
 
                         <div className='pl-4 space-y-0 lg:space-y-1'>
-                            <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong -mt-28 text-center' style={{ zIndex: 2 }}>Vision</h4>
+                            <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong -mt-28 text-center pt-10' style={{ zIndex: 2 }}>Vision</h4>
                             <p className='text-center font-bold text-headline-31'>To become the best student-run marketing competition for students.</p>
                         </div>
 
