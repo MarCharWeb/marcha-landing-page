@@ -26,7 +26,7 @@ const Rules = () => {
             <div className="space-y-1">
                 <div className="flex items-center ">
                     <Value className="value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-primary-500 -pl-10">ENTRANT ELIGIBILITY</h4>
+                    <h4 className="font-bold uppercase text-glow-strong -pl-10">ENTRANT ELIGIBILITY</h4>
                 </div>
                 <div className="-pt-32">
                 <ul className="pl-4 space-y-1 list-disc">
@@ -41,7 +41,7 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-primary-500 ">COMPETITION STRUCTURE</h4>
+                    <h4 className="font-bold uppercase text-glow-strong">COMPETITION STRUCTURE</h4>
                 </div>
                 <ul className="pl-4 space-y-1 list-disc">
                     
@@ -79,11 +79,11 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center ">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-primary-500 ">REGISTRATION TIMELINE</h4>
+                    <h4 className="font-bold uppercase text-glow-strong">REGISTRATION TIMELINE</h4>
                 </div>
                 <ul className="pl-4 space-y-1 list-disc">
                     
-                    <li><p>From <strong className="text-primary-500">October 24 to November 14</strong></p></li>
+                    <li><p>From <strong className="text-glow-strong">October 24 to November 14</strong></p></li>
 
                 </ul>
 
@@ -117,7 +117,7 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-primary-500 ">SUBMISSION GUIDELINE</h4>
+                    <h4 className="font-bold uppercase text-glow-strong">SUBMISSION GUIDELINE</h4>
                 </div>
                 
                 <ul className="pl-4 space-y-1 list-disc">
@@ -131,7 +131,7 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-primary-500 ">TERM & CONDITIONS</h4>
+                    <h4 className="font-bold uppercase text-glow-strong">TERMS & CONDITIONS</h4>
                 </div>                
                 <ul className="pl-4 space-y-1 list-disc">
                    <li><p>No registration fees necessary for entering the competition.</p></li> 
@@ -142,7 +142,7 @@ const Rules = () => {
                    <li><p>The Organising Team cannot be held responsible for lost, delayed, mislaid entries or any technical failure of online submission. A confirmation email will be sent if a team’s submission for every round is successful.</p></li> 
                    <li><p>The Organising Team reserves the right to prohibit entry or exclude any teams from the competition who we believe that they violated the rules and regulation listed above (will communicate to the recipients <strong>at least 24 hours before finalising this decision</strong>).</p></li> 
                    <li><p>These rules are subject to change without notice.</p></li> 
-                   <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-primary-500">marketingchallengers.rmitbc@gmail.com</strong></p></li> 
+                   <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-glow-strong">marketingchallengers.rmitbc@gmail.com</strong></p></li> 
                     
                 </ul>
                 
@@ -150,7 +150,7 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-primary-500 ">COPYRIGHTS OF MARKETING CHALLENGERS</h4>
+                    <h4 className="font-bold uppercase text-glow-strong">COPYRIGHTS OF MARKETING CHALLENGERS</h4>
                 </div>    
                 
                 <ul className="pl-4 space-y-1 list-disc">
