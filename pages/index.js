@@ -69,7 +69,7 @@ export default function Home({ data }) {
             <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss11-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 sm:pt-10'}></ImageHolder>
             <PageTitle className='hidden lg:flex justify-center' title='MARKETING CHALLENGERS' />
             <p className='hidden lg:flex text-center mx-auto p-8 font-bold text-headline-31 xl:w-2/3 pt-0 mt-6 sm:w-90%'>
-              Marketing Challengers is a top 3 national competition for Integrated Marketing Communications plans, organized by the RMIT Vietnam Business Club - SGS. With an impressive track record over a decade and 11 seasons, Marketing Challengers takes immense pride in the journey of inspiring passion and nurturing a vibrant community of marketers, while fostering the talented youth of Vietnam.
+              Marketing Challengers is a top 3 national competition for Integrated Marketing Communications plans, organized by the RMIT Vietnam Business Club - SGS. With an impressive track record over a decade with 11 seasons, Marketing Challengers takes immense pride in the journey of inspiring and nurturing a vibrant community of marketers across Vietnam.
             </p>
 
           </div>
