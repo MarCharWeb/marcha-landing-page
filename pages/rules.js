@@ -26,10 +26,10 @@ const Rules = () => {
             <div className="space-y-1">
                 <div className="flex items-center ">
                     <Value className="value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-glow-strong -pl-10">ENTRANT ELIGIBILITY</h4>
+                    <h4 className="font-bold uppercase text-glow-strong -ml-6">ENTRANT ELIGIBILITY</h4>
                 </div>
                 <div className="-pt-32">
-                <ul className="pl-4 space-y-1 list-disc">
+                <ul className="pl-4 space-y-1 list-disc -mt-6">
                     <li><p>Current university/college students from year <strong>01</strong> to year <strong>04</strong> who are living, studying and working in Vietnam or studying abroad but are Vietnamese students.</p></li>
                     <li><p>Members of organising teams and (sponsor) related parties are <strong>NOT</strong> allowed to join the competition.</p></li>
                     <li><p>Compulsory language used in the competition: <strong>100% English</strong></p></li>
@@ -41,9 +41,9 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-glow-strong">COMPETITION STRUCTURE</h4>
+                    <h4 className="font-bold uppercase text-glow-strong -ml-6">COMPETITION STRUCTURE</h4>
                 </div>
-                <ul className="pl-4 space-y-1 list-disc">
+                <ul className="pl-4 space-y-1 list-disc -mt-6">
                     
                     <li><p> <strong className="italic">Round 1:</strong> Candidates have to independently complete <strong>an INDIVIDUAL online test.</strong></p></li>
 
@@ -79,11 +79,11 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center ">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-glow-strong">REGISTRATION TIMELINE</h4>
+                    <h4 className="font-bold uppercase text-glow-strong -ml-6">REGISTRATION TIMELINE</h4>
                 </div>
-                <ul className="pl-4 space-y-1 list-disc">
+                <ul className="pl-4 space-y-1 list-disc -mt-6">
                     
-                    <li><p>From <strong className="text-glow-strong">October 24 to November 14</strong></p></li>
+                    <li><p>From <strong className="text-primary-500">October 24 to November 14</strong></p></li>
 
                 </ul>
 
@@ -117,10 +117,10 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-glow-strong">SUBMISSION GUIDELINE</h4>
+                    <h4 className="font-bold uppercase text-glow-strong -ml-6">SUBMISSION GUIDELINE</h4>
                 </div>
                 
-                <ul className="pl-4 space-y-1 list-disc">
+                <ul className="pl-4 space-y-1 list-disc -mt-6">
                    <li><p>Follow the instructions of the organisers. Contact as soon as technical problems occur.</p></li> 
                    <li><p>Candidates are encouraged not to submit the test too close to the deadline to avoid unnecessary technical problems.</p></li> 
                    <li><p>Candidates who submit assignments late or incorrectly will be disqualified.</p></li> 
@@ -131,9 +131,9 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-glow-strong">TERMS & CONDITIONS</h4>
+                    <h4 className="font-bold uppercase text-glow-strong -ml-6">TERMS & CONDITIONS</h4>
                 </div>                
-                <ul className="pl-4 space-y-1 list-disc">
+                <ul className="pl-4 space-y-1 list-disc -mt-6">
                    <li><p>No registration fees necessary for entering the competition.</p></li> 
                    <li><p>All materials submitted must be candidates’ own work and must not be under the submission of other competitions. Any duplication of outside sources must be referenced properly to avoid plagiarism.</p></li> 
                    <li><p>Candidates must not reveal the datasets and questions from all rounds to ensure the confidentiality of the contest.</p></li> 
@@ -142,7 +142,7 @@ const Rules = () => {
                    <li><p>The Organising Team cannot be held responsible for lost, delayed, mislaid entries or any technical failure of online submission. A confirmation email will be sent if a team’s submission for every round is successful.</p></li> 
                    <li><p>The Organising Team reserves the right to prohibit entry or exclude any teams from the competition who we believe that they violated the rules and regulation listed above (will communicate to the recipients <strong>at least 24 hours before finalising this decision</strong>).</p></li> 
                    <li><p>These rules are subject to change without notice.</p></li> 
-                   <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-glow-strong">marketingchallengers.rmitbc@gmail.com</strong></p></li> 
+                   <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-primary-500">marketingchallengers.rmitbc@gmail.com</strong></p></li> 
                     
                 </ul>
                 
@@ -150,10 +150,10 @@ const Rules = () => {
             <div className="space-y-1 pt-5">
                 <div className="flex items-center">
                     <Value className=" value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />
-                    <h4 className="font-bold uppercase text-glow-strong">COPYRIGHTS OF MARKETING CHALLENGERS</h4>
+                    <h4 className="font-bold uppercase text-glow-strong -ml-6">COPYRIGHTS OF MARKETING CHALLENGERS</h4>
                 </div>    
                 
-                <ul className="pl-4 space-y-1 list-disc">
+                <ul className="pl-4 space-y-1 list-disc -mt-6">
                    <li><p>Candidates must obey the copyright laws and not violate the copyrights of any other third parties. The Organisers of this Contest, RMIT Business Club, is not responsible for any breach by the candidate.</p></li> 
                    <li><p>RMIT Business Club reserves the right to publish and display the Project, using its content and images for publicity, promotion and non-payment purposes.</p></li> 
                    <li><p>The Organising Team, RMIT Vietnam Business Club - SGS, sponsors and RMIT will not use the candidate&apos; s work for any purpose other than grading and filtering out the best works for awarding.</p></li> 
