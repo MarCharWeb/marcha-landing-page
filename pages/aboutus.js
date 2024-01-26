@@ -21,13 +21,13 @@ const AboutUs = () => {
         <main className="space-y-1"
 
 
-            // style={{
-            //     backgroundImage: `url(${Avabg.src})`,
-            //     backgroundRepeat: 'no-repeat',
-            //     backgroundSize: 'cover',
-            //     backgroundPosition: '0% 0%',
-            //     zIndex: 2,
-            // }}>
+            style={{
+                backgroundImage: `url(${Avabg.src})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: '0% 0%',
+                zIndex: 2,
+            }}>
             <section id='about-marketing-challengers' className='pt-20' >
 
                 <div className='bg-right-top'
