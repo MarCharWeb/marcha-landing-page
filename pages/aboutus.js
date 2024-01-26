@@ -18,20 +18,20 @@ const AboutUs = () => {
     const heroTextRef = useRef(null);
 
     return (
-        <main className="space-y-1"
+        <main className="space-y-1" style={{
+                backgroundImage: `url(${Avabg.src})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: '0% 0%',
+                zIndex: 2,
+            }}
 
 
             >
             <section id='about-marketing-challengers' className='pt-20' >
 
                 <div className='bg-right-top'
-                    style={{
-                        backgroundImage: `url(${Bg.src})`,
-                        backgroundRepeat: 'no-repeat',
-                        backgroundSize: '110% 58%',
-                        backgroundPosition: '40% 0%',
-                        zIndex: 1,
-                    }}>
+>
 
                     <div>
                         <PageTitle className='pt-10' title="ABOUT US"></PageTitle>
