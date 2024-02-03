@@ -27,7 +27,6 @@ import Operationsimg from '../assets/TeamImage/Operations-Team.jpg';
 import Programimg from '../assets/TeamImage/Program-Team.jpg';
 import Sponsorimg from '../assets/TeamImage/Team-Sponsor.jpg';
 
-import Avabg from '../assets/Ava-background.png';
 export default function Home({ data }) {
 
   const heroTextRef = useRef(null);
