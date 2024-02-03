@@ -158,7 +158,7 @@ export const sponsorLogo = () => {
                         {
                             logoImg: DiamondSs11,
                             logoLink: 'https://fonos.vn/',
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-20 md:w-28 xl:w-[300px]"
                         }
                     ]
 
@@ -291,7 +291,7 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Media6Ss11,
                             logoLink: "https://marketingworks.vn/",
-                            logoClassName: "w-20 md:w-28 xl:w-[300px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         },
                     ]
 
