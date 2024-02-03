@@ -210,12 +210,12 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Silver1Ss11,
                             logoLink: "https://ubl.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[220px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         },
                         {
                             logoImg: Silver2Ss11,
                             logoLink: "https://www.facebook.com/rmitstudentlifesgs",
-                            logoClassName: "w-16 md:w-20 xl:w-48"
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         }
                     ]
 
