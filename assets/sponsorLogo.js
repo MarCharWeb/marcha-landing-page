@@ -108,8 +108,6 @@ import ExclusiveSs6 from './season6/exclusive.png'
 
 import Media1Ss6 from './season6/media-1.png'
 import Media2Ss6 from './season6/media-2.png'
-import Media3Ss6 from './season6/media-3.png'
-
 
 //Season 5 Logos Import
 import ExclusiveSs5 from './season5/exclusive.png'
@@ -462,8 +460,7 @@ export const sponsorLogo = () => {
                     categoryName: 'Media Sponsors',
                     logoList: [{ logoImg: Media1Ss6,
                         logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media2Ss6,
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]" } , { logoImg: Media3Ss6,
-                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" } ]
 
                 },
             ],
