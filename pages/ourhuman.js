@@ -71,7 +71,7 @@ const Ourhuman = () => {
                           <Image className="flex items-center justify-center h-screen" src={Programimg} width={620} height={330} />
                     </div>
                 </div>
-                <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center pl-4">
+                <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center pr-4">
                     &quot;Program Team conveys primarily all core materials of Marketing Challengers. Here we work cohesively to drive the competition&aposs success through each initiative strategy. Specifically, defining projects&apos objectives, establishing timeline; planning event&aposs agenda, round structures and especially client brief&aposs overview as the main criteria for judges to find out the winner. Our mission is how to foster contestant&aposs marketing sense and ensure academic quality throughout each season.&quot;
                 </div>
             </div>
@@ -83,7 +83,7 @@ const Ourhuman = () => {
                         <Image className="flex items-center justify-center h-screen" src={Operationsimg} width={620} height={330} />
                     </div>
                 </div>
-                <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center pr-4">
+                <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center pl-4">
                     &quot;Our team is the pivotal force in ensuring the smooth execution of the all events. We are responsible for orchestrating the finer details like paperwork, venue preparation, and on-site coordination. Our focus on logistics and on-the-ground management is the key bringing the event to life, guaranteeing a memorable and well-organised experience for all.&quot;
                 </div>            
                 </div>
