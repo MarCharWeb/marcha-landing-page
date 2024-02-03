@@ -13,7 +13,13 @@ import Avabg from '../assets/Ava-background.png';
 
 const Ourhuman = () => {
   return (
-    <main className="space-y-1 pb-10 pt-20">
+    <main className="space-y-1 pb-10 pt-20" style={{
+        backgroundImage: `url(${Avabg.src})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: '0% 0%',
+        zIndex: 2,
+    }}>
             <div className="">
                 <PageTitle className="" title={'OUR HUMAN'} type={2}></PageTitle>
     <h4 className="pt-10 flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Leader Board</h4>
