@@ -35,7 +35,7 @@ const Ourhuman = () => {
                         <Image className="flex items-center justify-center h-screen" src={Sponsorimg} width={620} height={330} />
                         </div>
                 </div>
-                <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center">
+                <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center mr-4">
                     &quot;Meet the dedicated sponsor team of Marketing Challengers Season 12! As integral members of the organizing committee, our primary focus lies in securing valuable sponsors for the competition. Committed to fostering partnerships that further elevate the competition&apos;s value, we work tirelessly to ensure the support necessary for its success. Together, we contribute to the seamless execution of Marketing Challengers, enriching the experience for participants and sponsors alike. Stay tuned to see what the sponsor team has in store for our beloved participants this season!&quot;
                 </div>            
                 </div>
