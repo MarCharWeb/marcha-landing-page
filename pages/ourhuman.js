@@ -23,6 +23,9 @@ const Ourhuman = () => {
             <div className="">
                 <PageTitle className="" title={'OUR HUMAN'} type={2}></PageTitle>
     <h4 className="pt-10 flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Leader Board</h4>
+              <div className="w-screen flex items-center justify-center pb-5">
+                <Image className="flex items-center justify-center h-screen bg-gray-300 p-4 object-center lg:w-[500px] lg:h-auto" src={Leaderboardimg} width={650} height={390} />
+            </div>
             <div className="w-screen flex items-center justify-center pb-5">
             </div>
             <div className="lg:flex lg:items-center mx-5 py-5">
