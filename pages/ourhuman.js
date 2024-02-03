@@ -1,5 +1,5 @@
 import PageTitle from "../components/PageTitle";
-// import Image from 'next/image';
+import Image from 'next/image';
 import Footer from "../components/Footer";
 
 import Leaderboardimg from '../assets/TeamImage/Leaderboard.jpg';
