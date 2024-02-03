@@ -118,7 +118,6 @@ import Media1Ss5 from './season5/media-1.png'
 import Media2Ss5 from './season5/media-2.png'
 import Media3Ss5 from './season5/media-3.png'
 import Media4Ss5 from './season5/media-4.png'
-import Media5Ss5 from './season5/media-5.png'
 
 import Strategic1Ss5 from './season5/strategic-1.png'
 import Strategic2Ss5 from './season5/strategic-2.png'
@@ -197,11 +196,13 @@ export const sponsorLogo = () => {
                     logoList: [
                         {
                             logoImg: Academic1Ss11,
-                            logoLink: "https://eqvn.net/"
+                            logoLink: "https://eqvn.net/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         },
                         {
                             logoImg: Academic2Ss11,
-                            logoLink: "https://www.brandsvietnam.com/"
+                            logoLink: "https://www.brandsvietnam.com/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         }]
 
                 },
@@ -211,12 +212,12 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Silver1Ss11,
                             logoLink: "https://ubl.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[220px]",
+                            logoClassName: "w-16 md:w-20 xl:w-[220px]"
                         },
                         {
                             logoImg: Silver2Ss11,
                             logoLink: "https://www.facebook.com/rmitstudentlifesgs",
-                            logoClassName: "w-16 md:w-20 xl:w-48",
+                            logoClassName: "w-16 md:w-20 xl:w-48"
                         }
                     ]
 
@@ -232,18 +233,19 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Bronze2Ss11,
                             logoLink: "https://motdoigiay.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px] bg-bg-50",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]",
 
                         },
                         {
                             logoImg: Bronze3Ss11,
                             logoLink: "https://suntorypepsico.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[277px]",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
 
                         },
                         {
                             logoImg: Bronze4Ss11,
-                            logoLink: "https://www.facebook.com/rmitvn.sc.sgs"
+                            logoLink: "https://www.facebook.com/rmitvn.sc.sgs",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         }]
 
                 },
@@ -252,7 +254,8 @@ export const sponsorLogo = () => {
                     logoList: [
                         {
                             logoImg: StreamingSs11,
-                            logoLink: "https://www.facebook.com/preecostudio/"
+                            logoLink: "https://www.facebook.com/preecostudio/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         }
                     ]
 
@@ -262,19 +265,23 @@ export const sponsorLogo = () => {
                     logoList: [
                         {
                             logoImg: Media1Ss11,
-                            logoLink: "https://adsangtao.com/"
+                            logoLink: "https://adsangtao.com/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         },
                         {
-                            logoImg: Media2Ss10,
-                            logoLink: "https://www.brandsvietnam.com/"
+                            logoImg: Media2Ss11,
+                            logoLink: "https://www.brandsvietnam.com/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         },
                         {
                             logoImg: Media3Ss11,
-                            logoLink: "https://advertisingvietnam.com/"
+                            logoLink: "https://advertisingvietnam.com/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         },
                         {
                             logoImg: Media4Ss11,
                             logoLink: "https://aimacademy.vn/vi",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         },
                         {
                             logoImg: Media5Ss11,
@@ -299,22 +306,42 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs10 }]
+                    logoList: [{ logoImg: ExclusiveSs10,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'In-kind Sponsors',
-                    logoList: [{ logoImg: InKind1Ss10 }, { logoImg: InKind2Ss10 }, { logoImg: InKind3Ss10 }, { logoImg: InKind4Ss10 }, { logoImg: InKind5Ss10 }, { logoImg: InKind6Ss10 }, { logoImg: InKind7Ss10 }, { logoImg: InKind8Ss10 }]
+                    logoList: [{ logoImg: InKind1Ss10,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind2Ss10,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind3Ss10,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind4Ss10,
+                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind5Ss10,
+                                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind6Ss10,
+                                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind7Ss10,
+                                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind8Ss10,
+                                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{ logoImg: Media1Ss10 }, { logoImg: Media2Ss10 }, { logoImg: Media3Ss10 }, { logoImg: Media4Ss10 }, { logoImg: Media5Ss10 }]
+                    logoList: [{ logoImg: Media1Ss10,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media2Ss10,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media3Ss10,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media4Ss10,
+                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media5Ss10,
+                                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{ logoImg: Strategic1Ss10 }, { logoImg: Strategic2Ss10 }, { logoImg: Strategic3Ss10 }, { logoImg: Strategic4Ss10 }, { logoImg: Strategic5Ss10 }, { logoImg: Strategic6Ss10 }]
+                    logoList: [{ logoImg: Strategic1Ss10,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic2Ss10,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic3Ss10,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic4Ss10,
+                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic5Ss10,
+                                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic6Ss10,
+                                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
@@ -325,17 +352,30 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs9 }]
+                    logoList: [{ logoImg: ExclusiveSs9,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'In-kind Sponsors',
-                    logoList: [{ logoImg: InKind1Ss9 }, { logoImg: InKind2Ss9 }, { logoImg: InKind3Ss10 }, { logoImg: InKind4Ss9 }, { logoImg: InKind5Ss9 }, { logoImg: InKind6Ss9 }, { logoImg: InKind7Ss9 }, { logoImg: InKind8Ss9 }]
+                    logoList: [{ logoImg: InKind1Ss9,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind2Ss9,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind3Ss9,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]"}, { logoImg: InKind4Ss9,
+                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind5Ss9,
+                                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind6Ss9,
+                                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind7Ss9,
+                                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind8Ss9,
+                                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{ logoImg: Strategic1Ss9 }, { logoImg: Strategic2Ss9 }, { logoImg: Strategic3Ss9 }, { logoImg: Strategic4Ss9 }]
+                    logoList: [{ logoImg: Strategic1Ss9,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic2Ss9,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic3Ss9,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic4Ss9,
+                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
@@ -346,22 +386,32 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs8 }]
+                    logoList: [{ logoImg: ExclusiveSs8,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'In-kind Sponsors',
-                    logoList: [{ logoImg: InKind1Ss8 }, { logoImg: InKind2Ss8 }, { logoImg: InKind3Ss8 },]
+                    logoList: [{ logoImg: InKind1Ss8,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind2Ss8,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind3Ss8,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" },]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{ logoImg: Strategic1Ss8 }, { logoImg: Strategic2Ss8 }, { logoImg: Strategic3Ss8 }]
+                    logoList: [{ logoImg: Strategic1Ss8,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic2Ss8,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic3Ss8,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{ logoImg: Media1Ss8 }, { logoImg: Media2Ss8 }, { logoImg: Media3Ss8 }]
+                    logoList: [{ logoImg: Media1Ss8,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media2Ss8,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media3Ss8,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
@@ -372,22 +422,28 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs7 }]
+                    logoList: [{ logoImg: ExclusiveSs7,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'In-kind Sponsors',
-                    logoList: [{ logoImg: InKind1Ss7 }, { logoImg: InKind2Ss7 },]
+                    logoList: [{ logoImg: InKind1Ss7,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind2Ss7,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" },]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{ logoImg: Strategic1Ss7 }, { logoImg: Strategic2Ss7 }]
+                    logoList: [{ logoImg: Strategic1Ss7,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic2Ss7,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{ logoImg: Media1Ss7 }]
+                    logoList: [{ logoImg: Media1Ss7,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
@@ -398,12 +454,16 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs6 }]
+                    logoList: [{ logoImg: ExclusiveSs6,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{ logoImg: Media1Ss6 }, { logoImg: Media2Ss6 } , { logoImg: Media3Ss6 }]
+                    logoList: [{ logoImg: Media1Ss6,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media2Ss6,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" } , { logoImg: Media3Ss6,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
@@ -414,17 +474,25 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs5 }]
+                    logoList: [{ logoImg: ExclusiveSs5,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'Strategic Sponsors',
-                    logoList: [{ logoImg: Strategic1Ss5 }, { logoImg: Strategic2Ss5 }, { logoImg: Strategic3Ss5 }]
+                    logoList: [{ logoImg: Strategic1Ss5,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic2Ss5,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic3Ss5,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
-                    logoList: [{ logoImg: Media1Ss5 }, { logoImg: Media2Ss5 }, { logoImg: Media3Ss5 }, { logoImg: Media4Ss5 }, { logoImg: Media5Ss5 }]
+                    logoList: [{ logoImg: Media1Ss5,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media2Ss5,
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media3Ss5,
+                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media4Ss5,
+                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
@@ -435,7 +503,8 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs4 }]
+                    logoList: [{ logoImg: ExclusiveSs4,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
@@ -446,7 +515,8 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs3 }]
+                    logoList: [{ logoImg: ExclusiveSs3,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
@@ -457,7 +527,8 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs2 }]
+                    logoList: [{ logoImg: ExclusiveSs2,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
@@ -468,7 +539,8 @@ export const sponsorLogo = () => {
             sponsorLogos: [
                 {
                     categoryName: 'Exclusive Sponsor',
-                    logoList: [{ logoImg: ExclusiveSs1 }]
+                    logoList: [{ logoImg: ExclusiveSs1,
+                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
 
                 },
             ],
