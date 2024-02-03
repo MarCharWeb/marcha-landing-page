@@ -26,6 +26,7 @@ import Mediaimg from '../assets/TeamImage/Media-Team.jpg';
 import Operationsimg from '../assets/TeamImage/Operations-Team.jpg';
 import Programimg from '../assets/TeamImage/Program-Team.jpg';
 import Sponsorimg from '../assets/TeamImage/Team-Sponsor.jpg';
+import Ourhumanlp from '../components/Ourhuman-lp'
 
 export default function Home({ data }) {
 
@@ -97,6 +98,7 @@ export default function Home({ data }) {
       {/* <Award></Award> */}
       {/* <CallToAction></CallToAction> */}
       <News featurePosts={data}></News>
+      <Ourhumanlp></Ourhumanlp>
       <Whocanjoin></Whocanjoin>
       {/* <Rules></Rules> */}
       <Footer></Footer>
