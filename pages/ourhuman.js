@@ -1,3 +1,7 @@
+import PageTitle from "../components/PageTitle";
+// import Image from 'next/image';
+import Footer from "../components/Footer";
+
 import Leaderboardimg from '../assets/TeamImage/Leaderboard.jpg';
 import Marketingimg from '../assets/TeamImage/Marketing-Team.jpg';
 import Mediaimg from '../assets/TeamImage/Media-Team.jpg';
@@ -10,6 +14,7 @@ import Avabg from '../assets/Ava-background.png';
 const Ourhuman = () => {
   return (
     <main>
+                <PageTitle className="" title={'OUR HUMAN'} type={2}></PageTitle>
     </main>
     );
 }
