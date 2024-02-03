@@ -20,7 +20,7 @@ import Script from 'next/script'
 import Whocanjoin from '../components/Whocanjoin'
 import Avabg from '../assets/Ava-background.png'
 import Footer from "../components/Footer";
-
+import Leaderboardimg from '../assets/TeamImage/Leaderboard.jpg';
 
 export default function Home({ data }) {
 
