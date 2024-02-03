@@ -43,7 +43,7 @@ const Ourhuman = () => {
                 <div className="lg:w-1/2 w-full bg-gray-300 lg:order-2">
                     <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Marketing Team</h4>
                     <div className="flex items-center justify-center ">
-                                          <Image className="flex items-center justify-center h-screen" src={Marketingimg} width={650} height={390} />
+                                          <Image className="flex items-center justify-center h-screen" src={Marketingimg} width={620} height={330} />
                     </div>
 
                 </div>
@@ -56,7 +56,7 @@ const Ourhuman = () => {
                 <div className="lg:w-1/2 w-full bg-gray-300 pb-5">
                     <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong">Media Team</h4>
                     <div className="flex items-center justify-center">
-                        <Image className="flex items-center justify-center h-screen" src={Mediaimg} width={650} height={390} />
+                        <Image className="flex items-center justify-center h-screen" src={Mediaimg} width={620} height={330} />
                     </div>
                 </div>
                 <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center">
@@ -68,7 +68,7 @@ const Ourhuman = () => {
                 <div className="lg:w-1/2 w-full bg-gray-300 lg:order-2">
                     <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Program Team</h4>
                     <div className="flex items-center justify-center">
-                          <Image className="flex items-center justify-center h-screen" src={Programimg} width={650} height={390} />
+                          <Image className="flex items-center justify-center h-screen" src={Programimg} width={620} height={330} />
                     </div>
                 </div>
                 <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center">
@@ -80,7 +80,7 @@ const Ourhuman = () => {
                 <div className="lg:w-1/2 w-full bg-gray-300 pb-10">
                     <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Operations Team</h4>
                     <div className="flex items-center justify-center">
-                        <Image className="flex items-center justify-center h-screen" src={Operationsimg} width={650} height={390} />
+                        <Image className="flex items-center justify-center h-screen" src={Operationsimg} width={620} height={330} />
                     </div>
                 </div>
                 <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center">
