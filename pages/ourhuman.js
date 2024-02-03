@@ -31,6 +31,9 @@ const Ourhuman = () => {
             <div className="lg:flex lg:items-center mx-5 py-5">
                 <div className="lg:w-1/2 w-full bg-gray-300 ">
                     <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong">Sponsor Team</h4>
+                      <div className="flex items-center justify-center">
+                        <Image className="flex items-center justify-center h-screen" src={Sponsorimg} width={650} height={390} />
+                        </div>
                     <div className="flex items-center justify-center">
                     </div>
                 </div>
