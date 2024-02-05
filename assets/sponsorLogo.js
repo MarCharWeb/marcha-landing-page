@@ -156,7 +156,7 @@ export const sponsorLogo = () => {
                         {
                             logoImg: DiamondSs11,
                             logoLink: 'https://fonos.vn/',
-                            logoClassName: "w-20 md:w-28 xl:w-[300px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
                         }
                     ]
 
@@ -167,22 +167,22 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Executive1Ss11,
                             logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
                         },
                         {
                             logoImg: Executive2Ss11,
                             logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[100px]"
                         },
                         {
                             logoImg: Executive3Ss11,
                             logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
                         },
                         {
                             logoImg: Executive4Ss11,
                             logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[125px]"
                         }
                     ]
 
@@ -195,12 +195,12 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Academic1Ss11,
                             logoLink: "https://eqvn.net/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
                         },
                         {
                             logoImg: Academic2Ss11,
                             logoLink: "https://www.brandsvietnam.com/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
                         }]
 
                 },
@@ -210,12 +210,12 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Silver1Ss11,
                             logoLink: "https://ubl.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[225px]"
                         },
                         {
                             logoImg: Silver2Ss11,
                             logoLink: "https://www.facebook.com/rmitstudentlifesgs",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
                         }
                     ]
 
@@ -231,19 +231,19 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Bronze2Ss11,
                             logoLink: "https://motdoigiay.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]",
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]",
 
                         },
                         {
                             logoImg: Bronze3Ss11,
                             logoLink: "https://suntorypepsico.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
 
                         },
                         {
                             logoImg: Bronze4Ss11,
                             logoLink: "https://www.facebook.com/rmitvn.sc.sgs",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
                         }]
 
                 },
@@ -253,7 +253,7 @@ export const sponsorLogo = () => {
                         {
                             logoImg: StreamingSs11,
                             logoLink: "https://www.facebook.com/preecostudio/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
                         }
                     ]
 
@@ -284,12 +284,12 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Media5Ss11,
                             logoLink: "https://www.yan.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
                         },
                         {
                             logoImg: Media6Ss11,
                             logoLink: "https://marketingworks.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
                         },
                     ]
 
@@ -305,30 +305,30 @@ export const sponsorLogo = () => {
                 {
                     categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs10,
-                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                        logoClassName: "w-16 md:w-20 xl:w-[125px]" }]
 
                 },
                 {
                     categoryName: 'In-kind Sponsors',
                     logoList: [{ logoImg: InKind1Ss10,
-                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind2Ss10,
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind3Ss10,
-                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind4Ss10,
-                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind5Ss10,
+                        logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: InKind2Ss10,
+                            logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: InKind3Ss10,
+                                logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: InKind4Ss10,
+                                    logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: InKind5Ss10,
                                         logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind6Ss10,
-                                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind7Ss10,
-                                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind8Ss10,
-                                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                                            logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: InKind7Ss10,
+                                                logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: InKind8Ss10,
+                                                    logoClassName: "w-16 md:w-20 xl:w-[125px]" }]
 
                 },
                 {
                     categoryName: 'Media Sponsors',
                     logoList: [{ logoImg: Media1Ss10,
-                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media2Ss10,
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media3Ss10,
-                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media4Ss10,
-                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media5Ss10,
-                                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                        logoClassName: "w-16 md:w-20 xl:w-[175px]" }, { logoImg: Media2Ss10,
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]" }, { logoImg: Media3Ss10,
+                                logoClassName: "w-16 md:w-20 xl:w-[175px]" }, { logoImg: Media4Ss10,
+                                    logoClassName: "w-16 md:w-20 xl:w-[175px]" }, { logoImg: Media5Ss10,
+                                        logoClassName: "w-16 md:w-20 xl:w-[175px]" }]
 
                 },
                 {
@@ -339,7 +339,7 @@ export const sponsorLogo = () => {
                                 logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic4Ss10,
                                     logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic5Ss10,
                                         logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic6Ss10,
-                                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                                            logoClassName: "w-16 md:w-20 xl:w-[175px]" }]
 
                 },
             ],
@@ -358,7 +358,7 @@ export const sponsorLogo = () => {
                     categoryName: 'In-kind Sponsors',
                     logoList: [{ logoImg: InKind1Ss9,
                         logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind2Ss9,
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind3Ss9,
+                            logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: InKind3Ss9,
                                 logoClassName: "w-16 md:w-20 xl:w-[150px]"}, { logoImg: InKind4Ss9,
                                     logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind5Ss9,
                                         logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: InKind6Ss9,
@@ -370,10 +370,10 @@ export const sponsorLogo = () => {
                 {
                     categoryName: 'Strategic Sponsors',
                     logoList: [{ logoImg: Strategic1Ss9,
-                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic2Ss9,
-                            logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic3Ss9,
-                                logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Strategic4Ss9,
-                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                        logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: Strategic2Ss9,
+                            logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: Strategic3Ss9,
+                                logoClassName: "w-16 md:w-20 xl:w-[125px]" }, { logoImg: Strategic4Ss9,
+                                    logoClassName: "w-16 md:w-20 xl:w-[125px]" }]
 
                 },
             ],
@@ -421,7 +421,7 @@ export const sponsorLogo = () => {
                 {
                     categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs7,
-                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                        logoClassName: "w-16 md:w-20 xl:w-[125px]" }]
 
                 },
                 {
@@ -489,7 +489,7 @@ export const sponsorLogo = () => {
                         logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media2Ss5,
                             logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media3Ss5,
                                 logoClassName: "w-16 md:w-20 xl:w-[150px]" }, { logoImg: Media4Ss5,
-                                    logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                                    logoClassName: "w-16 md:w-20 xl:w-[175px]" }]
 
                 },
             ],
@@ -501,7 +501,7 @@ export const sponsorLogo = () => {
                 {
                     categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs4,
-                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                        logoClassName: "w-16 md:w-20 xl:w-[175px]" }]
 
                 },
             ],
@@ -525,7 +525,7 @@ export const sponsorLogo = () => {
                 {
                     categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs2,
-                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                        logoClassName: "w-16 md:w-20 xl:w-[200px]" }]
 
                 },
             ],
@@ -537,7 +537,7 @@ export const sponsorLogo = () => {
                 {
                     categoryName: 'Exclusive Sponsor',
                     logoList: [{ logoImg: ExclusiveSs1,
-                        logoClassName: "w-16 md:w-20 xl:w-[150px]" }]
+                        logoClassName: "w-16 md:w-20 xl:w-[200px]" }]
 
                 },
             ],
