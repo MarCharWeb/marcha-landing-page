@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Bg from "../assets/bg.png"
 import ImageHolder from "../components/ImageHolder";
 import { useRef } from "react";
-import HeroText from '../assets/hero-text.png'
+import HeroText from '../assets/spark.png'
 import Footer from "../components/Footer";
 import Avabg from '../assets/Ava-background.png'
 import Aboutus1 from '../assets/aboutus1.png'
@@ -11,6 +11,7 @@ import Aboutus2 from '../assets/aboutus2.png'
 import Aboutus3 from '../assets/aboutus3.png'
 import Aboutus4 from '../assets/aboutus4.png'
 import newbg from '../assets/newbg.png';
+import LayerImage from '../assets/layer.png';
 
 
 const AboutUs = () => {
@@ -33,7 +34,13 @@ const AboutUs = () => {
 
                     <div>
                         <PageTitle className='pt-10' title="ABOUT US"></PageTitle>
-                        <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss11-slogan" className={'mx-auto xl:mt-10 w-56 h-56 lg:w-64 lg:h-64 xl:w-[350px] xl:h-[350px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 pt-2'}></ImageHolder>
+                        <ImageHolder 
+    ref={heroTextRef} 
+    priority={true} 
+    src={HeroText} 
+    alt="marketing-challengers-ss11-slogan" 
+    className='mx-auto xl:mt-10 w-72 h-72 lg:w-80 lg:h-80 xl:w-[400px] xl:h-[400px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 pt-2'
+></ImageHolder>
 
                         <div className='pl-4 space-y-0 lg:space-y-1'>
                             <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong -mt-28 text-center pt-10 sm:text-xm' style={{ zIndex: 2 }}>Vision</h4>

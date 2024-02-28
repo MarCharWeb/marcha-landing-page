@@ -4,6 +4,7 @@ import ImageHolder from '../../components/ImageHolder'
 import BlogCard from '../../components/BlogCard'
 import {PortableText} from '@portabletext/react'
 import Footer from "../../components/Footer";
+import newbg from '../../assets/newbg.png';
 
 
 const Post = ({data:{title, abstract, headerImage, facebookLink, body, relatedPosts}}) => {
@@ -29,7 +30,13 @@ const Post = ({data:{title, abstract, headerImage, facebookLink, body, relatedPo
     }
 
     return ( 
-        <main className='pt-28 container-media-padding'>
+        <main className='pt-28 container-media-padding bg-fixed'style={{
+            backgroundImage: `url(${newbg.src})`, // Check if .src is correctly providing the URL
+            backgroundSize: 'cover', // Ensure background size is set
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center center', // Adjust the position if needed
+            zIndex: 2,
+        }}>
           <section className='w-full mx-auto md:w-11/12 xl:w-10/12'>
              <h1 className='font-bold leading-[1.2em] text-headline-48 xl:text-display-64 mb-4 xl:mb-7'>{title}</h1>
              <h5 className='mb-4 xl:mb-8'>{abstract}</h5>

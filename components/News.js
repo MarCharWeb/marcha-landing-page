@@ -1,7 +1,4 @@
-import ImageHolder from "./ImageHolder";
 import IndexBlogCard from "./IndexBlogCard";
-import StarBg from "../assets/value-bg.png";
-import Link from 'next/link'
 import PageTitle from "../components/PageTitle";
 import Button from '../components/Button'
 import { useRouter } from 'next/router'
@@ -15,12 +12,7 @@ const News = ({featurePosts}) => {
         router.push('/news');
       }
 
-    return ( <section className="relative pt-48 md:pt-20 lg:pt-10 container-media-padding pt-20 container-media-padding bg-fixed" style={{
-        backgroundImage: `url(${newbg.src})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: '0% 0%',
-        zIndex: 2,
-    }}> 
+    return ( <section className="relative pt-48 md:pt-20 lg:pt-10 container-media-padding" >
         <div id="blog" className="flex items-center justify-center">
         <PageTitle title={'BLOG'}></PageTitle>
         </div>

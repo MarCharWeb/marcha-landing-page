@@ -1,12 +1,12 @@
 import ImageHolder from "../../components/ImageHolder";
 import PageTitle from "../../components/PageTitle";
-// import NewsBg from "../../assets/news-illustration.png";
 import { sanityClient } from '../../config/sanity';
 import BlogCard from "../../components/BlogCard";
 import Button from "../../components/Button";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Footer from "../../components/Footer";
+import newbg from '../../assets/newbg.png';
 
 
 const News = ({data}) => {
@@ -45,7 +45,13 @@ const News = ({data}) => {
         setHasMore(isMore);
     }, [showList, data.length]);
 
-    return ( <main className="relative z-[5] pt-28 xl:pt-32 container-media-padding">
+    return ( <main className="relative z-[5] pt-28 xl:pt-32 container-media-padding bg-fixed" style={{
+        backgroundImage: `url(${newbg.src})`, // Check if .src is correctly providing the URL
+        backgroundSize: 'cover', // Ensure background size is set
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center', // Adjust the position if needed
+        zIndex: 2,
+    }}>
             <Head>
                 <title>Marketing Challengers Season 12</title>
                 <link rel="icon" type="image/png" sizes='16x16' href="/favi.png"></link>

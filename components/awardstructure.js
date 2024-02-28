@@ -19,7 +19,7 @@ const Awardstructure = () => {
             <div style={{ backgroundColor: '#6739B1' }}  className='group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <PageTitle title={'CHAMPION'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">000,000,000</span>
+                    <span className="font-bold text-primary-500 text-[40px]">400,000,000</span>
                 </div>
                 <span style={{left: '100%', marginLeft: '-500px', marginRight: '-500px', backgroundColor: '#000000', opacity: '0.9',zIndex: '10' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
                     <ul className="space-y-1 list-disc px-10 pt-5 text-justify">
@@ -39,7 +39,7 @@ const Awardstructure = () => {
             <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <PageTitle title={'1ST RUNNER UP'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">000,000,000</span>
+                    <span className="font-bold text-primary-500 text-[40px]">300,000,000</span>
                 </div>
                 <span style={{left: '150%', marginLeft: '-500px', marginRight: '-500px', backgroundColor: '#000000', opacity: '0.9',zIndex: '10' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
                     <ul className="space-y-1 list-disc px-10 pt-5 text-justify justify-right">
@@ -57,7 +57,7 @@ const Awardstructure = () => {
             <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <PageTitle title={'2RD RUNNER UP'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">000,000,000</span>
+                    <span className="font-bold text-primary-500 text-[40px]">200,000,000</span>
                 </div>
                 <span style={{left: '50%', marginLeft: '-500px', marginRight: '-150px',backgroundColor: '#000000', opacity: '0.9',zIndex: '10' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
                     <ul className="space-y-1 list-disc px-10 pt-5 text-justify">
@@ -76,9 +76,9 @@ const Awardstructure = () => {
             <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <PageTitle title={'TOP 8'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">000,000,000</span>
+                    <span className="font-bold text-primary-500 text-[40px]">100,000,000</span>
                 </div>
-                <span style={{left: '150%', marginLeft: '-500px', marginRight: '-500px', backgroundColor: '#000000', opacity: '0.9',zIndex: '10' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
+                <span style={{left: '150%', marginLeft: '-500px', marginRight: '-500px', backgroundColor: '#000000', opacity: '0.9',zIndex: '50' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
                     <ul className="space-y-1 list-disc px-10 pt-5 text-justify">
                         <li><p>1 3-month membership card from Fonos audiobook/person</p></li>
                         <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/ person</p></li>
@@ -88,7 +88,7 @@ const Awardstructure = () => {
                 </span>
             </div>
 
-            <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+            {/* <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <PageTitle title={'TOP 30'} className="pb-4"></PageTitle>
                     <span className="font-bold text-primary-500 text-[40px]">000,000,000</span>
@@ -100,7 +100,7 @@ const Awardstructure = () => {
                         <li><p>1 dental care package worth 1.5 million from Singae Dental / person</p></li>
                     </ul>
                 </span>
-            </div>
+            </div> */}
             </div>
         </main>
     );

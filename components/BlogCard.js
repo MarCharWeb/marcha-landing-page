@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const BlogCard = ({ thumbnail, title, abstract, slug }) => {
   return (
-    <div className="bg-gradient-to-br from-[#310564]/[28%] py-5 flex flex-col lg:flex-row items-center gap-5 xl:gap-8 px-4 xl:px-12 md:py-8 lg:py-6 xl:py-10  rounded backdrop-filter to-white/[4%]  backdrop-blur-2xl ">
+    <div className="bg-gradient-to-br from-[#FFFFFF]/[50%] py-5 flex flex-col lg:flex-row items-center gap-5 xl:gap-8 px-4 xl:px-12 md:py-8 lg:py-6 xl:py-10  rounded backdrop-filter to-[#3d067d]/[50%]  backdrop-blur-2xl ">
       <Link href={`news/${slug}`}>
         <a className="w-1/3 h-full object-cover aspect-4/3">
           <ImageHolder src={urlFor(thumbnail).url()} alt={"marketing-challengers-season12-" + title} priority={true} layout='fill' className="w-full h-full object-cover" />

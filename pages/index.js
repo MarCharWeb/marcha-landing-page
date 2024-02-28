@@ -90,7 +90,7 @@ export default function Home({ data }) {
     <main className="" style={{
       backgroundImage: `url(${LayerImage.src}), url(${newbg.src})`,
       backgroundRepeat: 'no-repeat, no-repeat',
-      backgroundPosition: 'center -70px, 0% 0%',
+      backgroundPosition: '0% 0%, 0% 0%',
       backgroundSize: '100% auto, auto',  // Adjust as per your requirement
       backgroundAttachment: 'scroll, fixed',
     }}>
@@ -127,8 +127,9 @@ export default function Home({ data }) {
           //   zIndex: 2,}}
             >
             {/* <PageTitle type={2} title='MARKETING CHALLENGERS'></PageTitle> */}
-            <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss12-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 sm:pt-10'}></ImageHolder>          </div>
-          <PageTitle className='hidden lg:flex justify-center mb-6 pt-16' title='COUNTDOWN TO OPEN ROUND 1' />
+            {/* <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss12-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 sm:pt-10'}></ImageHolder>           */}
+          <PageTitle className='hidden lg:flex justify-center mb-6 pt-[800px]' title='GRAB YOUR SPARK NOW' />
+          </div>
           <div>
             <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong box-border w-2/3 h-[200px] border-8 mx-auto pt-8'>
               <Countdown targetDate={new Date('2024-04-04T20:00:00+07:00')} />
@@ -148,7 +149,7 @@ export default function Home({ data }) {
             </div>
           </div>
           <PageTitle className='hidden lg:flex justify-center mt-20' title='MARKETING CHALLENGERS' />
-          <p className='hidden lg:flex mx-auto p-8 font-bold text-headline-31 xl:w-3/4 pt-0 mt-6 sm:w-095% text-justify'>
+          <p className='hidden lg:flex mx-auto p-8 font-bold text-headline-31 xl:w-3/4 pt-0 mt-6 sm:w-095% text-center'>
             Marketing Challengers is a top 3 national competition for Integrated Marketing Communications plans, organized by the RMIT Vietnam Business Club - SGS. With an impressive track record over a decade with 11 seasons, Marketing Challengers takes immense pride in the journey of inspiring and nurturing a vibrant community of marketers across Vietnam.
           </p>
 
@@ -163,8 +164,8 @@ export default function Home({ data }) {
 
       {/* text-[30px] lg:text-headline-30 invisible hero-title 2xl:text-hero-60 xl:text-[60px] tracking-widest leading-10  lg:text-glow-strong  text-primary-500 */}
       <Timeline></Timeline>
-      <Awardstructure></Awardstructure>
-      <Sponsor></Sponsor>
+      <div className='pb-[400px]'><Awardstructure></Awardstructure></div>
+      <div><Sponsor></Sponsor></div>
 
 
       {/* <Award></Award> */}
