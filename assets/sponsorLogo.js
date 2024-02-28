@@ -1,3 +1,35 @@
+//Season 12 Logos Import
+import Diamond1Ss12 from './season12/diamond-1.png'
+import Diamond2Ss12 from './season12/diamond-2.png'
+import Diamond3Ss12 from './season12/diamond-3.png'
+
+import Gold1Ss12 from './season12/gold-1.png'
+import Gold2Ss12 from './season12/gold-2.png'
+import Gold3Ss12 from './season12/gold-3.png'
+
+import ExclusiveSs12 from './season12/exclusive.svg'
+
+import Media1Ss12 from './season12/media-1.png'
+import Media2Ss12 from './season12/media-2.png'
+import Media3Ss12 from './season12/media-3.png'
+import Media4Ss12 from './season12/media-4.png'
+import Media5Ss12 from './season12/media-5.png'
+import Media6Ss12 from './season12/media-6.png'
+import Media7Ss12 from './season12/media-7.png'
+import Media8Ss12 from './season12/media-8.png'
+
+import Executive1Ss12 from './season12/executive-1.png'
+import Executive2Ss12 from './season12/executive-2.png'
+import Executive3Ss12 from './season12/executive-3.png'
+import Executive4Ss12 from './season12/executive-4.png'
+import Executive5Ss12 from './season12/executive-5.png'
+import Executive6Ss12 from './season12/executive-6.png'
+
+import Silver1Ss12 from './season12/silver-1.jpg'
+import Silver2Ss12 from './season12/silver-2.png'
+
+import StreamingSs12 from './season12/streaming.png'
+
 //Season 11 Logos Import
 import DiamondSs11 from './season11/diamond.png'
 
@@ -136,6 +168,176 @@ import ExclusiveSs1 from './season1/exclusive.png'
 
 export const sponsorLogo = () => {
     return [
+        {
+            year: 'Sponsor 12',
+            sponsorLogos: [
+                {
+                    categoryName: 'Exclusive Sponsor',
+                    logoList: [
+                        {
+                            logoImg: ExclusiveSs12,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[225px]"
+                        }
+                    ]
+
+                }, 
+                {
+                    categoryName: 'Diamond Sponsor',
+                    logoList: [
+                        {
+                            logoImg: Diamond1Ss12,
+                            logoLink: 'https://fonos.vn/',
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        },
+                        {
+                            logoImg: Diamond2Ss12,
+                            logoLink: 'https://fonos.vn/',
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        },
+                        {
+                            logoImg: Diamond3Ss12,
+                            logoLink: 'https://fonos.vn/',
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        }
+                    ]
+
+                },
+                {
+                    categoryName: 'Executive Sponsors',
+                    logoList: [
+                        {
+                            logoImg: Executive1Ss12,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        },
+                        {
+                            logoImg: Executive2Ss12,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
+                        },
+                        {
+                            logoImg: Executive3Ss12,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        },
+                        {
+                            logoImg: Executive4Ss12,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[125px]"
+                        },
+                        {
+                            logoImg: Executive5Ss12,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        },
+                        {
+                            logoImg: Executive6Ss12,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[250px]"
+                        }
+                    ]
+
+                }, 
+                {
+                    categoryName: 'Gold Sponsors',
+                    logoList: [
+                        {
+                            logoImg: Gold1Ss12,
+                            logoLink: "https://ubl.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        },
+                        {
+                            logoImg: Gold2Ss12,
+                            logoLink: "https://ubl.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        },
+                        {
+                            logoImg: Gold3Ss12,
+                            logoLink: "https://ubl.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        }
+                    ]
+
+                },
+                {
+                    categoryName: 'Silver Sponsors',
+                    logoList: [
+                        {
+                            logoImg: Silver1Ss12,
+                            logoLink: "https://ubl.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[250px]"
+                        },
+                        {
+                            logoImg: Silver2Ss12,
+                            logoLink: "https://www.facebook.com/rmitstudentlifesgs",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        }
+                    ]
+
+                },
+                {
+                    categoryName: 'Streaming Sponsor',
+                    logoList: [
+                        {
+                            logoImg: StreamingSs12,
+                            logoLink: "https://www.facebook.com/preecostudio/",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        }
+                    ]
+
+                },
+                {
+                    categoryName: 'Media Sponsors',
+                    logoList: [
+                        {
+                            logoImg: Media1Ss12,
+                            logoLink: "https://adsangtao.com/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                        },
+                        {
+                            logoImg: Media2Ss12,
+                            logoLink: "https://www.brandsvietnam.com/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                        },
+                        {
+                            logoImg: Media3Ss12,
+                            logoLink: "https://advertisingvietnam.com/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                        },
+                        {
+                            logoImg: Media4Ss12,
+                            logoLink: "https://aimacademy.vn/vi",
+                            logoClassName: "w-16 md:w-20 xl:w-[125px]"
+                        },
+                        {
+                            logoImg: Media5Ss12,
+                            logoLink: "https://www.yan.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        },
+                        {
+                            logoImg: Media6Ss12,
+                            logoLink: "https://marketingworks.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
+                        },
+                        {
+                            logoImg: Media7Ss12,
+                            logoLink: "https://marketingworks.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
+                        },
+                        {
+                            logoImg: Media8Ss12,
+                            logoLink: "https://marketingworks.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
+                        }
+                    ]
+
+                },
+
+
+            ],
+            isActive: true
+        },
         {
             year: 'Sponsor 11',
             sponsorLogos: [
@@ -297,7 +499,7 @@ export const sponsorLogo = () => {
 
 
             ],
-            isActive: true
+            isActive: false
         },
         {
             year: 'Sponsor 10',
