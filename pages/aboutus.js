@@ -10,6 +10,7 @@ import Aboutus1 from '../assets/aboutus1.png'
 import Aboutus2 from '../assets/aboutus2.png'
 import Aboutus3 from '../assets/aboutus3.png'
 import Aboutus4 from '../assets/aboutus4.png'
+import newbg from '../assets/newbg.png';
 
 
 const AboutUs = () => {
@@ -18,15 +19,12 @@ const AboutUs = () => {
     const heroTextRef = useRef(null);
 
     return (
-        <main className="space-y-1" style={{
-                backgroundImage: `url(${Avabg.src})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-                backgroundPosition: '0% 0%',
-                zIndex: 2,
-            }}
-
-
+        <main className="space-y-1 -mt-8 bg-fixed" style={{
+            backgroundImage: `url(${newbg.src})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '0% 0%',
+            zIndex: 2,
+        }}
             >
             <section id='about-marketing-challengers' className='pt-20' >
 
