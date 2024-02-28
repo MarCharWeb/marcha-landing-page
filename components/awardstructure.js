@@ -62,7 +62,7 @@ const Awardstructure = () => {
                 <span style={{left: '50%', marginLeft: '-500px', marginRight: '-150px',backgroundColor: '#000000', opacity: '0.9',zIndex: '10' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
                     <ul className="space-y-1 list-disc px-10 pt-5 text-justify">
                         <li><p>Internship opportunitiy from MET EV/ person</p></li>
-                        <li><p>1 sampling box including lotion full size 8oz + cream full size 120z from Cerave/person (only for 1 team) --> consider passing it on to champion of cerave</p></li>
+                        <li><p>1 sampling box including lotion full size 8oz + cream full size 120z from Cerave/person (only for 1 team) --&gt consider passing it on to champion of cerave</p></li>
                         <li><p>1 3-month membership card from Fonos audiobook/person</p></li>
                         <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/person</p></li>
                         <li><p>Any one full course in the list of 13 courses from Brands Vietnam/person</p></li>
