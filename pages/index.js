@@ -4,7 +4,7 @@ import ImageHolder from '../components/ImageHolder'
 import PageTitle from '../components/PageTitle'
 import SectionTitle from '../components/SectionTitle'
 import AboutUsImg from '../assets/about-us.jpg'
-// import Timeline from '../components/Timeline'
+import Timeline from '../components/Timeline'
 import Award from '../components/Award'
 import Sponsor from '../components/Sponsor'
 import CallToAction from '../components/CallToAction'
@@ -162,7 +162,7 @@ export default function Home({ data }) {
       {/* <ValueProps></ValueProps> */}
 
       {/* text-[30px] lg:text-headline-30 invisible hero-title 2xl:text-hero-60 xl:text-[60px] tracking-widest leading-10  lg:text-glow-strong  text-primary-500 */}
-      {/* <Timeline></Timeline> */}
+      <Timeline></Timeline>
       <Awardstructure></Awardstructure>
       <Sponsor></Sponsor>
 
