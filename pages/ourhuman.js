@@ -9,14 +9,13 @@ import Operationsimg from '../assets/TeamImage/Operations-Team.jpg';
 import Programimg from '../assets/TeamImage/Program-Team.jpg';
 import Sponsorimg from '../assets/TeamImage/Team-Sponsor.jpg';
 
-import Avabg from '../assets/Ava-background.png';
+import newbg from '../assets/newbg.png';
 
 const Ourhuman = () => {
   return (
-    <main className="space-y-1 pb-10 pt-20" style={{
-        backgroundImage: `url(${Avabg.src})`,
+    <main className="space-y-1 pb-10 pt-20 bg-fixed" style={{
+        backgroundImage: `url(${newbg.src})`,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
         backgroundPosition: '0% 0%',
         zIndex: 2,
     }}>
