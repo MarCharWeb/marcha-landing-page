@@ -21,7 +21,7 @@ const PageTitle = ({ className = '', type, title, subTitle = 'season 12' }) => {
     return (
         <div ref={pageTitleRef} className={combinedClassNames}>
             {type === 2 ? <h3 ref={subTitleRef} className="tracking-[0.07em] subtitle uppercase xl:text-headline-26">{subTitle}</h3> : null}
-            <h1 ref={titleRef} className="text-[35px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[60px] tracking-widest leading-10 text-glow-strong ">{title}</h1>
+            <h1 ref={titleRef} className="text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong ">{title}</h1>
         </div>
     );
 }
