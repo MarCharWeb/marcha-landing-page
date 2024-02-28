@@ -6,6 +6,7 @@ import Birdbg from "../assets/bird-bg.png"
 import SponsorTag from "../components/SponsorTag";
 import Footer from "../components/Footer";
 import Avabg from '../assets/Ava-background.png'
+import newbg from '../assets/newbg.png';
 
 
 const Sponsor = () => {
@@ -22,10 +23,9 @@ const Sponsor = () => {
 
         setSponsorData(updateSponsorData)
     }
-    return (<section className="py-10 relative z-[1] xl:py-16" style={{
-        backgroundImage: `url(${Avabg.src})`,
+    return (<section className="py-10 relative z-[1] xl:py-16 pt-20 bg-fixed" style={{
+        backgroundImage: `url(${newbg.src})`,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
         backgroundPosition: '0% 0%',
         zIndex: 2,
     }}>
