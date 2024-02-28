@@ -5,6 +5,7 @@ import Link from 'next/link'
 import PageTitle from "../components/PageTitle";
 import Button from '../components/Button'
 import { useRouter } from 'next/router'
+import newbg from "../assets/newbg.png";
 
 const News = ({featurePosts}) => {
 
@@ -14,7 +15,12 @@ const News = ({featurePosts}) => {
         router.push('/news');
       }
 
-    return ( <section className="relative pt-48 md:pt-20 lg:pt-10 container-media-padding" > 
+    return ( <section className="relative pt-48 md:pt-20 lg:pt-10 container-media-padding pt-20 container-media-padding bg-fixed" style={{
+        backgroundImage: `url(${newbg.src})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: '0% 0%',
+        zIndex: 2,
+    }}> 
         <div id="blog" className="flex items-center justify-center">
         <PageTitle title={'BLOG'}></PageTitle>
         </div>
