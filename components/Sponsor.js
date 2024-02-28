@@ -12,7 +12,7 @@ const Sponsor = () => {
     const handleClick = () => {
         router.push('/sponsor');
     };
-    
+
     const [sponsorData, setSponsorData] = useState(sponsorLogo());
     const handleTagClick = (sponsorYear) => {
         let updateSponsorData = sponsorData.map(sps => {
@@ -25,8 +25,8 @@ const Sponsor = () => {
 
         setSponsorData(updateSponsorData)
     }
-    return (<section className="py-10 xl:mt-24 relative z-[1] xl:py-16 " id="sponsorship">
-        <PageTitle className="pt-[600px]" title={'SPONSORSHIP'}></PageTitle>
+    return (<section className="py-10 xl:mt-24 relative z-[1] xl:py-16" id="sponsorship">
+        <PageTitle title={'SPONSORSHIP'}></PageTitle>
         {/* Sponsor Tag List */}
 
         {/* <div className="flex flex-wrap justify-center w-11/12 gap-4 pt-4 pb-8 mx-auto xl:w-10/12 xl:pt-6 xl:gap-6 2xl:w-8/12"
