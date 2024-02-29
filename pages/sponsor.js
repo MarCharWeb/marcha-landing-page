@@ -33,7 +33,7 @@ const Sponsor = () => {
         <PageTitle className="mt-10" title={'SPONSORSHIP'}></PageTitle>
         {/* Sponsor Tag List */}
 
-        <div className="flex flex-wrap justify-center w-11/12 gap-4 pt-4 pb-8 mx-auto xl:w-10/12 xl:pt-6 xl:gap-6 2xl:w-8/12"
+        <div className="flex flex-wrap justify-center w-11/12 gap-4 pt-4 mx-auto xl:w-10/12 xl:pt-6 xl:gap-6 2xl:w-8/12"
             style={{
                 backgroundImage: `url(${Birdbg.src})`,
                 backgroundRepeat: 'no-repeat',
