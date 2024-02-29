@@ -63,13 +63,16 @@ const Countdown = ({ targetDate }) => {
   return (
     <div className="flex justify-center space-x-4">
       {Object.entries(timeLeft).map(([unit, value]) => (
-        <div key={unit} className="text-center">
-          <div className="text-[100px] font-black">{formatValue(value)}</div>
-          <div className="text-sm">{unit}</div>
+        <div key={unit} className="text-center" style={{ margin: '20px' }}>
+          <div style={{ fontFamily: "'Brandon Grotesque', sans-serif", fontSize: '150px', fontWeight: 'bold' }}>
+            {formatValue(value)}
+          </div>
+          <div className="text-sm font-bold mt-8">{unit}</div>
         </div>
       ))}
     </div>
   );
+  
 };
 
 
@@ -131,18 +134,18 @@ export default function Home({ data }) {
           <PageTitle className='hidden lg:flex justify-center mb-6 pt-[1200px]' title='GRAB YOUR SPARK NOW' />
           </div>
           <div>
-            <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong box-border w-2/3 h-[200px] border-8 mx-auto pt-8'>
+            <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong box-border w-3/4 h-[300px] border-8 mx-auto pt-8'>
               <Countdown targetDate={new Date('2024-04-04T20:00:00+07:00')} />
             </div>
-            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 mt-8'>
+            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 mt-12'>
               <Button ref={heroBtn} onClick={() => {
                 // route.push('/aboutus')
               }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'REGISTER NOW'} size='large'></Button>
             </div>
             <div className='pl-4 space-y-0 lg:space-y-1'>
-              <p className='text-center text-headline-31 font-bold text-glow-strong'>More information:</p>
+              <p className='text-center text-headline-31 font-bold text-glow-strong mt-2'>More information:</p>
             </div>
-            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 mt-4'>
+            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 mt-6'>
               <Button ref={heroBtn} onClick={() => {
                 // route.push('/aboutus')
               }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'Registration for Opening Ceremony'} size='large'></Button>
