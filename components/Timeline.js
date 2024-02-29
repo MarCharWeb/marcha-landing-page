@@ -23,13 +23,13 @@ const Timeline = () => {
         }
     }, [isVisible]);
 
-    return (<div className="flex justify-center items-center pt-[2200px]">
+    return (<div className="flex justify-center items-center pt-[2400px]">
         <div className="absolute left-1/2 top-0 bottom-0 border-r border-gray-500" style={{
             position: 'absolute',
             left: '50%',
             width: '8px', // Width of the line
             background: 'linear-gradient(135deg, #ffde59, #ff914d)', // Adjust the color and thickness of the line here
-            top: '2100px',
+            top: '2350px',
             height: `calc(1450px)`,
             transform: 'translateX(-50%)'
         }}>
