@@ -33,7 +33,7 @@ import Executive7Ss12 from './season12/executive-7.png'
 
 import Silver1Ss12 from './season12/silver-1.jpg'
 import Silver2Ss12 from './season12/silver-2.png'
-import Silver3Ss12 from './season12/silver-3.png'
+// import Silver3Ss12 from './season12/silver-3.png'
 
 import StreamingSs12 from './season12/streaming.png'
 
@@ -288,12 +288,12 @@ export const sponsorLogo = () => {
                             logoImg: Silver2Ss12,
                             logoLink: "https://www.facebook.com/rmitstudentlifesgs",
                             logoClassName: "w-16 md:w-20 xl:w-[200px]"
-                        },
-                        {
-                            logoImg: Silver3Ss12,
-                            logoLink: "https://www.facebook.com/rmitstudentlifesgs",
-                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
                         }
+                        // {
+                        //     logoImg: Silver3Ss12,
+                        //     logoLink: "https://www.facebook.com/rmitstudentlifesgs",
+                        //     logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        // }
                     ]
 
                 },
