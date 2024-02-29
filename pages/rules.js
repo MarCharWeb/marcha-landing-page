@@ -120,7 +120,9 @@ const Rules = () => {
 
             </div>
         </section>
+        <div className="-mx-16">
         <Footer></Footer>
+        </div>
     </main>
     );
 }
