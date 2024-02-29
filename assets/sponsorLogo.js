@@ -33,7 +33,7 @@ import Executive7Ss12 from './season12/executive-7.png'
 
 import Silver1Ss12 from './season12/silver-1.jpg'
 import Silver2Ss12 from './season12/silver-2.png'
-// import Silver3Ss12 from './season12/silver-3.png'
+import Silver3Ss12 from './season12/silver-3.png'
 
 import StreamingSs12 from './season12/streaming.png'
 
@@ -218,37 +218,39 @@ export const sponsorLogo = () => {
                         {
                             logoImg: Executive1Ss12,
                             logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
                         },
                         {
                             logoImg: Executive2Ss12,
                             logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[125px]"
                         },
                         {
-                            logoImg: Executive3Ss12,
+                            logoImg: Executive6Ss12,
                             logoLink: "https://wisdom.com.vn/",
                             logoClassName: "w-16 md:w-20 xl:w-[200px]"
                         },
                         {
                             logoImg: Executive4Ss12,
                             logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[125px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[100px]"
                         },
                         {
                             logoImg: Executive5Ss12,
                             logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
                         },
-                        {
-                            logoImg: Executive6Ss12,
-                            logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[250px]"
-                        },
+
                         {
                             logoImg: Executive7Ss12,
                             logoLink: "https://wisdom.com.vn/",
-                            logoClassName: "w-16 md:w-20 xl:w-[250px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[175px]"
+                        },
+
+                        {
+                            logoImg: Executive3Ss12,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         }
                     ]
 
@@ -287,11 +289,11 @@ export const sponsorLogo = () => {
                             logoLink: "https://www.facebook.com/rmitstudentlifesgs",
                             logoClassName: "w-16 md:w-20 xl:w-[200px]"
                         },
-                        // {
-                        //     logoImg: Silver3Ss12,
-                        //     logoLink: "https://www.facebook.com/rmitstudentlifesgs",
-                        //     logoClassName: "w-16 md:w-20 xl:w-[200px]"
-                        // }
+                        {
+                            logoImg: Silver3Ss12,
+                            logoLink: "https://www.facebook.com/rmitstudentlifesgs",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        }
                     ]
 
                 },
