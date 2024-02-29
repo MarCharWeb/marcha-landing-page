@@ -23,7 +23,7 @@ const Sponsor = () => {
 
         setSponsorData(updateSponsorData)
     }
-    return (<section className="pt-10 relative z-[1] xl:py-16 pt-20 bg-fixed" style={{
+    return (<section className="pt-10 relative z-[1] xl:pt-16 pt-20 bg-fixed" style={{
         backgroundImage: `url(${newbg.src})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',  // Adjust as per your requirement
