@@ -36,7 +36,7 @@ const Countdown = ({ targetDate }) => {
 
     if (difference > 0) {
       timeLeft = {
-        Dates: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         Hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
         Minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
         Seconds: Math.floor((difference % (1000 * 60)) / 1000),
