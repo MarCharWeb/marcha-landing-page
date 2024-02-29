@@ -84,7 +84,9 @@ const News = ({data}) => {
                      <span>You have seen all the posts</span>
                 </p>
             </div>
-            <Footer></Footer>
+            <div className="-mx-16">
+        <Footer></Footer>
+        </div>
         </main>
      );
 }
