@@ -128,7 +128,7 @@ export default function Home({ data }) {
             >
             {/* <PageTitle type={2} title='MARKETING CHALLENGERS'></PageTitle> */}
             {/* <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss12-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 sm:pt-10'}></ImageHolder>           */}
-          <PageTitle className='hidden lg:flex justify-center mb-6 pt-[900px]' title='GRAB YOUR SPARK NOW' />
+          <PageTitle className='hidden lg:flex justify-center mb-6 pt-[1200px]' title='GRAB YOUR SPARK NOW' />
           </div>
           <div>
             <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong box-border w-2/3 h-[200px] border-8 mx-auto pt-8'>
