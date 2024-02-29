@@ -10,7 +10,7 @@ const Navigation = () => {
     const navRef = useRef();
     const [isScroll, setIsScroll] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
+
     const handleHomeAndCloseMenu = () => {
         handleHomeClick();
         closeMenu();
@@ -52,30 +52,34 @@ const Navigation = () => {
             </li>
             <li className={'px-4 py-2 rounded '}>
                 <Link href={'/aboutus'}>
-                    <a className={router.asPath == '/aboutus' ? 'active-link' : ''}>ABOUT US</a>
+                    <a className={`${router.asPath == '/aboutus' ? 'active-link' : ''} font-bold`}>ABOUT US</a>
                 </Link>
+
             </li>
             {/* <li className={'px-4 py-2 rounded '}>
                 <Link href={'/#hall-of-fame'}><a className={router.asPath == '/#hall-of-fame' ? 'active-link': ''}>HALL OF FAME</a></Link>
             </li> */}
             <li className={'px-4 py-2 rounded '}>
-            <Link href={'/sponsor'}>
-                    <a className={router.asPath == '/sponsor' ? 'active-link' : ''}>SPONSORSHIP</a>
+                <Link href={'/sponsor'}>
+                    <a className={`${router.asPath == '/sponsor' ? 'active-link' : ''} font-bold`}>SPONSORSHIP</a>
                 </Link>
             </li>
             <li className={'px-4 py-2 rounded '}>
                 <Link href={'/news'}>
-                    <a className={router.asPath == '/news' ? 'active-link' : ''}>BLOG</a>
-                </Link>            
-                </li>
+                    <a className={`${router.asPath == '/news' ? 'active-link' : ''} font-bold`}>BLOG</a>
+                </Link>
+            </li>
             <li className={'px-4 py-2 rounded '}>
-                <Link href={'/ourhuman'}><a className={router.asPath == '/ourhuman' ? 'active-link' : ''}>OUR HUMAN</a></Link>
+                <Link href={'/ourhuman'}>
+                    <a className={`${router.asPath == '/ourhuman' ? 'active-link' : ''} font-bold`}>OUR HUMAN</a>
+                </Link>
             </li>
             <li className='px-4 py-2 rounded'>
                 <Link href={'/rules'}>
-                    <a className={router.asPath == '/rules' ? 'active-link' : ''}>RULES &#38; REGULATIONS</a>
+                    <a className={`${router.asPath == '/rules' ? 'active-link' : ''} font-bold`}>RULES &#38; REGULATIONS</a>
                 </Link>
             </li>
+
             {/* <li className={'px-4 py-2 rounded ' }>
                 <Link  href={'/news'}><a className={router.asPath == '/news' || router.pathname.startsWith("/news") ? 'active-link': ''}>News</a></Link>
             </li> */}
