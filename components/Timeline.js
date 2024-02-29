@@ -49,7 +49,7 @@ const Timeline = () => {
                         <tbody>
                             <tr className="bg-gray-100 w-1/2 h-[200px]">
                                 <td className="png text-gray-600 flex flex-row">
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] pl-10">
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] ml-2">
                                         <p>72H RESEARCH AND IDEATION</p>
                                         <div className="group self-start relative">
                                             <Button
@@ -60,7 +60,7 @@ const Timeline = () => {
                                                 text={'Details'}
                                                 size='large'
                                             />
-                                            <span className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5" style={{width: '525px', left: '100%', top: '0', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50' , fontFamily: 'Brandon Grotesque'}}>
+                                            <span className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5" style={{ width: '525px', left: '100%', top: '0', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }}>
                                                 <ul className="space-y-1 list-disc text-left">
                                                     <li><span className="font-black text-[18px] text-glow-strong">Description:</span> <span className="font-light text-[18px]">In 72 hours, the contestants &apos; team of 3 members must come up with a general IMC Plan that brightens the marketing challenge addressed in the client brief provided by the company sponsoring this round.</span></li>
                                                     <li><span className="font-black text-[18px] text-glow-strong">Duration:</span> <span className="font-light text-[18px]">8:00 pm 04/04/2024 - 8:00 pm 07/04/2024 (3 days)</span></li>
@@ -80,11 +80,11 @@ const Timeline = () => {
                             </tr>
                             <tr className="w-1/2 h-[200px]">
                                 <td className="png px-4 py-2 text-gray-600"></td>
-                                <td className="png text-gray-600 flex flex-row pr-20 ">
-                                    <div>
+                                <td className="png text-gray-600 flex flex-row ">
+                                    <div style={{ flex: '1' }}>
                                         <Image src={Round21} alt="description" width={180} height={320} />
                                     </div>
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px]">
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] mr-2" style={{flex: '1'}}>
                                         <p>DEPLOYMENT PLAN</p>
                                         <div className="group self-end relative">
                                             <Button
@@ -103,14 +103,13 @@ const Timeline = () => {
                                                     <li><span className="font-black text-[18px] text-glow-strong">Attendance:</span> <span className="font-light text-[18px]">Top 30 teams</span></li>
                                                 </ul>
                                             </span>
-
                                         </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr className="bg-gray-100 w-1/2 h-[200px]">
                                 <td className="png text-gray-600 flex flex-row ">
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] pl-10">
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] ml-2">
                                         <p>SHOWCASE & PRIVATE PITCHING</p>
                                         <div className="group self-start relative">
                                             <Button
@@ -121,7 +120,7 @@ const Timeline = () => {
                                                 text={'Details'}
                                                 size='large'
                                             />
-                                            <span className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 w-96" style={{width: '650px', left: '100%', top: '0', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }}>
+                                            <span className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 w-96" style={{ width: '650px', left: '100%', top: '0', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }}>
                                                 <ul className="space-y-1 list-disc text-left">
                                                     <li>
                                                         <span className="font-black text-[18px] text-glow-strong">Description:</span> <span className="font-light text-[18px]">
@@ -146,12 +145,12 @@ const Timeline = () => {
                             </tr>
                             <tr className="w-1/2 h-[200px]">
                                 <td className="png px-4 py-2 text-gray-600"></td>
-                                <td className="png text-gray-600 flex flex-row pr-52 ">
-                                    <div>
-                                        <Image src={Round3} alt="description" width={180} height={320} />
+                                <td className="png text-gray-600 flex flex-row ">
+                                    <div style={{ flex: '1' }}>
+                                    <Image src={Round3} alt="description" width={180} height={320} />
                                     </div>
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px]">
-                                        <p>GRAND FINALE</p>
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] mr-2" style={{flex: '1'}}>
+                                        <p className='ml-16'>GRAND FINALE</p>
                                         <div className="group self-end relative">
                                             <Button
                                                 onClick={handleClick}
@@ -161,7 +160,7 @@ const Timeline = () => {
                                                 text={'Details'}
                                                 size='large'
                                             />
-                                            <span className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 w-96" style={{ right: '100%', top: '0', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque'}}>
+                                            <span className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 w-96" style={{ right: '100%', top: '0', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }}>
                                                 <ul className="space-y-1 list-disc text-left">
                                                     <li><span className="font-black text-[18px] text-glow-strong">Description:</span> <span className="font-light text-[18px]">Top 30 will continue to develop an IMC plan using different marketing tools to communicate the brand message to the target audience. The case will be provided by the company sponsoring it. </span></li>
                                                     <li><span className="font-black text-[18px] text-glow-strong">Duration:</span> <span className="font-light text-[18px]">8:00 pm 13/04/2024 - 8:00 pm 19/04/2024 (5 days)</span></li>
