@@ -16,13 +16,16 @@ const Awardstructure = () => {
                 <PageTitle title={'AWARD STRUCTURE'}></PageTitle>
                 <ImageHolder src={Trophy} alt='marketing-challengers-season11-value' className={'w-[200px] h-[192px] xl:w-[277px] xl:h-[267px]'} ></ImageHolder>
             </div>
-            <div style={{ backgroundColor: '#6739B1' }}  className='group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+            <div className='bg-transparent group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <PageTitle title={'CHAMPION'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">400,000,000</span>
+                    <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">400,000,000 VND</span>
                 </div>
-                <span style={{left: '100%', marginLeft: '-500px', marginRight: '-500px', backgroundColor: '#000000', opacity: '0.9',zIndex: '10' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
-                    <ul className="space-y-1 list-disc px-10 pt-5 text-justify">
+                <span style={{ width: '625px', left: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5">
+                    <div className="w-full flex justify-center">
+                        <span className="font-black text-[18px] text-glow-strong">CHAMPION</span>
+                    </div>
+                    <ul className="list-disc text-justify font-light text-[18px]">
                         <li><p>1 Electric car + Internship opportunity from MET EV/person</p></li>
                         <li><p>1 sampling box including lotion full size 8oz x2 + cream full size 120z x2 from Cerave/person</p></li>
                         <li><p>1 3-month membership card from Fonos audiobook/person</p></li>
@@ -35,66 +38,78 @@ const Awardstructure = () => {
                 </span>
             </div>
 
-<div className="flex justify-between pt-8">
-            <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
-                <div className="text-center">
-                    <PageTitle title={'1ST RUNNER UP'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">300,000,000</span>
+            <div className="flex justify-between pt-8">
+                <div className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                    <div className="text-center">
+                        <PageTitle title={'1ST RUNNER UP'} className="pb-4"></PageTitle>
+                        <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">300,000,000 VND</span>
+                    </div>
+                    <span style={{ width: '625px', left: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5">
+                        <div className="w-full flex justify-center">
+                            <span className="font-black text-[18px] text-glow-strong">1ST RUNNER UP</span>
+                        </div>
+                        <ul className="list-disc text-justify font-light text-[18px]">
+                            <li><p>Internship opportunitiy from MET EV/ person</p></li>
+                            <li><p>1 sampling box including lotion full size 8oz + cream full size 120z from Cerave/person</p></li>
+                            <li><p>1 3-month membership card from Fonos audiobook/person</p></li>
+                            <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/person</p></li>
+                            <li><p>Any one full course in the list of 13 courses from Brands Vietnam/person</p></li>
+                            <li><p>1 dental care package worth 1.5 million from Singae Dental/person</p></li>
+                            <li><p>Offer shsortcut to the interview round at the Marketing Trainee position at MVillage</p></li>
+                        </ul>
+                    </span>
                 </div>
-                <span style={{left: '150%', marginLeft: '-500px', marginRight: '-500px', backgroundColor: '#000000', opacity: '0.9',zIndex: '10' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
-                    <ul className="space-y-1 list-disc px-10 pt-5 text-justify justify-right">
-                        <li><p>Internship opportunitiy from MET EV/ person</p></li>
-                        <li><p>1 sampling box including lotion full size 8oz + cream full size 120z from Cerave/person</p></li>
-                        <li><p>1 3-month membership card from Fonos audiobook/person</p></li>
-                        <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/person</p></li>
-                        <li><p>Any one full course in the list of 13 courses from Brands Vietnam/person</p></li>
-                        <li><p>1 dental care package worth 1.5 million from Singae Dental/person</p></li>
-                        <li><p>Offer shsortcut to the interview round at the Marketing Trainee position at MVillage</p></li>
-                    </ul>
-                </span>
-            </div>
 
-            <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
-                <div className="text-center">
-                    <PageTitle title={'2RD RUNNER UP'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">200,000,000</span>
+                <div className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                    <div className="text-center">
+                        <PageTitle title={'2RD RUNNER UP'} className="pb-4"></PageTitle>
+                        <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">200,000,000 VND</span>
+                    </div>
+                    <span style={{ width: '625px', right: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5">
+                        <div className="w-full flex justify-center">
+                            <span className="font-black text-[18px] text-glow-strong">2RD RUNNER UP</span>
+                        </div>
+                        <ul className="list-disc text-justify font-light text-[18px]">
+                            <li><p>Internship opportunitiy from MET EV/ person</p></li>
+                            <li><p>1 sampling box including lotion full size 8oz + cream full size 120z from Cerave/person (only for 1 team) --&gt consider passing it on to champion of cerave</p></li>
+                            <li><p>1 3-month membership card from Fonos audiobook/person</p></li>
+                            <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/person</p></li>
+                            <li><p>Any one full course in the list of 13 courses from Brands Vietnam/person</p></li>
+                            <li><p>1 dental care package worth 1.5 million from Singae Dental/person</p></li>
+                            <li><p>Offer shsortcut to the interview round at the Marketing Trainee position at MVillage</p></li>
+                        </ul>
+                    </span>
                 </div>
-                <span style={{left: '50%', marginLeft: '-500px', marginRight: '-150px',backgroundColor: '#000000', opacity: '0.9',zIndex: '10' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
-                    <ul className="space-y-1 list-disc px-10 pt-5 text-justify">
-                        <li><p>Internship opportunitiy from MET EV/ person</p></li>
-                        <li><p>1 sampling box including lotion full size 8oz + cream full size 120z from Cerave/person (only for 1 team) --&gt consider passing it on to champion of cerave</p></li>
-                        <li><p>1 3-month membership card from Fonos audiobook/person</p></li>
-                        <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/person</p></li>
-                        <li><p>Any one full course in the list of 13 courses from Brands Vietnam/person</p></li>
-                        <li><p>1 dental care package worth 1.5 million from Singae Dental/person</p></li>
-                        <li><p>Offer shsortcut to the interview round at the Marketing Trainee position at MVillage</p></li>
-                    </ul>
-                </span>
-            </div>
             </div>
             <div className="flex justify-between pt-8">
-            <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
-                <div className="text-center">
-                    <PageTitle title={'TOP 8'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">100,000,000</span>
+                <div className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                    <div className="text-center">
+                        <PageTitle title={'TOP 8'} className="pb-4"></PageTitle>
+                        <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">100,000,000 VND</span>
+                    </div>
+                    <span style={{ width: '625px', left: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5">
+                        <div className="w-full flex justify-center">
+                            <span className="font-black text-[18px] text-glow-strong">TOP 8</span>
+                        </div>
+                        <ul className="list-disc text-justify font-light text-[18px]">
+                            <li><p>1 3-month membership card from Fonos audiobook/person</p></li>
+                            <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/ person</p></li>
+                            <li><p>1 dental care package worth 1.5 million from Singae Dental/person</p></li>
+                            <li><p>Offer shsortcut to the interview round at the Marketing Trainee position at MVillage</p></li>
+                        </ul>
+                    </span>
                 </div>
-                <span style={{left: '150%', marginLeft: '-500px', marginRight: '-500px', backgroundColor: '#000000', opacity: '0.9',zIndex: '50' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
-                    <ul className="space-y-1 list-disc px-10 pt-5 text-justify">
-                        <li><p>1 3-month membership card from Fonos audiobook/person</p></li>
-                        <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/ person</p></li>
-                        <li><p>1 dental care package worth 1.5 million from Singae Dental/person</p></li>
-                        <li><p>Offer shsortcut to the interview round at the Marketing Trainee position at MVillage</p></li>
-                    </ul>
-                </span>
-            </div>
 
-            {/* <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                {/* <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <PageTitle title={'TOP 30'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">000,000,000</span>
+                    <span className="font-bold text-primary-500 text-[40px]">000,000,000 VND</span>
                 </div>
-                <span style={{left: '50%', marginLeft: '-500px', marginRight: '-500px', backgroundColor: '#000000', opacity: '0.9',zIndex: '10' }}  className="absolute hidden group-hover:block border-2 border-yellow-500 rounded-md text-[20px]">
-                    <ul className="space-y-1 list-disc px-10 pt-5 text-justify">
+                    <span style={{ width: '625px', right: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5">
+                        <div className="w-full flex justify-center">
+                            <span className="font-black text-[18px] text-glow-strong">TOP 30</span>
+                        </div>
+                        <ul className="list-disc text-justify font-light text-[18px]">
                         <li><p>1 cerave lotion full size 8oz/person (10 teams only)</p></li>
                         <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/ person</p></li>
                         <li><p>1 dental care package worth 1.5 million from Singae Dental / person</p></li>
