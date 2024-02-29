@@ -13,7 +13,7 @@ import newbg from '../assets/newbg.png';
 
 const Ourhuman = () => {
   return (
-    <main className="space-y-1 pb-10 pt-20 bg-fixed" style={{
+    <main className="space-y-1 pt-20 bg-fixed" style={{
         backgroundImage: `url(${newbg.src})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',  // Adjust as per your requirement
