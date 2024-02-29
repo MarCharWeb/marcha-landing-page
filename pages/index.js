@@ -91,7 +91,7 @@ export default function Home({ data }) {
       backgroundImage: `url(${LayerImage.src}), url(${newbg.src})`,
       backgroundRepeat: 'no-repeat, no-repeat',
       backgroundPosition: '0% 0%, 0% 0%',
-      backgroundSize: '100% auto, auto',  // Adjust as per your requirement
+      backgroundSize: '100% auto, cover',  // Adjust as per your requirement
       backgroundAttachment: 'scroll, fixed',
     }}>
       <div className="w-full">
