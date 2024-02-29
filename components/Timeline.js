@@ -62,7 +62,7 @@ const Timeline = () => {
                                             />
                                             <span className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5" style={{width: '525px', left: '100%', top: '0', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50' , fontFamily: 'Brandon Grotesque'}}>
                                                 <ul className="space-y-1 list-disc text-left">
-                                                    <li><span className="font-black text-[18px] text-glow-strong">Description:</span> <span className="font-light text-[18px]">In 72 hours, the contestants' team of 3 members must come up with a general IMC Plan that brightens the marketing challenge addressed in the client brief provided by the company sponsoring this round.</span></li>
+                                                    <li><span className="font-black text-[18px] text-glow-strong">Description:</span> <span className="font-light text-[18px]">In 72 hours, the contestants &apos; team of 3 members must come up with a general IMC Plan that brightens the marketing challenge addressed in the client brief provided by the company sponsoring this round.</span></li>
                                                     <li><span className="font-black text-[18px] text-glow-strong">Duration:</span> <span className="font-light text-[18px]">8:00 pm 04/04/2024 - 8:00 pm 07/04/2024 (3 days)</span></li>
                                                     <li><span className="font-black text-[18px] text-glow-strong">Format:</span> <span className="font-light text-[18px]">Online</span></li>
                                                     <li><span className="font-black text-[18px] text-glow-strong">Attendance:</span> <span className="font-light text-[18px]">All teams successfully registered</span></li>
@@ -126,8 +126,8 @@ const Timeline = () => {
                                                     <li>
                                                         <span className="font-black text-[18px] text-glow-strong">Description:</span> <span className="font-light text-[18px]">
                                                             <ul className="list-disc list-inside space-y-2 mt-2">
-                                                                <li>Key content asset (26/04/2024 - 02/05/2024): Each team has to conduct a media product highlighting their plan's key message addressing the brand's marketing challenge. The product would be posted on the Marketing Challengers fan page for the “most popular” category; also considered one of the main criteria for finding the top 4 finalists.</li>
-                                                                <li>Private Pitching (04/05/2024): This stage allows the top 8 teams to present their plan more precisely; presenting their media products and answering judges' questions on the online platform.</li>
+                                                                <li>Key content asset (26/04/2024 - 02/05/2024): Each team has to conduct a media product highlighting their plan&apos;s key message addressing the brand&apos;s marketing challenge. The product would be posted on the Marketing Challengers fan page for the “most popular” category; also considered one of the main criteria for finding the top 4 finalists.</li>
+                                                                <li>Private Pitching (04/05/2024): This stage allows the top 8 teams to present their plan more precisely; presenting their media products and answering judges&apos; questions on the online platform.</li>
                                                             </ul>
                                                         </span>
                                                     </li>
