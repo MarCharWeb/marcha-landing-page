@@ -9,6 +9,7 @@ const Rules = () => {
     return (<main className="pt-20 container-media-padding bg-fixed" style={{
         backgroundImage: `url(${newbg.src})`,
         backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',  // Adjust as per your requirement
         backgroundPosition: '0% 0%',
         zIndex: 2,
     }}>

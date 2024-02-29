@@ -26,6 +26,7 @@ const Sponsor = () => {
     return (<section className="py-10 relative z-[1] xl:py-16 pt-20 bg-fixed" style={{
         backgroundImage: `url(${newbg.src})`,
         backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',  // Adjust as per your requirement
         backgroundPosition: '0% 0%',
         zIndex: 2,
     }}>

@@ -167,7 +167,7 @@ export default function Home({ data }) {
 
       {/* text-[30px] lg:text-headline-30 invisible hero-title 2xl:text-hero-60 xl:text-[60px] tracking-widest leading-10  lg:text-glow-strong  text-primary-500 */}
       <Timeline></Timeline>
-      <div className='pb-[400px]'><Awardstructure></Awardstructure></div>
+      <div className='pb-[450px]'><Awardstructure></Awardstructure></div>
       <div><Sponsor></Sponsor></div>
 
 

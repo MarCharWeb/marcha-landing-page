@@ -16,6 +16,7 @@ const Ourhuman = () => {
     <main className="space-y-1 pb-10 pt-20 bg-fixed" style={{
         backgroundImage: `url(${newbg.src})`,
         backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',  // Adjust as per your requirement
         backgroundPosition: '0% 0%',
         zIndex: 2,
     }}>
