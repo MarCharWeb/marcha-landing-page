@@ -53,21 +53,35 @@ const AboutUs = () => {
                         <div className='mt-40 '>
                             <PageTitle className="mt-64 hidden md:flex items-center justify-center" title={'SEASON 11 MILESTONES'}></PageTitle>
                         </div>
-                        <div className="hidden md:flex w-full h-96 -mt-28" style={{
-                            backgroundImage: `url(${Aboutus1.src}),url(${Aboutus2.src})`,
-                            backgroundRepeat: 'no-repeat',
-                            backgroundSize: '50% 100%',
-                            backgroundPosition: '10% 100%,90% 0%',
-                            zIndex: '1',
-                        }}>
+                        <div  className="flex justify-between pt-8">
+                            <div style={{ backgroundColor: 'rgba(61, 6, 125, 0.6)' }} className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                                <div className="text-center">
+                                    <PageTitle title={'1100+'} className="pb-4"></PageTitle>
+                                    <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">REGISTRATIONS</span>
+                                </div>
+                            </div>
+
+                            <div style={{ backgroundColor: 'rgba(61, 6, 125, 0.6)' }} className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                                <div className="text-center">
+                                    <PageTitle title={'210+'} className="pb-4"></PageTitle>
+                                    <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">TEAMS</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="hidden md:flex w-full h-96 -mt-40" style={{
-                            backgroundImage: `url(${Aboutus3.src}),url(${Aboutus4.src})`,
-                            backgroundRepeat: 'no-repeat',
-                            backgroundSize: '50% 100%',
-                            backgroundPosition: '10% 0%,90% 100%',
-                            zIndex: '1',
-                        }}>
+                        <div className="flex justify-between py-8 ">
+                            <div style={{ backgroundColor: 'rgba(61, 6, 125, 0.6)' }} className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                                <div className="text-center">
+                                    <PageTitle title={'30+'} className="pb-4"></PageTitle>
+                                    <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">UNIVERSITIES</span>
+                                </div>
+                            </div>
+
+                            <div style={{ backgroundColor: 'rgba(61, 6, 125, 0.6)' }} className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                                <div className="text-center">
+                                    <PageTitle title={'31000+'} className="pb-4"></PageTitle>
+                                    <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">FOLLOWERS</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
