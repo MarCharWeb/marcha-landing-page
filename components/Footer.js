@@ -1,6 +1,6 @@
 const Footer = () => {
     return ( 
-    <div style={{ position: 'relative', zIndex: 4 }}>
+    <div style={{ position: 'relative', zIndex: 100, backgroundColor: 'rgba(61, 6, 125, 0.6)'}}>
     <section className="flex relative z-[5] flex-col items-start justify-between gap-4 pt-6 xl:items-end xl:flex-row text-small-16 md:text-headline-21 xl:pt-12 pb-4 pl-4">
         <div>
         <p className="text-small-16"><span className="font-bold text-secondary-500">Contact Information:</span></p>
