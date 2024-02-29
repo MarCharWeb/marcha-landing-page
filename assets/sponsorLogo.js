@@ -7,7 +7,12 @@ import Gold1Ss12 from './season12/gold-1.png'
 import Gold2Ss12 from './season12/gold-2.png'
 import Gold3Ss12 from './season12/gold-3.png'
 
-import ExclusiveSs12 from './season12/exclusive.svg'
+import Bronze1Ss12 from './season12/bronze-1.jpg'
+import Bronze2Ss12 from './season12/bronze-2.png'
+import Bronze3Ss12 from './season12/bronze-3.png'
+import Bronze4Ss12 from './season12/bronze-4.png'
+
+import ExclusiveSs12 from './season12/exclusive.jpg'
 
 import Media1Ss12 from './season12/media-1.png'
 import Media2Ss12 from './season12/media-2.png'
@@ -24,11 +29,15 @@ import Executive3Ss12 from './season12/executive-3.png'
 import Executive4Ss12 from './season12/executive-4.png'
 import Executive5Ss12 from './season12/executive-5.png'
 import Executive6Ss12 from './season12/executive-6.png'
+import Executive7Ss12 from './season12/executive-7.png'
 
 import Silver1Ss12 from './season12/silver-1.jpg'
 import Silver2Ss12 from './season12/silver-2.png'
+import Silver3Ss12 from './season12/silver-3.png'
 
 import StreamingSs12 from './season12/streaming.png'
+
+import VenueSs12 from './season12/venue.png'
 
 //Season 11 Logos Import
 import DiamondSs11 from './season11/diamond.png'
@@ -235,6 +244,11 @@ export const sponsorLogo = () => {
                             logoImg: Executive6Ss12,
                             logoLink: "https://wisdom.com.vn/",
                             logoClassName: "w-16 md:w-20 xl:w-[250px]"
+                        },
+                        {
+                            logoImg: Executive7Ss12,
+                            logoLink: "https://wisdom.com.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[250px]"
                         }
                     ]
 
@@ -272,6 +286,39 @@ export const sponsorLogo = () => {
                             logoImg: Silver2Ss12,
                             logoLink: "https://www.facebook.com/rmitstudentlifesgs",
                             logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        },
+                        {
+                            logoImg: Silver3Ss12,
+                            logoLink: "https://www.facebook.com/rmitstudentlifesgs",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        }
+                    ]
+
+                },
+                {
+                    categoryName: 'Bronze Sponsors',
+                    logoList: [
+                        {
+                            logoImg: Bronze1Ss12,
+                            logoLink: "https://ubl.vn/",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                        },
+                        {
+                            logoImg: Bronze2Ss12,
+                            logoLink: "https://www.facebook.com/rmitstudentlifesgs",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                        }
+                        ,
+                        {
+                            logoImg: Bronze3Ss12,
+                            logoLink: "https://www.facebook.com/rmitstudentlifesgs",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
+                        }
+                        ,
+                        {
+                            logoImg: Bronze4Ss12,
+                            logoLink: "https://www.facebook.com/rmitstudentlifesgs",
+                            logoClassName: "w-16 md:w-20 xl:w-[150px]"
                         }
                     ]
 
@@ -333,6 +380,17 @@ export const sponsorLogo = () => {
                     ]
 
                 },
+                {
+                    categoryName: 'Venue Sponsor',
+                    logoList: [
+                        {
+                            logoImg: VenueSs12,
+                            logoLink: "https://www.facebook.com/preecostudio/",
+                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                        }
+                    ]
+
+                }
 
 
             ],
