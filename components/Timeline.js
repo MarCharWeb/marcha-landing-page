@@ -49,7 +49,7 @@ const Timeline = () => {
                         <tbody>
                             <tr className="bg-gray-100 w-1/2 h-[200px]">
                                 <td className="png text-gray-600 flex flex-row">
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] ml-2">
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] ml-4">
                                         <p>72H RESEARCH AND IDEATION</p>
                                         <div className="group self-start relative">
                                             <Button
@@ -84,7 +84,7 @@ const Timeline = () => {
                                     <div style={{ flex: '1' }}>
                                         <Image src={Round21} alt="description" width={180} height={320} />
                                     </div>
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] mr-2" style={{flex: '1'}}>
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] mr-4" style={{flex: '1'}}>
                                         <p>DEPLOYMENT PLAN</p>
                                         <div className="group self-end relative">
                                             <Button
@@ -109,7 +109,7 @@ const Timeline = () => {
                             </tr>
                             <tr className="bg-gray-100 w-1/2 h-[200px]">
                                 <td className="png text-gray-600 flex flex-row ">
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] ml-2">
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] ml-4">
                                         <p>SHOWCASE & PRIVATE PITCHING</p>
                                         <div className="group self-start relative">
                                             <Button
@@ -149,7 +149,7 @@ const Timeline = () => {
                                     <div style={{ flex: '1' }}>
                                     <Image src={Round3} alt="description" width={180} height={320} />
                                     </div>
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] mr-2" style={{flex: '1'}}>
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] mr-4" style={{flex: '1'}}>
                                         <p className='ml-16'>GRAND FINALE</p>
                                         <div className="group self-end relative">
                                             <Button
