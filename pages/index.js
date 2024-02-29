@@ -131,7 +131,7 @@ export default function Home({ data }) {
           <PageTitle className='hidden lg:flex justify-center mb-6 pt-[800px]' title='GRAB YOUR SPARK NOW' />
           </div>
           <div>
-            <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong box-border w-2/3 h-[200px] border-8 mx-auto pt-8'>
+            <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong box-border w-2/3 h-[200px] border-8 mx-auto pt-20'>
               <Countdown targetDate={new Date('2024-04-04T20:00:00+07:00')} />
             </div>
             <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 mt-8'>
