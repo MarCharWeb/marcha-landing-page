@@ -54,14 +54,14 @@ const AboutUs = () => {
                             <PageTitle className="mt-64 hidden md:flex items-center justify-center" title={'SEASON 11 MILESTONES'}></PageTitle>
                         </div>
                         <div  className="flex justify-between pt-8">
-                            <div style={{ backgroundColor: 'rgba(61, 6, 125, 0.6)' }} className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                            <div  className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
                                     <PageTitle title={'1100+'} className="pb-4"></PageTitle>
                                     <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">REGISTRATIONS</span>
                                 </div>
                             </div>
 
-                            <div style={{ backgroundColor: 'rgba(61, 6, 125, 0.6)' }} className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                            <div  className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
                                     <PageTitle title={'210+'} className="pb-4"></PageTitle>
                                     <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">TEAMS</span>
@@ -69,14 +69,14 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div className="flex justify-between py-8 ">
-                            <div style={{ backgroundColor: 'rgba(61, 6, 125, 0.6)' }} className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                            <div  className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
                                     <PageTitle title={'30+'} className="pb-4"></PageTitle>
                                     <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">UNIVERSITIES</span>
                                 </div>
                             </div>
 
-                            <div style={{ backgroundColor: 'rgba(61, 6, 125, 0.6)' }} className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                            <div  className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
                                     <PageTitle title={'31000+'} className="pb-4"></PageTitle>
                                     <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">FOLLOWERS</span>
