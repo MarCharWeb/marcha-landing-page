@@ -24,7 +24,7 @@ const Ourhuman = () => {
                 <PageTitle className="" title={'OUR HUMAN'} type={2}></PageTitle>
     <h4 className="pt-10 flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Leader Board</h4>
               <div className="w-screen flex items-center justify-center pb-5">
-                <Image className="flex items-center justify-center h-screen bg-gray-300 p-4 object-center lg:w-[500px] lg:h-auto" src={Leaderboardimg} width={650} height={390} />
+                <Image className="flex items-center justify-center h-screen bg-gray-300 p-4 object-center lg:w-[500px] lg:h-auto" src={Leaderboardimg} width={650} height={420} />
             </div>
             <div className="w-screen flex items-center justify-center pb-5">
             </div>
@@ -32,7 +32,7 @@ const Ourhuman = () => {
                 <div className="lg:w-1/2 w-full bg-gray-300 ">
                     <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong">Sponsor Team</h4>
                       <div className="flex items-center justify-center">
-                        <Image className="flex items-center justify-center h-screen" src={Sponsorimg} width={650} height={360} />
+                        <Image className="flex items-center justify-center h-screen" src={Sponsorimg} width={650} height={400} />
                         </div>
                 </div>
                 <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-10 lg:mx-4 flex items-center justify-center pl-4">
@@ -43,7 +43,7 @@ const Ourhuman = () => {
                 <div className="lg:w-1/2 w-full bg-gray-300 lg:order-2">
                     <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Marketing Team</h4>
                     <div className="flex items-center justify-center ">
-                                          <Image className="flex items-center justify-center h-screen" src={Marketingimg} width={620} height={330} />
+                                          <Image className="flex items-center justify-center h-screen" src={Marketingimg} width={620} height={400} />
                     </div>
 
                 </div>
@@ -88,7 +88,7 @@ const Ourhuman = () => {
                 </div>            
                 </div>
         </div>
-        <Footer></Footer>
+            <Footer></Footer>
     </main>
     );
 }
