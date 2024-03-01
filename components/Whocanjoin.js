@@ -13,7 +13,8 @@ const Whocanjoin = () => {
     <main className="space-y-1">
         <div className="flex flex-col items-center justify-center sm:px-20">
             <PageTitle title={'WHO CAN JOIN?'}></PageTitle>
-            <p className='max-w-prose font-bold text-center sm:pt-0 mt-2.5'>University and college students from year 01 to year 04 all around the world, having a passion for challenges and learning in the Marketing arena. </p>
+            <p className='max-w-prose font-bold text-center sm:pt-0 mt-2.5'>University and college students from year 01 to year 04 in all nationalities who live Vietnam, having a passion for challenges and learning in the Marketing arena.
+</p>
             <Button
                 onClick={handleClick}
                 isGlow={true}
