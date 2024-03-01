@@ -61,14 +61,17 @@ const Countdown = ({ targetDate }) => {
   }, []);
 
   return (
-    <div className="flex justify-center space-x-4">
-      {Object.entries(timeLeft).map(([unit, value]) => (
-        <div key={unit} className="text-center" style={{ margin: '20px' }}>
-          <div style={{ fontFamily: "'Brandon Grotesque', sans-serif", fontSize: '150px', fontWeight: 'bold' }}>
-            {formatValue(value)}
+    <div className="flex justify-center">
+      {Object.entries(timeLeft).map(([unit, value], index, array) => (
+        <React.Fragment key={unit}>
+          <div className="text-center" style={{ margin: '20px' }}>
+            <div style={{ fontFamily: "'Brandon Grotesque', sans-serif", fontSize: '150px', fontWeight: 'bold' }}>
+              {formatValue(value)}
+            </div>
+            <div className="text-sm font-bold mt-8">{unit}</div>
           </div>
-          <div className="text-sm font-bold mt-8">{unit}</div>
-        </div>
+          {index < array.length - 1 && <div className='pb-20' style={{ alignSelf: 'flex-end', fontSize: '150px', fontWeight: 'bold' }}>:</div>}
+        </React.Fragment>
       ))}
     </div>
   );
