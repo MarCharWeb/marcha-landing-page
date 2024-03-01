@@ -48,8 +48,8 @@ const Timeline = () => {
                         </colgroup>
                         <tbody>
                             <tr className="bg-gray-100 w-1/2 h-[200px]">
-                                <td className="png text-gray-600 flex flex-row">
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] ml-4">
+                                <td className="png text-gray-600 flex flex-row justify-end">
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] w-1/2">
                                         <p>72H RESEARCH AND IDEATION</p>
                                         <div className="group self-start relative">
                                             <Button
@@ -80,13 +80,13 @@ const Timeline = () => {
                             </tr>
                             <tr className="w-1/2 h-[200px]">
                                 <td className="png px-4 py-2 text-gray-600"></td>
-                                <td className="png text-gray-600 flex flex-row ">
-                                    <div style={{ flex: '1' }}>
-                                        <Image src={Round21} alt="description" width={180} height={320} />
+                                <td className="png text-gray-600 flex flex-row justify-start">
+                                    <div>
+                                        <Image src={Round21} alt="description" width={200} height={320} />
                                     </div>
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] mr-4" style={{flex: '1'}}>
+                                    <div className="flex flex-col items-start justify-center font-extrabold text-[25px]" style={{flex: '1'}}>
                                         <p>DEPLOYMENT PLAN</p>
-                                        <div className="group self-end relative">
+                                        <div className="group self-start relative">
                                             <Button
                                                 onClick={handleClick}
                                                 isGlow={true}
@@ -108,8 +108,8 @@ const Timeline = () => {
                                 </td>
                             </tr>
                             <tr className="bg-gray-100 w-1/2 h-[200px]">
-                                <td className="png text-gray-600 flex flex-row ">
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] ml-4">
+                                <td className="png text-gray-600 flex flex-row justify-end">
+                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] w-1/2">
                                         <p>SHOWCASE & PRIVATE PITCHING</p>
                                         <div className="group self-start relative">
                                             <Button
@@ -146,12 +146,12 @@ const Timeline = () => {
                             <tr className="w-1/2 h-[200px]">
                                 <td className="png px-4 py-2 text-gray-600"></td>
                                 <td className="png text-gray-600 flex flex-row ">
-                                    <div style={{ flex: '1' }}>
+                                    <div>
                                     <Image src={Round3} alt="description" width={180} height={320} />
                                     </div>
-                                    <div className="flex flex-col items-center justify-center font-extrabold text-[25px] mr-4" style={{flex: '1'}}>
-                                        <p className='ml-16'>GRAND FINALE</p>
-                                        <div className="group self-end relative">
+                                    <div className="flex flex-col items-start justify-center font-extrabold text-[25px]" style={{flex: '1'}}>
+                                        <p className=''>GRAND FINALE</p>
+                                        <div className="group self-start relative">
                                             <Button
                                                 onClick={handleClick}
                                                 isGlow={true}
