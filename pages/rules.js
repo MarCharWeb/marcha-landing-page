@@ -6,13 +6,17 @@ import Footer from "../components/Footer";
 import newbg from '../assets/newbg.png';
 
 const Rules = () => {
-    return (<main className="pt-20 container-media-padding bg-fixed" style={{
-        backgroundImage: `url(${newbg.src})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',  // Adjust as per your requirement
-        backgroundPosition: '0% 0%',
-        zIndex: 2,
-    }}>
+    return (
+        <div className="bg-fixed"
+        style={{
+            backgroundImage: `url(${newbg.src})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',  // Adjust as per your requirement
+            backgroundPosition: '0% 0%',
+            zIndex: 2,
+        }}>
+
+    <main className="pt-20 container-media-padding ">
         <div id="rules&regulations" />
         <PageTitle title={'RULES AND REGULATIONS'} type={2}></PageTitle>
         <section className="py-10 space-y-6"
@@ -120,10 +124,11 @@ const Rules = () => {
 
             </div>
         </section>
-        <div className="-mx-16">
-        <Footer></Footer>
-        </div>
+
     </main>
+    <Footer></Footer>
+
+    </div>
     );
 }
 
