@@ -12,7 +12,7 @@ import Bronze2Ss12 from './season12/bronze-2.png'
 import Bronze3Ss12 from './season12/bronze-3.png'
 import Bronze4Ss12 from './season12/bronze-4.png'
 
-import ExclusiveSs12 from './season12/exclusive.jpg'
+import ExclusiveSs12 from './season12/exclusive.png'
 
 import Media1Ss12 from './season12/media-1.png'
 import Media2Ss12 from './season12/media-2.png'
