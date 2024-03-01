@@ -26,6 +26,7 @@ import newbg from '../assets/newbg.png';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import LayerImage from '../assets/layer.png';
+import React from 'react';
 
 
 
