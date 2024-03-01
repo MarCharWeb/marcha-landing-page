@@ -29,7 +29,7 @@ const Awardstructure = () => {
                         <li><p>1 electric motorbike from MET EV per person</p></li>
                         <li><p>1 2-day 1-night ticket for resort room at a MVillage branch per person</p></li>
                         <li><p>1 sampling box from Cerave per person</p></li>
-                        <li><p>1 L'Usine Signature Totebag per person</p></li>
+                        <li><p>1 L&rsquo;Usine Signature Totebag per person</p></li>
                         <li><p>1 2-day 1-night ticket for resort room at a MVillage branch per person</p></li>
                         <li><p>1 three-month membership card from Fonos audiobooks per person</p></li>
                         <li><p>1 21-day experience voucher from California Fitness & Yoga per person</p></li>
@@ -56,7 +56,7 @@ const Awardstructure = () => {
                         </div>
                         <ul className="list-disc text-justify font-light text-[16px] leading-6">
                             <li><p>1 sampling box from Cerave per person</p></li>
-                            <li><p>1 L'Usine Signature Totebag per person</p></li>
+                            <li><p>1 L&rsquo;Usine Signature Totebag per person</p></li>
                             <li><p>1 three-month membership card from Fonos audiobooks per person</p></li>
                             <li><p>1 21-day experience voucher from California Fitness & Yoga per person</p></li>
                             <li><p>Study free 1 course from the list of 13 courses from Brands Vietnam per person</p></li>
