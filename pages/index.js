@@ -135,7 +135,7 @@ export default function Home({ data }) {
           </div>
           <div>
             <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong box-border w-3/4 h-[300px] border-8 mx-auto pt-8'>
-              <Countdown targetDate={new Date('2024-04-04T20:00:00+07:00')} />
+              <Countdown targetDate={new Date('2024-04-03T20:00:00+07:00')} />
             </div>
             <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 mt-12'>
               <Button ref={heroBtn} onClick={() => {
