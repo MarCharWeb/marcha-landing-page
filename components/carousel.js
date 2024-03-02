@@ -32,7 +32,7 @@ const Carousel = () => {
             <div className="flex-shrink-0 flex items-center justify-start whitespace-nowrap w-full animate-scrollX">
               <div className="space-x-4 place-items-center w-[clamp(10rem,1rem+40vmin,30rem)] p-[calc(clamp(10rem,1rem+30vmin,30rem)/10)]">
                 {allImages.map((imageSrc, index) => (
-                  <a key={index} href="#" target="_blank" rel="noreferrer">
+                  <a key={index} target="_blank" rel="noreferrer">
                     <Image src={imageSrc} alt={`Slide ${index}`} width={imageWidth} height={imageHeight} layout="intrinsic" objectFit="cover" />
                   </a>
                 ))}
