@@ -2,6 +2,7 @@ import Round1 from '../assets/1.png';
 import Round21 from '../assets/21.png';
 import Round22 from '../assets/22.png';
 import Round3 from '../assets/3.png';
+import WARMUP from '../assets/WARMUP.png';
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Button from '../components/Button';
@@ -36,7 +37,7 @@ const Timeline = () => {
                     width: '8px',
                     background: 'linear-gradient(135deg, #ffde59, #ff914d)',
                     top: '2800px',
-                    height: `calc(1350px)`,
+                    height: `calc(1900px)`,
                     transform: 'translateX(-50%)'
                 }}>
                 </div>
@@ -47,6 +48,35 @@ const Timeline = () => {
                             <col style={{ width: '50%' }} />
                         </colgroup>
                         <tbody>
+                        <tr className="w-1/2 h-[200px]">
+                                <td className="png px-4 py-2 text-gray-600"></td>
+                                <td className="png text-gray-600 flex flex-row justify-start">
+                                    <div className='-ml-12'>
+                                        <Image src={WARMUP} alt="description" width={320} height={500} />
+                                    </div>
+                                    <div className="flex flex-col items-start justify-center font-extrabold text-[25px]" style={{flex: '1'}}>
+                                        <p>CERAVE'S CHALLENGE</p>
+                                        <div className="group self-start relative">
+                                            <Button
+                                                onClick={handleClick}
+                                                isGlow={true}
+                                                type='primary'
+                                                className='animate-bounce-slow font-bold mt-4'
+                                                text={'Details'}
+                                                size='large'
+                                            />
+                                            <span className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 w-96" style={{ right: '100%', top: '0', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }}>
+                                                <ul className="space-y-1 list-disc text-left">
+                                                    <li><span className="font-black text-[18px] text-glow-strong">Description:</span> <span className="font-light text-[18px]">This is a separate category that sets the stage for you to showcase and sharpen your creativity before the Official Round, given by our <span className='font-bold'>Diamond Sponsor</span> - <span className='font-bold'>CeraVe Skincare</span>.</span></li>
+                                                    <li><span className="font-black text-[18px] text-glow-strong">Duration:</span> <span className="font-light text-[18px]">29/02/2024 - 16/03/2024</span></li>
+                                                    <li><span className="font-black text-[18px] text-glow-strong">Format:</span> <span className="font-light text-[18px]">Online</span></li>
+                                                    <li><span className="font-black text-[18px] text-glow-strong">Attendance:</span> <span className="font-light text-[18px]"><span className='font-bold'>LIMITED</span> to the first <span className='font-bold'>100 quickest teams</span> only</span></li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
                             <tr className="bg-gray-100 w-1/2 h-[200px]">
                                 <td className="png text-gray-600 flex flex-row justify-end">
                                     <div className="flex flex-col items-center justify-center font-extrabold text-[25px] w-1/2">
