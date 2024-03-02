@@ -143,7 +143,7 @@ export default function Home({ data }) {
             </div>
             <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 mt-12'>
               <Button ref={heroBtn} onClick={() => {
-                // route.push('/aboutus')
+                window.location.href = 'https://forms.gle/K8kAi7rJqWZ1uqan9';
               }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'REGISTER NOW'} size='large'></Button>
             </div>
             <div className='pl-4 space-y-0 lg:space-y-1'>
