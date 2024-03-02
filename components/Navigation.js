@@ -45,38 +45,38 @@ const Navigation = () => {
 
         {/* Navigation List Begins */}
         <ul className="lg:flex hidden items-center justify-between flex-grow max-w-[80%] xl:max-w-[80%] font-normal text-white text-small-16 xl:text-body-10">
-            <li className={'px-4 py-2 '}>
+            <li className={'px-4 py-2 li-hover-effect'}>
                 <Link href={'/'} scroll={false} >
-                    <a onClick={handleHomeClick} className={`font-bold ${router.asPath === '/' ? 'active-link' : ''}`}>HOME</a>
+                    <a onClick={handleHomeClick} className={`nav-item font-bold ${router.asPath === '/' ? 'active-link' : ''}`}>HOME</a>
                 </Link>
             </li>
-            <li className={'px-4 py-2 rounded '}>
+            <li className={'px-4 py-2 li-hover-effect'}>
                 <Link href={'/aboutus'}>
-                    <a className={`${router.asPath == '/aboutus' ? 'active-link' : ''} font-bold`}>ABOUT US</a>
+                    <a className={`nav-item ${router.asPath == '/aboutus' ? 'active-link' : ''} font-bold`}>ABOUT US</a>
                 </Link>
 
             </li>
             {/* <li className={'px-4 py-2 rounded '}>
                 <Link href={'/#hall-of-fame'}><a className={router.asPath == '/#hall-of-fame' ? 'active-link': ''}>HALL OF FAME</a></Link>
             </li> */}
-            <li className={'px-4 py-2 rounded '}>
+            <li className={'px-4 py-2 li-hover-effect '}>
                 <Link href={'/sponsor'}>
-                    <a className={`${router.asPath == '/sponsor' ? 'active-link' : ''} font-bold`}>SPONSORSHIP</a>
+                    <a className={`nav-item ${router.asPath == '/sponsor' ? 'active-link' : ''} font-bold`}>SPONSORSHIP</a>
                 </Link>
             </li>
-            <li className={'px-4 py-2 rounded '}>
+            <li className={'px-4 py-2 li-hover-effect '}>
                 <Link href={'/news'}>
-                    <a className={`${router.asPath == '/news' ? 'active-link' : ''} font-bold`}>BLOG</a>
+                    <a className={`nav-item ${router.asPath == '/news' ? 'active-link' : ''} font-bold`}>BLOG</a>
                 </Link>
             </li>
-            <li className={'px-4 py-2 rounded '}>
+            <li className={'px-4 py-2 li-hover-effect '}>
                 <Link href={'/ourhuman'}>
-                    <a className={`${router.asPath == '/ourhuman' ? 'active-link' : ''} font-bold`}>OUR HUMAN</a>
+                    <a className={`nav-item ${router.asPath == '/ourhuman' ? 'active-link' : ''} font-bold`}>OUR HUMAN</a>
                 </Link>
             </li>
-            <li className='px-4 py-2 rounded'>
+            <li className='px-4 py-2 li-hover-effect'>
                 <Link href={'/rules'}>
-                    <a className={`${router.asPath == '/rules' ? 'active-link' : ''} font-bold`}>RULES &#38; REGULATIONS</a>
+                    <a className={`nav-item ${router.asPath == '/rules' ? 'active-link' : ''} font-bold`}>RULES &#38; REGULATIONS</a>
                 </Link>
             </li>
 
