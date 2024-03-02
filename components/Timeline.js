@@ -55,7 +55,7 @@ const Timeline = () => {
                                         <Image src={WARMUP} alt="description" width={320} height={500} />
                                     </div>
                                     <div className="flex flex-col items-start justify-center font-extrabold text-[25px]" style={{flex: '1'}}>
-                                        <p>CERAVE'S CHALLENGE</p>
+                                        <p>CERAVE&apos;S CHALLENGE</p>
                                         <div className="group self-start relative">
                                             <Button
                                                 onClick={handleClick}
