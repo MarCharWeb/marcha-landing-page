@@ -2,16 +2,14 @@ import PageTitle from "../components/PageTitle";
 import { useRouter } from 'next/router';
 import ImageHolder from "../components/ImageHolder";
 import { useRef } from "react";
-import HeroText from '../assets/spark.png'
+import HeroText from '../assets/spark.png';
 import Footer from "../components/Footer";
-import Aboutus1 from '../assets/aboutus1.png'
-import Aboutus2 from '../assets/aboutus2.png'
-import Aboutus3 from '../assets/aboutus3.png'
-import Aboutus4 from '../assets/aboutus4.png'
 import newbg from '../assets/newbg.png';
-
+import React from "react";
+import Carousel from "../components/carousel";
 
 const AboutUs = () => {
+
     const router = useRouter();
 
     const heroTextRef = useRef(null);
@@ -29,18 +27,11 @@ const AboutUs = () => {
 
                 <div className='bg-right-top'
                 >
-
                     <div>
                         <PageTitle className='pt-10' title="ABOUT US"></PageTitle>
-                        <ImageHolder
-                            ref={heroTextRef}
-                            priority={true}
-                            src={HeroText}
-                            alt="marketing-challengers-ss11-slogan"
-                            className='mx-auto xl:mt-10 w-72 h-72 lg:w-80 lg:h-80 xl:w-[400px] xl:h-[400px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 pt-20'
-                        ></ImageHolder>
+                    <Carousel></Carousel>
 
-                        <div className='pl-4 space-y-0 lg:space-y-1'>
+                        <div className='pl-4 space-y-0 lg:space-y-1 pt-20'>
                             <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong -mt-28 text-center pt-10 sm:text-xm' style={{ zIndex: 2 }}>Vision</h4>
                             <p className='text-center text-headline-31'>To become the best student-run marketing competition for students.</p>
                         </div>
@@ -70,7 +61,7 @@ const AboutUs = () => {
                         </div>
 
                         <div className="flex justify-center items-center py-8" >
-                        <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
+                            <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
                                     <PageTitle title={'30+'} className="pb-4"></PageTitle>
                                     <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">UNIVERSITIES</span>
