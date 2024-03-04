@@ -30,7 +30,6 @@ const Awardstructure = () => {
                         <li><p>1 2-day 1-night ticket for resort room at a MVillage branch per person</p></li>
                         <li><p>1 sampling box from Cerave per person</p></li>
                         <li><p>1 L&rsquo;Usine Signature Totebag per person</p></li>
-                        <li><p>1 2-day 1-night ticket for resort room at a MVillage branch per person</p></li>
                         <li><p>1 three-month membership card from Fonos audiobooks per person</p></li>
                         <li><p>1 21-day experience voucher from California Fitness & Yoga per person</p></li>
                         <li><p>Study free 1 course from the list of 13 courses from Brands Vietnam per person</p></li>
@@ -40,6 +39,8 @@ const Awardstructure = () => {
                         <li><p>1 internship opportunity from MET EV per person</p></li>
                         <li><p>1 shortcut offer to interview round for Marketing Trainee position at MVillage per person</p></li>
                         <li><p>1 shortcut offer to interview round for Executive position at Kaya House per person</p></li>
+                        <li><p>1 internship opportunity from DNA Consulting per person</p></li>
+                        <li><p>1 shortcut offer to interview round for Strategic intern position at Wisdom Agency per person</p></li>
                     </ul>
                 </span>
             </div>
@@ -66,6 +67,8 @@ const Awardstructure = () => {
                             <li><p>1 internship opportunity from MET EV per person</p></li>
                             <li><p>1 shortcut offer to interview round for Marketing Trainee position at MVillage per person</p></li>
                             <li><p>1 shortcut offer to interview round for Executive position at Kaya House per person</p></li>
+                            <li><p>1 internship opportunity from DNA Consulting per person</p></li>
+                            <li><p>1 shortcut offer to interview round for Strategic intern position at Wisdom Agency per person</p></li>
                         </ul>
                     </span>
                 </div>
@@ -88,6 +91,8 @@ const Awardstructure = () => {
                             <li><p>1 internship opportunity from MET EV per person</p></li>
                             <li><p>1 shortcut offer to interview round for Marketing Trainee position at MVillage per person</p></li>
                             <li><p>1 shortcut offer to interview round for Executive position at Kaya House per person</p></li>
+                            <li><p>1 internship opportunity from DNA Consulting per person</p></li>
+                            <li><p>1 shortcut offer to interview round for Strategic intern position at Wisdom Agency per person</p></li>
                         </ul>
                     </span>
                 </div>
