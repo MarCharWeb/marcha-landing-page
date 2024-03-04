@@ -51,7 +51,7 @@ const Awardstructure = () => {
                         <PageTitle title={'1ST RUNNER UP'} className="pb-4"></PageTitle>
                         <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">120,000,000 VND</span>
                     </div>
-                    <span style={{ width: '720px', left: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5">
+                    <span style={{ width: '720px', left: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 pb-5">
                         <div className="w-full flex justify-center">
                             <span className="font-black text-[18px] text-glow-strong">1ST RUNNER UP</span>
                         </div>
@@ -78,7 +78,7 @@ const Awardstructure = () => {
                         <PageTitle title={'2RD RUNNER UP'} className="pb-4"></PageTitle>
                         <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">80,000,000 VND</span>
                     </div>
-                    <span style={{ width: '720px', right: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5">
+                    <span style={{ width: '720px', right: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 pb-5">
                         <div className="w-full flex justify-center">
                             <span className="font-black text-[18px] text-glow-strong">2RD RUNNER UP</span>
                         </div>
@@ -103,7 +103,7 @@ const Awardstructure = () => {
                         <PageTitle title={'TOP 8'} className="pb-4"></PageTitle>
                         <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">50,000,000 VND</span>
                     </div>
-                    <span style={{ width: '720px', left: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5">
+                    <span style={{ width: '720px', left: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 pb-5">
                         <div className="w-full flex justify-center">
                             <span className="font-black text-[18px] text-glow-strong">TOP 8</span>
 
@@ -125,7 +125,7 @@ const Awardstructure = () => {
                     <PageTitle title={'TOP 30'} className="pb-4"></PageTitle>
                     <span className="font-bold text-primary-500 text-[40px]">000,000,000 VND</span>
                 </div>
-                    <span style={{ width: '625px', right: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5">
+                    <span style={{ width: '625px', right: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 pb-5">
                         <div className="w-full flex justify-center">
                             <span className="font-black text-[18px] text-glow-strong">TOP 30</span>
                         </div>
