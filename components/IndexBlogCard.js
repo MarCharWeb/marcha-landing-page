@@ -20,7 +20,7 @@ const IndexBlogCard = ({thumbSrc, title, abstract, slug}) => {
         <ImageHolder src={urlFor(thumbSrc).url()} className='w-full md:w-96 rounded aspect-4/3' layout="fill"></ImageHolder>
         {/* <div className="bg-grey-700 aspect-4/3"></div> */}
         
-        <Link href={`news/${slug}`}><a><h5 className="duration-200 text-lead-2 hover:text-glow-strong hover:text-primary-500 line-clamp-2">{title}</h5></a></Link>
+        <Link href={`news/${slug}`}><a><h5 className="duration-200 text-lead-2 hover:text-glow-strong line-clamp-2">{title}</h5></a></Link>
         <div>{abstract}</div>
     </div>
 
