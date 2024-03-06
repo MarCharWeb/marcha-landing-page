@@ -129,7 +129,7 @@ const Awardstructure = () => {
                         <div className="w-full flex justify-center">
                             <span className="font-black text-[18px] text-glow-strong">TOP 30</span>
                         </div>
-                        <ul className="list-disc text-justify font-light text-[18px]">
+                        <ul className="list-disc text-justify font-light text-[16px] leading-6">
                         <li><p>1 cerave lotion full size 8oz/person (10 teams only)</p></li>
                         <li><p>1 21-day experience voucher from Cafornia Fitness & Yoga/ person</p></li>
                         <li><p>1 dental care package worth 1.5 million from Singae Dental / person</p></li>
