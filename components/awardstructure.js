@@ -120,7 +120,7 @@ const Awardstructure = () => {
                     </span>
                 </div>
 
-                 <div style={{ backgroundColor: '#6739B1' }}  className='mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
+                 <div className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <PageTitle title={'TOP 30'} className="pb-4"></PageTitle>
                     <span className="font-bold text-primary-500 text-[40px]">30,000,000 VND</span>
