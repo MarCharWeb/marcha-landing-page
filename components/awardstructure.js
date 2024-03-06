@@ -123,7 +123,7 @@ const Awardstructure = () => {
                  <div className='bg-transparent mx-4 group text-headline-31 relative w-[550px] py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <PageTitle title={'TOP 30'} className="pb-4"></PageTitle>
-                    <span className="font-bold text-primary-500 text-[40px]">30,000,000 VND</span>
+                    <span className="font-bold text-[40px]">30,000,000 VND</span>
                 </div>
                     <span style={{ width: '625px', right: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 pb-5">
                         <div className="w-full flex justify-center">
