@@ -33,12 +33,12 @@ const AboutUs = () => {
 
                         <div className='pl-4 space-y-0 lg:space-y-1 pt-20'>
                             <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong -mt-28 text-center pt-10 sm:text-xm' style={{ zIndex: 2 }}>Vision</h4>
-                            <p className='text-center text-headline-31'>Become a milestone in the self-affirmation journey of young Marketing lovers where they determine their next steps in the field.</p>
+                            <p className='text-center text-headline-31 lg:px-24'>Become a milestone in the self-affirmation journey of young Marketing lovers where they determine their next steps in the field.</p>
                         </div>
 
                         <div className='pl-4 space-y-0 lg:space-y-1 xl:space-y-2.5'>
                             <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong pt-4 text-center'>Mission</h4>
-                            <p className='text-center lg:px-48 text-headline-31'> Build an insightful and interactive playground for contestants by providing the most modern Digital Marketing trends via various platforms.</p>
+                            <p className='text-center lg:px-24 text-headline-31'> Build an insightful and interactive playground for contestants by providing the most modern Digital Marketing trends via various platforms.</p>
                         </div>
 
                         <div className='mt-40 '>
