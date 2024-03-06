@@ -10,11 +10,8 @@ import Carousel from "../components/carousel";
 import Button from '../components/Button'
 import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
+
 const AboutUs = () => {
-
-    const router = useRouter();
-
-    const heroTextRef = useRef(null);
 
     const heroBtn = useRef(null);
     useLayoutEffect(() => {
@@ -24,7 +21,7 @@ const AboutUs = () => {
     }, [])
 
     const heroTextRef = useRef(null);
-    
+
     return (
         <main className="space-y-1 -mt-8 bg-fixed" style={{
             backgroundImage: `url(${newbg.src})`,
@@ -39,7 +36,7 @@ const AboutUs = () => {
                 <div className='bg-right-top'
                 >
                     <div>
-                    <PageTitle className='pt-10' title="ABOUT US"></PageTitle>
+                        <PageTitle className='pt-10' title="ABOUT US"></PageTitle>
                         <Carousel></Carousel>
 
                         <div className='lg:pl-4 space-y-0 lg:space-y-1 pt-20 '>
@@ -57,22 +54,25 @@ const AboutUs = () => {
                             window.location.href = 'https://drive.google.com/file/d/1n-cBvve8X_ZNyKfBA0OFWZ9oOhK26Ye_/view?fbclid=IwAR2hiO5MDx-4S_qtUCXy95LsUcxPHIaoAOAs-INb6i9UhgfPW8w0c8jtrhY';
                         }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'MARCHA BOOKLET'} size='large'></Button>
                         </div>
+                        
 
-                        <div className='mt-40 '>
-                            <PageTitle className="mt-64 hidden md:flex items-center justify-center" title={'SEASON 11 MILESTONES'}></PageTitle>
+                        <div className='mt-12 lg:mt-32'>
+                            <PageTitle className=" md:flex items-center justify-center" title={'SEASON 11 MILESTONES'}></PageTitle>
                         </div>
                         <div className="flex justify-center pt-8">
-                            <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
+                            <div className='bg-transparent mx-4 group text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md '>
                                 <div className="text-center">
-                                    <PageTitle title={'1100+'} className="pb-4"></PageTitle>
-                                    <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">REGISTRATIONS</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">1100+</span>
+                                    <br></br>
+                                    <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">REGISTRATIONS</span>
                                 </div>
                             </div>
 
-                            <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
+                            <div className='bg-transparent mx-4 group text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
-                                    <PageTitle title={'210+'} className="pb-4"></PageTitle>
-                                    <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">TEAMS</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">210+</span>
+                                    <br></br>
+                                    <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">TEAMS</span>
                                 </div>
                             </div>
                         </div>
@@ -80,15 +80,17 @@ const AboutUs = () => {
                         <div className="flex justify-center items-center py-8" >
                             <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
-                                    <PageTitle title={'30+'} className="pb-4"></PageTitle>
-                                    <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">UNIVERSITIES</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">30+</span>
+                                    <br></br>
+                                    <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">UNIVERSITIES</span>
                                 </div>
                             </div>
 
                             <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
-                                    <PageTitle title={'31000+'} className="pb-4"></PageTitle>
-                                    <span className="font-bold text-[#FFFFFF] text-[40px] text-glow-strong">FOLLOWERS</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">31000+</span>
+                                    <br></br>
+                                    <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">FOLLOWERS</span>
                                 </div>
                             </div>
                         </div>
