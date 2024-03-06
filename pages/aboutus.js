@@ -7,13 +7,24 @@ import Footer from "../components/Footer";
 import newbg from '../assets/newbg.png';
 import React from "react";
 import Carousel from "../components/carousel";
-
+import Button from '../components/Button'
+import { useLayoutEffect } from "react";
+import { gsap } from "gsap";
 const AboutUs = () => {
 
     const router = useRouter();
 
     const heroTextRef = useRef(null);
 
+    const heroBtn = useRef(null);
+    useLayoutEffect(() => {
+      gsap.from(heroTextRef.current, { opacity: 0, duration: 2, ease: "bounce.out", autoAlpha: 0, delay: 1 })
+  
+  
+    }, [])
+
+    const heroTextRef = useRef(null);
+    
     return (
         <main className="space-y-1 -mt-8 bg-fixed" style={{
             backgroundImage: `url(${newbg.src})`,
@@ -28,17 +39,23 @@ const AboutUs = () => {
                 <div className='bg-right-top'
                 >
                     <div>
-                        <PageTitle className='pt-10' title="ABOUT US"></PageTitle>
-                    <Carousel></Carousel>
+                    <PageTitle className='pt-10' title="ABOUT US"></PageTitle>
+                        <Carousel></Carousel>
 
-                        <div className='pl-4 space-y-0 lg:space-y-1 pt-20'>
-                            <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong -mt-28 text-center pt-10 sm:text-xm' style={{ zIndex: 2 }}>Vision</h4>
-                            <p className='text-center text-headline-31 lg:px-24'>Become a milestone in the self-affirmation journey of young Marketing lovers where they determine their next steps in the field.</p>
+                        <div className='lg:pl-4 space-y-0 lg:space-y-1 pt-20 '>
+                            <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong -mt-28 text-center pt-10 text-[24px] lg:text-auto' style={{ zIndex: 2 }}>Vision</h4>
+                            <p className='lg:px-24 text-center text-headline-31 text-[19px] lg:text-[30px]'>Become a milestone in the self-affirmation journey of young Marketing lovers where they determine their next steps in the field.</p>
                         </div>
 
-                        <div className='pl-4 space-y-0 lg:space-y-1 xl:space-y-2.5'>
-                            <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong pt-4 text-center'>Mission</h4>
-                            <p className='text-center lg:px-24 text-headline-31'> Build an insightful and interactive playground for contestants by providing the most modern Digital Marketing trends via various platforms.</p>
+                        <div className='lg:pl-4 space-y-0 lg:space-y-1 xl:space-y-2.5'>
+                            <h4 className='font-bold text-headline-31 lg:text-headline-48 text-glow-strong pt-4 text-center text-[24px] lg:text-auto'>Mission</h4>
+                            <p className='text-center lg:px-24 text-headline-31 text-[19px] lg:text-[30px]'>To provide students, regardless of their marketing foundation, a practical playground to develop an Integrated Marketing Communication (IMC) Plan and an opportunity to pitch their ideas to real famous client brands.</p>
+                        </div>
+
+                        <div className="flex justify-center items-center w-full mt-4">
+                        <Button ref={heroBtn} onClick={() => {
+                            window.location.href = 'https://drive.google.com/file/d/1n-cBvve8X_ZNyKfBA0OFWZ9oOhK26Ye_/view?fbclid=IwAR2hiO5MDx-4S_qtUCXy95LsUcxPHIaoAOAs-INb6i9UhgfPW8w0c8jtrhY';
+                        }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'MARCHA BOOKLET'} size='large'></Button>
                         </div>
 
                         <div className='mt-40 '>
