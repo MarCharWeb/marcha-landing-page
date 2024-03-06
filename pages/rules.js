@@ -103,7 +103,7 @@ const Rules = () => {
                         <li><p>The Organising Team cannot be held responsible for lost, delayed, mislaid entries or any technical failure of online submission. A confirmation email will be sent if a team’s submission for every round is successful.</p></li>
                         <li><p>The Organising Team reserves the right to prohibit entry or exclude any teams from the competition who we believe that they violated the rules and regulation listed above (will communicate to the recipients <strong>at least 24 hours before finalising this decision</strong>).</p></li>
                         <li><p>These rules are subject to change without notice.</p></li>
-                        <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-primary-500">marketingchallengers.rmitbc@gmail.com</strong></p></li>
+                        <li><p>By entering this contest, candidates accept the terms herein and agree to be bound by the above rules and regulations. Entrants further agree to be bound by the decisions of the Judging Panel and the Organizing Team, which shall be final and binding in all respects. Any concerns, conflicts or disputes <strong className="underline">MUST</strong> be sent to the Organizing team via this email: <strong className="text-primary-500">rmitbcmarketingchallengers@gmail.com</strong></p></li>
 
                     </ul>
                 </div>
@@ -115,7 +115,7 @@ const Rules = () => {
                 </div>
                 <div>
                     <ul className="space-y-1 list-disc -mt-6 px-24 text-justify">
-                        <li><p>Candidates must obey the copyright laws and not violate the copyrights of any other third parties. The Organisers of this Contest, RMIT Business Club, is not responsible for any breach by the candidate.</p></li>
+                        <li><p>Candidates must obey the copyright laws and not violate the copyrights of any other third parties. The Organisers of this Contest, RMIT Vietnam Business Club - SGS, is not responsible for any breach by the candidate.</p></li>
                         <li><p>RMIT Vietnam Business Club - SGS reserves the right to publish and display the Project, using its content and images for publicity, promotion and non-payment purposes.</p></li>
                         <li><p>The Organising Team, RMIT Vietnam Business Club - SGS, sponsors and RMIT will not use the candidate&apos; s work for any purpose other than grading and filtering out the best works for awarding.</p></li>
                         <li><p>If a sponsor desires to use a candidate&apos; s idea, the sponsor and candidate will enter into a separate agreement. The Organizing Team, RMIT Vietnam Business Club - SGS, and RMIT <strong>are not responsible</strong> for this consent or any ensuing circumstances.</p></li>
