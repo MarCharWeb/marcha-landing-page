@@ -12,7 +12,7 @@ const News = ({featurePosts}) => {
         router.push('/news');
       }
 
-    return ( <section className="relative pt-48 md:pt-20 lg:pt-10 container-media-padding" >
+    return ( <section className="relative md:pt-20 lg:pt-10 container-media-padding" >
         <div id="blog" className="flex items-center justify-center">
         <PageTitle title={'BLOG'}></PageTitle>
         </div>
@@ -50,7 +50,7 @@ const News = ({featurePosts}) => {
                     onClick={handleSeeAllClick}
                     isGlow={true}
                     type='primary'
-                    className='animate-bounce-slow font-bold mt-10 mb-20 sm:mt-4'
+                    className='animate-bounce-slow font-bold mt-10 mb-16 sm:mt-4'
                     text={'See All'}
                     size='large'
                 />
