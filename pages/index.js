@@ -141,8 +141,10 @@ export default function Home({ data }) {
             <PageTitle className='flex justify-center lg:mb-6 lg:pt-[1200px] pt-[200px]' title='GRAB YOUR SPARK NOW' />
           </div>
           <div>
-            <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest lg:leading-10 text-glow-strong box-border lg:w-3/4 lg:h-[300px] lg:border-8 border-4 mx-auto lg:pt-8'>
+            <div className='flex items-center justify-center w-screen'>
+            <div className='inline-flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest lg:leading-10 text-glow-strong box-border lg:w-3/4 lg:h-[300px] lg:border-8 border-4 mx-auto lg:pt-8 '>
               <Countdown className='' targetDate={new Date('2024-04-03T20:00:00+07:00')} />
+            </div>
             </div>
             <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-12 mt-20'>
               <Button
