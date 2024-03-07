@@ -64,11 +64,26 @@ const Countdown = ({ targetDate }) => {
       ))}
     </div>
   );
-  
+
 };
 
 
 export default function Home({ data }) {
+
+  const [buttonSize, setButtonSize] = useState('large');
+
+  useEffect(() => {
+    const updateButtonSize = () => {
+      setButtonSize(window.innerWidth < 1024 ? 'small' : 'large');
+    };
+
+    window.addEventListener('resize', updateButtonSize);
+    updateButtonSize(); // Initialize on component mount
+
+    return () => {
+      window.removeEventListener('resize', updateButtonSize);
+    };
+  }, []);
 
   const heroTextRef = useRef(null);
   const heroBtn = useRef(null);
@@ -113,34 +128,48 @@ export default function Home({ data }) {
 
       <div className='absolute flex flex-col pt-20 xl:pt-[150px] 2xl:pt-40 items-center w-full' style={{ zIndex: 2 }} >
         <div>
-          <div className='' 
+          <div className=''
           // style={{
           //   backgroundImage: `url(${LayerImage.src})`,
           //   backgroundSize: '100% auto',
           //   backgroundRepeat: 'no-repeat',
           //   backgroundPosition: '0% 0%',
           //   zIndex: 2,}}
-            >
+          >
             {/* <PageTitle type={2} title='MARKETING CHALLENGERS'></PageTitle> */}
             {/* <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss12-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 sm:pt-10'}></ImageHolder>           */}
-          <PageTitle className='flex justify-center lg:mb-6 lg:pt-[1200px] pt-[200px]' title='GRAB YOUR SPARK NOW' />
+            <PageTitle className='flex justify-center lg:mb-6 lg:pt-[1200px] pt-[200px]' title='GRAB YOUR SPARK NOW' />
           </div>
           <div>
             <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest lg:leading-10 text-glow-strong box-border lg:w-3/4 lg:h-[300px] lg:border-8 border-4 mx-auto lg:pt-8'>
               <Countdown className='' targetDate={new Date('2024-04-03T20:00:00+07:00')} />
             </div>
-            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-12 mt-20'>
-              <Button ref={heroBtn} onClick={() => {
-                window.location.href = 'https://forms.gle/K8kAi7rJqWZ1uqan9';
-              }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'REGISTER NOW'} size='large'></Button>
+            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-12 mt-16'>
+              <Button
+                onClick={() => {
+                  window.location.href = 'https://forms.gle/K8kAi7rJqWZ1uqan9';
+                }}
+                isGlow={true}
+                type='primary'
+                className='animate-bounce-slow font-bold mt-4'
+                text={'REGISTER NOW'}
+                size={buttonSize}
+              />
             </div>
             <div className='pl-4 space-y-0 lg:space-y-1'>
               <p className='text-center text-headline-31 font-bold text-glow-strong lg:mt-2 -mt-12'>More information:</p>
             </div>
-            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-6 mt-20'>
-              <Button ref={heroBtn} onClick={() => {
-                window.location.href = 'https://quickom.net/event/opening-ceremony-marketing-challengers-1564?zarsrc=1303&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo';
-              }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'Registration for Opening Ceremony'} size='large'></Button>
+            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-6 mt-12'>
+              <Button
+                onClick={() => {
+                  window.location.href = 'https://quickom.net/event/opening-ceremony-marketing-challengers-1564?zarsrc=1303&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo';
+                }}
+                isGlow={true}
+                type='primary'
+                className='animate-bounce-slow font-bold mt-4'
+                text={'Registration for Opening Ceremony'}
+                size={buttonSize}
+              />
             </div>
           </div>
           <PageTitle className='hidden lg:flex justify-center mt-20' title='MARKETING CHALLENGERS' />
