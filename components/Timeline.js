@@ -160,7 +160,7 @@ const Timeline = () => {
                                                             </ul>
                                                         </span>
                                                     </li>
-                                                    <li><span className="font-black text-[18px] text-glow-strong">Format:</span> <span className="font-light text-[18px]">Online</span></li>
+                                                    <li><span className="font-black text-[18px] text-glow-strong">Format:</span> <span className="font-light text-[18px]">Offline at RMIT University</span></li>
                                                     <li><span className="font-black text-[18px] text-glow-strong">Attendance:</span> <span className="font-light text-[18px]">Top 8 teams</span></li>
                                                 </ul>
                                             </span>
@@ -193,7 +193,7 @@ const Timeline = () => {
                                             <span className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 w-96" style={{ right: '100%', top: '0', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }}>
                                                 <ul className="space-y-1 list-disc text-left">
                                                     <li><span className="font-black text-[18px] text-glow-strong">Description:</span> <span className="font-light text-[18px]">The top 4 teams will respectively present their IMC plan to Round 2’s case study. Then, the top 2 will be decided by round judges and come to the mini case study round. Final results announcement and reward session are conducted.</span></li>
-                                                    <li><span className="font-black text-[18px] text-glow-strong">Date and Time:</span> <span className="font-light text-[18px]">1:30 pm - 6:00 pm 18/05/2024</span></li>
+                                                    <li><span className="font-black text-[18px] text-glow-strong">Date and Time:</span> <span className="font-light text-[18px]">1:30 pm - 6:00 pm 19/05/2024</span></li>
                                                 </ul>
                                             </span>
 
