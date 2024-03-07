@@ -144,7 +144,7 @@ export default function Home({ data }) {
             <div className='flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest lg:leading-10 text-glow-strong box-border lg:w-3/4 lg:h-[300px] lg:border-8 border-4 mx-auto lg:pt-8'>
               <Countdown className='' targetDate={new Date('2024-04-03T20:00:00+07:00')} />
             </div>
-            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-12 mt-16'>
+            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-12 mt-20'>
               <Button
                 onClick={() => {
                   window.location.href = 'https://forms.gle/K8kAi7rJqWZ1uqan9';
@@ -159,7 +159,7 @@ export default function Home({ data }) {
             <div className='pl-4 space-y-0 lg:space-y-1'>
               <p className='text-center text-headline-31 font-bold text-glow-strong lg:mt-2 -mt-12'>More information:</p>
             </div>
-            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-6 mt-12'>
+            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-6 mt-20'>
               <Button
                 onClick={() => {
                   window.location.href = 'https://quickom.net/event/opening-ceremony-marketing-challengers-1564?zarsrc=1303&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo';
