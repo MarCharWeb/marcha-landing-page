@@ -63,7 +63,7 @@ const News = ({ data }) => {
 
         </Head>
         {/* <ImageHolder src={NewsBg} alt='marketing-challengers-season11-news' style={{position: 'absolute'}} className={'w-[125vw] z-[-1] h-screen top-0 left-0 '}/> */}
-        <PageTitle type={1} title='BLOGS'></PageTitle>
+        <PageTitle type={1} title='NEWS'></PageTitle>
 
         <div className="mt-5 space-y-5 xl:space-y-6 xl:mt-14">
             {showList.length > 0 && showList.map(({ title, thumbnail, slug, abstract }) => <BlogCard title={title} key={title} thumbnail={thumbnail.asset} slug={slug.current} abstract={abstract} />)}
