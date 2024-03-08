@@ -66,7 +66,7 @@ const Navigation = () => {
             </li>
             <li className={'px-4 py-2 li-hover-effect '}>
                 <Link href={'/news'}>
-                    <a className={`nav-item ${router.asPath == '/news' ? 'active-link' : ''} font-bold`}>BLOG</a>
+                    <a className={`nav-item ${router.asPath == '/news' ? 'active-link' : ''} font-bold`}>NEWS</a>
                 </Link>
             </li>
             <li className={'px-4 py-2 li-hover-effect '}>
