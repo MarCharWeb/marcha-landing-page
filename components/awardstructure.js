@@ -261,7 +261,7 @@ const Awardstructure = () => {
                 </div>
                     <span style={{ width: '500px', right: '50%', top: '50px', zIndex: '50', backgroundColor: '#3D067D', opacity: '0.9', zIndex: '50', fontFamily: 'Brandon Grotesque' }} className="absolute hidden group-hover:block bg-black text-white border-2 border-yellow-500 rounded-md p-5 pb-5">
                         <div className="w-full flex justify-center">
-                            <span className="font-black text-[18px] text-glow-strong">TOP 8</span>
+                            <span className="font-black text-[18px] text-glow-strong">TOP 30</span>
 
                         </div>
                         <ul className="list-disc text-justify font-light text-[16px] leading-6">
