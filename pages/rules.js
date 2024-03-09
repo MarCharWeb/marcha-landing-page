@@ -73,12 +73,12 @@ const Rules = () => {
                         </li>
                         <li><strong className="">Regulation for candidates:</strong>
                             <ul className="pl-4 space-y-1 list-[circle]">
-                                <li>Join the event on time</li>
-                                <li>Open the camera to communicate with guest speakers</li>
-                                <li>Must not share screen or turn on the microphone while guest speakers are sharing</li>
-                                <li>Must not spam messages in the chat box</li>
-                                <li>Follow the instruction of displaying candidate name during the event</li>
-                                <li>Have a respectful attitude when interacting with others</li>
+                                <li>Join the event on time.</li>
+                                <li>Open the camera to communicate with guest speakers.</li>
+                                <li>Must not share screen or turn on the microphone while guest speakers are sharing.</li>
+                                <li>Must not spam messages in the chat box.</li>
+                                <li>Follow the instruction of displaying candidate name during the event.</li>
+                                <li>Have a respectful attitude when interacting with others.</li>
                                 <li>Marketing Challengers still has live broadcasts of this series on Facebook Page & Facebook Group.</li>
                             </ul>
 
