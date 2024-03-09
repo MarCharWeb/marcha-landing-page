@@ -115,7 +115,7 @@ const Rules = () => {
                 </div>
                 <div>
                     <ul className="space-y-1 list-disc -mt-6 lg:px-24 text-left">
-                        <li><p>Candidates must obey the copyright laws and not violate the copyrights of any other third parties. The Organisers of this Contest, RMIT Business Club, is not responsible for any breach by the candidate.</p></li>
+                        <li><p>Candidates must obey the copyright laws and not violate the copyrights of any other third parties. The Organisers of this Contest, RMIT Vietnam Business Club - SGS, is not responsible for any breach by the candidate.</p></li>
                         <li><p>RMIT Vietnam Business Club - SGS reserves the right to publish and display the Project, using its content and images for publicity, promotion and non-payment purposes.</p></li>
                         <li><p>The Organising Team, RMIT Vietnam Business Club - SGS, sponsors and RMIT will not use the candidate&apos; s work for any purpose other than grading and filtering out the best works for awarding.</p></li>
                         <li><p>If a sponsor desires to use a candidate&apos; s idea, the sponsor and candidate will enter into a separate agreement. The Organizing Team, RMIT Vietnam Business Club - SGS, and RMIT <strong>are not responsible</strong> for this consent or any ensuing circumstances.</p></li>
