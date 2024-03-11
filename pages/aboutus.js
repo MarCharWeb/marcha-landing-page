@@ -50,12 +50,18 @@ const AboutUs = () => {
                         </div>
 
                         <div className="flex justify-center items-center w-full mt-4">
-                        <Button ref={heroBtn} onClick={() => {
-                            window.location.href = 'https://drive.google.com/file/d/1n-cBvve8X_ZNyKfBA0OFWZ9oOhK26Ye_/view?fbclid=IwAR2hiO5MDx-4S_qtUCXy95LsUcxPHIaoAOAs-INb6i9UhgfPW8w0c8jtrhY';
-                        }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'MARCHA BOOKLET'} size='large'></Button>
+                            <Button 
+                              ref={heroBtn} 
+                              onClick={() => {
+                                window.open('https://drive.google.com/file/d/1n-cBvve8X_ZNyKfBA0OFWZ9oOhK26Ye_/view?fbclid=IwAR2hiO5MDx-4S_qtUCXy95LsUcxPHIaoAOAs-INb6i9UhgfPW8w0c8jtrhY', '_blank');
+                              }} 
+                              isGlow={true} 
+                              type='primary' 
+                              className='animate-bounce-slow font-bold' 
+                              text={'MARCHA BOOKLET'} 
+                              size='large'>
+                            </Button>
                         </div>
-                        
-
                         <div className='mt-12 lg:mt-32'>
                             <PageTitle className=" md:flex items-center justify-center" title={'SEASON 11 MILESTONES'}></PageTitle>
                         </div>
