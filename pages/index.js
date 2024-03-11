@@ -149,7 +149,7 @@ export default function Home({ data }) {
             <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-12 mt-20'>
               <Button
                 onClick={() => {
-                  window.location.href = 'https://forms.gle/K8kAi7rJqWZ1uqan9';
+                  window.location.href = 'https://forms.gle/zy4HRYkZzay943io9';
                 }}
                 isGlow={true}
                 type='primary'
