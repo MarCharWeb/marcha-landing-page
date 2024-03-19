@@ -59,7 +59,7 @@ const Footer = () => {
                 </a>
                 </div>
                 <div className="footer-hover-effect">
-                    <a target='_blank' rel="noreferrer" href="https://open.spotify.com/show/2Z04Hb6Ate8xan1p9fALZO" className="flex flex-col items-center place-self-stretch p-2">
+                    <a target='_blank' rel="noreferrer" href="https://www.tiktok.com/@marketingchallengers?_t=8kcDEZAyBd3&_r=1" className="flex flex-col items-center place-self-stretch p-2">
                         <FaTiktok size={'1.35em'}/>
                         <span className="text-XSmall-12 lg:text-small-16 mt-3">Tiktok</span>
                     </a>
