@@ -1,3 +1,4 @@
+import { FaTiktok } from "react-icons/fa";
 const Footer = () => {
     return ( 
         <div style={{ position: 'relative', zIndex: 100, backgroundColor: 'rgba(61, 6, 125, 0.6)', paddingLeft: '15px', paddingRight: '15px'}}>
@@ -57,7 +58,12 @@ const Footer = () => {
 
                 </a>
                 </div>
-
+                <div className="footer-hover-effect">
+                    <a target='_blank' rel="noreferrer" href="https://open.spotify.com/show/2Z04Hb6Ate8xan1p9fALZO" className="flex flex-col items-center place-self-stretch p-2">
+                        <FaTiktok size={'1.35em'}/>
+                        <span className="text-XSmall-12 lg:text-small-16 mt-3">Tiktok</span>
+                    </a>
+                 </div>
             </div>
         </div>
     </section> 
