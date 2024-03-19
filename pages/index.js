@@ -164,7 +164,7 @@ export default function Home({ data }) {
             <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-6 mt-20'>
               <Button
                 onClick={() => {
-                  // window.location.href = 'https://quickom.net/event/opening-ceremony-marketing-challengers-1564?zarsrc=1303&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo';
+                  window.open('https://quickom.net/event/opening-ceremony-marketing-challengers-1564?fbclid=IwAR1bJVTdK5QhytE_PJx8tZDRdBwqrti-femA4I2k3xuyhKd0vYAvlXIADWw', '_blank');
                 }}
                 isGlow={true}
                 type='primary'
