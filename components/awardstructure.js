@@ -17,7 +17,7 @@ const Awardstructure = () => {
                 <ImageHolder src={Trophy} alt='marketing-challengers-season11-value' className={'w-[200px] h-[192px] xl:w-[277px] xl:h-[267px]'} ></ImageHolder>
             </div>
             <div className='hidden lg:flex bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md'>
-                <div className="text-center">
+                <div className="text-center w-full">
                     <div className="lg:pb-4">
                         <span className="text-[22px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">CHAMPION</span>
                     </div>
