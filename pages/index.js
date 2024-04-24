@@ -30,12 +30,21 @@ const Countdown = ({ targetDate }) => {
         Minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
         Seconds: Math.floor((difference % (1000 * 60)) / 1000),
       };
+    } else {
+      timeLeft = {
+        Days: 0,
+        Hours: 0,
+        Minutes: 0,
+        Seconds: 0,
+      };
     }
 
     return timeLeft;
   };
 
   const formatValue = (value) => {
+    // Handle undefined values by defaulting to zero before formatting
+    value = value ?? 0;
     return value < 10 ? `0${value}` : value;
   };
 
@@ -43,7 +52,8 @@ const Countdown = ({ targetDate }) => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      const newTimeLeft = calculateTimeLeft();
+      setTimeLeft(newTimeLeft);
     }, 1000);
 
     return () => clearInterval(timer);
@@ -53,18 +63,17 @@ const Countdown = ({ targetDate }) => {
     <div className="flex justify-center">
       {Object.entries(timeLeft).map(([unit, value], index, array) => (
         <React.Fragment key={unit}>
-          <div className="text-center mx-3 lg:mx-5 mt-2" >
+          <div className="text-center mx-3 lg:mx-5 mt-2">
             <div className='text-[30px] lg:text-[150px]' style={{ fontFamily: "'Brandon Grotesque', sans-serif", fontWeight: 'bold' }}>
               {formatValue(value)}
             </div>
-            <div className="text-[12px] lg:text-[30px] font-bold lg:mt-8 ">{unit}</div>
+            <div className="text-[12px] lg:text-[30px] font-bold lg:mt-8">{unit}</div>
           </div>
           {index < array.length - 1 && <div className='hidden lg:flex lg:pb-20 pb-[50px] text-[30px] lg:text-[150px]' style={{ alignSelf: 'flex-end', fontWeight: 'bold' }}>:</div>}
         </React.Fragment>
       ))}
     </div>
   );
-
 };
 
 
