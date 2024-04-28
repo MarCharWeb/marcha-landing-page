@@ -47,7 +47,7 @@ const EventInfo = () => {
                 <div className="h-[250px] lg:w-1/2 w-full bg-blue-300 text-justify lg:mt-10 lg:mx-4 flex justify-end items-center">
                     <div style={{ borderRadius: '50px' }} className="gradient-bg-big-left flex-col flex items-center justify-center">
                         <div className="m-7">
-                            At Webinar 1, contestants will discover information related to the topic of season 12 and will help them in the process of solving the case in round 1. Don't hesitate to take this opportunity and enter this exciting journey ahead.
+                            At Webinar 1, contestants will discover information related to the topic of season 12 and will help them in the process of solving the case in round 1. Don&apos;t hesitate to take this opportunity and enter this exciting journey ahead.
                         </div>
                         <Button
                             onClick={() => {
@@ -104,7 +104,7 @@ const EventInfo = () => {
                 <div className="h-[250px] lg:w-1/2 w-full bg-blue-300 text-justify lg:mt-10 lg:mx-4 flex justify-end items-center">
                     <div style={{ borderRadius: '50px' }} className="gradient-bg-big-right flex-col flex items-center justify-center">
                         <div className="m-7">
-                            Test Drive will create an opportunity for contestants to supplement their knowledge about MET.EV's brand and products that have not been published online, and confidently conquer the upcoming rounds. Let's quickly learn to understand the values, orientation and spirit of the brand.                        </div>
+                            Test Drive will create an opportunity for contestants to supplement their knowledge about MET.EV&apos;s brand and products that have not been published online, and confidently conquer the upcoming rounds. Let&apos;s quickly learn to understand the values, orientation and spirit of the brand.                        </div>
                         <Button
                             onClick={() => {
                                 window.open('https://www.facebook.com/marketing.challengers/posts/pfbid025855WE9wXtDVJ9S5BjjfiTDrLbRP4eU4tVLAvWx6RXDsovbvXLunNFLjRnxHcuvml', '_blank');
@@ -122,7 +122,7 @@ const EventInfo = () => {
                 <div className="h-[250px] lg:w-1/2 w-full bg-blue-300 text-justify lg:mt-10 lg:mx-4 flex justify-end items-center">
                     <div style={{ borderRadius: '50px' }} className="gradient-bg-big-left flex-col flex items-center justify-center">
                         <div className="m-7">
-                            At the Opening Ceremony, contestants will have the opportunity to hear details about the competition rounds, exam structure, prizes and at the same time meet and interact with big brands. Therefore, don't miss these valuable and useful moments!                        </div>
+                            At the Opening Ceremony, contestants will have the opportunity to hear details about the competition rounds, exam structure, prizes and at the same time meet and interact with big brands. Therefore, don&apos;t miss these valuable and useful moments!                        </div>
                         <Button
                             onClick={() => {
                                 window.open('https://www.facebook.com/marketing.challengers/posts/pfbid0iFFynV3kYLWr9UfrW8eJumNL4DAyYQ7itvVDMCasJafW846SyntLBtoTbHSw4iMBl', '_blank');
@@ -177,7 +177,7 @@ const EventInfo = () => {
                 <div className="h-[250px] lg:w-1/2 w-full bg-blue-300 text-justify lg:mt-10 lg:mx-4 flex justify-end items-center">
                     <div style={{ borderRadius: '50px' }} className="gradient-bg-big-right flex-col flex items-center justify-center">
                         <div className="m-7">
-                            Coming to Webinar 2, contestants will discover many different ways to find customer "insight", learn how to avoid assumptions when searching and prepare more thoroughly for round 1 of the competition.
+                            Coming to Webinar 2, contestants will discover many different ways to find customer &quot;insight&quot;, learn how to avoid assumptions when searching and prepare more thoroughly for round 1 of the competition.
                         </div>
                         <Button
                             onClick={() => {
@@ -196,7 +196,7 @@ const EventInfo = () => {
                 <div className="h-[250px] lg:w-1/2 w-full bg-blue-300 text-justify lg:mt-10 lg:mx-4 flex justify-end items-center">
                     <div style={{ borderRadius: '50px' }} className="gradient-bg-big-left flex-col flex items-center justify-center">
                         <div className="m-7">
-                            During the Workshop, the Top 30 will  hear useful sharing about how to implement a real Marketing campaign from an agency's perspective and practiced exercises to deepen their knowledge. Don't miss the opportunity to learn from these experts.                        </div>
+                            During the Workshop, the Top 30 will  hear useful sharing about how to implement a real Marketing campaign from an agency&apos;s perspective and practiced exercises to deepen their knowledge. Don&apos;t miss the opportunity to learn from these experts.                        </div>
                         <Button
                             onClick={() => {
                                 window.open('https://www.facebook.com/marketing.challengers/posts/pfbid02LAzmqKpkTmmVdYViQFX2oxQWSDQjpjyEZvbPbUv8JXbpgQfYHbY1ivsuSHqMETFtl', '_blank');
