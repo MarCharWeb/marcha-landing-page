@@ -11,17 +11,17 @@ import TD1 from '../assets/EventInfo/TestDrive/1.png';
 import TD2 from '../assets/EventInfo/TestDrive/2.png';
 import TD3 from '../assets/EventInfo/TestDrive/3.png';
 
-import W11 from '../assets/EventInfo/Webinar1/1.png';
-import W12 from '../assets/EventInfo/Webinar1/2.png';
-import W13 from '../assets/EventInfo/Webinar1/3.png';
+import W11 from '../assets/EventInfo/webinar1/1.png';
+import W12 from '../assets/EventInfo/webinar1/2.png';
+import W13 from '../assets/EventInfo/webinar1/3.png';
 
-import W21 from '../assets/EventInfo/Webinar2/1.png';
-import W22 from '../assets/EventInfo/Webinar2/2.png';
-import W23 from '../assets/EventInfo/Webinar2/3.png';
+import W21 from '../assets/EventInfo/webinar2/1.png';
+import W22 from '../assets/EventInfo/webinar2/2.png';
+import W23 from '../assets/EventInfo/webinar2/3.png';
 
-import WS1 from '../assets/EventInfo/Workshop/1.png';
-import WS2 from '../assets/EventInfo/Workshop/2.png';
-import WS3 from '../assets/EventInfo/Workshop/3.png';
+import WS1 from '../assets/EventInfo/workshop/1.png';
+import WS2 from '../assets/EventInfo/workshop/2.png';
+import WS3 from '../assets/EventInfo/workshop/3.png';
 
 
 
