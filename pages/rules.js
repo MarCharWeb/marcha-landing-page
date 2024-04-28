@@ -96,7 +96,7 @@ const Rules = () => {
                 <div>
                     <ul className="space-y-1 list-disc -mt-6 lg:px-24 text-left">
                         <li><p>No registration fees necessary for entering the competition.</p></li>
-                        <li><p>All materials submitted must be candidates’ own work and must not be under the submission of other competitions. Any duplication of outside sources must be referenced properly to avoid plagiarism.</p></li>
+                        <li><p>All materials submitted must be candidates&apos; own work and must not be under the submission of other competitions. Any duplication of outside sources must be referenced properly to avoid plagiarism.</p></li>
                         <li><p>Candidates must not reveal the datasets and questions from all rounds to ensure the confidentiality of the contest.</p></li>
                         <li><p>Candidates must maintain a courteous and respectful demeanor throughout the competition toward the organizers, judges, sponsors, guest speakers, mentors, and other teams. Candidates shall not make deceptive comments that may affect the stakeholders involved.</p></li>
                         <li><p>The Organising Team, RMIT Vietnam Business Club - SGS, sponsors and RMIT reserve the right to use all data, entries, photographs for communication purposes and other legal purposes.</p></li>
