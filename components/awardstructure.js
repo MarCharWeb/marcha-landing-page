@@ -4,12 +4,6 @@ import Trophy from '../assets/trophy.png'; // Import the image
 import ImageHolder from "./ImageHolder";
 
 const Awardstructure = () => {
-    const router = useRouter();
-
-    const handleClick = () => {
-        router.push('/ourhuman');
-    };
-
     return (
         <main className="space-y-1 flex flex-col justify-center items-center h-screen pt-[500px]">
             <div className="flex flex-col items-center justify-center pt-40 mt-40 sm:pt-0">
