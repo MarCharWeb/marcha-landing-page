@@ -50,7 +50,7 @@ const halloffame = () => {
                             <div className=" text-center p-8 relative rounded-lg h-[240px] w-[326px] bg-transparent border-2 border-yellow-500">
                                 <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                 <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 5</h2>
-                                <p className="text-white text-[20px]">
+                                <p className="text-white text-[19px]">
                                     Nguyen Ngoc Thuy Quynh
                                 </p>
                                 <p className="text-white text-[20px]">
@@ -110,7 +110,7 @@ const halloffame = () => {
                                 <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">
                                     <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 8</h2>
-                                    <p className="text-white text-[18px]">
+                                    <p className="text-white text-[17px]">
                                     Nguyen Viet Truong Son - APD
                                     </p>
                                     <p className="text-white text-[18px]">
@@ -171,7 +171,7 @@ const halloffame = () => {
                                     <p className="text-white text-[18px]">
                                     Nguyen Vu Quynh Anh - FTU 1
                                     </p>
-                                    <p className="text-white text-[18px] mb-2">
+                                    <p className="text-white text-[17px] mb-2">
                                     Nguyen Gia Nhat Truong - UEH
                                     </p>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[22px]">THE MAGIC</h2>
