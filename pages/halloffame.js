@@ -10,21 +10,13 @@ const halloffame = () => {
             backgroundPosition: '0% 0%',
             zIndex: 2,
         }}>
-            <style>
-                {`
-                    .gradient-bg 
-                    {
-                        background-image: linear-gradient(90deg, #f85f1d, #6739b1);
-                    }
-                `}
-            </style>
             <section className='pt-28 pb-10' >
 
                 <PageTitle className="" title={"HALL OF FAME"}></PageTitle>
                 <div className="flex flex-col items-center justify-center text-center">
                     <p className='font-extrabold lg:text-[27px] text-[25px] my-4'>CERAVE&#39;S CHALLENGE</p>
                     <div>
-                        <div className="gradient-bg text-center p-8 relative rounded-lg h-[222px] w-[300px]">
+                        <div className="text-center p-8 relative rounded-lg h-[222px] w-[300px] bg-transparent border-2 border-yellow-500">
                             <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                             <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">WINNER</h2>
                             <p className="text-white text-[20px]">
@@ -40,7 +32,7 @@ const halloffame = () => {
                     </div>
                     <div className="flex flex-row mt-6">
                         <div className="mr-6">
-                            <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[326px]">
+                            <div className=" text-center p-8 relative rounded-lg h-[240px] w-[326px] bg-transparent border-2 border-yellow-500">
                                 <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                 <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 5</h2>
                                 <p className="text-white text-[20px]">
@@ -55,7 +47,7 @@ const halloffame = () => {
 
                         </div>
                         <div className="ml-6">
-                            <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[326px]">
+                            <div className=" text-center p-8 relative rounded-lg h-[240px] w-[326px] bg-transparent border-2 border-yellow-500">
                                 <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                 <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 5</h2>
                                 <p className="text-white text-[20px]">
@@ -75,7 +67,7 @@ const halloffame = () => {
                     </div>
                     <div className="flex flex-row mt-6">
                         <div className="mr-6">
-                            <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[326px]">
+                            <div className=" text-center p-8 relative rounded-lg h-[240px] w-[326px] bg-transparent border-2 border-yellow-500">
                                 <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                 <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 5</h2>
                                 <p className="text-white text-[20px]">
@@ -93,7 +85,7 @@ const halloffame = () => {
 
                         </div>
                         <div className="ml-6">
-                            <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[326px]">
+                            <div className=" text-center p-8 relative rounded-lg h-[240px] w-[326px] bg-transparent border-2 border-yellow-500">
                                 <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                 <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 5</h2>
                                 <p className="text-white text-[20px]">
@@ -115,7 +107,7 @@ const halloffame = () => {
                     <div className="flex flex-row">
                         <div className="flex flex-row mt-6">
                             <div className="">
-                                <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[340px]">
+                                <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">
                                     <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 8</h2>
                                     <p className="text-white text-[18px]">
@@ -133,7 +125,7 @@ const halloffame = () => {
 
                             </div>
                             <div className="ml-6 mr-3">
-                                <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[340px]">
+                                <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">
                                     <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 8</h2>
                                     <p className="text-white text-[18px]">
@@ -153,7 +145,7 @@ const halloffame = () => {
                         </div>
                         <div className="flex flex-row mt-6">
                             <div className="ml-3 mr-6">
-                                <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[340px]">
+                                <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">
                                     <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 8</h2>
                                     <p className="text-white text-[18px]">
@@ -170,7 +162,7 @@ const halloffame = () => {
 
                             </div>
                             <div className="">
-                                <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[340px]">
+                                <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">
                                     <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 8</h2>
                                     <p className="text-white text-[18px]">
@@ -192,7 +184,7 @@ const halloffame = () => {
                     <div className="flex flex-row">
                         <div className="flex flex-row mt-6">
                             <div className="">
-                                <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[340px]">
+                                <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">
                                     <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 8</h2>
                                     <p className="text-white text-[18px]">
@@ -209,7 +201,7 @@ const halloffame = () => {
 
                             </div>
                             <div className="ml-6 mr-3">
-                                <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[340px]">
+                                <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">
                                     <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 8</h2>
                                     <p className="text-white text-[18px]">
@@ -218,7 +210,7 @@ const halloffame = () => {
                                     <p className="text-white text-[18px]">
                                     Ho Minh Thu - RMIT SGS
                                     </p>
-                                    <p className="text-white text-[17px] mb-2">
+                                    <p className="text-white text-[16px] mb-2">
                                     Pham Tran Thu Ngan - RMIT SGS
                                     </p>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[22px]">22H</h2>
@@ -229,7 +221,7 @@ const halloffame = () => {
                         </div>
                         <div className="flex flex-row mt-6">
                             <div className="ml-3 mr-6">
-                                <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[340px]">
+                                <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">
                                     <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 8</h2>
                                     <p className="text-white text-[18px]">
@@ -246,7 +238,7 @@ const halloffame = () => {
 
                             </div>
                             <div className="">
-                                <div className="gradient-bg text-center p-8 relative rounded-lg h-[240px] w-[340px]">
+                                <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">
                                     <div className="absolute inset-0 pointer-events-none rounded-[20px]"></div>
                                     <h2 className="text-xl font-bold text-white mb-2 text-glow-strong text-[30px]">TOP 8</h2>
                                     <p className="text-white text-[18px]">
