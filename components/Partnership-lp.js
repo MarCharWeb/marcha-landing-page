@@ -165,7 +165,7 @@ const Partnershiplp = () => {
                 <div className="flex flex-row">
                     <div className="flex flex-row mt-6">
                         <div className="">
-                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
+                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanMimg} />
                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px]">MS. Vo Huynh Minh Xuan</h2>
                                 <p className="text-white text-[18px]">
@@ -174,7 +174,7 @@ const Partnershiplp = () => {
                             </div>
                         </div>
                         <div className="ml-6 mr-3">
-                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
+                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamMimg} />
                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px]">Ms. Thoa Pham</h2>
                                 <p className="text-white text-[18px]">
@@ -185,7 +185,7 @@ const Partnershiplp = () => {
                     </div>
                     <div className="flex flex-row mt-6">
                         <div className="ml-3 mr-6">
-                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
+                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungMimg} />
                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px]">Ms. Nguyen Thi Hong Nhung</h2>
                                 <p className="text-white text-[18px]">
@@ -194,7 +194,7 @@ const Partnershiplp = () => {
                             </div>
                         </div>
                         <div className="">
-                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
+                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenMimg} />
                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px]">Ms. Tran Kim Hoang Yen</h2>
                                 <p className="text-white text-[18px]">
@@ -207,7 +207,7 @@ const Partnershiplp = () => {
                 <div className="flex flex-row">
                     <div className="flex flex-row mt-6">
                         <div className="">
-                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
+                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoMimg} />
                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px]">Ms. Quynh Do</h2>
                                 <p className="text-white text-[18px]">
@@ -216,7 +216,7 @@ const Partnershiplp = () => {
                             </div>
                         </div>
                         <div className="ml-6 mr-3">
-                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
+                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeMimg} />
                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px]">Mr. Tri Minh Le</h2>
                                 <p className="text-white text-[18px]">
@@ -227,7 +227,7 @@ const Partnershiplp = () => {
                     </div>
                     <div className="flex flex-row mt-6">
                         <div className="ml-3 mr-6">
-                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
+                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyMimg} />
                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px]">Mr. Dang Quang Huy</h2>
                                 <p className="text-white text-[18px]">
@@ -236,7 +236,7 @@ const Partnershiplp = () => {
                             </div>
                         </div>
                         <div className="">
-                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
+                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px]">
                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangMimg} />
                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px]">Ms. Duong An Giang</h2>
                                 <p className="text-white text-[18px]">
