@@ -2,8 +2,8 @@ import Button from '../components/Button'
 import PageTitle from '../components/PageTitle'
 import Timeline from '../components/Timeline'
 import EventInfo from '../components/EventInfo'
-import CRVChallenge from '../components/CRVChallenge'
 import Sponsor from '../components/Sponsor'
+import Partnershiplp from '../components/Partnership-lp'
 import { sanityClient } from '../config/sanity';
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
@@ -149,28 +149,13 @@ export default function Home({ data }) {
           >
             {/* <PageTitle type={2} title='MARKETING CHALLENGERS'></PageTitle> */}
             {/* <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss12-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 sm:pt-10'}></ImageHolder>           */}
-            <PageTitle className='flex justify-center lg:mb-6 lg:pt-[1200px] pt-[200px]' title='GRAB YOUR SPARK NOW' />
+            <PageTitle className='flex justify-center lg:pt-[1200px] pt-[200px]' title='GRAB YOUR SPARK NOW' />
           </div>
           <div>
             <div className='flex items-center justify-center w-screen'>
-            <div className='inline-flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest lg:leading-10 text-glow-strong box-border lg:w-3/4 lg:h-[300px] lg:border-8 border-4 mx-auto lg:pt-8 '>
-              <Countdown className='' targetDate={new Date('2024-04-03T20:00:00+07:00')} />
-            </div>
-            </div>
-            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-12 mt-20'>
-              <Button
-                onClick={() => {
-                  window.open('https://forms.gle/zy4HRYkZzay943io9', '_blank');
-                }}
-                isGlow={true}
-                type='primary'
-                className='animate-bounce-slow font-bold mt-4'
-                text={'REGISTER NOW'}
-                size={buttonSize}
-              />
-            </div>
-            <div className='pl-4 space-y-0 lg:space-y-1'>
-              <p className='text-center text-headline-31 font-bold text-glow-strong lg:mt-2 -mt-12'>More information:</p>
+              <div className='inline-flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest lg:leading-10 text-glow-strong box-border lg:w-3/4 lg:h-[300px] lg:border-8 border-4 mx-auto lg:pt-8 '>
+                <Countdown className='' targetDate={new Date('2024-05-18T23:59:59+07:00')} />
+              </div>
             </div>
             <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-6 mt-20'>
               <Button
@@ -180,7 +165,7 @@ export default function Home({ data }) {
                 isGlow={true}
                 type='primary'
                 className='animate-bounce-slow font-bold mt-4'
-                text={'Registration for Opening Ceremony'}
+                text={'Registration for Closing Ceremony'}
                 size={buttonSize}
               />
             </div>
@@ -202,11 +187,9 @@ export default function Home({ data }) {
       {/* text-[30px] lg:text-headline-30 invisible hero-title 2xl:text-hero-60 xl:text-[60px] tracking-widest leading-10  lg:text-glow-strong  text-primary-500 */}
       <Timeline></Timeline>
       <div className='pb-[450px]'><Awardstructure></Awardstructure></div>
-      <div><CRVChallenge></CRVChallenge></div>
       <div><EventInfo></EventInfo></div>
       <div><Sponsor></Sponsor></div>
-
-
+      <div><Partnershiplp></Partnershiplp></div>
       {/* <Award></Award> */}
       {/* <CallToAction></CallToAction> */}
       <News featurePosts={data}></News>

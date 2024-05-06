@@ -1,8 +1,5 @@
 import PageTitle from "../components/PageTitle";
-import { useRouter } from 'next/router';
-import ImageHolder from "../components/ImageHolder";
 import { useRef } from "react";
-import HeroText from '../assets/spark.png';
 import Footer from "../components/Footer";
 import newbg from '../assets/newbg.png';
 import React from "react";
@@ -63,12 +60,12 @@ const AboutUs = () => {
                             </Button>
                         </div>
                         <div className='mt-12 lg:mt-32'>
-                            <PageTitle className=" md:flex items-center justify-center" title={'SEASON 11 MILESTONES'}></PageTitle>
+                            <PageTitle className=" md:flex items-center justify-center" title={'SEASON 12 MILESTONES'}></PageTitle>
                         </div>
                         <div className="flex justify-center pt-8">
                             <div className='bg-transparent mx-4 group text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md '>
                                 <div className="text-center">
-                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">1100+</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">&gt;700</span>
                                     <br></br>
                                     <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">REGISTRATIONS</span>
                                 </div>
@@ -76,7 +73,7 @@ const AboutUs = () => {
 
                             <div className='bg-transparent mx-4 group text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
-                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">210+</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">&gt;300</span>
                                     <br></br>
                                     <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">TEAMS</span>
                                 </div>
@@ -86,7 +83,7 @@ const AboutUs = () => {
                         <div className="flex justify-center items-center py-8" >
                             <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
-                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">30+</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">&gt;30</span>
                                     <br></br>
                                     <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">UNIVERSITIES</span>
                                 </div>
@@ -94,7 +91,7 @@ const AboutUs = () => {
 
                             <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
-                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">31000+</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">&gt;33000</span>
                                     <br></br>
                                     <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">FOLLOWERS</span>
                                 </div>
