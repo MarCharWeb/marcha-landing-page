@@ -38,6 +38,10 @@ const Partnershiplp = () => {
                     {
                         background-image: linear-gradient(90deg, #f85f1d, #6739b1);
                     }
+                    .gradient-mentor-bg 
+                    {
+                        background-image: linear-gradient(90deg, #6739b1, #f8a01d);
+                    }
                 `}
             </style>
             <PageTitle className="" title={'PARTNERSHIP'}></PageTitle>
