@@ -62,7 +62,7 @@ const EventInfo = () => {
                 <div className="gradient-bg relative rounded-[50px] h-[800px] w-[800px] flex flex-col items-center justify-start mt-10">
                     <Image className="flex items-center justify-center object-center rounded-[30px]" src={TestDriveimg} />
                     <p className="text-white text-[18px] mx-4 mt-4 text-justify">
-                        Understanding the contestants' desires, MarCha has organized a "Test Drive" session to provide additional knowledge about the <span className="font-bold">MET</span>.<span className="font-bold">EV</span> brand and product that you won't find anywhere else on the internet. At the "Test Drive", you will have the opportunity: <br></br>
+                        Understanding the contestants&apos;desires, MarCha has organized a &quot;Test Drive&quot; session to provide additional knowledge about the <span className="font-bold">MET</span>.<span className="font-bold">EV</span> brand and product that you won&apos;t find anywhere else on the internet. At the &quot;Test Drive&quot;, you will have the opportunity: <br></br>
                         🌟Hear the sharing from the founder of <span className="font-bold">MET</span>.<span className="font-bold">EV</span><br></br>
                         🌟Understand the value and direction of the brand<br></br>
                         🌟Understand the spiritual value of the product<br></br>
@@ -86,7 +86,7 @@ const EventInfo = () => {
                     <p className="text-white text-[18px] mx-4 mt-4 text-justify">
                         The Opening Ceremony is a milestone marking the official start of Marketing Challengers Season 12. Coming to the Opening Ceremony, you will have the opportunity to:<br></br>
                         🌟Understand the competition rounds, competition structure, and special prizes<br></br>
-                        🌟Meet and interact with the representatives of MarCha's sponsors<br></br>
+                        🌟Meet and interact with the representatives of MarCha&apos;s sponsors<br></br>
                         🌟Grasp thorough understanding and expectations from our Exclusive Sponsor MET.EV<br></br>
                         🌟Expand networking and find great teammates for your upcoming journey<br></br>
                         🌟Unveiling the winner team of <span className="font-bold">CeraVe&#39;𝘀 Challenge Category</span>
@@ -105,10 +105,10 @@ const EventInfo = () => {
                 <div className="gradient-bg relative rounded-[50px] h-[800px] w-[800px] flex flex-col items-center justify-start mt-10">
                     <Image className="flex items-center justify-center object-center rounded-[30px]" src={Webinar2img} />
                     <p className="text-white text-[18px] mx-4 mt-4 text-justify">
-                        You are so proud to announce the upcoming webinar entitled “<span className="font-bold">How to find an insightful insight</span>". In this webinar, we are glad to inform the presence of:<br></br>
+                        You are so proud to announce the upcoming webinar entitled &quot;<span className="font-bold">How to find an insightful insight</span>&quot;. In this webinar, we are glad to inform the presence of:<br></br>
                         🌿Mr. Nguyen Hai Minh - Chairman & Chief of Knowledge at Wisdom Agency<br></br>
                         🌿Ms. Lucy Pham - Webinar 2 Host<br></br>
-                        Don't miss out on this webinar, as you will have a chance to discover various ways to discover an insightful insight, know how to avoid assumptions when finding, an more importantly, get yourself well-prepared before the Round 1.
+                        Don&apos;t miss out on this webinar, as you will have a chance to discover various ways to discover an insightful insight, know how to avoid assumptions when finding, an more importantly, get yourself well-prepared before the Round 1.
                     </p>
                     <Button
                         onClick={() => {

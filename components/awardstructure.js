@@ -35,7 +35,7 @@ const Awardstructure = () => {
                         <li><p>1 2-Day 1-Night Ticket for Resort Room at a MVillage Branch per person.</p></li>
                         <li><p>1 Experience Voucher for the Sustainable Happiness Competency Transformation Class from Harmony Hub per person.</p></li>
                         <li><p>1 21-Day Experience Voucher from California Fitness & Yoga per person.</p></li>
-                        <li><p>1 L'Usine Signature Tote Bag per person.</p></li>
+                        <li><p>1 L&apos;Usine Signature Tote Bag per person.</p></li>
                         <li><p>2 Boxes of Sachet Products consisting of Kaya Premium Hainanese and Kaya Premium Nonya per person.</p></li>
                         <li><p>1 Three Piece Non-stick Ceramic Coated Cookware Set from Thien Nam Hoa Electronics per person.</p></li>
                         <li><p>Study Free 1 Course from the List of 13 Courses from Brands Vietnam per person.</p></li>
@@ -71,7 +71,7 @@ const Awardstructure = () => {
                         <li><p>1 2-Day 1-Night Ticket for Resort Room at a MVillage Branch per person.</p></li>
                         <li><p>1 Experience Voucher for the Sustainable Happiness Competency Transformation Class from Harmony Hub per person.</p></li>
                         <li><p>1 21-Day Experience Voucher from California Fitness & Yoga per person.</p></li>
-                        <li><p>1 L'Usine Signature Tote Bag per person.</p></li>
+                        <li><p>1 L&apos;Usine Signature Tote Bag per person.</p></li>
                         <li><p>2 Boxes of Sachet Products consisting of Kaya Premium Hainanese and Kaya Premium Nonya per person.</p></li>
                         <li><p>1 Three Piece Non-stick Ceramic Coated Cookware Set from Thien Nam Hoa Electronics per person.</p></li>
                         <li><p>Study Free 1 Course from the List of 13 Courses from Brands Vietnam per person.</p></li>
@@ -105,7 +105,7 @@ const Awardstructure = () => {
                         <li><p>1 Three-month Membership Card from Fonos Audiobooks per person.</p></li>
                         <li><p>1 Experience Voucher for the Sustainable Happiness Competency Transformation Class from Harmony Hub per person.</p></li>
                         <li><p>1 21-Day Experience Voucher from California Fitness & Yoga per person.</p></li>
-                        <li><p>1 L'Usine Signature Tote Bag per person.</p></li>
+                        <li><p>1 L&apos;Usine Signature Tote Bag per person.</p></li>
                         <li><p>2 Boxes of Sachet Products consisting of Kaya Premium Hainanese and Kaya Premium Nonya per person.</p></li>
                         <li><p>1 Three Piece Non-stick Ceramic Coated Cookware Set from Thien Nam Hoa Electronics per person.</p></li>
                         <li><p>Study Free 1 Course from the List of 13 Courses from Brands Vietnam per person.</p></li>
@@ -226,7 +226,7 @@ const Awardstructure = () => {
                             <li><p>1 Three-month Membership Card from Fonos Audiobooks per person.</p></li>
                             <li><p>1 Experience Voucher for the Sustainable Happiness Competency Transformation Class from Harmony Hub per person.</p></li>
                             <li><p>1 21-Day Experience Voucher from California Fitness & Yoga per person.</p></li>
-                            <li><p>1 L'Usine Signature Tote Bag per person.</p></li>
+                            <li><p>1 L&apos;Usine Signature Tote Bag per person.</p></li>
                             <li><p>2 Boxes of Sachet Products consisting of Kaya Premium Hainanese and Kaya Premium Nonya per person.</p></li>
                             <li><p>1 Three Piece Non-stick Ceramic Coated Cookware Set from Thien Nam Hoa Electronics per person.</p></li>
                             <li><p>Study Free 1 Course from the List of 13 Courses from Brands Vietnam per person.</p></li>
