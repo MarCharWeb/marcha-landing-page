@@ -2,12 +2,6 @@ import PageTitle from "../components/PageTitle";
 import Image from 'next/image';
 import Footer from "../components/Footer";
 
-import OCimg from '../assets/Website/Events/OC.jpg';
-import TestDriveimg from '../assets/Website/Events/TestDrive.jpg';
-import Webinar1img from '../assets/Website/Events/Webinar1.jpg';
-import Webinar2img from '../assets/Website/Events/webinar2.jpg';
-import Workshopimg from '../assets/Website/Events/Workshop.jpg';
-
 import DangQuangHuyimg from '../assets/Website/Judges/DangQuangHuy.png';
 import DaoHienMaiimg from '../assets/Website/Judges/DaoHienMai.png';
 import LeHuynhThienLanimg from '../assets/Website/Judges/LeHuynhThienLan.png';
