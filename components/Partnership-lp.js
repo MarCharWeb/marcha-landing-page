@@ -1,7 +1,6 @@
 import PageTitle from "../components/PageTitle";
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 
 import DangQuangHuyimg from '../assets/Website/Judges/DangQuangHuy.png';
 import DaoHienMaiimg from '../assets/Website/Judges/DaoHienMai.png';
@@ -66,15 +65,14 @@ const Partnershiplp = () => {
                 `}
             </style>
             <PageTitle className="" title={'PARTNERSHIP'}></PageTitle>
-
             <p className='font-extrabold lg:text-[27px] text-[25px] my-4 pt-4 text-glow-strong'>JUDGES FOR ROUND 1 & 2</p>
             <div className="flex flex-col items-center justify-center text-center">
                 <div className="flex flex-row">
                     <div className="flex flex-row mt-6">
                         <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                            <div className="hover-card-container ">
-                                <Link href="https://www.linkedin.com/in/paul3nguyen/" passHref>
-                                    <a target="_blank">
+                            <Link href="https://www.linkedin.com/in/paul3nguyen/" passHref>
+                                <a target="_blank">
+                                    <div className="hover-card-container ">
                                         <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                             <Image className="flex items-center justify-center object-center rounded-[30px]" src={PaulThangNguyenimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Paul Thang Nguyen</h2>
@@ -82,18 +80,17 @@ const Partnershiplp = () => {
                                                 Co-Founder & CGO at MET.EV and DEALERSEDGE
                                             </p>
                                         </div>
-                                    </a>
-                                </Link>
-                            </div>
-                            <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                            </span>
+                                    </div>
+                                    <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                    </span>
+                                </a>
+                            </Link>
                         </div>
-
                         <div className="ml-6 mr-3">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/mai-hien-dao-648a801a0/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/mai-hien-dao-648a801a0/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={DaoHienMaiimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Dao Hien Mai</h2>
@@ -101,20 +98,20 @@ const Partnershiplp = () => {
                                                     Associate Brand Manager<br></br> at Fonos
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-row mt-6">
                         <div className="ml-3 mr-6">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/thuanngominh/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/thuanngominh/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={NgoMinhThuanimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Ngo Minh Thuan</h2>
@@ -122,18 +119,18 @@ const Partnershiplp = () => {
                                                     Founder & Managing Director <br></br> at DNA Consulting
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
+                                        </div>
+                                    </a>
+                                </Link>
                                 <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
                                 </span>
                             </div>
                         </div>
                         <div className="">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
@@ -141,11 +138,11 @@ const Partnershiplp = () => {
                                                     Social Planner at <br></br> DNA Consulting
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -154,9 +151,9 @@ const Partnershiplp = () => {
                     <div className="flex flex-row mt-6">
                         <div className="">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/minhhainguyen2006/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/minhhainguyen2006/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenHaiMinhimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Nguyen Hai Minh</h2>
@@ -164,18 +161,18 @@ const Partnershiplp = () => {
                                                     Chairman & Chief of<br></br> Knowledge at Wisdom Agency
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="ml-6 mr-3">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/nguyennhuhatrang/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/nguyennhuhatrang/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenNhuHaTranimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Nhu Ha Trang</h2>
@@ -183,21 +180,20 @@ const Partnershiplp = () => {
                                                     Senior Strategist at <br></br> DNA Consulting
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
-
                     </div>
                     <div className="flex flex-row mt-6">
                         <div className="ml-3 mr-6">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/lan-l%C3%AA-hu%E1%BB%B3nh-thi%C3%AAn-95b979286/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/lan-l%C3%AA-hu%E1%BB%B3nh-thi%C3%AAn-95b979286/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={LeHuynhThienLanimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Le Huynh Thien Lan</h2>
@@ -205,18 +201,18 @@ const Partnershiplp = () => {
                                                     Senior Strategic Planner <br></br> at Wisdom Agency
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Vo Huynh Minh Xuan</h2>
@@ -224,11 +220,11 @@ const Partnershiplp = () => {
                                                     Managing Director at <br></br> Wisdom Agency
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -237,9 +233,9 @@ const Partnershiplp = () => {
                     <div className="flex flex-row mt-6">
                         <div className="">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
@@ -247,18 +243,18 @@ const Partnershiplp = () => {
                                                     Head of Marketing & Consumer Insight at BuzzMetrics
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="ml-6 mr-3">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
@@ -266,18 +262,18 @@ const Partnershiplp = () => {
                                                     Planning & Consulting Manager at TRUM Consultant
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="ml-3 mr-6">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
@@ -285,11 +281,11 @@ const Partnershiplp = () => {
                                                     Creative Director at TRUM Consultant & Fashion Blogger
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -300,9 +296,9 @@ const Partnershiplp = () => {
                 <div className="flex flex-row">
                     <div className="flex flex-row mt-6">
                         <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                            <div className="hover-card-container ">
-                                <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
-                                    <a target="_blank">
+                            <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
+                                <a target="_blank">
+                                    <div className="hover-card-container ">
                                         <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                             <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanMimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">MS. Vo Huynh Minh Xuan</h2>
@@ -310,18 +306,17 @@ const Partnershiplp = () => {
                                                 Managing Director at <br></br>Wisdom Agency
                                             </p>
                                         </div>
-                                    </a>
-                                </Link>
-                            </div>
-                            <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                            </span>
+                                    </div>
+                                    <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                    </span>
+                                </a>
+                            </Link>
                         </div>
-
                         <div className="ml-6 mr-3">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamMimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
@@ -329,20 +324,20 @@ const Partnershiplp = () => {
                                                     Planning & Consulting Manager <br></br> at Trum Consultant
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-row mt-6">
                         <div className="ml-3 mr-6">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/nguyen-thi-hong-nhung/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/nguyen-thi-hong-nhung/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungMimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Thi Hong Nhung</h2>
@@ -350,18 +345,19 @@ const Partnershiplp = () => {
                                                     Head of Growth Marketing<br></br>at Fonos
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/trankimhoangyen/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/trankimhoangyen/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
+
                                             <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenMimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Tran Kim Hoang Yen</h2>
@@ -369,11 +365,11 @@ const Partnershiplp = () => {
                                                     Associate PR Account Director <br></br> at VERO Vietnam
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -382,9 +378,9 @@ const Partnershiplp = () => {
                     <div className="flex flex-row mt-6">
                         <div className="">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoMimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
@@ -392,18 +388,18 @@ const Partnershiplp = () => {
                                                     Head of Marketing & Consumer Insight at BuzzMetrics
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="ml-6 mr-3">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeMimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
@@ -411,21 +407,20 @@ const Partnershiplp = () => {
                                                     Creative Director at Trum Consultant & Fashion Blogger
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
-
                     </div>
                     <div className="flex flex-row mt-6">
                         <div className="ml-3 mr-6">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyMimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
@@ -433,18 +428,18 @@ const Partnershiplp = () => {
                                                     Social Planner at <br></br>DNA Consulting
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="">
                             <div className="group relative transition-all duration-300 hover:scale-105 hover-info cursor-pointer">
-                                <div className="hover-card-container ">
-                                    <Link href="https://www.linkedin.com/in/giangduongofficial/" passHref>
-                                        <a target="_blank">
+                                <Link href="https://www.linkedin.com/in/giangduongofficial/" passHref>
+                                    <a target="_blank">
+                                        <div className="hover-card-container ">
                                             <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangMimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Duong An Giang</h2>
@@ -452,11 +447,12 @@ const Partnershiplp = () => {
                                                     CEO at VFC Group
                                                 </p>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
-                                </span>
+
+                                        </div>
+                                        <span style={{ top: '250px', left: '0px', zIndex: '0', }} className="absolute hidden group-hover:block gradient-hover-bg rounded-[50px] text-center h-[150px] w-[275px] transition-all duration-300">
+                                        </span>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
