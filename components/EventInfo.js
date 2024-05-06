@@ -112,7 +112,7 @@ const EventInfo = () => {
                     </p>
                     <Button
                         onClick={() => {
-                            window.open('https://www.facebook.com/photo/?fbid=718265680501602&set=a.484714687190037', '_blank');
+                            window.open('https://www.facebook.com/photo/?fbid=727219086272928&set=a.484714687190037', '_blank');
                         }}
                         isGlow={true}
                         type='primary'
@@ -135,7 +135,7 @@ const EventInfo = () => {
                     </p>
                     <Button
                         onClick={() => {
-                            window.open('https://www.facebook.com/photo/?fbid=718265680501602&set=a.484714687190037', '_blank');
+                            window.open('https://www.facebook.com/photo/?fbid=734851522176351&set=a.484714687190037', '_blank');
                         }}
                         isGlow={true}
                         type='primary'
