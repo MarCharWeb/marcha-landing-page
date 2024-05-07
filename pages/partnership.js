@@ -28,7 +28,7 @@ import newbg from '../assets/newbg.png';
 
 const partnership = () => {
     return (
-        <main className="space-y-1 pt-20 bg-fixed text-center" style={{
+        <main className="space-y-1 pt-20 bg-fixed" style={{
             backgroundImage: `url(${newbg.src})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -67,7 +67,9 @@ const partnership = () => {
                 `}
             </style>
             <PageTitle className="" title={'PARTNERSHIP'}></PageTitle>
-            <p className='font-extrabold lg:text-[27px] text-[25px] my-4 pt-4 text-glow-strong'>JUDGES FOR ROUND 1 & 2</p>
+            <div className="text-center w-full items-center justify-center">
+                <p className='font-extrabold lg:text-[27px] text-[25px] my-4 pt-4 text-glow-strong'>JUDGES FOR ROUND 1 & 2</p>
+            </div>
             <div className="flex flex-col items-center justify-center text-center">
                 <div className="flex flex-row">
                     <div className="flex flex-row mt-6">
@@ -293,7 +295,9 @@ const partnership = () => {
                     </div>
                 </div>
             </div>
-            <p className='font-extrabold lg:text-[27px] text-[25px] my-4 pt-16 text-glow-strong'>MENTORS</p>
+            <div className="text-center w-full items-center justify-center">
+                <p className='font-extrabold lg:text-[27px] text-[25px] my-4 pt-16 text-glow-strong'>MENTORS</p>
+            </div>
             <div className="flex flex-col items-center justify-center text-center pb-6">
                 <div className="flex flex-row">
                     <div className="flex flex-row mt-6">
