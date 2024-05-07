@@ -388,7 +388,7 @@ export const sponsorLogo = () => {
                         {
                             logoImg: VenueSs12,
                             logoLink: "https://www.facebook.com/preecostudio/",
-                            logoClassName: "w-16 md:w-20 xl:w-[200px]"
+                            logoClassName: "w-16 md:w-20 xl:w-[300px]"
                         }
                     ]
 
