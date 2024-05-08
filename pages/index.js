@@ -160,7 +160,7 @@ export default function Home({ data }) {
             <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-6 mt-20'>
               <Button
                 onClick={() => {
-                  window.open('https://quickom.net/event/opening-ceremony-marketing-challengers-1564?fbclid=IwAR1bJVTdK5QhytE_PJx8tZDRdBwqrti-femA4I2k3xuyhKd0vYAvlXIADWw', '_blank');
+                  window.open('https://docs.google.com/forms/d/e/1FAIpQLScy-Ghgn8gQhRId_V3ggHmD6DFrdsBEROroP685sqDZIOKpXA/viewform', '_blank');
                 }}
                 isGlow={true}
                 type='primary'
