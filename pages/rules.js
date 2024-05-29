@@ -62,12 +62,12 @@ const Rules = () => {
                     <h4 className="font-bold uppercase text-glow-strong -ml-6">CONDITIONS & RULES FOR EVENT PARTICIPATION </h4>
                 </div>
                 <div>
-                    <ul className="space-y-1 list-disc -mt-6 lg:px-24 text-left pt-5 lg:pt-0">
+                    <ul className="space-y-1 list-disc -mt-6 lg:px-20 text-left pt-5 lg:pt-0">
                         <li><strong className="">Condition to join:</strong>
                             <ul className="pl-4 space-y-1 list-[circle]">
                                 <li>Webinar: Opened for everyone.</li>
-                                <li className=" w-[300px] lg:w-auto">Workshop: candidates who have successfully made it to Round 2.1 (Top 30).</li>
-                                <li className=" w-[300px] lg:w-auto">Mentoring Program & Networking Night: candidates who have successfully made it to Round 2.2 (Top 8).</li>
+                                <li className="">Workshop: candidates who have successfully made it to Round 2.1 (Top 30).</li>
+                                <li className="">Mentoring Program & Networking Night: candidates who have successfully made it to Round 2.2 (Top 8).</li>
                             </ul>
 
                         </li>
