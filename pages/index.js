@@ -159,7 +159,7 @@ export default function Home({ data }) {
             <div className='relative flex justify-center lg:mt-2'>
               <Button
                 onClick={() => {
-                  window.open('https://quickom.net/event/opening-ceremony-marketing-challengers-1564?fbclid=IwAR1bJVTdK5QhytE_PJx8tZDRdBwqrti-femA4I2k3xuyhKd0vYAvlXIADWw', '_blank');
+                  window.open('https://docs.google.com/forms/d/e/1FAIpQLScy-Ghgn8gQhRId_V3ggHmD6DFrdsBEROroP685sqDZIOKpXA/viewform', '_blank');
                 }}
                 isGlow={true}
                 type='primary'
