@@ -29,7 +29,7 @@ const EventInfo = () => {
         };
     }, []);
     return (
-        <main className="mt-40">
+        <main className="hidden lg:flex lg:flex-col mt-40">
             <style>
                 {`
                     .gradient-bg 

@@ -45,7 +45,6 @@ const Countdown = ({ targetDate }) => {
   };
 
   const formatValue = (value) => {
-    // Handle undefined values by defaulting to zero before formatting
     value = value ?? 0;
     return value < 10 ? `0${value}` : value;
   };
@@ -66,12 +65,12 @@ const Countdown = ({ targetDate }) => {
       {Object.entries(timeLeft).map(([unit, value], index, array) => (
         <React.Fragment key={unit}>
           <div className="text-center mx-3 lg:mx-5 mt-2">
-            <div className='text-[30px] lg:text-[150px]' style={{ fontFamily: "'Brandon Grotesque', sans-serif", fontWeight: 'bold' }}>
+            <div className='sm:text-[30px] md:text-[70px] md:pt-2 lg:text-[100px] xl:text-[120px] lg:-mb-4' style={{ fontFamily: "'Brandon Grotesque', sans-serif", fontWeight: 'bold' }}>
               {formatValue(value)}
             </div>
-            <div className="text-[12px] lg:text-[30px] font-bold lg:mt-8">{unit}</div>
-          </div>
-          {index < array.length - 1 && <div className='hidden lg:flex lg:pb-20 pb-[50px] text-[30px] lg:text-[150px]' style={{ alignSelf: 'flex-end', fontWeight: 'bold' }}>:</div>}
+            <div className="text-[12px] sm:text-[15px] md:text-[20px] lg:text-[30px] md:pt-4 lg:text-[30px] font-bold lg:mt-8">{unit}</div>
+          </div> 
+          {index < array.length - 1 && <div className='hidden lg:flex lg:pb-16 pb-[50px] text-[30px] lg:text-[150px]' style={{ alignSelf: 'flex-end', fontWeight: 'bold' }}>:</div>}
         </React.Fragment>
       ))}
     </div>
@@ -85,7 +84,7 @@ export default function Home({ data }) {
 
   useEffect(() => {
     const updateButtonSize = () => {
-      setButtonSize(window.innerWidth < 1024 ? 'small' : 'large');
+      setButtonSize(window.innerWidth < 992 ? 'small' : 'large');
     };
 
     window.addEventListener('resize', updateButtonSize);
@@ -137,7 +136,7 @@ export default function Home({ data }) {
       </Head>
 
 
-      <div className='absolute flex flex-col pt-20 xl:pt-[150px] 2xl:pt-40 items-center w-full' style={{ zIndex: 2 }} >
+      <div className='pt-10 sm:pt-52 md:pt-[400px] lg:pt-[600px] xl:pt-[700px] 2xl:pt-[800px] absolute flex flex-col  items-center w-full ' style={{ zIndex: 2 }} >
         <div>
           <div className=''
           // style={{
@@ -149,15 +148,15 @@ export default function Home({ data }) {
           >
             {/* <PageTitle type={2} title='MARKETING CHALLENGERS'></PageTitle> */}
             {/* <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss12-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 sm:pt-10'}></ImageHolder>           */}
-            <PageTitle className='flex justify-center lg:pt-[1200px] pt-[200px]' title='GRAB YOUR SPARK NOW' />
+            <PageTitle className='flex justify-center pt-[200px]' title='GRAB YOUR SPARK NOW' />
           </div>
           <div>
             <div className='flex items-center justify-center w-screen'>
-              <div className='inline-flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest lg:leading-10 text-glow-strong box-border lg:w-3/4 lg:h-[300px] lg:border-8 border-4 mx-auto lg:pt-8 '>
+              <div className='inline-flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest lg:leading-10 text-glow-strong box-border xl:w-3/4 lg:h-[300px] lg:border-8 border-4 mx-auto'>
                 <Countdown className='' targetDate={new Date('2024-05-18T23:59:59+07:00')} />
               </div>
             </div>
-            <div className='relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6 lg:mt-6 mt-20'>
+            <div className='relative flex justify-center lg:mt-2'>
               <Button
                 onClick={() => {
                   window.open('https://quickom.net/event/opening-ceremony-marketing-challengers-1564?fbclid=IwAR1bJVTdK5QhytE_PJx8tZDRdBwqrti-femA4I2k3xuyhKd0vYAvlXIADWw', '_blank');
@@ -170,22 +169,23 @@ export default function Home({ data }) {
               />
             </div>
           </div>
-          <PageTitle className='hidden lg:flex justify-center mt-20' title='MARKETING CHALLENGERS' />
-          <p className='hidden lg:flex mx-auto p-8 font-bold text-headline-31 xl:w-3/4 pt-0 mt-6 sm:w-095% text-center'>
-            Marketing Challengers is a top 3 national competition for Integrated Marketing Communications plans, organized by the RMIT Vietnam Business Club - SGS. With an impressive track record over a decade with 11 seasons, Marketing Challengers takes immense pride in the journey of inspiring and nurturing a vibrant community of marketers across Vietnam.
-          </p>
+            <PageTitle className='hidden lg:flex justify-center mt-20' title='MARKETING CHALLENGERS' />
+            <p className='hidden lg:flex mx-auto p-8 font-bold text-headline-31 xl:w-3/4 pt-0 mt-6 sm:w-095% text-center'>
+              Marketing Challengers is a top 3 national competition for Integrated Marketing Communications plans, organized by the RMIT Vietnam Business Club - SGS. With an impressive track record over a decade with 11 seasons, Marketing Challengers takes immense pride in the journey of inspiring and nurturing a vibrant community of marketers across Vietnam.
+            </p>
+            <div className='hidden lg:flex relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6'>
+            <Button ref={heroBtn} onClick={() => { route.push('/aboutus') }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'About Marketing Challengers'} size='large'></Button>
+          </div>
 
         </div>
-        <div className='hidden lg:flex relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6'>
-          <Button ref={heroBtn} onClick={() => { route.push('/aboutus') }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'About Marketing Challengers'} size='large'></Button>
-        </div>
+
 
       </div>
 
       {/* <ValueProps></ValueProps> */}
 
       {/* text-[30px] lg:text-headline-30 invisible hero-title 2xl:text-hero-60 xl:text-[60px] tracking-widest leading-10  lg:text-glow-strong  text-primary-500 */}
-      <Timeline></Timeline>
+      <Timeline ></Timeline>
       <div className='pb-[450px]'><Awardstructure></Awardstructure></div>
       <div><EventInfo></EventInfo></div>
       <div><Sponsor></Sponsor></div>

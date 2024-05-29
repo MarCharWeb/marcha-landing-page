@@ -37,13 +37,13 @@ const News = ({featurePosts}) => {
 
 
         
-        <div className="relative grid grid-cols-1 gap-4 xl:gap-6 mt-2.5 xl:mt-5 md:grid-cols-2 lg:grid-cols-2">
+        <div className="relative grid grid-cols-1 gap-4 xl:gap-6 mt-2.5 xl:mt-5 md:grid-cols-1 lg:grid-cols-2">
             {featurePosts.length > 0 &&
             featurePosts
             .slice(0, 2)
             .map(({ title, thumbnail, slug}) => (
                 <IndexBlogCard title={title} thumbSrc={thumbnail} key={title} slug={slug.current}/>
-            ))}
+            ))} 
         </div>
         <div className="flex justify-center">
                 <Button 

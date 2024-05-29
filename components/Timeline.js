@@ -13,12 +13,11 @@ const Timeline = () => {
     const paragraphRef = useRef(null);
 
     const handleClick = () => {
-        setIsVisible(true); // Make the paragraph visible
+        setIsVisible(true);
     };
 
     useEffect(() => {
         if (isVisible) {
-            // Scroll to the paragraph when it becomes visible
             paragraphRef.current?.scrollIntoView({ behavior: 'smooth' });
         }
     }, [isVisible]);
@@ -31,7 +30,7 @@ const Timeline = () => {
         };
 
         window.addEventListener('resize', updateButtonSize);
-        updateButtonSize(); // Initialize on component mount
+        updateButtonSize();
 
         return () => {
             window.removeEventListener('resize', updateButtonSize);
@@ -39,39 +38,39 @@ const Timeline = () => {
     }, []);
 
 
-    const [dynamicHeight, setDynamicHeight] = useState('calc(1900px)');
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [lineLength, setLineLength] = useState(300); // Initial length of the line
 
     useEffect(() => {
+        // Function to handle the resizing event
         const handleResize = () => {
-            if (window.innerWidth < 1024) { // Assuming 'lg' is at 1024px
-                setDynamicHeight('calc(1000px)'); // Smaller height for smaller screens
-            } else {
-                setDynamicHeight('calc(1900px)'); // Larger height for larger screens
-            }
+            const newLength = 3 * (window.innerWidth - 100);
+            setLineLength(Math.min(1900, newLength));
         };
 
+        // Adding the event listener for the resize event
         window.addEventListener('resize', handleResize);
-        handleResize(); // Initialize on component mount
 
+        // Call the function to set initial size based on the current window size
+        handleResize();
+
+        // Cleanup function to remove the event listener
         return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
 
     return (
-        <div className='lg:pt-[2700px] pt-[1000px] '>
+        <div className='sm:pt-[800px] md:pt-[1000px] lg:pt-[1900px] xl:pt-[2000px] '>
             <PageTitle className='pb-10' title="TIMELINE"></PageTitle>
 
             <div className="lg:hidden flex justify-center items-center">
-                {/* Page Title */}
-
-                {/* Rest of the component */}
-                <div className="absolute left-1/2 top-0 bottom-0 border-r border-gray-500 lg:top-[2800px] top-[1100px]" style={{
+                <div className="absolute left-1/2 top-0 bottom-0 border-r border-gray-500 sm:top-[900px] md:top-[1100px]" style={{
                     position: 'absolute',
                     left: '50%',
                     width: '8px',
                     background: 'linear-gradient(135deg, #ffde59, #ff914d)',
-                    height: dynamicHeight,
+                    height: lineLength,
                     transform: 'translateX(-50%)'
                 }}>
                 </div>
@@ -249,12 +248,12 @@ const Timeline = () => {
                 {/* Page Title */}
 
                 {/* Rest of the component */}
-                <div className="absolute left-1/2 top-0 bottom-0 border-r border-gray-500 lg:top-[2800px] top-[1100px]" style={{
+                <div className="absolute left-1/2 top-0 bottom-0 border-r border-gray-500 lg:top-[2000px] xl:top-[2100px]" style={{
                     position: 'absolute',
                     left: '50%',
                     width: '8px',
                     background: 'linear-gradient(135deg, #ffde59, #ff914d)',
-                    height: dynamicHeight,
+                    height: lineLength,
                     transform: 'translateX(-50%)'
                 }}>
                 </div>
