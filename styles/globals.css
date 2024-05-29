@@ -95,7 +95,7 @@
 .nav-item {
   color: white;
   transition: color 0.3s ease, text-decoration 0.3s ease;
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
 }
 .li-hover-effect:hover {
   background-color: rgba(255, 255, 255, 0.8);
@@ -103,25 +103,19 @@
   cursor: pointer;/* Changes the cursor to a pointer */
 }
 .li-hover-effect:hover .nav-item {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-               0 0 20px rgba(255, 255, 255, 0.8),
-               0 0 30px rgba(255, 255, 255, 0.8),
-               0 0 40px crimson,
-               0 0 70px crimson,
-               0 0 80px crimson,
-               0 0 100px crimson,
-               0 0 150px crimson;
-  cursor: pointer;/* Changes the cursor to a pointer */
   color: rgba(61, 6, 125);
 }
+.nav-item.active {
+  color: #FFDD00; /* Yellow color */
+}
 .li-hover-effect {
-  display: flex; /* Enables Flexbox */
-  align-items: center; /* Vertically center the content */
-  justify-content: center; /* Horizontally center the content */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
 .footer-hover-effect:hover {
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 10px;;
-  cursor: pointer;/* Changes the cursor to a pointer */
+  cursor: pointer;
 }
 
