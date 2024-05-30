@@ -23,14 +23,14 @@ const Sponsor = () => {
 
         setSponsorData(updateSponsorData)
     }
-    return (<section className="pt-10 relative z-[1] xl:pt-16 pt-20 bg-fixed" style={{
+    return (<section className="relative z-[1] xl:pt-16 sm:pt-12 lg:pt-20 bg-fixed" style={{
         backgroundImage: `url(${newbg.src})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',  // Adjust as per your requirement
         backgroundPosition: '0% 0%',
         zIndex: 2,
     }}>
-        <PageTitle className="mt-10" title={'SPONSORSHIP'}></PageTitle>
+        <PageTitle className="lg:mt-2 xl:pt-5" title={'SPONSORSHIP'}></PageTitle>
         {/* Sponsor Tag List */}
 
         <div className="flex flex-wrap justify-center w-11/12 gap-4 pt-4 pb-8 mx-auto xl:w-10/12 xl:pt-6 xl:gap-6 2xl:w-8/12"

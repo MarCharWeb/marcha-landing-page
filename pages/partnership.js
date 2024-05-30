@@ -28,7 +28,7 @@ import newbg from '../assets/newbg.png';
 
 const partnership = () => {
     return (
-        <main className="space-y-1 pt-20 bg-fixed" style={{
+        <main className="space-y-1 sm:pt-12 lg:pt-20 bg-fixed" style={{
             backgroundImage: `url(${newbg.src})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',

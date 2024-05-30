@@ -60,7 +60,7 @@ const Navigation = () => {
         <ul className="lg:flex hidden items-center justify-between flex-grow max-w-[85%] xl:max-w-[95%] font-normal text-white">
             <li className={'px-2.45 p-2 li-hover-effect'}>
                 <Link href={'/'} scroll={false} >
-                    <a onClick={handleHomeClick} className={`font-bold  ${router.asPath === '/' ? 'active' : ''}`}>HOME</a>
+                    <a onClick={handleHomeClick} className={`font-bold nav-item ${router.asPath === '/' ? 'active' : ''}`}>HOME</a>
                 </Link>
             </li>
             <li className="px-2.45 p-2 li-hover-effect">

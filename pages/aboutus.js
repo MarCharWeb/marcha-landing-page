@@ -44,7 +44,7 @@ const AboutUs = () => {
             zIndex: 2,
         }}
         >
-            <section id='about-marketing-challengers' className='pt-20' >
+            <section id='about-marketing-challengers' className='sm:pt-12 lg:pt-20' >
 
                 <div className='bg-right-top'
                 >

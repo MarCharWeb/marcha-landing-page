@@ -3,15 +3,14 @@ import newbg from "../assets/newbg.png"
 import Footer from "../components/Footer";
 const halloffame = () => {
     return (
-        <main className="space-y-1 -mt-8 bg-fixed" style={{
+        <main className="space-y-1 bg-fixed" style={{
             backgroundImage: `url(${newbg.src})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: '0% 0%',
             zIndex: 2,
         }}>
-            <section className='pt-28 pb-10' >
-
+            <section className='sm:pt-12 lg:pt-20 pb-10' >
                 <PageTitle className="pb-6" title={"HALL OF FAME"}></PageTitle>
                 <div className="flex flex-col items-center justify-center text-center">
                     <div className=" text-center p-8 relative rounded-lg h-[240px] w-[340px] bg-transparent border-2 border-yellow-500">

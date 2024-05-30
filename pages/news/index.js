@@ -53,7 +53,7 @@ const News = ({ data }) => {
         backgroundPosition: 'center center', // Adjust the position if needed
         zIndex: 2,
     }}>
-    <main className="relative z-[5] pt-28 xl:pt-32 container-media-padding">
+    <main className="relative z-[5] sm:pt-12 lg:pt-20 xl:pt-28 xl:pt-32 container-media-padding">
         <Head>
             <title>Marketing Challengers Season 12</title>
             <link rel="icon" type="image/png" sizes='16x16' href="/favi.png"></link>
@@ -65,7 +65,7 @@ const News = ({ data }) => {
         {/* <ImageHolder src={NewsBg} alt='marketing-challengers-season11-news' style={{position: 'absolute'}} className={'w-[125vw] z-[-1] h-screen top-0 left-0 '}/> */}
         <PageTitle type={1} title='NEWS'></PageTitle>
 
-        <div className="mt-5 space-y-5 xl:space-y-6 xl:mt-14">
+        <div className="mt-5 space-y-5 xl:space-y-6 xl:mt-14 ">
             {showList.length > 0 && showList.map(({ title, thumbnail, slug, abstract }) => <BlogCard title={title} key={title} thumbnail={thumbnail.asset} slug={slug.current} abstract={abstract} />)}
         </div>
 

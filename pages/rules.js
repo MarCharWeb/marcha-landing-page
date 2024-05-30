@@ -1,7 +1,7 @@
 import PageTitle from "../components/PageTitle";
 import WhiteLight from '../assets/Logolight-white.png'
 import Value from "../components/Value";
-import Birdbg from "../assets/bird-bg.png"
+// import Birdbg from "../assets/bird-bg.png"
 import Footer from "../components/Footer";
 import newbg from '../assets/newbg.png';
 
@@ -11,22 +11,23 @@ const Rules = () => {
         style={{
             backgroundImage: `url(${newbg.src})`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',  // Adjust as per your requirement
+            backgroundSize: 'cover',
             backgroundPosition: '0% 0%',
             zIndex: 2,
         }}>
 
-    <main className="pt-20 container-media-padding lg:text-[22px] text-[18px]">
+    <main className="sm:pt-12 lg:pt-20 container-media-padding lg:text-[22px] text-[18px]">
         <div id="rules&regulations" />
         <PageTitle title={'RULES AND REGULATIONS'} type={2}></PageTitle>
         <section className="py-10 space-y-6"
-            style={{
-                backgroundImage: `url(${Birdbg.src})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: '250px 350px',
-                backgroundPosition: '100% -5%',
-                zIndex: '1',
-            }}>
+            // style={{
+            //     backgroundImage: `url(${Birdbg.src})`,
+            //     backgroundRepeat: 'no-repeat',
+            //     backgroundSize: '250px 350px',
+            //     backgroundPosition: '100% -5%',
+            //     zIndex: '1',
+            // }}
+            >
             <div className="space-y-1">
                 <div className="flex items-center -ml-8 lg:ml-0">
                     <Value className="value" icon={WhiteLight} iconClassName="w-[120px] h-[120px] xl:w-[120px] xl:h-[120px]" />

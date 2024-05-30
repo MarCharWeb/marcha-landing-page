@@ -14,7 +14,7 @@ const BlogCard = ({ thumbnail, title, abstract, slug }) => {
       <div className="w-full ">
         <Link href={`news/${slug}`}>
           <a>
-            <h4 className="line-clamp-4 cursor-pointer font-bold lg:text-headline-31 text-glow-strong text-jutify lg:text-[30px] text-[20px]">{title}</h4>
+            <h4 className="line-clamp-4 cursor-pointer font-bold lg:text-headline-31 hover:text-glow-strong text-jutify lg:text-[30px] text-[20px] text-glow-normal">{title}</h4>
           </a>
         </Link>
         <p className="line-clamp-4">{abstract}</p>
