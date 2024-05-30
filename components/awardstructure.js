@@ -6,7 +6,7 @@ import ImageHolder from "./ImageHolder";
 const Awardstructure = () => {
     return (
         <main className="space-y-1 flex flex-col justify-center items-center h-screen pt-[500px]">
-            <div className="flex flex-col items-center justify-center pt-40 mt-40 sm:pt-0">
+            <div className="flex flex-col items-center justify-center mt-60 sm:pt-0">
                 <PageTitle title={'AWARD STRUCTURE'}></PageTitle>
                 <ImageHolder src={Trophy} alt='marketing-challengers-season11-value' className={'w-[200px] h-[192px] xl:w-[277px] xl:h-[267px]'} ></ImageHolder>
             </div>
@@ -46,7 +46,7 @@ const Awardstructure = () => {
                 </span>
             </div>
 
-            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md'>
+            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] sm:w-1/2 md:w-1/3 py-10 border-2 border-yellow-500 rounded-md '>
                 <div className="text-center">
                     <div className="lg:pb-4">
                         <span className="text-[22px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">CHAMPION</span>
@@ -82,10 +82,10 @@ const Awardstructure = () => {
                 </span>
             </div>
 
-            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md'>
+            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] sm:w-1/2 md:w-1/3 py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <div className="lg:pb-4">
-                        <span className="text-[22px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest  text-glow-strong font-black">1ST RUNNER UP</span>
+                        <span className="text-[22px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest  text-glow-strong font-black">1ST <br></br>  RUNNER UP</span>
                     </div>
                     <span className="font-bold text-[#FFFFFF] text-[20px] lg:text-[40px] text-glow-strong">120,000,000 VND</span>
                 </div>
@@ -116,10 +116,10 @@ const Awardstructure = () => {
                 </span>
             </div>
 
-            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md'>
+            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] sm:w-1/2 md:w-1/3 py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <div className="lg:pb-4">
-                        <span className="text-[22px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest left text-glow-strong font-black">2ND RUNNER UP</span>
+                        <span className="text-[22px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest left text-glow-strong font-black">2ND  <br></br>  RUNNER UP</span>
                     </div>
                     <span className="font-bold text-[#FFFFFF] text-[20px] lg:text-[40px] text-glow-strong">80,000,000 VND</span>
                 </div>
@@ -148,7 +148,7 @@ const Awardstructure = () => {
                 </span>
             </div>
 
-            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md'>
+            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] sm:w-1/2 md:w-1/3 py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <div className="lg:pb-4">
                         <span className="text-[22px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest left text-glow-strong font-black">TOP 8</span>
@@ -177,7 +177,7 @@ const Awardstructure = () => {
                 </span>
             </div>
 
-            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] w-1/2 py-10 border-2 border-yellow-500 rounded-md'>
+            <div className='lg:hidden bg-transparent mx-4 group lg:text-headline-31 relative lg:w-[400px] sm:w-1/2 md:w-1/3 py-10 border-2 border-yellow-500 rounded-md'>
                 <div className="text-center">
                     <div className="lg:pb-4">
                         <span className="text-[22px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest left text-glow-strong font-black">TOP 30</span>
