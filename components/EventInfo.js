@@ -152,7 +152,7 @@ const EventInfo = () => {
                         The Grand Finale of Marketing Challengers Season 12 is to wrap up this exciting journey .
                         Join us for an unforgettable evening which will include:<br></br>
                         🌿Award Ceremony - the Top 8 will receive prizes from our Sponsors.<br></br>
-                        🌿Witness Top 4 Finalists' Presentation - a showcase of their innovative marketing strategies.<br></br>
+                        🌿Witness Top 4 Finalists&apos; Presentation - a showcase of their innovative marketing strategies.<br></br>
                         🌿Engage with our Sponsors, Mentors, and MarCha&apos;s organizers.<br></br>
                         🌿Expand your network and connect with like-minded Marketing enthusiasts.<br></br>
                     </p>
