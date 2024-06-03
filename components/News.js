@@ -14,7 +14,7 @@ const News = ({featurePosts}) => {
 
     return ( <section className="relative md:pt-20 lg:pt-10 container-media-padding" >
         <div id="blog" className="flex items-center justify-center">
-        <PageTitle title={'NEWS'}></PageTitle>
+        <PageTitle title={'BLOGS'}></PageTitle>
         </div>
       
         <div className="relative grid grid-cols-1 gap-4 xl:gap-6 mt-2.5 xl:mt-5 md:grid-cols-1 lg:grid-cols-2">

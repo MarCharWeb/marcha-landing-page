@@ -99,7 +99,7 @@ const AboutUs = () => {
                         <div className="flex justify-center items-center py-8" >
                             <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
-                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">&gt;30</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">&gt;60</span>
                                     <br></br>
                                     <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">UNIVERSITIES</span>
                                 </div>
@@ -107,7 +107,7 @@ const AboutUs = () => {
 
                             <div className='bg-transparent mx-4 group text-headline-31 relative w-[400px] py-10 border-2 border-yellow-500 rounded-md'>
                                 <div className="text-center">
-                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">&gt;33000</span>
+                                    <span className="text-[24px] lg:pb-4 lg:text-[30px] lg:text-headline-30 hero-title 2xl:text-hero-60 xl:text-[40px] tracking-widest leading-10 text-glow-strong font-black">&gt;35,000</span>
                                     <br></br>
                                     <span className="font-bold text-[#FFFFFF] lg:text-[40px] text-glow-strong text-[20px]">FOLLOWERS</span>
                                 </div>

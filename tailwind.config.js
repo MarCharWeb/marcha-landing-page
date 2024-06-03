@@ -203,7 +203,6 @@ module.exports = {
       },
       backgroundImage: {
         'hero-bg': "url('../assets/hero-bg-1.png')",
-
       },
 
     },

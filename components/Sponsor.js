@@ -25,29 +25,13 @@ const Sponsor = () => {
 
         setSponsorData(updateSponsorData)
     }
-    return (<section className="py-10 xl:mt-24 relative z-[1] xl:py-16 mt-64" id="sponsorship">
+    return (<section className="py-10 xl:mt-24 relative z-[1] xl:py-16 lg:mt-24 md:pt-[600px] sm:pt-[450px]" id="sponsorship">
         <PageTitle className="" title={'SPONSORSHIP'}></PageTitle>
-        {/* Sponsor Tag List */}
-
-        {/* <div className="flex flex-wrap justify-center w-11/12 gap-4 pt-4 pb-8 mx-auto xl:w-10/12 xl:pt-6 xl:gap-6 2xl:w-8/12"
-            style={{
-                backgroundImage: `url(${Birdbg.src})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: '10% 60%',
-                backgroundPosition: '100% 105%',
-                zIndex: 1,
-            }
-            }>
-            {sponsorData.map((sps, index) => <SponsorTag key={index} handleTagClick={handleTagClick} text={sps.year} isActive={sps.isActive} />)}
-        </div> */}
-
         <div className="w-10/12 mx-auto space-y-2.5 2xl:w-8/12 pt-4">
-
             {sponsorData.find(sps => sps.isActive).sponsorLogos.length > 0 ? sponsorData.find(sps => sps.isActive).sponsorLogos?.map((logoCategory, index) => <SponsorDisplay key={index} categoryName={logoCategory.categoryName} logoList={logoCategory.logoList} />)
                 :
                 <p className="text-center">To be updated</p>
             }
-
         </div>
         <div className="flex items-center justify-center">
         <Button 
