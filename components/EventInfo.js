@@ -13,20 +13,6 @@ import PPimg from '../assets/Website/Events/PP.jpg';
 import CCimg from '../assets/Website/Events/CC.png';
 
 const EventInfo = () => {
-    const [buttonSize, setButtonSize] = useState('large');
-
-    useEffect(() => {
-        const updateButtonSize = () => {
-            setButtonSize(window.innerWidth < 1024 ? 'small' : 'large');
-        };
-
-        window.addEventListener('resize', updateButtonSize);
-        updateButtonSize();
-
-        return () => {
-            window.removeEventListener('resize', updateButtonSize);
-        };
-    }, []);
     return (
         <main className="hidden lg:block flex flex-col pt-[1600px]">
             <style>
