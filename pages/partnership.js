@@ -14,15 +14,9 @@ import QuynhDoimg from '../assets/Website/Judges/QuynhDo.png';
 import ThoaPhamimg from '../assets/Website/Judges/ThoaPham.png';
 import TriMinhLeimg from '../assets/Website/Judges/TriMinhLe.png';
 import VoHuynhMinhXuanimg from '../assets/Website/Judges/VoHuynhMinhXuan.png';
-
-import DangQuangHuyMimg from '../assets/Website/Mentors/DangQuangHuy.png';
-import DuongAnGiangMimg from '../assets/Website/Mentors/DuongAnGiang.png';
-import NguyenThiHongNhungMimg from '../assets/Website/Mentors/NguyenThiHongNhung.png';
-import QuynhDoMimg from '../assets/Website/Mentors/QuynhDo.png';
-import ThoaPhamMimg from '../assets/Website/Mentors/ThoaPham.png';
-import TranKimHoangYenMimg from '../assets/Website/Mentors/TranKimHoangYen.png';
-import TriMinhLeMimg from '../assets/Website/Mentors/TriMinhLe.png';
-import VoHuynhMinhXuanMimg from '../assets/Website/Mentors/VoHuynhMinhXuan.png';
+import DuongAnGiangimg from '../assets/Website/Mentors/DuongAnGiang.png';
+import NguyenThiHongNhungimg from '../assets/Website/Mentors/NguyenThiHongNhung.png';
+import TranKimHoangYenimg from '../assets/Website/Mentors/TranKimHoangYen.png';
 
 import newbg from '../assets/newbg.png';
 
@@ -35,37 +29,6 @@ const partnership = () => {
             backgroundPosition: '0% 0%',
             zIndex: 2,
         }}>
-            <style>
-                {`
-                    .gradient-bg 
-                    {
-                        background-image: linear-gradient(90deg, #f85f1d, #6739b1);
-                    }
-                    .gradient-hover-bg 
-                    {
-                        background-image: linear-gradient(to top, rgba(255, 255, 0, 0.4), rgba(255, 255, 0, 0));
-                    }
-                    .gradient-mentor-bg 
-                    {
-                        background-image: linear-gradient(90deg, #6739b1, #f8a01d);
-                    }
-                    .hover-card-container 
-                    {
-                        cursor: pointer;
-                    }
-                    .hover-info 
-                    {
-                        position: relative;
-                        top: 0px;
-                        transition: all 0.5s ease;
-                    }
-                    .hover-card-container:hover .hover-info 
-                    {
-                      top: -10px;
-                    }
-                      
-                `}
-            </style>
             <div className="w-full flex items-center justify-center flex-col pb-6">
             <PageTitle className="item-center justify-center" title={'PARTNERSHIP'}></PageTitle>
             <p className='font-extrabold lg:text-[27px] text-[25px] my-4 pt-4 text-glow-strong'>JUDGES FOR ROUND 1 & 2</p>
@@ -76,9 +39,9 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/paul3nguyen/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={PaulThangNguyenimg} />
-                                            <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Paul Thang Nguyen</h2>
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={PaulThangNguyenimg} width={150} height={272}/>
+                                            <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info">Mr. Paul Thang Nguyen</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Co-Founder & CGO at MET.EV and DEALERSEDGE
                                             </p>
@@ -94,8 +57,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/mai-hien-dao-648a801a0/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DaoHienMaiimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DaoHienMaiimg}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Dao Hien Mai</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Associate Brand Manager<br></br> at Fonos
@@ -115,8 +78,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/thuanngominh/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NgoMinhThuanimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NgoMinhThuanimg} width={175} height={275}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Ngo Minh Thuan</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Founder & Managing Director <br></br> at DNA Consulting
@@ -134,8 +97,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} width={255} height={278}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Social Planner at <br></br> DNA Consulting
@@ -157,8 +120,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/minhhainguyen2006/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenHaiMinhimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenHaiMinhimg} width={185} height={272}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Nguyen Hai Minh</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Chairman & Chief of<br></br> Knowledge at Wisdom Agency
@@ -176,8 +139,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/nguyennhuhatrang/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenNhuHaTranimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenNhuHaTranimg} width={212} height={272}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Nhu Ha Trang</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Senior Strategist at <br></br> DNA Consulting
@@ -197,8 +160,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/lan-l%C3%AA-hu%E1%BB%B3nh-thi%C3%AAn-95b979286/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={LeHuynhThienLanimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={LeHuynhThienLanimg} width={202} height={272}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Le Huynh Thien Lan</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Senior Strategic Planner <br></br> at Wisdom Agency
@@ -216,8 +179,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} width={252} height={272}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Vo Huynh Minh Xuan</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Managing Director at <br></br> Wisdom Agency
@@ -239,8 +202,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} width={172} height={272}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Head of Marketing & Consumer Insight at BuzzMetrics
@@ -258,7 +221,7 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
                                                 <p className="text-white text-[18px] hover-info">
@@ -277,7 +240,7 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
                                                 <p className="text-white text-[18px] hover-info">
@@ -302,8 +265,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/paul3nguyen/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={PaulThangNguyenimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={PaulThangNguyenimg} width={150} height={272}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Paul Thang Nguyen</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Co-Founder & CGO at MET.EV and DEALERSEDGE
@@ -321,7 +284,7 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/mai-hien-dao-648a801a0/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={DaoHienMaiimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Dao Hien Mai</h2>
                                                 <p className="text-white text-[18px] hover-info">
@@ -340,8 +303,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/thuanngominh/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NgoMinhThuanimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NgoMinhThuanimg} width={175} height={275} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Ngo Minh Thuan</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Founder & Managing Director <br></br> at DNA Consulting
@@ -363,8 +326,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} width={255} height={278} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Social Planner at <br></br> DNA Consulting
@@ -382,8 +345,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/minhhainguyen2006/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenHaiMinhimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenHaiMinhimg} width={185} height={272} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Nguyen Hai Minh</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Chairman & Chief of<br></br> Knowledge at Wisdom Agency
@@ -401,8 +364,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/nguyennhuhatrang/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenNhuHaTranimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenNhuHaTranimg} width={212} height={272} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Nhu Ha Trang</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Senior Strategist at <br></br> DNA Consulting
@@ -424,8 +387,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/lan-l%C3%AA-hu%E1%BB%B3nh-thi%C3%AAn-95b979286/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={LeHuynhThienLanimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={LeHuynhThienLanimg} width={202} height={272} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Le Huynh Thien Lan</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Senior Strategic Planner <br></br> at Wisdom Agency
@@ -443,8 +406,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} width={252} height={272} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Vo Huynh Minh Xuan</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Managing Director at <br></br> Wisdom Agency
@@ -462,8 +425,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} width={172} height={272}/>
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Head of Marketing & Consumer Insight at BuzzMetrics
@@ -484,7 +447,7 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                             <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
                                             <p className="text-white text-[18px] hover-info">
@@ -502,7 +465,7 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                                 <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
                                                 <p className="text-white text-[18px] hover-info">
@@ -526,8 +489,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/paul3nguyen/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={PaulThangNguyenimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={PaulThangNguyenimg} width={150} height={272}/>
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Paul Thang Nguyen</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Co-Founder & CGO at MET.EV and DEALERSEDGE
@@ -545,7 +508,7 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/mai-hien-dao-648a801a0/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                             <Image className="flex items-center justify-center object-center rounded-[30px]" src={DaoHienMaiimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Dao Hien Mai</h2>
                                             <p className="text-white text-[18px] hover-info">
@@ -566,8 +529,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/thuanngominh/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={NgoMinhThuanimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={NgoMinhThuanimg} width={175} height={275} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Ngo Minh Thuan</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Founder & Managing Director <br></br> at DNA Consulting
@@ -585,8 +548,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} width={255} height={278} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Social Planner at <br></br> DNA Consulting
@@ -606,8 +569,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/minhhainguyen2006/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenHaiMinhimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenHaiMinhimg} width={185} height={272} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Nguyen Hai Minh</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Chairman & Chief of<br></br> Knowledge at Wisdom Agency
@@ -625,8 +588,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/nguyennhuhatrang/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenNhuHaTranimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenNhuHaTranimg} width={212} height={272} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Nhu Ha Trang</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Senior Strategist at <br></br> DNA Consulting
@@ -646,8 +609,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/lan-l%C3%AA-hu%E1%BB%B3nh-thi%C3%AAn-95b979286/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={LeHuynhThienLanimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={LeHuynhThienLanimg} width={202} height={272} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Le Huynh Thien Lan</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Senior Strategic Planner <br></br> at Wisdom Agency
@@ -665,8 +628,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} width={252} height={272} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Vo Huynh Minh Xuan</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Managing Director at <br></br> Wisdom Agency
@@ -686,8 +649,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} width={172} height={272}/>
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Head of Marketing & Consumer Insight at BuzzMetrics
@@ -705,7 +668,7 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                             <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
                                             <p className="text-white text-[18px] hover-info">
@@ -724,7 +687,7 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                     <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
                                     <p className="text-white text-[18px] hover-info">
@@ -743,8 +706,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/paul3nguyen/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={PaulThangNguyenimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={PaulThangNguyenimg} width={150} height={272}/>
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Paul Thang Nguyen</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Co-Founder & CGO at MET.EV and DEALERSEDGE
@@ -760,7 +723,7 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/mai-hien-dao-648a801a0/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                     <Image className="flex items-center justify-center object-center rounded-[30px]" src={DaoHienMaiimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Dao Hien Mai</h2>
                                     <p className="text-white text-[18px] hover-info">
@@ -777,8 +740,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/thuanngominh/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={NgoMinhThuanimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={NgoMinhThuanimg} width={175} height={275} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Ngo Minh Thuan</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Founder & Managing Director <br></br> at DNA Consulting
@@ -794,8 +757,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} width={255} height={278} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Social Planner at <br></br> DNA Consulting
@@ -811,8 +774,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/minhhainguyen2006/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenHaiMinhimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenHaiMinhimg} width={185} height={272} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Nguyen Hai Minh</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Chairman & Chief of<br></br> Knowledge at Wisdom Agency
@@ -828,8 +791,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/nguyennhuhatrang/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenNhuHaTranimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenNhuHaTranimg} width={212} height={272} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Nhu Ha Trang</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Senior Strategist at <br></br> DNA Consulting
@@ -845,8 +808,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/lan-l%C3%AA-hu%E1%BB%B3nh-thi%C3%AAn-95b979286/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={LeHuynhThienLanimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={LeHuynhThienLanimg} width={202} height={272} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Le Huynh Thien Lan</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Senior Strategic Planner <br></br> at Wisdom Agency
@@ -862,8 +825,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} width={252} height={272} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Vo Huynh Minh Xuan</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Managing Director at <br></br> Wisdom Agency
@@ -881,8 +844,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} width={172} height={272}/>
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Head of Marketing & Consumer Insight at BuzzMetrics
@@ -898,7 +861,7 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                     <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
                                     <p className="text-white text-[18px] hover-info">
@@ -916,7 +879,7 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
                                     <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
                                     <p className="text-white text-[18px] hover-info">
@@ -938,8 +901,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} width={252} height={272}/>
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">MS. Vo Huynh Minh Xuan</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Managing Director at <br></br>Wisdom Agency
@@ -956,8 +919,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Planning & Consulting Manager <br></br> at Trum Consultant
@@ -977,8 +940,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/nguyen-thi-hong-nhung/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Thi Hong Nhung</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Head of Growth Marketing<br></br>at Fonos
@@ -997,8 +960,8 @@ const partnership = () => {
                                     <a target="_blank">
                                         <div className="hover-card-container ">
 
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Tran Kim Hoang Yen</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Associate PR Account Director <br></br> at VERO Vietnam
@@ -1020,8 +983,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} width={172} height={272} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Head of Marketing & Consumer Insight at BuzzMetrics
@@ -1039,8 +1002,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Creative Director at Trum Consultant & Fashion Blogger
@@ -1060,8 +1023,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Social Planner at <br></br>DNA Consulting
@@ -1079,8 +1042,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/giangduongofficial/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Duong An Giang</h2>
                                                 <p className="text-white text-[18px] hover-info mt-1">
                                                     CEO at VFC Group
@@ -1105,8 +1068,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">MS. Vo Huynh Minh Xuan</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Managing Director at <br></br>Wisdom Agency
@@ -1124,8 +1087,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Planning & Consulting Manager <br></br> at Trum Consultant
@@ -1143,8 +1106,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/nguyen-thi-hong-nhung/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Thi Hong Nhung</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Head of Growth Marketing<br></br>at Fonos
@@ -1167,8 +1130,8 @@ const partnership = () => {
                                     <a target="_blank">
                                         <div className="hover-card-container ">
 
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Tran Kim Hoang Yen</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Associate PR Account Director <br></br> at VERO Vietnam
@@ -1186,8 +1149,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} width={172} height={272} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Head of Marketing & Consumer Insight at BuzzMetrics
@@ -1205,8 +1168,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
                                                 <p className="text-white text-[18px] hover-info">
                                                     Creative Director at Trum Consultant & Fashion Blogger
@@ -1227,8 +1190,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Social Planner at <br></br>DNA Consulting
@@ -1245,8 +1208,8 @@ const partnership = () => {
                                 <Link href="https://www.linkedin.com/in/giangduongofficial/" passHref>
                                     <a target="_blank">
                                         <div className="hover-card-container ">
-                                            <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangMimg} />
+                                            <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                                <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangimg} />
                                                 <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Duong An Giang</h2>
                                                 <p className="text-white text-[18px] hover-info mt-1">
                                                     CEO at VFC Group
@@ -1270,8 +1233,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">MS. Vo Huynh Minh Xuan</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Managing Director at <br></br>Wisdom Agency
@@ -1289,8 +1252,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Planning & Consulting Manager <br></br> at Trum Consultant
@@ -1310,8 +1273,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/nguyen-thi-hong-nhung/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Thi Hong Nhung</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Head of Growth Marketing<br></br>at Fonos
@@ -1330,8 +1293,8 @@ const partnership = () => {
                                 <a target="_blank">
                                     <div className="hover-card-container ">
 
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Tran Kim Hoang Yen</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Associate PR Account Director <br></br> at VERO Vietnam
@@ -1351,8 +1314,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} width={172} height={272} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Head of Marketing & Consumer Insight at BuzzMetrics
@@ -1370,8 +1333,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Creative Director at Trum Consultant & Fashion Blogger
@@ -1391,8 +1354,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
                                             <p className="text-white text-[18px] hover-info">
                                                 Social Planner at <br></br>DNA Consulting
@@ -1410,8 +1373,8 @@ const partnership = () => {
                             <Link href="https://www.linkedin.com/in/giangduongofficial/" passHref>
                                 <a target="_blank">
                                     <div className="hover-card-container ">
-                                        <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangMimg} />
+                                        <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                            <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangimg} />
                                             <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Duong An Giang</h2>
                                             <p className="text-white text-[18px] hover-info mt-1">
                                                 CEO at VFC Group
@@ -1432,8 +1395,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/xu%C3%A2n-v%C3%B5-2542ab92/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanMimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={VoHuynhMinhXuanimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">MS. Vo Huynh Minh Xuan</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Managing Director at <br></br>Wisdom Agency
@@ -1449,8 +1412,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/thoa-pham-86a29a268/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamMimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={ThoaPhamimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Thoa Pham</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Planning & Consulting Manager <br></br> at Trum Consultant
@@ -1466,8 +1429,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/nguyen-thi-hong-nhung/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungMimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={NguyenThiHongNhungimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Nguyen Thi Hong Nhung</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Head of Growth Marketing<br></br>at Fonos
@@ -1484,8 +1447,8 @@ const partnership = () => {
                         <a target="_blank">
                             <div className="hover-card-container ">
 
-                                <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenMimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={TranKimHoangYenimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Tran Kim Hoang Yen</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Associate PR Account Director <br></br> at VERO Vietnam
@@ -1503,8 +1466,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/qu%E1%BB%B3nh-%C4%91%E1%BB%97-nh%C6%B0-270a05135/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoMimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={QuynhDoimg} width={172} height={272} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Quynh Do</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Head of Marketing & Consumer Insight at BuzzMetrics
@@ -1520,8 +1483,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/tri-minh-le-396b85237/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeMimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={TriMinhLeimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Tri Minh Le</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Creative Director at Trum Consultant & Fashion Blogger
@@ -1539,8 +1502,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/harvey-dang/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyMimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={DangQuangHuyimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Mr. Dang Quang Huy</h2>
                                     <p className="text-white text-[18px] hover-info">
                                         Social Planner at <br></br>DNA Consulting
@@ -1556,8 +1519,8 @@ const partnership = () => {
                     <Link href="https://www.linkedin.com/in/giangduongofficial/" passHref>
                         <a target="_blank">
                             <div className="hover-card-container ">
-                                <div className="gradient-mentor-bg text-center relative rounded-[50px] h-[400px] w-[275px] ">
-                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangMimg} />
+                                <div className="border-[2px] text-center relative rounded-[50px] h-[400px] w-[275px] ">
+                                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={DuongAnGiangimg} />
                                     <h2 className="text-xl font-bold text-white text-glow-strong text-[20px] hover-info ">Ms. Duong An Giang</h2>
                                     <p className="text-white text-[18px] hover-info mt-1">
                                         CEO at VFC Group
