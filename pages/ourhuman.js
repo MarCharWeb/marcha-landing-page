@@ -21,7 +21,7 @@ const Ourhuman = () => {
             zIndex: 2,
         }}>
             <div className="">
-                <PageTitle className="" title={'OUR HUMAN'} type={2}></PageTitle>
+                <PageTitle className="" title={'CONTACTS'} type={2}></PageTitle>
                 <h4 className="pt-10 flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Leader Board</h4>
                 <div className="w-screen flex items-center justify-center pb-5 px-4">
                     <Image className="flex items-center justify-center bg-gray-300 p-4 object-center lg:w-[500px] lg:h-auto" src={Leaderboardimg} width={650} height={420} />

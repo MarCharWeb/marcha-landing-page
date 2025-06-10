@@ -54,7 +54,7 @@ const Navigation = () => {
     }
     return (<nav style={{ zIndex: '50' }} ref={navRef} className={"fixed lg:text-[10px] xl:text-[14px] top-0 h-[90px] xl:h-[110px] z-50 container-media-padding flex w-full items-center justify-between " + (isScroll ? 'bg-[#0F0616CC]' : '')}>
         {/* Logo */}
-        <Link href="/"><a onClick={handleHomeClick} className={router.asPath == '/' ? 'active-link' : ''}><ImageHolder src={Logo} alt='logo-marcha' className={'w-[100px] h-[100px] xl:w-[150px] xl:h-[150px]'}></ImageHolder></a></Link>
+        <Link href="/"><a onClick={handleHomeClick} className={ router.asPath == '/' ? 'active-link' : ''}><ImageHolder src={Logo} alt='logo-marcha' className={'w-[100px] h-[100px] xl:w-[150px] xl:h-[150px]  '}></ImageHolder></a></Link>
 
         {/* Navigation List Begins */}
         <ul className="lg:flex hidden items-center justify-between flex-grow max-w-[85%] xl:max-w-[95%] font-normal text-white">
@@ -73,7 +73,7 @@ const Navigation = () => {
                     <a className={`font-bold nav-item ${router.asPath === '/sponsor' ? 'active' : ''}`}>SPONSORSHIP</a>
                 </Link>
             </li>
-            <li className={'px-2.45 p-2 li-hover-effect '}>
+            {/* <li className={'px-2.45 p-2 li-hover-effect '}>
                 <Link href={'/partnership'}>
                     <a className={`font-bold nav-item ${router.asPath == '/partnership' ? 'active' : ''} font-bold`}>PARTNERSHIP</a>
                 </Link>
@@ -87,15 +87,15 @@ const Navigation = () => {
                 <Link href={'/news'}>
                     <a className={`nav-item ${router.asPath == '/news' ? 'active' : ''} font-bold`}>BLOGS</a>
                 </Link>
+            </li> */}
+            <li className='px-2.45 p-2 li-hover-effect'>
+                <Link href={'/rules'}>
+                    <a className={`nav-item ${router.asPath == '/rules' ? 'active' : ''} font-bold`}>TERMS &#38; CONDITIONS</a>
+                </Link>
             </li>
             <li className={'px-2.45 p-2 li-hover-effect '}>
                 <Link href={'/ourhuman'}>
-                    <a className={`nav-item ${router.asPath == '/ourhuman' ? 'active' : ''} font-bold`}>OUR HUMAN</a>
-                </Link>
-            </li>
-            <li className='px-2.45 p-2 li-hover-effect'>
-                <Link href={'/rules'}>
-                    <a className={`nav-item ${router.asPath == '/rules' ? 'active' : ''} font-bold`}>RULES &#38; REGULATIONS</a>
+                    <a className={`nav-item ${router.asPath == '/ourhuman' ? 'active' : ''} font-bold`}>CONTACTS</a>
                 </Link>
             </li>
         </ul>

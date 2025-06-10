@@ -18,7 +18,7 @@ const Rules = () => {
 
     <main className="sm:pt-12 lg:pt-20 container-media-padding lg:text-[22px] text-[18px]">
         <div id="rules&regulations" />
-        <PageTitle title={'RULES AND REGULATIONS'} type={2}></PageTitle>
+        <PageTitle title={'TERMS & CONDITIONS'} type={2}></PageTitle>
         <section className="py-10 space-y-6"
             // style={{
             //     backgroundImage: `url(${Birdbg.src})`,
