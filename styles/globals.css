@@ -3,24 +3,24 @@
 @tailwind base;
 @layer base{
   @font-face {
-      font-family: Agrandir;
-      src: url('/fonts/Agrandir-Regular.otf') format('opentype');
+      font-family: Lexend;
+      src: url('/fonts/static/Lexend-Regular.ttf') format('truetype');
       font-weight: 400;
     }
   @font-face {
-      font-family: Agrandir;
-      src: url('/fonts/Agrandir-TextBold.otf') format('opentype');
+      font-family: Lexend;
+      src: url('/fonts/static/Lexend-Bold.ttf') format('truetype');
       font-weight: bold;
     }
 
   @font-face {
-    font-family: Agrandir;
-    src: url('/fonts/Agrandir-GrandHeavy.otf') format('opentype');
+    font-family: Lexend;
+    src: url('/fonts/static/Lexend-ExtraBold.ttf') format('truetype');
     font-weight: 900;
   }
   @font-face {
-    font-family: Agrandir;
-    src: url('/fonts/Agrandir-GrandLight.otf') format('opentype');
+    font-family: Lexend;
+    src: url('/fonts/static/Lexend-ExtraLight.ttf') format('truetype');
     font-weight: 300;
   }
  
@@ -36,8 +36,8 @@
 
   body,
   html {
-    @apply font-sans scroll-p-28 text-headline-21 text-grey-900;
-
+    font-family: 'Lexend', sans-serif;
+    
     scroll-behavior: smooth;
   }
 

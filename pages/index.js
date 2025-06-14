@@ -18,25 +18,30 @@ import newbg from '../assets/newbg.png';
 import { useState, useEffect } from 'react';
 import LayerImage from '../assets/layer.png';
 import React from 'react';
+import bg from '../assets/season13/HOMEPAGE/bg.png';
+import typ from '../assets/season13/HOMEPAGE/TYPE.png';
+import kv from '../assets/season13/HOMEPAGE/MASCOT_KV.png';
+import tach from '../assets/season13/HOMEPAGE/TÁCH.png';
+import boy from '../assets/season13/HOMEPAGE/BOY.png';
+import road from '../assets/season13/HOMEPAGE/ROAD.png';
+
 
 const Countdown = ({ targetDate }) => {
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
-    let timeLeft = {};
+    let timeLeft = {
+      Day: 0,
+      Hour: 0,
+      Minute: 0,
+      Second: 0,
+    };
 
     if (difference > 0) {
       timeLeft = {
-        Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        Hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-        Minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-        Seconds: Math.floor((difference % (1000 * 60)) / 1000),
-      };
-    } else {
-      timeLeft = {
-        Days: 0,
-        Hours: 0,
-        Minutes: 0,
-        Seconds: 0,
+        Day: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        Hour: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        Minute: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        Second: Math.floor((difference % (1000 * 60)) / 1000),
       };
     }
 
@@ -44,157 +49,159 @@ const Countdown = ({ targetDate }) => {
   };
 
   const formatValue = (value) => {
-    value = value ?? 0;
-    return value < 10 ? `0${value}` : value;
+    return value < 10 ? `0${value}` : `${value}`;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = React.useState(calculateTimeLeft());
 
-  useEffect(() => {
+  React.useEffect(() => {
     const timer = setInterval(() => {
-      const newTimeLeft = calculateTimeLeft();
-      setTimeLeft(newTimeLeft);
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
-
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className="flex justify-center">
-      {Object.entries(timeLeft).map(([unit, value], index, array) => (
-        <React.Fragment key={unit}>
-          <div className="text-center mx-3 lg:mx-5 mt-2">
-            <div className='sm:text-[30px] md:text-[70px] md:pt-2 lg:text-[100px] xl:text-[120px] lg:-mb-4' style={{ fontFamily: "'Brandon Grotesque', sans-serif", fontWeight: 'bold' }}>
-              {formatValue(value)}
-            </div>
-            <div className="text-[12px] sm:text-[15px] md:text-[20px] lg:text-[30px] md:pt-4 lg:text-[30px] font-bold lg:mt-8">{unit}</div>
-          </div> 
-          {index < array.length - 1 && <div className='hidden lg:flex lg:pb-16 pb-[50px] text-[30px] lg:text-[150px]' style={{ alignSelf: 'flex-end', fontWeight: 'bold' }}>:</div>}
-        </React.Fragment>
+    <div className="flex space-x-2">
+      {Object.entries(timeLeft).map(([label, value]) => (
+        <div key={label} className="flex flex-col items-center">
+          <div
+            className="flex items-center justify-center px-4 py-2 rounded-md bg-gradient-to-b from-gray-600 to-black text-white shadow-md"
+            style={{
+              width: '100px',
+              height: '100px',
+              background: 'linear-gradient(to bottom, #4B5563, #000000)',
+              border: '1px solid #4B5563',
+            }}
+          >
+            <div className="text-[28px] md:text-[40px] font-bold">{formatValue(value)}</div>
+          </div>
+          <div className="text-[10px] md:text-[14px] font-medium uppercase tracking-wide text-white mt-2">
+            {label.toLowerCase()}(s)
+          </div>
+        </div>
       ))}
     </div>
   );
 };
 
-
 export default function Home({ data }) {
-
-  const [buttonSize, setButtonSize] = useState('large');
-
-  useEffect(() => {
-    const updateButtonSize = () => {
-      setButtonSize(window.innerWidth < 992 ? 'small' : 'large');
-    };
-
-    window.addEventListener('resize', updateButtonSize);
-    updateButtonSize(); // Initialize on component mount
-
-    return () => {
-      window.removeEventListener('resize', updateButtonSize);
-    };
-  }, []);
-
-  const heroTextRef = useRef(null);
-  const heroBtn = useRef(null);
-  useLayoutEffect(() => {
-    gsap.from(heroTextRef.current, { opacity: 0, duration: 2, ease: "bounce.out", autoAlpha: 0, delay: 1 })
-
-
-  }, [])
-
-  const route = useRouter();
-
+  const router = useRouter();
 
   return (
-    <main className="" style={{
-      backgroundImage: `url(${LayerImage.src}), url(${newbg.src})`,
-      backgroundRepeat: 'no-repeat, no-repeat',
-      backgroundPosition: '0% 0%, 0% 0%',
-      backgroundSize: '100% auto, cover',  // Adjust as per your requirement
-      backgroundAttachment: 'scroll, fixed',
-    }}>
-      <div className="w-full">
-      </div>
+    <main className="relative w-full min-h-screen pt-20 overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 bg-no-repeat bg-cover opacity-30 z-1 h-[800px]"
+
+        style={{
+          backgroundImage: `url(${bg.src})`,
+        }}
+      ></div>
+    
+      <Head>
+        <title>Marketing Challengers Season 13</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favi.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favi-lg.png" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Marketing Challengers is a nationwide marketing competition for undergraduate students in Vietnam organized by RMIT Vietnam Business Club (SGS)"
+        />
+      </Head>
+
       <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-PKTX2148C4');
         `}
       </Script>
-      <Head>
-        <title>Marketing Challengers Season 12</title>
-        <link rel="icon" type="image/png" sizes='16x16' href="/favi.png"></link>
-        <link rel="icon" type="image/png" sizes='32x32' href="/favi-lg.png"></link>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Marketing Challengers is a nationwide marketing competition for undergraduate students in Vietnam organized by RMIT Vietnam Business Club (SGS)" />
 
-      </Head>
+      <div className="relative w-full h-screen">
+        {/* Tach behind boy */}
+        <div
+          className="absolute left-[-18%] top-[35%] transform -translate-y-1/2 w-1/2 h-[1000px] z-[30]"
+          style={{
+            backgroundImage: `url(${tach.src})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            
+          }}
+        ></div>
 
+        {/* Road below boy and kv */}
+        <div
+          className="absolute bottom-[-20%] left-0 w-full h-[1000px] z-[3] rotate-[120px]"
+          style={{
+            backgroundImage: `url(${road.src})`,
+            backgroundSize: '300% cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '-400px -500px',
+          
+          }}
+        ></div>
 
-      <div className='pt-10 sm:pt-52 md:pt-[400px] lg:pt-[600px] xl:pt-[700px] 2xl:pt-[800px] absolute flex flex-col items-center w-full ' style={{ zIndex: 2 }} >
-        <div>
-          <div className=''
-          // style={{
-          //   backgroundImage: `url(${LayerImage.src})`,
-          //   backgroundSize: '100% auto',
-          //   backgroundRepeat: 'no-repeat',
-          //   backgroundPosition: '0% 0%',
-          //   zIndex: 2,}}
-          >
-            {/* <PageTitle type={2} title='MARKETING CHALLENGERS'></PageTitle> */}
-            {/* <ImageHolder ref={heroTextRef} priority={true} src={HeroText} alt="marketing-challengers-ss12-slogan" className={'w-56 h-56 lg:w-64 lg:h-64 xl:w-[583px] mx-auto xl:h-[583px] transform -translate-y-10 lg:-translate-y-18 xl:-translate-y-20 sm:pt-10'}></ImageHolder>           */}
-            {/* <PageTitle className='flex justify-center pt-[200px]' title='GRAB YOUR SPARK NOW' /> */}
-          </div>
-          <div>
-            <div className='flex items-center justify-center w-screen'>
-              {/* <div className='inline-flex items-center justify-center text-[30px] lg:text-headline-30 2xl:text-hero-60 xl:text-[40px] tracking-widest lg:leading-10 text-glow-strong box-border xl:w-3/4 lg:h-[300px] lg:border-8 border-4 mx-auto'>
-                <Countdown className='' targetDate={new Date('2024-05-18T23:59:59+07:00')} />
-              </div> */}
-            </div>
-            {/* <div className='relative flex justify-center lg:mt-2'>
-              <Button
-                onClick={() => {
-                  window.open('https://docs.google.com/forms/d/e/1FAIpQLScy-Ghgn8gQhRId_V3ggHmD6DFrdsBEROroP685sqDZIOKpXA/viewform', '_blank');
-                }}
-                isGlow={true}
-                type='primary'
-                className='animate-bounce-slow font-bold mt-4'
-                text={'Registration for Closing Ceremony'}
-                size={buttonSize}
-              />
-            </div> */}
-          </div>
-            <PageTitle className='hidden lg:flex justify-center mt-44' title='MARKETING CHALLENGERS' />
-            <p className='hidden lg:flex mx-auto p-8 font-bold text-headline-31 xl:w-3/4 pt-0 mt-6 sm:w-095% text-center'>
-              Marketing Challengers is a top 3 national competition for Integrated Marketing Communications plans, organized by the RMIT Vietnam Business Club - SGS. With an impressive track record over a decade with 11 seasons, Marketing Challengers takes immense pride in the journey of inspiring and nurturing a vibrant community of marketers across Vietnam.
-            </p>
-            <div className='hidden lg:flex relative flex justify-center -top-16 lg:-top-2 xl:-top-2 sm:top-6'>
-            <Button ref={heroBtn} onClick={() => { route.push('/aboutus') }} isGlow={true} type='primary' className=' animate-bounce-slow font-bold' text={'About Marketing Challengers'} size='large'></Button>
-          </div>
+        <div
+          className="absolute left-[14%] top-[75%] transform -translate-y-1/2 w-1/3 h-[200px]"
+          style={{
+            backgroundImage: `url(${kv.src})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            zIndex: 60,
+          }}
+        ></div>
 
+        {/* Boy on left, in front of kv and tach */}
+        <div
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1/3 h-full"
+          style={{
+            backgroundImage: `url(${boy.src})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            zIndex: 40,
+          }}
+        ></div>
+
+        {/* Type (text) on right, above timer */}
+        <div
+          className="absolute right-0 top-1/4 transform -translate-y-1/2 w-1/2 h-full"
+          style={{
+            backgroundImage: `url(${typ.src})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            zIndex: 50,
+          }}
+        ></div>
+
+        {/* Countdown Timer below type */}
+        <div className="absolute right-10 top-[75%] transform -translate-y-1/2 z-[60] flex flex-col items-center space-y-4">
+          {/* Timer */}
+          <Countdown targetDate={new Date('2025-07-03T23:59:59+07:00')} />
+
+          {/* Register Now - bigger yellow button */}
+          <Button
+            onClick={() => router.push('/register')}
+            text="REGISTER NOW!"
+            className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-4xl px-10 py-5 rounded-full shadow-md w-[350px] h-[80px]"
+      
+          />
+
+          {/* Our Booklet - smaller purple gradient button */}
+          <Button
+            onClick={() => router.push('/booklet')}
+            text="OUR BOOKLET"
+            className="bg-gradient-to-r from-purple-600 to-purple-400 text-white text-sm font-semibold px-6 py-3 rounded-full shadow-sm w-[3  00px]"
+          />
         </div>
-
-
       </div>
-      {/* <Timeline ></Timeline>
-      <div className='pb-[450px]'><Awardstructure></Awardstructure></div> */}
-      <div><EventInfo></EventInfo></div>
-      <div><Sponsor></Sponsor></div>
-      <div><Partnershiplp></Partnershiplp></div>
-      <div><Halloffamelp></Halloffamelp></div>
-      {/* <Award></Award> */}
-      {/* <CallToAction></CallToAction> */}
-      <News featurePosts={data}></News>
-      <Ourhumanlp></Ourhumanlp>
-      <Whocanjoin></Whocanjoin>
-      {/* <Rules></Rules> */}
-      <Footer></Footer>
+      
     </main>
-  )
+  );
 }
 
 const featurePostQuery = `*[_type == "post" && featured == true]{

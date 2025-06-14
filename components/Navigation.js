@@ -52,7 +52,7 @@ const Navigation = () => {
     const handleHomeClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    return (<nav style={{ zIndex: '50' }} ref={navRef} className={"fixed lg:text-[10px] xl:text-[14px] top-0 h-[90px] xl:h-[110px] z-50 container-media-padding flex w-full items-center justify-between " + (isScroll ? 'bg-[#0F0616CC]' : '')}>
+    return (<nav style={{ zIndex: '50' }} ref={navRef} className={" lg:text-[10px] xl:text-[14px] top-0 h-[90px] xl:h-[110px] z-[100] container-media-padding flex w-full items-center justify-between " + (isScroll ? 'bg-[#0F0616CC]' : '')}>
         {/* Logo */}
         <Link href="/"><a onClick={handleHomeClick} className={ router.asPath == '/' ? 'active-link' : ''}><ImageHolder src={Logo} alt='logo-marcha' className={'w-[100px] h-[100px] xl:w-[150px] xl:h-[150px]  '}></ImageHolder></a></Link>
 
