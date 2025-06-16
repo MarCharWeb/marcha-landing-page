@@ -7,7 +7,10 @@ import SponsorTag from "../components/SponsorTag";
 import Footer from "../components/Footer";
 import Avabg from '../assets/Ava-background.png'
 import newbg from '../assets/newbg.png';
-
+import kv from '../assets/season13/HOMEPAGE/MASCOT_KV.png';
+import num from '../assets/season13/SPONSORS/8.jpg';
+import land from '../assets/season13/SPONSORS/land_bit.png';
+import sponsor from '../assets/season13/SPONSORS/sponsors.png';
 
 const Sponsor = () => {
 
@@ -23,39 +26,66 @@ const Sponsor = () => {
 
         setSponsorData(updateSponsorData)
     }
-    return (<section className="relative z-[1] xl:pt-16 sm:pt-12 lg:pt-20 bg-fixed" style={{
-        backgroundImage: `url(${newbg.src})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',  // Adjust as per your requirement
-        backgroundPosition: '0% 0%',
-        zIndex: 2,
-    }}>
-        <PageTitle className="lg:mt-2 xl:pt-5" title={'SPONSORSHIP'}></PageTitle>
-        {/* Sponsor Tag List */}
+    return (
+        <div className="relative" style={{ minHeight: "180vh", position: "relative" }}>
+      
+      <section
+        className="relative z-[1] min-h-[180vh] text-center text-tertiary-300 overflow-hidden"
+        style={{ backgroundColor: "transparent" }}
+      >
+        <div
+    className="absolute inset-0 -z-10"
+    style={{
+      backgroundImage: `url(${num.src})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      transform: "rotate(90deg)",
+      transformOrigin: "center",
+      width: "100%",
+      height: "100%",
+      scale: "150%",
+    }}
+  />
 
-        <div className="flex flex-wrap justify-center w-11/12 gap-4 pt-4 pb-8 mx-auto xl:w-10/12 xl:pt-6 xl:gap-6 2xl:w-8/12"
-            style={{
-                backgroundImage: `url(${Birdbg.src})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: '10% 60%',
-                backgroundPosition: '100% 105%',
-                zIndex: 1,
-            }
-            }>
-            {sponsorData.map((sps, index) => <SponsorTag key={index} handleTagClick={handleTagClick} text={sps.year} isActive={sps.isActive} />)}
+        {/* Top Title Section */}
+        <div className="flex items-center justify-center gap-2 pt-10 pb-5 z-10 relative">
+          <img
+            src={kv.src}
+            alt="mascot"
+            className="h-[100px] w-auto object-contain"
+          />
+          <h1 className="text-5xl font-bold text-white">SPONSORS</h1>
         </div>
 
-        <div className="w-10/12 mx-auto space-y-2.5 2xl:w-8/12">
-
-            {sponsorData.find(sps => sps.isActive).sponsorLogos.length > 0 ? sponsorData.find(sps => sps.isActive).sponsorLogos?.map((logoCategory, index) => <SponsorDisplay key={index} categoryName={logoCategory.categoryName} logoList={logoCategory.logoList} />)
-                :
-                <p className="text-center">To be updated</p>
-            }
-
+        {/* Sponsor PNG */}
+        <div className="relative w-full mt-10">
+          <img
+            src={sponsor.src}
+            alt="sponsors banner"
+            className="relative z-20 opacity-[90%] w-[350px] md:w-[500px] left-[33%] pt-[50px] scale-[200%] object-contain mt-5"
+          />
         </div>
-        <Footer></Footer>
 
-    </section>);
-}
+        {/* Text below the sponsor stack */}
+        <h2 className="text-yellow-300 text-2xl md:text-4xl font-semibold relative z-30 mt-40 text-center mx-auto w-[80%]">
+          Stay tuned for<br />this season's sponsor!
+        </h2>
+
+        {/* Land PNG as background at the bottom */}
+        <div className="relative w-full mt-[210px]">
+          <img
+            src={land.src}
+            alt="land decoration"
+            className="absolute z-0 w-full object-cover scale-[150%]"
+            style={{ bottom: 0, left: 0 }}
+          />
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+    );
+};
 
 export default Sponsor;

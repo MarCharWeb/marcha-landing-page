@@ -118,7 +118,6 @@ const AboutUs = () => {
     }}
   />
 
-  {/* Mascot image absolutely positioned above the road */}
   <img
     src={kv.src}
     alt="mascot"

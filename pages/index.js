@@ -199,8 +199,9 @@ export default function Home({ data }) {
           />
         </div>
       </div>
-      
+      <Footer></Footer>
     </main>
+    
   );
 }
 
