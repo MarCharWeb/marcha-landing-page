@@ -1,10 +1,4 @@
 import React, { useState } from 'react';
-import marketing from '../assets/season13/ABOUT US/MARKETING.png';
-import media from '../assets/season13/ABOUT US/MEDIA.png';
-import operations from '../assets/season13/ABOUT US/OPERATIONS.png';
-import program from '../assets/season13/ABOUT US/PROGRAM.png';
-import sponsor from '../assets/season13/ABOUT US/SPONSOR.png';
-import arc from '../assets/season13/ABOUT US/ARC.png';
 
 const teams = [
   {
@@ -57,11 +51,11 @@ const TeamCarousel = () => {
       {/* Left: Text */}
       <div className="w-full lg:w-1/2 p-4 flex flex-col items-center">
         <h2 className="text-tertiary-300 text-4xl text-headline-31 mb-8">Hi! We are</h2>
-        <div className="w-full max-w-lg flex items-center justify-between relative">
+        <div className="w-full max-w-xl flex items-center justify-between relative">
           <button onClick={handlePrev} className="w-0 h-0 border-y-[20px] border-r-[30px] border-y-transparent border-r-yellow-400 hover:brightness-110" />
 
           <div className="flex-1 mx-4">
-            <div className="border border-yellow-400 bg-[#8a2be2] p-6 rounded-lg h-[550px] text-left text-tertiary-300">
+            <div className="border border-yellow-400 bg-[#8a2be2] p-6 rounded-lg h-[550px] flex flex-col justify-center text-left text-tertiary-300">
               <h3 className="text-2xl text-center text-headline-37 mb-4">{currentTeam.name}</h3>
               <p className="text-sm ">{currentTeam.description}</p>
             </div>
@@ -75,9 +69,9 @@ const TeamCarousel = () => {
       <div className="w-full lg:w-1/2 p-4 flex items-center justify-center relative">
   {/* Team Circle Image */}
   <div
-    className="w-[600px] h-[600px] rounded-full overflow-hidden relative z-10"
+    className="w-[700px] h-[700px] rounded-full overflow-hidden relative z-10"
     style={{
-      backgroundImage: `url(${currentTeam.image})`,
+      backgroundImage: `url("${currentTeam.image}")`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}
