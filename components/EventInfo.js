@@ -4,14 +4,6 @@ import Image from 'next/image';
 import Button from '../components/Button'
 import { useState, useEffect } from 'react';
 
-import OCimg from '../assets/Website/Events/OC.jpg';
-import TestDriveimg from '../assets/Website/Events/TestDrive.jpg';
-import Webinar1img from '../assets/Website/Events/Webinar1.jpg';
-import Webinar2img from '../assets/Website/Events/Webinar2.jpg';
-import Workshopimg from '../assets/Website/Events/Workshop.jpg';
-import PPimg from '../assets/Website/Events/PP.jpg';
-import CCimg from '../assets/Website/Events/CC.png';
-
 const EventInfo = () => {
     return (
         <main className="hidden lg:block flex flex-col pt-[1600px]">
@@ -26,7 +18,7 @@ const EventInfo = () => {
             <PageTitle className="" title={"SEASON 11'S EVENT DETAILS"}></PageTitle>
             <div className="flex flex-col items-center justify-center w-full mt-4">
                 <div className="gradient-bg relative rounded-[50px] h-[825px] w-[800px] flex flex-col items-center justify-start">
-                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={Webinar1img} />
+                    {/* <Image className="flex items-center justify-center object-center rounded-[30px]" src={Webinar1img} /> */}
                     <p className="text-white text-[18px] mx-4 mt-4 text-left">
                         Being one of the events in the launch series of the Marketing Challengers season 12, Webinar 1: Sustainability in Marketing & Business Development, we are pleased to welcome the 2 Guest Speakers: <br></br>
                         🌿Ms. Khanh Truong - Client Partnership Supervisor at Buzzmetrics<br></br>
@@ -45,7 +37,7 @@ const EventInfo = () => {
                     />
                 </div>
                 <div className="gradient-bg relative rounded-[50px] h-[800px] w-[800px] flex flex-col items-center justify-start mt-10">
-                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={TestDriveimg} />
+                    {/* <Image className="flex items-center justify-center object-center rounded-[30px]" src={TestDriveimg} /> */}
                     <p className="text-white text-[18px] mx-4 mt-4 text-left">
                         Understanding the contestants&apos;desires, MarCha has organized a &quot;Test Drive&quot; session to provide additional knowledge about the <span className="font-bold">MET</span>.<span className="font-bold">EV</span> brand and product that you won&apos;t find anywhere else on the internet. At the &quot;Test Drive&quot;, you will have the opportunity: <br></br>
                         🌟Hear the sharing from the founder of <span className="font-bold">MET</span>.<span className="font-bold">EV</span><br></br>
@@ -66,7 +58,7 @@ const EventInfo = () => {
                 </div>
                 <div className="gradient-bg relative rounded-[50px] h-[800px] w-[800px] flex flex-col items-center justify-start mt-10">
                     <div className="w-full">
-                        <Image className="flex items-center justify-center object-center rounded-[30px] min-w-full min-h-full object-cover" src={OCimg} />
+                        {/* <Image className="flex items-center justify-center object-center rounded-[30px] min-w-full min-h-full object-cover" src={OCimg} /> */}
                     </div>
                     <p className="text-white text-[18px] mx-4 mt-4 text-left">
                         The Opening Ceremony is a milestone marking the official start of Marketing Challengers Season 12. Coming to the Opening Ceremony, you will have the opportunity to:<br></br>
@@ -88,7 +80,7 @@ const EventInfo = () => {
                     />
                 </div>
                 <div className="gradient-bg relative rounded-[50px] h-[800px] w-[800px] flex flex-col items-center justify-start mt-10">
-                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={Webinar2img} />
+                    {/* <Image className="flex items-center justify-center object-center rounded-[30px]" src={Webinar2img} /> */}
                     <p className="text-white text-[18px] mx-4 mt-4 text-left">
                         You are so proud to announce the upcoming webinar entitled &quot;<span className="font-bold">How to find an insightful insight</span>&quot;. In this webinar, we are glad to inform the presence of:<br></br>
                         🌿Mr. Nguyen Hai Minh - Chairman & Chief of Knowledge at Wisdom Agency<br></br>
@@ -107,7 +99,7 @@ const EventInfo = () => {
                     />
                 </div>
                 <div className="gradient-bg relative rounded-[50px] h-[800px] w-[800px] flex flex-col items-center justify-start mt-10">
-                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={Workshopimg} />
+                    {/* <Image className="flex items-center justify-center object-center rounded-[30px]" src={Workshopimg} /> */}
                     <p className="text-white text-[18px] mx-4 mt-4 text-left">
                         In this workshop, we are honored to invite two esteemed guest speakers:<br></br>
                         🌿Mr. Ngo Minh Thuan - Founder & Managing Director at DNA Consulting<br></br>
@@ -130,7 +122,7 @@ const EventInfo = () => {
                     />
                 </div>
                 <div className="gradient-bg relative rounded-[50px] h-[830px] w-[800px] flex flex-col items-center justify-start mt-10">
-                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={PPimg} />
+                    {/* <Image className="flex items-center justify-center object-center rounded-[30px]" src={PPimg} /> */}
                     <p className="text-white text-[18px] mx-4 mt-4 text-left">
                         As part of Marketing Challengers Season 12, Private Pitching is where the Top 8 teams will showcase their talents through important social content (viral videos, small games, posters, etc.), aiming to highlight the key message in their strategy and solve marketing challenges from MET.EV with special support and guidance from the our esteemed mentors.<br></br>
                         Following this, the Networking Event is a valuable opportunity for the Top 8 finalists. This will undoubtedly be a &quot;golden&quot; opportunity for young marketers to interact, learn from industry veterans, and explore thousands of exciting career prospects awaiting them.
@@ -147,7 +139,7 @@ const EventInfo = () => {
                     />
                 </div>
                 <div className="gradient-bg relative rounded-[50px] h-[800px] w-[800px] flex flex-col items-center justify-start mt-10">
-                    <Image className="flex items-center justify-center object-center rounded-[30px]" src={CCimg} />
+                    {/* <Image className="flex items-center justify-center object-center rounded-[30px]" src={CCimg} /> */}
                     <p className="text-white text-[18px] mx-4 mt-4 text-left">
                         The Grand Finale of Marketing Challengers Season 12 is to wrap up this exciting journey .
                         Join us for an unforgettable evening which will include:<br></br>

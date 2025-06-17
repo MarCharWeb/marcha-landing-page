@@ -2,19 +2,14 @@ import PageTitle from "../components/PageTitle";
 import Image from 'next/image';
 import Footer from "../components/Footer";
 
-import Leaderboardimg from '../assets/TeamImage/Leaderboard.jpg';
-import Marketingimg from '../assets/TeamImage/Marketing-Team.jpg';
-import Mediaimg from '../assets/TeamImage/Media-Team.jpg';
-import Operationsimg from '../assets/TeamImage/Operations-Team.jpg';
-import Programimg from '../assets/TeamImage/Program-Team.jpg';
-import Sponsorimg from '../assets/TeamImage/Team-Sponsor.jpg';
+
 
 import newbg from '../assets/newbg.png';
 
 const Ourhuman = () => {
     return (
         <main className="space-y-1 sm:pt-12 lg:pt-20 bg-fixed" style={{
-            backgroundImage: `url(${newbg.src})`,
+            // backgroundImage: `url(${newbg.src})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: '0% 0%',
@@ -24,7 +19,7 @@ const Ourhuman = () => {
                 <PageTitle className="" title={'CONTACTS'} type={2}></PageTitle>
                 <h4 className="pt-10 flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Leader Board</h4>
                 <div className="w-screen flex items-center justify-center pb-5 px-4">
-                    <Image className="flex items-center justify-center bg-gray-300 p-4 object-center lg:w-[500px] lg:h-auto" src={Leaderboardimg} width={650} height={420} />
+                    {/* <Image className="flex items-center justify-center bg-gray-300 p-4 object-center lg:w-[500px] lg:h-auto" src={Leaderboardimg} width={650} height={420} /> */}
                 </div>
                 <div className="w-screen flex items-center justify-center pb-5">
                 </div>
@@ -32,7 +27,7 @@ const Ourhuman = () => {
                     <div className="lg:w-1/2 w-full bg-gray-300 ">
                         <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong">Sponsor Team</h4>
                         <div className="flex items-center justify-center">
-                            <Image className="flex items-center justify-center h-screen" src={Sponsorimg} width={650} height={400} />
+                            {/* <Image className="flex items-center justify-center h-screen" src={Sponsorimg} width={650} height={400} /> */}
                         </div>
                     </div>
                     <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-4 lg:mt-10 lg:mx-4 flex items-center justify-center lg:pl-4">
@@ -43,7 +38,7 @@ const Ourhuman = () => {
                     <div className="lg:w-1/2 w-full bg-gray-300 lg:order-2">
                         <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Marketing Team</h4>
                         <div className="flex items-center justify-center ">
-                            <Image className="flex items-center justify-center h-screen" src={Marketingimg} width={620} height={400} />
+                            {/* <Image className="flex items-center justify-center h-screen" src={Marketingimg} width={620} height={400} /> */}
                         </div>
 
                     </div>
@@ -56,7 +51,7 @@ const Ourhuman = () => {
                     <div className="lg:w-1/2 w-full bg-gray-300">
                         <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong">Media Team</h4>
                         <div className="flex items-center justify-center">
-                            <Image className="flex items-center justify-center h-screen" src={Mediaimg} width={620} height={330} />
+                            {/* <Image className="flex items-center justify-center h-screen" src={Mediaimg} width={620} height={330} /> */}
                         </div>
                     </div>
                     <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-4 lg:mt-10 lg:mx-4 flex items-center justify-center lg:pl-4">
@@ -68,7 +63,7 @@ const Ourhuman = () => {
                     <div className="lg:w-1/2 w-full bg-gray-300 lg:order-2">
                         <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Program Team</h4>
                         <div className="flex items-center justify-center">
-                            <Image className="flex items-center justify-center h-screen" src={Programimg} width={620} height={330} />
+                            {/* <Image className="flex items-center justify-center h-screen" src={Programimg} width={620} height={330} /> */}
                         </div>
                     </div>
                     <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-4 lg:mt-10 lg:mx-4 flex items-center justify-center lg:pr-4">
@@ -80,7 +75,7 @@ const Ourhuman = () => {
                     <div className="lg:w-1/2 w-full bg-gray-300">
                         <h4 className="flex items-center justify-center font-bold text-headline-31 lg:text-headline-37 text-glow-strong ">Operations Team</h4>
                         <div className="flex items-center justify-center">
-                            <Image className="flex items-center justify-center h-screen" src={Operationsimg} width={620} height={330} />
+                            {/* <Image className="flex items-center justify-center h-screen" src={Operationsimg} width={620} height={330} /> */}
                         </div>
                     </div>
                     <div className="lg:w-1/2 w-full bg-blue-300 text-justify mt-4 lg:mt-10 lg:mx-4 flex items-center justify-center lg:pl-4">

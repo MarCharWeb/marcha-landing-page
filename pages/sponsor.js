@@ -1,12 +1,12 @@
 import { useState } from "react";
 import SponsorDisplay from "../components/SponsorDisplay";
-import { sponsorLogo } from "../assets/sponsorLogo";
+// import { sponsorLogo } from "../assets/sponsorLogo";
 import PageTitle from "../components/PageTitle";
 import SponsorTag from "../components/SponsorTag";
 import Footer from "../components/Footer";
 
 const Sponsor = ({ hideFooter = false }) => {
-  const [sponsorData, setSponsorData] = useState(sponsorLogo());
+  // const [sponsorData, setSponsorData] = useState(sponsorLogo());
 
   const handleTagClick = (sponsorYear) => {
     let updateSponsorData = sponsorData.map((sps) => {
