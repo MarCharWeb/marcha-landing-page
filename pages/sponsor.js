@@ -12,7 +12,7 @@ import num from '../assets/season13/SPONSORS/8.jpg';
 import land from '../assets/season13/SPONSORS/land_bit.png';
 import sponsor from '../assets/season13/SPONSORS/sponsors.png';
 
-const Sponsor = () => {
+const Sponsor = ({hideFooter = false}) => {
 
     const [sponsorData, setSponsorData] = useState(sponsorLogo());
     const handleTagClick = (sponsorYear) => {
@@ -34,28 +34,27 @@ const Sponsor = () => {
         style={{ backgroundColor: "transparent" }}
       >
         <div
-    className="absolute inset-0 -z-10"
-    style={{
-      backgroundImage: `url(${num.src})`,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      transform: "rotate(90deg)",
-      transformOrigin: "center",
-      width: "100%",
-      height: "100%",
-      scale: "150%",
-    }}
-  />
+  className="absolute inset-0 -z-10"
+  style={{
+    backgroundImage: `url(${num.src})`,
+    backgroundSize: "450px 1500px", 
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center ",
+    transform: "rotate(90deg) scale(3)", 
+    transformOrigin: "center",
+    width: "100%",
+    height: "60%",
+  }}
+/>
 
         {/* Top Title Section */}
-        <div className="flex items-center justify-center gap-2 pt-10 pb-5 z-10 relative">
+        <div className="flex items-center justify-center gap-2 pt-10 pb-5 z-10 relative mt-[70px]">
           <img
             src={kv.src}
             alt="mascot"
             className="h-[100px] w-auto object-contain"
           />
-          <h1 className="text-5xl font-bold text-white">SPONSORS</h1>
+          <h1 className="text-tertiary-400 font-bold text-display-64 text-white">SPONSORS</h1>
         </div>
 
         {/* Sponsor PNG */}
@@ -67,23 +66,21 @@ const Sponsor = () => {
           />
         </div>
 
-        {/* Text below the sponsor stack */}
-        <h2 className="text-yellow-300 text-2xl md:text-4xl font-semibold relative z-30 mt-40 text-center mx-auto w-[80%]">
+        <h2 className="text-yellow-300 text-headline-48 md:text-4xl font-semibold relative z-30 mt-40 text-center mx-auto w-[80%]">
           Stay tuned for<br />this season's sponsor!
         </h2>
 
-        {/* Land PNG as background at the bottom */}
-        <div className="relative w-full mt-[210px]">
+        <div className="relative w-full mt-[260px]">
           <img
             src={land.src}
             alt="land decoration"
-            className="absolute z-0 w-full object-cover scale-[150%]"
-            style={{ bottom: 0, left: 0 }}
+            className="absolute z-0 w-full left-[50px] object-cover scale-[140%]"
+            style={{ bottom: 0 }}
           />
         </div>
       </section>
 
-      <Footer />
+                 {!hideFooter && <Footer />}
     </div>
     );
 };

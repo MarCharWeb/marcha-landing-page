@@ -156,7 +156,7 @@
 
         },
         fontFamily: {
-          sans: ['Agrandir', 'sans-serif'],
+          sans: ['Lexend', 'sans-serif'],
           teko: ['Teko', 'sans-serif']
         },
 

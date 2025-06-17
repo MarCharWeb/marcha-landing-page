@@ -19,7 +19,7 @@ const Rules = () => {
                 
             }}>
             <main className="sm:pt-12 lg:pt-20 container-media-padding lg:text-[22px] text-[18px]">
-                <h1 className="text-4xl md:text-5xl font-bold text-center text-tertiary-300 mt-10 mb-8">
+                <h1 className="text-display-64 md:text-5xl font-bold text-center text-tertiary-300 mt-10 mb-8">
   TERMS & CONDITIONS
 </h1>
                 <section className="py-10 space-y-6">
@@ -32,7 +32,7 @@ const Rules = () => {
                             style={{ zIndex: 0 }}
                         />
                         
-                        <h4 className="relative z-10 font-bold uppercase pb-[50px] text-tertiary-300 text-center text-2xl mb-4">
+                        <h4 className="relative z-10 mt-20 font-semibold uppercase pb-[50px] text-tertiary-300 text-center text-headline-48 mb-4">
                             Entrance Eligibility
                         </h4>
                         <div className="relative z-10">
@@ -56,7 +56,7 @@ const Rules = () => {
 
                     {/* Submission Date */}
                     <div>
-                        <h4 className="font-bold uppercase text-tertiary-300 text-center pb-[50px] text-2xl mb-4">
+                        <h4 className="font-semibold text-headline-48 uppercase text-tertiary-300 text-center pb-[50px] mb-4">
   Team Submission
 </h4>
 <div>
@@ -91,7 +91,7 @@ const Rules = () => {
 
                     {/* Conditions & Rules for Event Participation */}
                     <div>
-                        <h4 className="font-bold uppercase text-tertiary-300 text-center pb-[50px] text-2xl mb-4">
+                        <h4 className="font-semibold uppercase text-tertiary-300 text-center pb-[50px] text-headline-48  mb-4">
                             Event Participation
                             </h4>
                         <div>
@@ -136,7 +136,7 @@ const Rules = () => {
                             alt="decorative right graphic"
                             className="absolute top-[0%] right-0 w-[150px] z-0 opacity-30 scale-[1000%] pointer-events-none select-none"
                         />
-                        <h4 className="relative z-10 font-bold uppercase pb-[50px] text-center text-2xl mb-4">
+                        <h4 className="relative z-10 font-semibold text-tertiary-300 uppercase pb-[50px] text-center text-headline-48 mb-4">
                             Contestant Rights
                             </h4>
                         <div>
@@ -170,11 +170,11 @@ const Rules = () => {
 
                     {/* Copyrights of Marketing Challengers */}
                     <div>
-                        <h4 className="font-bold uppercase text-center pb-[50px] text-2xl mb-4">
-  COPYRIGHTS OF MARKETING CHALLENGERS
+                        <h4 className="font-semibold text-tertiary-300 uppercase text-center pb-[50px] text-headline-48  mb-4">
+  COPYRIGHTS OF<br></br> MARKETING CHALLENGERS
 </h4>
                         <div>
-                            <ul className="space-y-1 list-disc -mt-6 lg:px-24 text-left">
+                            <ul className="space-y-1 list-disc -mt-6 text-tertiary-300 lg:px-24 text-left">
                                 <li><p>Candidates must obey the copyright laws and not violate the copyrights of any other third parties. The organizer of this contest, RMIT Vietnam Business Club-SGS, is not responsible for any breach by the candidate.</p></li>
                                 <li><p>RMIT Vietnam Business Club - SGS reserves the right to publish and display the Project, using its content and images for publicity, promotion, and non-profit purposes.</p></li>
                                 <li><p>The Organising Team reserves the right to take photographs throughout the competition and use them for non-profit publications and other related materials in the future.</p></li>
