@@ -9,14 +9,14 @@ const Terms = () => {
   return (
     <div className="relative w-full py-[500px] bg-[#2D033F] overflow-visible flex justify-center items-center">
 
-      <img
+      <Image
         src={tach.src}
         alt="left tach"
         className="absolute transform scale-[300%] opacity-[80%] w-[500px] object-contain z-0"
         style={{ left: '-260px', top: '35%' }}
       />
 
-      <img
+      <Image
         src={tach.src}
         alt="right tach"
         className="absolute transform scale-[200%] opacity-[80%] w-[500px] object-contain z-0"
@@ -30,7 +30,7 @@ const Terms = () => {
           <h2 className="text-tertiary-300 text-4xl font-bold whitespace-nowrap text-center z-10">
             TERMS & CONDITIONS
           </h2>
-          <img
+          <Image
             src={kv.src}
             alt="mascot"
             className="absolute left-[calc(50%-300px)] w-[120px] h-auto z-0"
