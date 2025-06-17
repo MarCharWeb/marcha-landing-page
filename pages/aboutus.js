@@ -57,7 +57,7 @@ const AboutUs = ({hideFooter = false}) => {
           <div
             className="absolute top-[52%] w-full h-[300px] z-1 scale-[380%]"
             style={{
-              backgroundImage: `url(${land_ver1.src})`,
+              backgroundImage:  `url("/season13/ABOUT US/land_ver1.png")`,
               backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center bottom',
@@ -67,7 +67,7 @@ const AboutUs = ({hideFooter = false}) => {
           <div
             className="absolute bottom-[23%] right-[30%] w-full h-[500px] z-[5] opacity-40 rotate-[200deg] scale-[80%]"
             style={{
-              backgroundImage: `url(${road_full.src})`,
+              backgroundImage:`url("/season13/HOMEPAGE/ROAD_FULL.png")`,
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center',
@@ -109,7 +109,7 @@ const AboutUs = ({hideFooter = false}) => {
           <div className="relative w-full bottomx rotate-[2deg] -mt-[350px] pointer-events-none">
   {/* Road image as a full-width layout */}
   <img
-    src={road_full.src}
+    src="/season13/HOMEPAGE/ROAD_FULL.png"
     alt="road background"
     className="w-full object-cover"
     style={{
@@ -119,7 +119,7 @@ const AboutUs = ({hideFooter = false}) => {
   />
 
   <img
-    src={kv.src}
+    src="/season13/HOMEPAGE/MASCOT_KV.png"
     alt="mascot"
     className="absolute bottom-[20%] left-[10%] h-[350px] z-10 object-contain pointer-events-none"
   />

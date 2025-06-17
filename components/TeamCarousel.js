@@ -11,31 +11,31 @@ const teams = [
     name: 'MEDIA TEAM',
     description:
       'The Media Team represents the public face of Marketing Challengers, managing all online content across social media platforms and ensuring the development and maintenance of the website throughout the competition. Additionally, we cultivate and manage relationships with Media Sponsors, Supporters, and Ambassadors to enhance the competition’s visibility and impact.',
-    image: media.src,
+    image: '/season13/ABOUT US/MEDIA.png',
   },
   {
     name: 'PROGRAM TEAM',
     description:
       'The Program Team is responsible for delivering the core content of Marketing Challengers. We collaborate closely to ensure the competition’s success by shaping each strategic initiative. This includes setting project objectives, creating themes and timelines, organizing event agendas and round structures, and providing detailed client briefs that serve as key criteria for judging. Our mission is to nurture contestants’ marketing skills while maintaining academic excellence throughout every season.',
-    image: program.src,
+    image: '/season13/ABOUT US/PROGRAM.png',
   },
   {
     name: 'MARKETING TEAM',
     description:
       'The Marketing team enhances brand visibility and drives sales for Marketing Challengers each season. We manage promotional materials, coordinate budgets and strategies with other teams, and align creative direction with project goals. We develop marketing plans across various channels, analyze market trends and consumer insights, and ensure projects remain on track and within budget.',
-    image: marketing.src,
+    image: '/season13/ABOUT US/MARKETING.png',
   },
   {
     name: 'SPONSOR TEAM',
     description:
       'The Sponsor Team, which is dedicated members of the organizing committee, focuses on securing essential sponsorships to ensure the competition’s success. Our commitment to building strategic partnerships enhances the experience for participants and sponsors alike. Stay tuned for the exciting initiatives we have planned this season!',
-    image: sponsor.src,
+    image: '/season13/ABOUT US/SPONSOR.png',
   },
   {
     name: 'OPERATIONS TEAM',
     description:
       'The Operations team is essential to the seamless execution of all events. We manage critical details, including documentation, venue setup, and on-site coordination. With a strong focus on logistics and hands-on management, we ensure every event runs smoothly, providing a memorable and well-organized experience for all participants.',
-    image: operations.src,
+    image: '/season13/ABOUT US/OPERATIONS.png',
   },
 ];
 
@@ -83,7 +83,7 @@ const TeamCarousel = () => {
     }}
   />
   <img
-    src={arc.src}
+    src="/season13/ABOUT US/ARC.png"
     alt="arc overlay"
     className="absolute top-0 left-0 w-[920px] h-[920px] z-2 pointer-events-none"
     style={{ top: '-50px', left: '90px' }}

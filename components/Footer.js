@@ -74,31 +74,31 @@ const Footer = () => {
 <div className="flex gap-x-10 gap-y-4 mt-2 flex-wrap justify-start">
   {/* Facebook Fanpage */}
   <a href="https://facebook.com/" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
-    <img src={face.src} alt="Facebook" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
+    <img src="/season13/CONTACT/face.png" alt="Facebook" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
     <span className="text-xs mt-1">Facebook<br />Fanpage</span>
   </a>
 
   {/* Facebook Group */}
   <a href="https://bit.ly/MarChaFacebookGroup" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
-    <img src={face.src} alt="Facebook Group" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
+    <img src="/season13/CONTACT/face.png" alt="Facebook Group" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
     <span className="text-xs mt-1">Facebook<br />Group</span>
   </a>
 
   {/* LinkedIn */}
   <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
-    <img src={link.src} alt="LinkedIn" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
+    <img src="/season13/CONTACT/link.png" alt="LinkedIn" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
     <span className="text-xs mt-1">LinkedIn</span>
   </a>
 
   {/* Spotify */}
   <a href="https://open.spotify.com/" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
-    <img src={spot.src} alt="Spotify" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
+    <img src="/season13/CONTACT/spot.png" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
     <span className="text-xs mt-1">Spotify</span>
   </a>
 
   {/* TikTok */}
   <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
-    <img src={tik.src} alt="TikTok" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
+    <img src="/season13/CONTACT/tik.png" alt="TikTok" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
     <span className="text-xs mt-1">TikTok</span>
   </a>
 </div>

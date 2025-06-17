@@ -26,7 +26,7 @@ const Rules = () => {
                     {/* Entrant Eligibility */}
                     <div className="relative">
                         <img
-                            src={tach.src}
+                            src="/season13/RULES AND REGULATIONS/tach.png" 
                             alt="decorative left graphic"
                             className="absolute top-[40%] left-0 w-[150px] z-[0] opacity-30 scale-[1000%] pointer-events-none select-none"
                             style={{ zIndex: 0 }}
@@ -115,7 +115,7 @@ const Rules = () => {
                                 <li>Join the event on time.</li>
                                 <li>Must not share the screen or turn on the microphone while guest speakers are sharing during Webinar 2 and Workshops.</li>
                                 <li>Must not send spam messages in the chat box.</li>
-                                <li>Follow the instructions for displaying the candidate's name during the events.</li>
+                                <li>Follow the instructions for displaying the candidate&apos;s name during the events.</li>
                                 <li>Have a respectful attitude when interacting with others.</li>
                                 <li>Open the camera to communicate with the Guest Speakers during the exclusive workshops for Top 32 and Top 10.</li>
                                 </ul>
@@ -132,7 +132,7 @@ const Rules = () => {
                     {/* Term & Conditions */}
                     <div className="relative">
                         <img
-                            src={tach.src}
+                            src="/season13/RULES AND REGULATIONS/tach.png" 
                             alt="decorative right graphic"
                             className="absolute top-[0%] right-0 w-[150px] z-0 opacity-30 scale-[1000%] pointer-events-none select-none"
                         />
@@ -178,8 +178,8 @@ const Rules = () => {
                                 <li><p>Candidates must obey the copyright laws and not violate the copyrights of any other third parties. The organizer of this contest, RMIT Vietnam Business Club-SGS, is not responsible for any breach by the candidate.</p></li>
                                 <li><p>RMIT Vietnam Business Club - SGS reserves the right to publish and display the Project, using its content and images for publicity, promotion, and non-profit purposes.</p></li>
                                 <li><p>The Organising Team reserves the right to take photographs throughout the competition and use them for non-profit publications and other related materials in the future.</p></li>
-                                <li><p>The Organising Team, RMIT Vietnam Business Club - SGS, sponsors, and RMIT will not use the candidate's work for any purpose other than grading, reviewing between judges/mentors, and filtering out the best works for awarding.</p></li>
-                                <li><p>If a sponsor desires to use a candidate's idea, the sponsor and candidate will enter into a separate agreement. The Organising Team, RMIT Vietnam Business Club - SGS, and RMIT are not responsible for this consent or any ensuing circumstances.</p></li>
+                                <li><p>The Organising Team, RMIT Vietnam Business Club - SGS, sponsors, and RMIT will not use the candidate&apos;s work for any purpose other than grading, reviewing between judges/mentors, and filtering out the best works for awarding.</p></li>
+                                <li><p>If a sponsor desires to use a candidate&apos;s idea, the sponsor and candidate will enter into a separate agreement. The Organising Team, RMIT Vietnam Business Club - SGS, and RMIT are not responsible for this consent or any ensuing circumstances.</p></li>
                             </ul>
                         </div>
                     </div>
@@ -187,7 +187,7 @@ const Rules = () => {
             </main>
             <div className="relative h-[150px]">
             <img
-                src={road.src}
+                src="/season13/RULES AND REGULATIONS/ROAD_FULL.png" 
                 alt="road decoration"
                 className="absolute bottom-0 left-1/2 scale-[400%] top-[-160%] -translate-x-1/2 w-[400px] opacity-30 pointer-events-none select-none z-0"
             />
