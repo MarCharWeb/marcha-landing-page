@@ -33,7 +33,7 @@ const Sponsor = ({ hideFooter = false }) => {
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
-            transform: "rotate(90deg) scale(1.5)",
+            transform: "rotate(90deg) scale(4)",
             transformOrigin: "center",
             width: "100%",
             height: "100%",

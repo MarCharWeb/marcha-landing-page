@@ -186,7 +186,7 @@ const Rules = () => {
             <img
                 src="/season13/RULES AND REGULATIONS/ROAD_FULL.png" 
                 alt="road decoration"
-                className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[400px] max-w-[90%] scale-[400%] opacity-30 pointer-events-none select-none z-0"
+                className="absolute bottom-12 right-0 transform -translate-x-1/2 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[400px] max-w-[90%] scale-[400%] opacity-30 pointer-events-none select-none z-0"
             />
             </div>
             <br></br>
