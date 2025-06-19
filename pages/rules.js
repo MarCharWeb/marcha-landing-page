@@ -3,9 +3,6 @@ import WhiteLight from '../assets/Logolight-white.png'
 import Value from "../components/Value";
 // import Birdbg from "../assets/bird-bg.png"
 import Footer from "../components/Footer";
-import newbg from '../assets/newbg.png';
-import road from '../assets/season13/RULES AND REGULATIONS/ROAD_FULL.png';
-import tach from '../assets/season13/RULES AND REGULATIONS/TACH.png';
 
 const Rules = () => {
     return (
@@ -19,14 +16,14 @@ const Rules = () => {
                 
             }}>
             <main className="sm:pt-12 lg:pt-20 container-media-padding lg:text-[22px] text-[18px]">
-                <h1 className="text-display-64 md:text-5xl font-bold text-center text-tertiary-300 mt-10 mb-8">
-  TERMS & CONDITIONS
-</h1>
+                <h1 className="text-display-64 sm:text-headline-48 md:text-display-64 lg:text-display-64 font-bold text-center text-tertiary-300 mt-10 mb-8">
+                    TERMS & CONDITIONS
+                </h1>
                 <section className="py-10 space-y-6">
                     {/* Entrant Eligibility */}
                     <div className="relative">
                         <img
-                            src="/season13/RULES AND REGULATIONS/tach.png" 
+                            src="/season13/RULES AND REGULATIONS/TACH.png" 
                             alt="decorative left graphic"
                             className="absolute top-[40%] left-0 w-[150px] z-[0] opacity-30 scale-[1000%] pointer-events-none select-none"
                             style={{ zIndex: 0 }}
@@ -36,7 +33,7 @@ const Rules = () => {
                             Entrance Eligibility
                         </h4>
                         <div className="relative z-10">
-                            <ul className="space-y-1 list-disc text-tertiary-300 -mt-6 lg:px-12 z-10 text-left">
+                            <ul className="space-y-1 list-disc text-tertiary-300 -mt-6 lg:px-12 px-4 sm:px-6 z-10 text-left">
                                 <li><p>All University and College undergraduates who are currently enrolled in universities or colleges in Vietnam (of all nationalities); OR graduated within 1 year; OR studying abroad but are Vietnamese students.</p></li>
                                 <li><p>No registration fees are necessary to enter the competition.</p></li>
                                 <li><p>Each team must consist of exactly 3 members to qualify for participation. Basic English proficiency is required, as the competition will be conducted fully in English.</p></li>
@@ -50,7 +47,7 @@ const Rules = () => {
                     </div>
                     <div className="flex items-center justify-center my-10 ">
   <div className="w-2 h-2 bg-white rotate-45"></div>
-  <div className="h-[2px] w-[500px] bg-white"></div>
+  <div className="h-[1px] w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] bg-white"></div>
   <div className="w-2 h-2 bg-white rotate-45"></div>
 </div>
 
@@ -64,7 +61,7 @@ const Rules = () => {
       <li>
         <p className="font-bold mb-2">Submission Rules and Conditions</p>
         <ul className="list-disc pl-6 space-y-1 text-tertiary-300">
-          <li>All materials submitted must be candidates’ original work and must not be under submission to other competitions. Any duplication of outside sources must be referenced properly to avoid plagiarism. The Organising Team is not responsible for any violations made by the candidates.</li>
+          <li>All materials submitted must be candidates&apos; original work and must not be under submission to other competitions. Any duplication of outside sources must be referenced properly to avoid plagiarism. The Organising Team is not responsible for any violations made by the candidates.</li>
           <li>The Organising Team has the right to use the content and images of the submissions for non-profit public communications and promotional purposes without compensation.</li>
           <li>The Organising Team reserves the right to access, review, and store all submitted materials for the purposes of evaluation, quality control, and internal documentation. These materials will not be publicly disclosed or used for commercial purposes without the candidates’ consent.</li>
           <li>Candidates must not reveal the datasets and questions from all rounds to ensure the confidentiality of the contest.</li>
@@ -85,7 +82,7 @@ const Rules = () => {
 
                     <div className="flex items-center justify-center my-10 ">
   <div className="w-2 h-2 bg-white rotate-45"></div>
-  <div className="h-[2px] w-[500px] bg-white"></div>
+  <div className="h-[1px] w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] bg-white"></div>
   <div className="w-2 h-2 bg-white rotate-45"></div>
 </div>
 
@@ -95,7 +92,7 @@ const Rules = () => {
                             Event Participation
                             </h4>
                         <div>
-                            <ul className="space-y-8 list-decimal text-white -mt-6 lg:px-12 text-left">
+                            <ul className="space-y-8 list-decimal text-white -mt-6 lg:px-12 px-4 sm:px-6 text-left">
                             <li>
                                 <p className="font-bold mb-2"> Conditions for Event Participation</p>
                                 <ul className="list-disc pl-6 space-y-1 text-tertiary-300">
@@ -125,14 +122,14 @@ const Rules = () => {
                     </div>
                     <div className="flex items-center justify-center my-10 ">
   <div className="w-2 h-2 bg-white rotate-45"></div>
-  <div className="h-[2px] w-[500px] bg-white"></div>
+  <div className="h-[1px] w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] bg-white"></div>
   <div className="w-2 h-2 bg-white rotate-45"></div>
 </div>
 
                     {/* Term & Conditions */}
                     <div className="relative">
                         <img
-                            src="/season13/RULES AND REGULATIONS/tach.png" 
+                            src="/season13/RULES AND REGULATIONS/TACH.png" 
                             alt="decorative right graphic"
                             className="absolute top-[0%] right-0 w-[150px] z-0 opacity-30 scale-[1000%] pointer-events-none select-none"
                         />
@@ -140,7 +137,7 @@ const Rules = () => {
                             Contestant Rights
                             </h4>
                         <div>
-                            <ul className="relative z-10space-y-1 list-disc text-tertiary-300 -mt-6 lg:px-24 text-left">
+                            <ul className="relative z-10space-y-1 list-disc text-tertiary-300 -mt-6 lg:px-24 px-4 sm:px-6 text-left">
                                 <li><p>The teams must comply with all rules, guidelines, and regulations set by the Organising Team and submit their work on time as instructed.</p></li>
                                 <li><p>Any contact or meetings between teams and the judges, mentors, or sponsors involved in the professional collaboration during the competition period are prohibited.</p></li>
                                 <li><p>Candidates must maintain a courteous and respectful demeanor toward the organizers, judges, sponsors, guest speakers, mentors, other teams, as well as all stakeholders throughout the competition.</p></li>
@@ -164,7 +161,7 @@ const Rules = () => {
                     </div>
                     <div className="flex items-center justify-center my-10 ">
   <div className="w-2 h-2 bg-white rotate-45"></div>
-  <div className="h-[2px] w-[500px] bg-white"></div>
+  <div className="h-[1px] w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] bg-white"></div>
   <div className="w-2 h-2 bg-white rotate-45"></div>
 </div>
 
@@ -174,7 +171,7 @@ const Rules = () => {
   COPYRIGHTS OF<br></br> MARKETING CHALLENGERS
 </h4>
                         <div>
-                            <ul className="space-y-1 list-disc -mt-6 text-tertiary-300 lg:px-24 text-left">
+                            <ul className="space-y-1 list-disc -mt-6 text-tertiary-300 lg:px-24 px-4 sm:px-6 text-left">
                                 <li><p>Candidates must obey the copyright laws and not violate the copyrights of any other third parties. The organizer of this contest, RMIT Vietnam Business Club-SGS, is not responsible for any breach by the candidate.</p></li>
                                 <li><p>RMIT Vietnam Business Club - SGS reserves the right to publish and display the Project, using its content and images for publicity, promotion, and non-profit purposes.</p></li>
                                 <li><p>The Organising Team reserves the right to take photographs throughout the competition and use them for non-profit publications and other related materials in the future.</p></li>
@@ -189,7 +186,7 @@ const Rules = () => {
             <img
                 src="/season13/RULES AND REGULATIONS/ROAD_FULL.png" 
                 alt="road decoration"
-                className="absolute bottom-0 left-1/2 scale-[400%] top-[-160%] -translate-x-1/2 w-[400px] opacity-30 pointer-events-none select-none z-0"
+                className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[400px] max-w-[90%] scale-[400%] opacity-30 pointer-events-none select-none z-0"
             />
             </div>
             <br></br>

@@ -142,7 +142,7 @@ const Navigation = () => {
                         <Link href="/sponsor">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>SPONSORSHIP</a>
                         </Link>
-                        <Link href="/partnership">
+                        {/* <Link href="/partnership">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>PARTNERSHIP</a>
                         </Link>
                         <Link href="/halloffame">
@@ -150,12 +150,12 @@ const Navigation = () => {
                         </Link>
                         <Link href="/news">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>BLOGS</a>
-                        </Link>
+                        </Link> */}
                         {/* <Link href="/ourhuman">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>OUR HUMAN</a>
                         </Link> */}
                         <Link href="/rules">
-                            <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>RULES & REGULATIONS</a>
+                            <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>TERMS & CONDITIONS</a>
                         </Link>
                     </div>
                 </div>

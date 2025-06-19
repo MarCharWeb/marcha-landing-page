@@ -47,46 +47,50 @@ const TeamCarousel = () => {
   const currentTeam = teams[currentIndex];
 
   return (
-    <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-between">
+    <div className="w-full mx-auto flex flex-wrap items-center sm:justify-center lg:justify-between ">
       {/* Left: Text */}
-      <div className="w-full lg:w-1/2 p-4 flex flex-col items-center">
-        <h2 className="text-tertiary-300 text-4xl text-headline-31 mb-8">Hi! We are</h2>
-        <div className="w-full max-w-xl flex items-center justify-between relative">
-          <button onClick={handlePrev} className="w-0 h-0 border-y-[20px] border-r-[30px] border-y-transparent border-r-yellow-400 hover:brightness-110" />
+      <div className="w-full md:w-1/2  p-4 flex flex-col items-center">
+        <h2 className="text-tertiary-300 text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 md:mb-8">Hi! We are</h2>
+        <div className="w-full max-w-xl flex items-center justify-between">
+          <button
+            onClick={handlePrev}
+            className="w-0 h-0 border-y-[12px] sm:border-y-[16px] border-r-[20px] sm:border-r-[24px] border-y-transparent border-r-yellow-400 hover:brightness-110"
+            aria-label="Previous Team"
+          />
 
           <div className="flex-1 mx-4">
-            <div className="border border-yellow-400 bg-[#8a2be2] p-6 rounded-lg h-[550px] flex flex-col justify-center text-left text-tertiary-300">
-              <h3 className="text-2xl text-center text-headline-37 mb-4">{currentTeam.name}</h3>
-              <p className="text-sm ">{currentTeam.description}</p>
+            <div className="border min-w-[350px] border-yellow-400 bg-[#8a2be2] p-4 sm:p-6 rounded-lg min-h-[300px] sm:min-h-[350px] min-w-[400px] md:min-h-[400px] flex flex-col justify-center text-left z-20 text-tertiary-300">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl text-center mb-4">{currentTeam.name}</h3>
+              <p className="text-sm sm:text-base">{currentTeam.description}</p>
             </div>
           </div>
 
-          <button onClick={handleNext} className="w-0 h-0 border-y-[20px] border-l-[30px] border-y-transparent border-l-yellow-400 hover:brightness-110" />
+          <button
+            onClick={handleNext}
+            className="w-0 h-0 border-y-[12px] sm:border-y-[16px] border-l-[20px] sm:border-l-[24px] border-y-transparent border-l-yellow-400 hover:brightness-110"
+            aria-label="Next Team"
+          />
         </div>
       </div>
 
       {/* Right: Image */}
-      <div className="w-full lg:w-1/2 p-4 flex items-center justify-center relative">
-  {/* Team Circle Image */}
-  <div
-    className="w-[700px] h-[700px] rounded-full overflow-hidden relative z-10"
-    style={{
-      backgroundImage: `url("${currentTeam.image}")`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-    }}
-  />
-  <img
-    src="/season13/ABOUT US/ARC.png"
-    alt="arc overlay"
-    className="absolute top-0 left-0 w-[920px] h-[920px] z-2 pointer-events-none"
-    style={{ top: '-50px', left: '90px' }}
-  />
-</div>
-
-      
+      <div className="w-full md:w-1/2 px-4 flex items-center justify-center relative">
+        <div
+          className="w-[80vw] h-[80vw] md:w-[50vw] md:h-[50vw] lg:w-[600px] lg:h-[600px] rounded-full overflow-hidden z-10"
+          style={{
+            backgroundImage: `url("${currentTeam.image}")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <img
+          src="/season13/ABOUT US/ARC.png"
+          alt="Arc overlay"
+          className="absolute w-[100vw] h-[100vw] md:w-[70vw] md:h-[70vw] lg:w-[800px] lg:h-[800px] z-0 pointer-events-none"
+          style={{ top: '-5%', left: '50%', transform: 'translateX(-50%)' }}
+        />
+      </div>
     </div>
-    
   );
 };
 

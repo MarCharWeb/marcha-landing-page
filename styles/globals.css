@@ -29,11 +29,20 @@
     padding-bottom: 0;
   }
 }
+@media (min-width: 1000px) {
+  .left-at-1000 {
+    left: 0 !important;
+  }
+}
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
-
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   body,
   html {
     font-family: 'Lexend', sans-serif;
