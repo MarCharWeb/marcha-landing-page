@@ -30,7 +30,7 @@ const Sponsor = ({ hideFooter = false }) => {
           className="absolute bottom-30 -z-10 min-h-[100vh]"
           style={{
             backgroundImage: `url(/season13/SPONSORS/8.jpg)`,
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
             transform: "rotate(90deg) scale(1.5)",

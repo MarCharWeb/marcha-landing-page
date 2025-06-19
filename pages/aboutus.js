@@ -107,7 +107,7 @@ const AboutUs = ({ hideFooter = false }) => {
         <div className="relative w-full py-32 bg-purple-900 text-center mt-20">
           <h1 className="text-4xl font-semibold text-headline-48 mb-16 pt-[20%] text-tertiary-300" style={{ display: 'block' }}>OUR TEAM</h1>
           <TeamCarousel />
-          <div className="absolute bottom-[-15%] w-full rotate-[2deg]  pointer-events-none">
+          <div className="absolute bottom-[-20%] z-0 w-full rotate-[2deg] opacity-85 pointer-events-none">
             <img
               src="/season13/HOMEPAGE/ROAD_FULL.png"
               alt="road background"

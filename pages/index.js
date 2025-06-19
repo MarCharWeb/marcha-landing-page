@@ -146,7 +146,7 @@ export default function Home({ data }) {
         }}
       ></div>
       <div
-        className="absolute z-[30] scale-[200%] w-full h-full left-[-50%]"
+        className="absolute z-[30] scale-[180%] w-full h-full left-[-50%]"
         style={{
           backgroundImage: `url(/season13/HOMEPAGE/TÁCH.png)`,
           backgroundSize: 'contain',
