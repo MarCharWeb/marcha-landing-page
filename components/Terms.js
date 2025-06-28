@@ -14,7 +14,7 @@ const Terms = () => {
         <div
           className="relative w-full"
           style={{
-            backgroundImage: `url(/season13/IMAGE/HOME2.svg)`,
+            backgroundImage: `url(/season13/IMAGE/HOME3.png)`,
             backgroundSize: "100vw auto",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center top",
@@ -23,7 +23,7 @@ const Terms = () => {
           }}
         >
           <img
-            src="/season13/IMAGE/HOME2.svg"
+            src="/season13/IMAGE/HOME3.png"
             alt="terms background"
             className="w-screen h-auto object-contain"
             style={{ objectFit: "contain", display: "block" }}

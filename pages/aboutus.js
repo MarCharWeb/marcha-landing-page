@@ -27,7 +27,7 @@ const AboutUs = ({ hideFooter = false }) => {
           />
         </div>
         <div
-  className="absolute bottom-0 w-full text-center bg-transparent pb-0 md:pb-0 lg:pb-96"
+  className="absolute bottom-0 w-full text-center bg-transparent pb-0 md:pb-0 lg:pb-96 lg:bottom-10"
   style={{ zIndex: 2 }}
 >
   <TeamCarousel />

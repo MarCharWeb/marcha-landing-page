@@ -68,31 +68,31 @@ const Footer = () => {
             <h3 className="text-[#FBBE18] text-[14px] md:text-[16px] lg:text-lg lg:text-headline-31 mb-1 lg:mb-2">FOLLOW US ON</h3>
             <div className="flex flex-wrap justify-start gap-4 sm:gap-6 lg:gap-8 mt-1 lg:mt-2">
               {/* Facebook Fanpage */}
-              <a href="https://facebook.com/" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
+              <a href="https://www.facebook.com/marketing.challengers" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
                 <img src="/season13/CONTACT/face.png" alt="Facebook" className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
                 <span className="text-tiny-10 md:text-small-16 lg:text-headline-21 mt-0.5 lg:mt-1">Facebook<br />Fanpage</span>
               </a>
 
               {/* Facebook Group */}
-              <a href="https://bit.ly/MarChaFacebookGroup" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
+              <a href="https://www.facebook.com/groups/marketingchallengers" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
                 <img src="/season13/CONTACT/face.png" alt="Facebook Group" className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
                 <span className="text-tiny-10 md:text-small-16 lg:text-headline-21 mt-0.5 lg:mt-1">Facebook<br />Group</span>
               </a>
 
               {/* LinkedIn */}
-              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
+              <a href="https://www.linkedin.com/company/marketing-challengers/" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
                 <img src="/season13/CONTACT/link.png" alt="LinkedIn" className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
                 <span className="text-tiny-10 md:text-small-16 lg:text-headline-21 mt-0.5 lg:mt-1">LinkedIn</span>
               </a>
 
               {/* Spotify */}
-              <a href="https://open.spotify.com/" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
+              <a href="https://open.spotify.com/show/2Z04Hb6Ate8xan1p9fALZO" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
                 <img src="/season13/CONTACT/spot.png" alt="Spotify" className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
                 <span className="text-tiny-10 md:text-small-16 lg:text-headline-21 mt-0.5 lg:mt-1">Spotify</span>
               </a>
 
               {/* TikTok */}
-              <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
+              <a href="https://www.tiktok.com/@marketingchallengers" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
                 <img src="/season13/CONTACT/tik.png" alt="TikTok" className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
                 <span className="text-tiny-10 md:text-small-16 lg:text-headline-21 mt-0.5 lg:mt-1">TikTok</span>
               </a>

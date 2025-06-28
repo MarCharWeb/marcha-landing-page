@@ -36,7 +36,7 @@ const Countdown = ({ targetDate }) => {
       alt="Clock background"
       className="absolute inset-0 w-full h-[80%] sm:h-[85%] md:h-[90%] lg:h-full object-contain pointer-events-none"
     />
-    <div className="relative z-10 flex justify-between w-full px-1 sm:px-2 md:px-3 lg:px-4 gap-0 sm:gap-0 md:gap-2 lg:gap-6">
+    <div className="relative z-10 flex justify-between w-full px-1 sm:px-2 md:px-3 lg:px-4 gap-0 sm:gap-0 md:gap-2 lg:gap-10">
       {Object.entries(timeLeft).map(([label, value]) => (
         <div key={label} className="flex items-center justify-center w-1/4">
           <div className="text-white font-bold text-[24px] sm:text-[30px] md:text-[36px] lg:text-[44px]  font-mono tracking-tight">
@@ -80,7 +80,7 @@ export default function Home({ data }) {
 
       {/* HOME1.svg Section with Countdown and Buttons */}
       <section
-        className="relative z-[1] w-full overflow-hidden"
+        className="relative z-[101] w-full overflow-hidden"
         style={{ backgroundColor: "transparent" }}
       >
         <div
@@ -89,23 +89,26 @@ export default function Home({ data }) {
             backgroundImage: `url(/season13/IMAGE/HOME1.svg)`,
             backgroundSize: "100vw auto",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center top",
+            backgroundPosition: "center -20%",
             width: "100vw",
             paddingBottom: "0%",
+            position: "relative",
           }}
         >
           <img
             src="/season13/IMAGE/HOME1.svg"
             alt="home background"
             className="w-screen h-auto object-contain"
-            style={{ objectFit: "contain", display: "block" }}
+            style={{ objectFit: "contain", display: "block", transform: "translateY(-70px)" }}
           />
         </div>
-<div className="absolute top-[30%] w-full flex flex-col items-center right-[-15%] justify-center z-[2] pt-8 sm:pt-10 md:pt-12 v lg:pt-14">
+<div className="absolute top-[30%] w-full flex flex-col items-center right-[-15%] justify-center z-[2] pt-8 sm:pt-10 md:pt-12 v lg:pt-14"
+style={{ transform: "translateY(-120px)" }}>
   <Countdown targetDate={new Date('2025-07-03T23:59:59+07:00')} />
   <div className="flex flex-col items-center space-y-3 mt-3 sm:mt-4 md:mt-6 lg:mt-8">
+    <a href="https://marketingchallengers2025.fillout.com/t/n8ue4Lmjkzus" passHref target="_blank" rel="noopener noreferrer">
     <Button
-      onClick={() => router.push('/register')}
+   
       text="REGISTER NOW!"
       isPrimary={false}
       className="bg-[#ECE75F] text-[#2D033F] pointer-events-auto hover:text-[#2D033F] font-extrabold 
@@ -116,8 +119,9 @@ export default function Home({ data }) {
                hover:shadow-[0_2px_0_#b58000] sm:hover:shadow-[0_2px_0_#b58000] md:hover:shadow-[0_3px_0_#b58000] lg:hover:shadow-[0_6px_0_#b58000]
                transition duration-150 ease-in-out hover:scale-100 sm:hover:scale-100 md:hover:scale-102 lg:hover:scale-105"
     />
+    </a>
+    <a href="https://drive.google.com/drive/u/4/folders/1KqRmYs4pWwd1FdzOBi-lsSSichVc2vMw" passHref target="_blank" rel="noopener noreferrer">
     <Button
-      onClick={() => router.push('/booklet')}
       text="OUR BOOKLET"
       isPrimary={false}
       className="!text-white text-[16px] sm:text-[18px] md:text-[24px] lg:text-headline-21 font-semibold pointer-events-auto 
@@ -129,6 +133,7 @@ export default function Home({ data }) {
                transition duration-300 ease-in-out hover:scale-100 sm:hover:scale-100 md:hover:scale-102 lg:hover:scale-105
                whitespace-nowrap tracking-tight"
     />
+    </a>
   </div>
 </div>
       </section>

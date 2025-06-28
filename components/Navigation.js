@@ -52,15 +52,22 @@ const Navigation = () => {
     const handleHomeClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    return (<nav style={{ zIndex: '50', backgroundColor: "transparent", }} ref={navRef} className={`lg:text-[10px] xl:text-[14px] top-0 h-[90px] xl:h-[110px]  z-[100] container-media-padding flex w-full items-center justify-between transition-colors duration-300 ${isScroll ? 'bg-[#0F0616CC]' : 'bg-transparent'}`}>
+    return (<nav style={{ zIndex: '50', backgroundColor: "transparent", }} ref={navRef} className={`lg:text-[10px] xl:text-[14px] top-0 h-[90px] xl:h-[110px] z-[100] container-media-padding flex w-full items-center justify-between transition-colors duration-300 ${isScroll ? 'bg-[#0F0616CC]' : 'bg-transparent'}`}>
         {/* Logo */}
-        <Link href="/"><a onClick={handleHomeClick} className={ router.asPath == '/' ? 'active-link' : ''}><ImageHolder src={Logo} alt='logo-marcha' className={'w-[100px] h-[100px] xl:w-[150px] xl:h-[150px]  '}></ImageHolder></a></Link>
-
+        <div className="relative flex items-center pl-6 xl:pl-8">
+        <div className="transform translate-x-[-50%]">
+            <Link href="/">
+                <a onClick={handleHomeClick} className={router.asPath == '/' ? 'active-link' : ''}>
+                    <ImageHolder src={Logo} alt='logo-marcha' className={'w-[100px] h-[100px] xl:w-[150px] xl:h-[150px]'}></ImageHolder>
+                </a>
+            </Link>
+        </div>
+    </div>
         {/* Navigation List Begins */}
         <ul className="lg:flex hidden items-center justify-between flex-grow max-w-[85%] xl:max-w-[95%] font-normal text-white">
             <li className={'px-2.45 p-2 li-hover-effect'}>
                 <Link href={'/'} scroll={false} >
-                    <a onClick={handleHomeClick} className={`font-bold nav-item ${router.asPath === '/' ? 'active' : ''}`}>HOME</a>
+                    <a onClick={handleHomeClick} className={`font-bold nav-item  ${router.asPath === '/' ? 'active' : ''}`}>HOME</a>
                 </Link>
             </li>
             <li className="px-2.45 p-2 li-hover-effect">
