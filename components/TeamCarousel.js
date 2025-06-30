@@ -64,11 +64,11 @@ const TeamCarousel = () => {
       <div className="w-full max-w-[80vw] sm:max-w-[70vw] md:max-w-[90vw] lg:max-w-[1200px] flex flex-col md:flex-row bg-[#8a2be2] border border-yellow-400 rounded-lg p-0 sm:p-1 md:p-2 lg:p-4">
         {/* Text Section */}
         <div className="w-full md:w-1/2 p-0 sm:p-1 md:p-2 lg:p-4 flex flex-col items-center">
-          <h2 className="text-tertiary-300 text-xs sm:text-sm md:text-base lg:text-headline-31 mb-0 sm:mb-1 md:mb-2 lg:mb-4">Hi! We are</h2>
+          <h2 className="text-tertiary-300 text-xs sm:text-sm md:text-base lg:text-headline-31 font-bold mb-0 sm:mb-1 md:mb-2 lg:mb-4">Hi! We are</h2>
           <div className="flex-1 w-full">
             <div className="border border-yellow-400 bg-[#6a1bb8] p-0 sm:p-1 md:p-2 lg:p-4 rounded-lg min-h-[80px] sm:min-h-[100px] md:min-h-[160px] lg:min-h-[240px] flex flex-col justify-center text-left text-tertiary-300">
               <h3 className="text-[10px] sm:text-xs md:text-sm lg:text-headline-21 text-center mb-0 sm:mb-1 md:mb-2 lg:mb-4">{currentTeam.name}</h3>
-              <p className="text-[7px] sm:text-[8px] md:text-[10px] lg:text-base">{currentTeam.description}</p>
+              <p className="text-[7px] sm:text-[8px] md:text-[10px] lg:text-base leading-6">{currentTeam.description}</p>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@ const TeamCarousel = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2 p-0 sm:p-1 md:p-2 lg:p-4 flex items-center justify-center">
           <div
-            className="w-full max-w-[60vw] sm:max-w-[50vw] md:max-w-[35vw] lg:max-w-[400px] lg:scale-[140%] aspect-[4/3] overflow-hidden"
+            className="w-full max-w-[60vw] sm:max-w-[50vw] md:max-w-[35vw] lg:max-w-[400px] lg:scale-[140%] aspect-[4/3] overflow-hidden mt-[0px] sm:mt-[0px] md:mt-[0px] lg:mt-[30px]"
             style={{
               backgroundImage: `url("${currentTeam.image}")`,
               backgroundSize: 'contain',

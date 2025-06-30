@@ -23,7 +23,7 @@ const Terms = () => {
           }}
         >
           <img
-            src="/season13/IMAGE/HOME3.png"
+            src="/season13/IMA  `E/HOME3.png"
             alt="terms background"
             className="w-screen h-auto object-contain"
             style={{ objectFit: "contain", display: "block" }}

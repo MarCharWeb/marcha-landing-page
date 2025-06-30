@@ -80,7 +80,7 @@ export default function Home({ data }) {
 
       {/* HOME1.svg Section with Countdown and Buttons */}
       <section
-        className="relative z-[101] w-full overflow-hidden"
+        className="relative z-[99]] w-full overflow-hidden"
         style={{ backgroundColor: "transparent" }}
       >
         <div
@@ -99,20 +99,20 @@ export default function Home({ data }) {
             src="/season13/IMAGE/HOME1.svg"
             alt="home background"
             className="w-screen h-auto object-contain"
-            style={{ objectFit: "contain", display: "block", transform: "translateY(-70px)" }}
+            style={{ objectFit: "contain", display: "block" }}
           />
         </div>
 <div className="absolute top-[30%] w-full flex flex-col items-center right-[-15%] justify-center z-[2] pt-8 sm:pt-10 md:pt-12 v lg:pt-14"
-style={{ transform: "translateY(-120px)" }}>
+style={{ transform: "translateY(-50px)" }}>
   <Countdown targetDate={new Date('2025-07-03T23:59:59+07:00')} />
   <div className="flex flex-col items-center space-y-3 mt-3 sm:mt-4 md:mt-6 lg:mt-8">
     <a href="https://marketingchallengers2025.fillout.com/t/n8ue4Lmjkzus" passHref target="_blank" rel="noopener noreferrer">
     <Button
    
-      text="REGISTER NOW!"
+      text="REGISTER WARMUP ROUND NOW!"
       isPrimary={false}
       className="bg-[#ECE75F] text-[#2D033F] pointer-events-auto hover:text-[#2D033F] font-extrabold 
-               text-base sm:text-base md:text-lg lg:text-headline-31 
+               text-caption-14 sm:text-caption-14 md:text-lg lg:text-headline-26 
                px-4 sm:px-4 md:px-6 lg:px-10 py-2 sm:py-2 md:py-3 lg:py-5 rounded-full 
                w-[200px] sm:w-[200px] md:w-[300px] lg:w-[400px] h-[50px] sm:h-[50px] md:h-[60px] lg:h-[90px] 
                shadow-[0_1px_0_#cc9900] sm:shadow-[0_1px_0_#cc9900] md:shadow-[0_2px_0_#cc9900] lg:shadow-[0_4px_0_#cc9900] 
@@ -154,7 +154,7 @@ style={{ transform: "translateY(-120px)" }}>
   <div
     className="relative w-full min-h-[100vh] sm:min-h-[80vh] md:min-h-[60vh] lg:min-h-[auto]"
     style={{
-      backgroundImage: `url(/season13/IMAGE/HOME3.svg)`,
+      backgroundImage: `url(/season13/IMAGE/HOME4.svg)`,
       backgroundSize: "100vw auto",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center top",
@@ -162,7 +162,7 @@ style={{ transform: "translateY(-120px)" }}>
     }}
   >
     <img
-      src="/season13/IMAGE/HOME3.svg"
+      src="/season13/IMAGE/HOME4.svg"
       alt="home footer background"
       className="w-screen h-auto object-contain"
       style={{ objectFit: "contain", display: "block" }}
