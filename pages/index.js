@@ -120,7 +120,7 @@ style={{ transform: "translateY(-50px)" }}>
                transition duration-150 ease-in-out hover:scale-100 sm:hover:scale-100 md:hover:scale-102 lg:hover:scale-105"
     />
     </a>
-    <a href="https://drive.google.com/drive/u/4/folders/1KqRmYs4pWwd1FdzOBi-lsSSichVc2vMw" passHref target="_blank" rel="noopener noreferrer">
+    <a href="https://drive.google.com/file/d/1MV3rvOpfzXZ57DvpK5HLguLes-sny8dW/view" passHref target="_blank" rel="noopener noreferrer">
     <Button
       text="OUR BOOKLET"
       isPrimary={false}
