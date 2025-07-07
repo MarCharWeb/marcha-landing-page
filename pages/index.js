@@ -104,9 +104,9 @@ export default function Home({ data }) {
         </div>
 <div className="absolute top-[30%] w-full flex flex-col items-center right-[-15%] justify-center z-[2] pt-8 sm:pt-10 md:pt-12 v lg:pt-14"
 style={{ transform: "translateY(-50px)" }}>
-  <Countdown targetDate={new Date('2025-07-03T23:59:59+07:00')} />
+  <Countdown targetDate={new Date('2025-07-31T23:59:59+07:00')} />
   <div className="flex flex-col items-center space-y-3 mt-3 sm:mt-4 md:mt-6 lg:mt-8">
-    <a href="https://marketingchallengers2025.fillout.com/t/n8ue4Lmjkzus" passHref target="_blank" rel="noopener noreferrer">
+    <a href="https://marketingchallengers2025.fillout.com/t/7EYKkmzJF3us" passHref target="_blank" rel="noopener noreferrer">
     <Button
    
       text="REGISTER WARMUP ROUND NOW!"
@@ -120,7 +120,7 @@ style={{ transform: "translateY(-50px)" }}>
                transition duration-150 ease-in-out hover:scale-100 sm:hover:scale-100 md:hover:scale-102 lg:hover:scale-105"
     />
     </a>
-    <a href="https://drive.google.com/file/d/1MV3rvOpfzXZ57DvpK5HLguLes-sny8dW/view" passHref target="_blank" rel="noopener noreferrer">
+    <a href="https://drive.google.com/drive/folders/1KqRmYs4pWwd1FdzOBi-lsSSichVc2vMw?usp=drive_link" passHref target="_blank" rel="noopener noreferrer">
     <Button
       text="OUR BOOKLET"
       isPrimary={false}
