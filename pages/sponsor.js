@@ -10,16 +10,16 @@ const Sponsor = ({ hideFooter = false }) => {
         <div
           className="relative w-full"
           style={{
-            backgroundImage: `url(/season13/IMAGE/SPONSORSHIP1.png)`,
+            backgroundImage: `url(/season13/IMAGE/SPONSORSHIP2.png)`,
             backgroundSize: "100vw auto",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center top",
             width: "100vw",
-            paddingBottom: "0%", // Adjust this based on SVG's aspect ratio (height/width)
+            paddingBottom: "0%", 
           }}
         >
           <img
-            src="/season13/IMAGE/SPONSORSHIP1.png"
+            src="/season13/IMAGE/SPONSORSHIP2.png"
             alt="sponsorship background"
             className="w-screen h-auto object-contain"
             style={{ objectFit: "contain", display: "block" }}

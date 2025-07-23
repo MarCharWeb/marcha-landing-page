@@ -10,7 +10,7 @@ const Rules = ({ hideFooter = false }) => {
         <div
           className="relative w-full"
           style={{
-            backgroundImage: `url(/season13/IMAGE/TERMS & CONDITIONS.svg)`,
+            backgroundImage: `url(/season13/IMAGE/TERMS & CONDITIONS.png)`,
             backgroundSize: "100vw auto",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center top",
@@ -19,7 +19,7 @@ const Rules = ({ hideFooter = false }) => {
           }}
         >
           <img
-            src="/season13/IMAGE/TERMS & CONDITIONS.svg"
+            src="/season13/IMAGE/TERMS & CONDITIONS.png"
             alt="terms and conditions background"
             className="w-screen h-auto object-contain"
             style={{ objectFit: "contain", display: "block" }}
