@@ -156,7 +156,7 @@ style={{ transform: "translateY(-50px)" }}>
       {/* Overlay TEAM.png in the center */}
       <Link href="/aboutus">
         <img
-          src="/season13/IMAGE/TEAM.jpg"
+          src="/season13/IMAGE/TEAM.JPG"
           alt="team"
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-50 sm:scale-85 cursor-pointer"
         />
