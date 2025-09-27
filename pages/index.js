@@ -3,6 +3,7 @@ import { sanityClient } from '../config/sanity';
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
+import Link from "next/link";
 import { useRouter } from 'next/router';
 import Footer from "../components/Footer";
 import AboutUs from './aboutus';
@@ -104,14 +105,14 @@ export default function Home({ data }) {
         </div>
 <div className="absolute top-[30%] w-full flex flex-col items-center right-[-15%] justify-center z-[2] pt-8 sm:pt-10 md:pt-12 v lg:pt-14"
 style={{ transform: "translateY(-50px)" }}>
-  <Countdown targetDate={new Date('2025-07-31T23:59:59+07:00')} />
+  {/* <Countdown targetDate={new Date('2025-07-31T23:59:59+07:00')} /> */}
   <div className="flex flex-col items-center space-y-3 mt-3 sm:mt-4 md:mt-6 lg:mt-8">
-    <a href="https://marketingchallengers2025.fillout.com/t/7EYKkmzJF3us" passHref target="_blank" rel="noopener noreferrer">
+    <a href="https://drive.google.com/drive/folders/1KqRmYs4pWwd1FdzOBi-lsSSichVc2vMw?usp=drive_link" passHref target="_blank" rel="noopener noreferrer">
     <Button
    
-      text="REGISTER WARMUP ROUND NOW!"
+      text="Explore more!"
       isPrimary={false}
-      className="bg-[#ECE75F] text-[#2D033F] pointer-events-auto hover:text-[#2D033F] font-extrabold 
+      className="bg-gradient-to-bl from-[#ECE75F] via-white to-[#ECE75F] text-[#5A189A] pointer-events-auto hover:text-[#2D033F] font-extrabold 
                text-caption-14 sm:text-caption-14 md:text-lg lg:text-headline-26 
                px-4 sm:px-4 md:px-6 lg:px-10 py-2 sm:py-2 md:py-3 lg:py-5 rounded-full 
                w-[200px] sm:w-[200px] md:w-[300px] lg:w-[400px] h-[50px] sm:h-[50px] md:h-[60px] lg:h-[90px] 
@@ -120,7 +121,7 @@ style={{ transform: "translateY(-50px)" }}>
                transition duration-150 ease-in-out hover:scale-100 sm:hover:scale-100 md:hover:scale-102 lg:hover:scale-105"
     />
     </a>
-    <a href="https://drive.google.com/drive/folders/1KqRmYs4pWwd1FdzOBi-lsSSichVc2vMw?usp=drive_link" passHref target="_blank" rel="noopener noreferrer">
+    {/* <a href="https://drive.google.com/drive/folders/1KqRmYs4pWwd1FdzOBi-lsSSichVc2vMw?usp=drive_link" passHref target="_blank" rel="noopener noreferrer">
     <Button
       text="OUR BOOKLET"
       isPrimary={false}
@@ -133,16 +134,70 @@ style={{ transform: "translateY(-50px)" }}>
                transition duration-300 ease-in-out hover:scale-100 sm:hover:scale-100 md:hover:scale-102 lg:hover:scale-105
                whitespace-nowrap tracking-tight"
     />
-    </a>
+    </a> */}
   </div>
 </div>
       </section>
 
       {/* AboutUs Page */}
-      <AboutUs hideFooter={true} />
+      <img
+        src="/season13/IMAGE/ABOUTHOME1.png"
+        alt="sponsorship background"
+        className="w-screen h-auto object-contain block"
+      />
+     <div className="relative w-screen">
+      {/* Background image */}
+      <img
+        src="/season13/IMAGE/ABOUTHOME2.png"
+        alt="sponsorship background"
+        className="w-screen h-auto object-contain block"
+      />
+
+      {/* Overlay TEAM.png in the center */}
+      <Link href="/aboutus">
+        <img
+          src="/season13/IMAGE/TEAM.jpg"
+          alt="team"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-50 sm:scale-85 cursor-pointer"
+        />
+      </Link>
+    </div>
 
       {/* Sponsor Page */}
-      <Sponsors hideFooter={true} />
+      <section className="relative w-full">
+  <img
+    src="/season13/IMAGE/SPONSORHOME.png"
+    alt="sponsorship background"
+    className="w-screen h-auto object-contain block"
+  />
+
+  <div
+    className="
+      absolute left-1/2 transform -translate-x-1/2
+      bottom-[12%] sm:bottom-[10%] md:bottom-[8%] lg:bottom-[6%]
+      z-20 pointer-events-none
+    "
+  >
+    <Link href="/sponsor" passHref>
+      <Button
+        text="Explore our 2025 season sponsors."
+        isPrimary={false}
+        className="
+          !bg-[#ECE75F] !text-[#5A189A] font-extrabold
+          rounded-full
+          px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3
+          text-lg sm:text-xl md:text-2xl
+          min-w-[150px] sm:min-w-[180px] md:min-w-[800px]
+          max-w-[250px]
+          shadow-md
+          hover:scale-105 transition-transform duration-300
+          pointer-events-auto
+        "
+      />
+    </Link>
+  </div>
+</section>
+          
 
       {/* Terms Page */}
       <Terms />

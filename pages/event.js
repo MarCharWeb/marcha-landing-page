@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 
-const Rules = ({ hideFooter = false }) => {
+const Event = ({ hideFooter = false }) => {
   return (
     <div className="relative" style={{ position: "relative" }}>
       <section
@@ -10,7 +10,7 @@ const Rules = ({ hideFooter = false }) => {
         <div
           className="relative w-full"
           style={{
-            backgroundImage: `url(/season13/IMAGE/TERMS & CONDITIONS.png)`,
+            backgroundImage: `url(/season13/IMAGE/EVENT.png)`,
             backgroundSize: "100vw auto",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center top",
@@ -19,8 +19,8 @@ const Rules = ({ hideFooter = false }) => {
           }}
         >
           <img
-            src="/season13/IMAGE/TERMS & CONDITIONS.png"
-            alt="terms and conditions background"
+            src="/season13/IMAGE/EVENT.png"
+            alt="sponsorship background"
             className="w-screen h-auto object-contain"
             style={{ objectFit: "contain", display: "block" }}
           />
@@ -36,4 +36,4 @@ const Rules = ({ hideFooter = false }) => {
   );
 };
 
-export default Rules;
+export default Event;

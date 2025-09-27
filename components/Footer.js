@@ -19,11 +19,11 @@ const Footer = () => {
         <div className="flex flex-row flex-nowrap justify-between w-full gap-4 sm:gap-6 lg:gap-10">
           {/* Contact Information */}
           <div className="flex-1 min-w-0">
-            <h3 className="text-[#FBBE18] text-[14px] md:text-[16px] lg:text-lg lg:text-headline-31 mb-1 lg:mb-2">CONTACT INFORMATION</h3>
+            <h3 className="text-[#FBBE18] text-[14px] md:text-[16px] lg:text-lg lg:text-headline-31 mb-1 lg:mb-2">EMAIL</h3>
             <ul className="space-y-0.5 lg:space-y-1">
               <li className="flex items-start">
                 <span className="w-3 h-3 lg:w-4 lg:h-4 mt-1 mr-1.5 lg:mt-1.5 lg:mr-2 rounded-sm shrink-0 bg-gradient-to-br from-[#93089f] to-[#bb5cba]"></span>
-                <span className="text-white text-tiny-10 md:text-small-16  lg:text-lead-24 break-all">Contact: rmitbcmarketingchallengers@gmail.com</span>
+                <span className="text-white text-tiny-10 md:text-small-16  lg:text-lead-24 break-all">Contestant: rmitbcmarketingchallengers@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <span className="w-3 h-3 lg:w-4 lg:h-4 mt-1 mr-1.5 lg:mt-1.5 lg:mr-2 rounded-sm shrink-0 bg-gradient-to-br from-[#93089f] to-[#bb5cba]"></span>

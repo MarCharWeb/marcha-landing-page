@@ -32,9 +32,9 @@ const Terms = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[2]">
           <button
             onClick={() => router.push('/rules')}
-            className="px-6 py-3 sm:px-8 sm:py-4 bg-[#693eb2] border-2 border-yellow-400 text-tertiary-300 font-semibold rounded-full w-[70vw] min-w-[200px] max-w-[900px] text-base sm:text-lg hover:scale-105 transition-transform duration-300"
+            className="px-6 py-3 sm:px-8 sm:py-4 bg-[#ECE75F] border-2 border-yellow-400 text-[#5A189A] font-extrabold rounded-full w-[20vw] min-w-[200px] max-w-[900px] text-base sm:text-headline-21 hover:scale-105 transition-transform duration-300"
           >
-            EXPLORE MORE
+            Read More
           </button>
         </div>
       </section>

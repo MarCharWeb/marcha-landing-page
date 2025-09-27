@@ -11,7 +11,7 @@ const AboutUs = ({ hideFooter = false }) => {
         <div
           className="relative w-full"
           style={{
-            backgroundImage: `url(/season13/IMAGE/ABOUT US.svg)`,
+            backgroundImage: `url(/season13/IMAGE/ABOUT.png)`,
             backgroundSize: "100vw auto",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center top",
@@ -20,21 +20,25 @@ const AboutUs = ({ hideFooter = false }) => {
           }}
         >
           <img
-            src="/season13/IMAGE/ABOUT US.svg"
+            src="/season13/IMAGE/ABOUT.png"
             alt="about us background"
             className="w-screen h-auto object-contain"
             style={{ objectFit: "contain", display: "block" }}
           />
         </div>
-        <div
+        {/* <div
   className="absolute bottom-0 w-full text-center bg-transparent pb-0 md:pb-0 lg:pb-96 lg:bottom-10"
   style={{ zIndex: 2 }}
 >
   <TeamCarousel />
-</div>
+</div> */}
       </section>
+{!hideFooter && (
+    <div className="absolute bottom-0 w-full bg-transparent z-[10]">
+      <Footer />
+    </div>
+  )}
 
-      {!hideFooter && <Footer />}
     </div>
   );
 };

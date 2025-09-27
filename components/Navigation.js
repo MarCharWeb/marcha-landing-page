@@ -76,6 +76,16 @@ const Navigation = () => {
                 </Link>
             </li>
             <li className="px-2.45 p-2 li-hover-effect">
+                <Link href="event">
+                    <a className={`font-bold nav-item ${router.asPath === '/event' ? 'active' : ''}`}>Event</a>
+                </Link>
+            </li>
+            <li className="px-2.45 p-2 li-hover-effect">
+                <Link href="/halloffame">
+                    <a className={`font-bold nav-item ${router.asPath === '/halloffame' ? 'active' : ''}`}>Hall Of Fame</a>
+                </Link>
+            </li>
+            <li className="px-2.45 p-2 li-hover-effect">
                 <Link href="/sponsor">
                     <a className={`font-bold nav-item ${router.asPath === '/sponsor' ? 'active' : ''}`}>SPONSORSHIP</a>
                 </Link>
@@ -83,11 +93,6 @@ const Navigation = () => {
             {/* <li className={'px-2.45 p-2 li-hover-effect '}>
                 <Link href={'/partnership'}>
                     <a className={`font-bold nav-item ${router.asPath == '/partnership' ? 'active' : ''} font-bold`}>PARTNERSHIP</a>
-                </Link>
-            </li>
-            <li className={'px-2.45 p-2 li-hover-effect '}>
-                <Link href={'/halloffame'}>
-                    <a className={`nav-item ${router.asPath == '/halloffame' ? 'active' : ''} font-bold`}>HALL OF FAME</a>
                 </Link>
             </li>
             <li className={'px-2.45 p-2 li-hover-effect '}>
@@ -149,13 +154,13 @@ const Navigation = () => {
                         <Link href="/sponsor">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>SPONSORSHIP</a>
                         </Link>
-                        {/* <Link href="/partnership">
-                            <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>PARTNERSHIP</a>
+                        <Link href="/event">
+                            <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>EVENT</a>
                         </Link>
                         <Link href="/halloffame">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>HALL OF FAME</a>
                         </Link>
-                        <Link href="/news">
+                        {/* <Link href="/news">
                             <a className="block px-4 py-2 text-sm text-gray-700 text-center li-hover-effect nav-item" onClick={closeMenu}>BLOGS</a>
                         </Link> */}
                         {/* <Link href="/ourhuman">
