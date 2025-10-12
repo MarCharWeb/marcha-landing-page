@@ -77,12 +77,12 @@ const Navigation = () => {
             </li>
             <li className="px-2.45 p-2 li-hover-effect">
                 <Link href="event">
-                    <a className={`font-bold nav-item ${router.asPath === '/event' ? 'active' : ''}`}>Event</a>
+                    <a className={`font-bold nav-item ${router.asPath === '/event' ? 'active' : ''}`}>EVENT</a>
                 </Link>
             </li>
             <li className="px-2.45 p-2 li-hover-effect">
                 <Link href="/halloffame">
-                    <a className={`font-bold nav-item ${router.asPath === '/halloffame' ? 'active' : ''}`}>Hall Of Fame</a>
+                    <a className={`font-bold nav-item ${router.asPath === '/halloffame' ? 'active' : ''}`}>HALL OF FAME</a>
                 </Link>
             </li>
             <li className="px-2.45 p-2 li-hover-effect">

@@ -27,9 +27,9 @@ const Event = ({ hideFooter = false }) => {
         </div>
       </section>
 {!hideFooter && (
-    <div className="absolute bottom-0 w-full bg-transparent z-[10]">
+    // <div className="absolute bottom-0 w-full bg-transparent z-[10]">
       <Footer />
-    </div>
+    // {/* </div> */}
   )}
 
     </div>
