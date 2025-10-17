@@ -56,14 +56,14 @@ const Sponsor = ({ hideFooter = false }) => {
   <div className="absolute inset-0 flex flex-col justify-center items-center gap-y-4 translate-y-[8%]">
     <div className="flex justify-center items-center gap-[3%] flex-wrap">
       <img src="/season13/LOGO/Mermar.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://www.mermarcourse.com/", "_blank")} />
-      <img src="/season13/LOGO/Anymind.jpg" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://anymindgroup.com/", "_blank")} />
+      <img src="/season13/LOGO/Anymind.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://anymindgroup.com/", "_blank")} />
       <img src="/season13/LOGO/Lebros.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain"  onClick={() => window.open("https://lebros.vn/", "_blank")}/>
       <img src="/season13/LOGO/Wisdom.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://wisdomagency.com/", "_blank")}/>
     </div>
 
     <div className="flex justify-center items-center gap-[3%] flex-wrap">
       <img src="/season13/LOGO/TBWA.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://www.tbwa.com.vn/", "_blank")}/>
-      <img src="/season13/LOGO/Greent.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://greentransition.asia/", "_blank")}/>
+      <img src="/season13/LOGO/Greent.png" className="max-w-[12%] sm:max-w-[12%] md:max-w-[12%] lg:max-w-[12%] h-auto object-contain" onClick={() => window.open("https://greentransition.asia/", "_blank")}/>
       <img src="/season13/LOGO/Soldo.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://soldo.vn/", "_blank")}/>
     </div>
 
@@ -81,16 +81,16 @@ const Sponsor = ({ hideFooter = false }) => {
     className="w-screen h-auto object-contain block"
     style={{ objectFit: "contain", display: "block" }}
   />
-<div className="absolute inset-0 flex top-[20%] flex-col items-center justify-center space-y-[0%]">
+<div className="absolute inset-0 flex top-[20%] flex-col items-center justify-center space-y-[-4%] sm:space-y-[-7%] md:space-y-[-10%] ">
   <div className="flex justify-center space-x-[6%]">
-    <img src="/season13/LOGO/ACFC.png" alt="ACFC" className="max-w-[9%] sm:max-w-[10%] md:max-w-[13%] object-contain" onClick={() => window.open("https://www.acfc.com.vn/", "_blank")}/>
-    <img src="/season13/LOGO/Owndays.jpg" alt="Owndays" className="max-w-[9%] sm:max-w-[10%] md:max-w-[13%] object-contain" onClick={() => window.open("https://www.owndays.com/vn/vi", "_blank")}/>
-    <img src="/season13/LOGO/Tomorrow.png" alt="Tomorrow" className="max-w-[9%] sm:max-w-[10%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.tomorrowmarketers.org/", "_blank")}/>
+    <img src="/season13/LOGO/ACFC.png" alt="ACFC" className="max-w-[12%] sm:max-w-[13%] md:max-w-[13%] object-contain" onClick={() => window.open("https://www.acfc.com.vn/", "_blank")}/>
+    <img src="/season13/LOGO/Owndays.png" alt="Owndays" className="max-w-[13%] sm:max-w-[15%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.owndays.com/vn/vi", "_blank")}/>
+    <img src="/season13/LOGO/Tomorrow.png" alt="Tomorrow" className="max-w-[12%] sm:max-w-[15%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.tomorrowmarketers.org/", "_blank")}/>
   </div>
 
   <div className="flex justify-center space-x-[8%]">
-    <img src="/season13/LOGO/Arena.png" alt="Arena" className="max-w-[9%] sm:max-w-[10%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.arena-multimedia.vn/", "_blank")}/>
-    <img src="/season13/LOGO/Harmony.png" alt="Harmony" className="max-w-[9%] sm:max-w-[10%] md:max-w-[18%] object-contain" onClick={() => window.open("https://harmonyhub.vn/vi", "_blank")}/>
+    <img src="/season13/LOGO/Arena.png" alt="Arena" className="max-w-[22%] sm:max-w-[24%] md:max-w-[26%] object-contain" onClick={() => window.open("https://www.arena-multimedia.vn/", "_blank")}/>
+    <img src="/season13/LOGO/Harmony.png" alt="Harmony" className="max-w-[22%] sm:max-w-[24%] md:max-w-[27%] object-contain" onClick={() => window.open("https://harmonyhub.vn/vi", "_blank")}/>
   </div>
 </div>
 </div>
@@ -105,7 +105,7 @@ const Sponsor = ({ hideFooter = false }) => {
   <div className="absolute inset-0 flex justify-center items-center top-[20%] space-x-[6%]">
     <img src="/season13/LOGO/Cocoon.png" alt="Cocoon" className="max-w-[12%] sm:max-w-[15%] md:max-w-[18%] object-contain" onClick={() => window.open("https://cocoonvietnam.com/", "_blank")}/>
     <img src="/season13/LOGO/Oatside.png" alt="Oatside" className="max-w-[12%] sm:max-w-[15%] md:max-w-[18%] object-contain" onClick={() => window.open("https://oatside.com/", "_blank")}/>
-    <img src="/season13/LOGO/Wipro.jpg" alt="Wipro" className="max-w-[12%] sm:max-w-[15%] md:max-w-[18%] object-contain" onClick={() => window.open("https://wiprocci.com/vietnam/", "_blank")}/>
+    <img src="/season13/LOGO/Wipro.png" alt="Wipro" className="max-w-[12%] sm:max-w-[15%] md:max-w-[18%] object-contain" onClick={() => window.open("https://wiprocci.com/vietnam/", "_blank")}/>
   </div>
 </div>
 <div className="relative w-screen h-auto">
@@ -134,7 +134,7 @@ const Sponsor = ({ hideFooter = false }) => {
 
   <div className="absolute inset-0 flex justify-center top-[25%] items-center space-x-[23%]">
     <img src="/season13/LOGO/Hepmil.png" alt="Hepmil" className="max-w-[8%] sm:max-w-[10%] md:max-w-[13%] object-contain" onClick={() => window.open("https://www.hepmil.com/vi", "_blank")}/>
-    <img src="/season13/LOGO/Ame.jpg" alt="Ame" className="max-w-[8%] sm:max-w-[10%] md:max-w-[13%] object-contain" onClick={() => window.open("https://www.facebook.com/amecafenbrunch/?locale=vi_VN", "_blank")}/>
+    <img src="/season13/LOGO/Ame.png" alt="Ame" className="max-w-[8%] sm:max-w-[10%] md:max-w-[13%] object-contain" onClick={() => window.open("https://www.facebook.com/amecafenbrunch/?locale=vi_VN", "_blank")}/>
   </div>
 </div>
 <div className="relative w-screen h-auto">
@@ -168,41 +168,41 @@ const Sponsor = ({ hideFooter = false }) => {
     className="w-screen h-auto object-contain block"
     style={{ objectFit: "contain", display: "block" }}
   />
-<div className="absolute inset-0 flex flex-col items-center justify-center top-[10%] space-y-[0%]">
+<div className="absolute inset-0 flex flex-col items-center justify-center top-[10%] space-y-[-3%] sm:space-y-[-1%] md:space-y-[-3%]  ">
   <div className="flex justify-center space-x-[5%]">
-    <img src="/season13/LOGO/Ybox.png" alt="Ybox" className="max-w-[10%] sm:max-w-[8%] md:max-w-[10%] object-contain" onClick={() => window.open("https://ybox.vn/idyovhrlnl8r7l", "_blank")}/>
-    <img src="/season13/LOGO/Arena.png" alt="Arena" className="max-w-[10%] sm:max-w-[8%] md:max-w-[9%] object-contain" onClick={() => window.open("https://www.arena-multimedia.vn/", "_blank")}/>
-    <img src="/season13/LOGO/Edu2.png" alt="Edu2" className="max-w-[10%] sm:max-w-[8%] md:max-w-[10%] object-contain" onClick={() => window.open("https://edu2review.com/", "_blank")}/>
+    <img src="/season13/LOGO/Ybox.png" alt="Ybox" className="max-w-[15%] sm:max-w-[14%] md:max-w-[15%] object-contain" onClick={() => window.open("https://ybox.vn/idyovhrlnl8r7l", "_blank")}/>
+    <img src="/season13/LOGO/Arena.png" alt="Arena" className="max-w-[15%] sm:max-w-[14%] md:max-w-[14%] object-contain" onClick={() => window.open("https://www.arena-multimedia.vn/", "_blank")}/>
+    <img src="/season13/LOGO/Edu2.png" alt="Edu2" className="max-w-[15%] sm:max-w-[14%] md:max-w-[15%] object-contain" onClick={() => window.open("https://edu2review.com/", "_blank")}/>
   </div>
 
   <div className="flex justify-center space-x-[5%]">
-    <img src="/season13/LOGO/Brands.png" alt="Brands" className="max-w-[10%] sm:max-w-[8%] md:max-w-[10%] object-contain" onClick={() => window.open("https://www.brandsvietnam.com/", "_blank")}/>
-    <img src="/season13/LOGO/Job.png" alt="Job" className="max-w-[10%] sm:max-w-[8%] md:max-w-[10%] object-contain" onClick={() => window.open("https://job3s.ai/", "_blank")}/>
-    <img src="/season13/LOGO/Edu.png" alt="Edu" className="max-w-[10%] sm:max-w-[8%] md:max-w-[10%] object-contain" onClick={() => window.open("https://eduagency.com.vn/", "_blank")}/>
+    <img src="/season13/LOGO/Brands.png" alt="Brands" className="max-w-[15%] sm:max-w-[14%] md:max-w-[12%] object-contain" onClick={() => window.open("https://www.brandsvietnam.com/", "_blank")}/>
+    <img src="/season13/LOGO/Job.png" alt="Job" className="max-w-[15%] sm:max-w-[14%] md:max-w-[12%] object-contain" onClick={() => window.open("https://job3s.ai/", "_blank")}/>
+    <img src="/season13/LOGO/Edu.png" alt="Edu" className="max-w-[15%] sm:max-w-[14%] md:max-w-[14%] object-contain" onClick={() => window.open("https://eduagency.com.vn/", "_blank")}/>
   </div>
 
   <div className="flex justify-center space-x-[5%]">
-    <img src="/season13/LOGO/Keva.png" alt="Keva" className="max-w-[10%] sm:max-w-[11%] md:max-w-[16%] object-contain" onClick={() => window.open("https://kevalink.com/", "_blank")}/>
-    <img src="/season13/LOGO/ADS.png" alt="Ads" className="max-w-[10%] sm:max-w-[11%] md:max-w-[16%] object-contain" onClick={() => window.open("https://adsangtao.com/", "_blank")}/>
-    <img src="/season13/LOGO/Brand.png" alt="Brand" className="max-w-[10%] sm:max-w-[11%] md:max-w-[16%] object-contain" onClick={() => window.open("https://brandvn.vn/", "_blank")}/>
+    <img src="/season13/LOGO/Keva.png" alt="Keva" className="max-w-[15%] sm:max-w-[14%] md:max-w-[16%] object-contain" onClick={() => window.open("https://kevalink.com/", "_blank")}/>
+    <img src="/season13/LOGO/ADS.png" alt="Ads" className="max-w-[15%] sm:max-w-[14%] md:max-w-[16%] object-contain" onClick={() => window.open("https://adsangtao.com/", "_blank")}/>
+    <img src="/season13/LOGO/Brand.png" alt="Brand" className="max-w-[15%] sm:max-w-[14%] md:max-w-[16%] object-contain" onClick={() => window.open("https://brandvn.vn/", "_blank")}/>
   </div>
 
   <div className="flex justify-center space-x-[5%]">
-    <img src="/season13/LOGO/Vina.png" alt="Vina" className="max-w-[10%] sm:max-w-[11%] md:max-w-[14%] object-contain" onClick={() => window.open("https://vina-aspire.com/", "_blank")} />
-    <img src="/season13/LOGO/Vnt.png" alt="Vnt" className="max-w-[10%] sm:max-w-[11%] md:max-w-[14%] object-contain" onClick={() => window.open("https://vntre.vn/", "_blank")}/>
-    <img src="/season13/LOGO/Bold.png" alt="Bold" className="max-w-[10%] sm:max-w-[11%] md:max-w-[14%] object-contain" onClick={() => window.open("https://boldcreativelab.com/", "_blank")}/>
+    <img src="/season13/LOGO/Vina.png" alt="Vina" className="max-w-[15%] sm:max-w-[14%] md:max-w-[14%] object-contain" onClick={() => window.open("https://vina-aspire.com/", "_blank")} />
+    <img src="/season13/LOGO/Vnt.png" alt="Vnt" className="max-w-[15%] sm:max-w-[14%] md:max-w-[14%] object-contain" onClick={() => window.open("https://vntre.vn/", "_blank")}/>
+    <img src="/season13/LOGO/Bold.png" alt="Bold" className="max-w-[15%] sm:max-w-[14%] md:max-w-[14%] object-contain" onClick={() => window.open("https://boldcreativelab.com/", "_blank")}/>
   </div>
 
   <div className="flex justify-center space-x-[5%]">
-    <img src="/season13/LOGO/Mar.png" alt="Mar" className="max-w-[10%] sm:max-w-[11%] md:max-w-[14%] object-contain" onClick={() => window.open("https://www.facebook.com/marwuycrew/", "_blank")}/>
-    <img src="/season13/LOGO/Viet.png" alt="Viet" className="max-w-[10%] sm:max-w-[11%] md:max-w-[14%] object-contain" onClick={() => window.open("https://www.facebook.com/your.vietnammarketing", "_blank")}/>
-    <img src="/season13/LOGO/Viets.png" alt="Viets" className="max-w-[10%] sm:max-w-[11%] md:max-w-[14%] object-contain" onClick={() => window.open("https://vietsuccess.asia/ve-chung-toi/", "_blank")}/>
+    <img src="/season13/LOGO/Mar.png" alt="Mar" className="max-w-[15%] sm:max-w-[14%] md:max-w-[16%] object-contain" onClick={() => window.open("https://www.facebook.com/marwuycrew/", "_blank")}/>
+    <img src="/season13/LOGO/Viet.png" alt="Viet" className="max-w-[15%] sm:max-w-[14%] md:max-w-[16%] object-contain" onClick={() => window.open("https://www.facebook.com/your.vietnammarketing", "_blank")}/>
+    <img src="/season13/LOGO/Viets.png" alt="Viets" className="max-w-[15%] sm:max-w-[14%] md:max-w-[16%] object-contain" onClick={() => window.open("https://vietsuccess.asia/ve-chung-toi/", "_blank")}/>
   </div>
 
   <div className="flex justify-center space-x-[5%]">
-    <img src="/season13/LOGO/Eni.jpg" alt="Eni" className="max-w-[10%] sm:max-w-[11%] md:max-w-[16%] object-contain" onClick={() => window.open("https://enijobs.vn/", "_blank")}/>
-    <img src="/season13/LOGO/Mark.png" alt="Mark" className="max-w-[10%] sm:max-w-[11%] md:max-w-[16%] object-contain" onClick={() => window.open("https://marketingtrips.com/", "_blank")}/>
-    <img src="/season13/LOGO/Hi.JPG" alt="Hi" className="max-w-[10%] sm:max-w-[11%] md:max-w-[16%] object-contain" onClick={() => window.open("https://www.facebook.com/p/Hi-Fen-Marketing-61554799268384/", "_blank")}/>
+    <img src="/season13/LOGO/Eni.jpg" alt="Eni" className="max-w-[15%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://enijobs.vn/", "_blank")}/>
+    <img src="/season13/LOGO/Mark.png" alt="Mark" className="max-w-[15%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://marketingtrips.com/", "_blank")}/>
+    <img src="/season13/LOGO/Hi.JPG" alt="Hi" className="max-w-[15%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.facebook.com/p/Hi-Fen-Marketing-61554799268384/", "_blank")}/>
   </div>
 </div>
 
