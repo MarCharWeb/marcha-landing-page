@@ -10,26 +10,32 @@ const Rules = ({ hideFooter = false }) => {
         <div
           className="relative w-full"
           style={{
-            backgroundImage: `url(/season13/IMAGE/TERMS & CONDITIONS.png)`,
+            backgroundImage: `url(/season13/IMAGE/ABOUT.png)`,
             backgroundSize: "100vw auto",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center top",
             width: "100vw",
-            paddingBottom: "0%", 
+            paddingBottom: "00%", 
           }}
         >
           <img
-            src="/season13/IMAGE/TERMS & CONDITIONS.png"
-            alt="terms and conditions background"
+            src="/season13/IMAGE/TERMS & CONDITIONS1.png"
+            alt="about us background"
             className="w-screen h-auto object-contain"
             style={{ objectFit: "contain", display: "block" }}
           />
         </div>
+        {/* <div
+  className="absolute bottom-0 w-full text-center bg-transparent pb-0 md:pb-0 lg:pb-96 lg:bottom-10"
+  style={{ zIndex: 2 }}
+>
+  <TeamCarousel />
+</div> */}
       </section>
 {!hideFooter && (
-    <div className="absolute bottom-0 w-full bg-transparent z-[10]">
+    // <div className="absolute bottom-0 w-full bg-transparent z-[10]">
       <Footer />
-    </div>
+    // </div>
   )}
 
     </div>

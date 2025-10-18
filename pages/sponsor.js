@@ -9,7 +9,7 @@ const Sponsor = ({ hideFooter = false }) => {
       >
         <div>
           <div className="relative w-full flex justify-center items-center">
-      ``  <img
+        <img
           src="/season13/SPONSORS/EXCLUSIVE.png"
           alt="exclusive background"
           className="w-screen h-auto object-contain block"
@@ -205,24 +205,26 @@ const Sponsor = ({ hideFooter = false }) => {
     <img src="/season13/LOGO/Hi.JPG" alt="Hi" className="max-w-[15%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.facebook.com/p/Hi-Fen-Marketing-61554799268384/", "_blank")}/>
   </div>
 </div>
-
 </div>
         </div>
       </section>
-<section className="relative w-full">
-  <div className="relative w-full">
-    <img
-      src="/season13/SPONSORS/SPONS.png"
+       <img
+      src="/season13/SPONSORS/SPONS1.png"
       alt="sponsorship background"
       className="w-screen h-auto object-contain block"
-      style={{ objectFit: "contain" }}
+      style={{ objectFit: "contain", display: "block" }}
     />
-    {!hideFooter && (
-      <div className="absolute bottom-0 w-full bg-transparent z-[10]">
-        <Footer />
-      </div>
-    )}
-  </div>
+<section className="relative w-full flex flex-col items-center justify-end">
+  <img
+    src="/season13/SPONSORS/SPONS2.png"
+    alt="sponsorship background"
+    className="w-screen h-auto object-contain"
+  />
+  {!hideFooter && (
+    <div className="w-full bg-transparent z-[10] mt-[-12rem] sm:mt-[-16rem] md:mt-[-25rem]">
+      <Footer />
+    </div>
+  )}
 </section>
     </div>
   );

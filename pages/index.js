@@ -109,17 +109,16 @@ style={{ transform: "translateY(-50px)" }}>
   <div className="flex flex-col items-center space-y-3 mt-3 sm:mt-4 md:mt-6 lg:mt-8">
     <a href="https://drive.google.com/drive/folders/1KqRmYs4pWwd1FdzOBi-lsSSichVc2vMw?usp=drive_link" passHref target="_blank" rel="noopener noreferrer">
     <Button
-   
-      text="Explore more!"
-      isPrimary={false}
-      className="bg-gradient-to-bl from-[#ECE75F] via-white to-[#ECE75F] text-[#5A189A] pointer-events-auto hover:text-[#2D033F] font-extrabold 
-               text-caption-14 sm:text-caption-14 md:text-lg lg:text-headline-26 
-               px-4 sm:px-4 md:px-6 lg:px-10 py-2 sm:py-2 md:py-3 lg:py-5 rounded-full 
-               w-[200px] sm:w-[200px] md:w-[300px] lg:w-[400px] h-[50px] sm:h-[50px] md:h-[60px] lg:h-[90px] 
-               shadow-[0_1px_0_#cc9900] sm:shadow-[0_1px_0_#cc9900] md:shadow-[0_2px_0_#cc9900] lg:shadow-[0_4px_0_#cc9900] 
-               hover:shadow-[0_2px_0_#b58000] sm:hover:shadow-[0_2px_0_#b58000] md:hover:shadow-[0_3px_0_#b58000] lg:hover:shadow-[0_6px_0_#b58000]
-               transition duration-150 ease-in-out hover:scale-100 sm:hover:scale-100 md:hover:scale-102 lg:hover:scale-105"
-    />
+  text="Explore more!"
+  isPrimary={false}
+  className="bg-gradient-to-bl from-[#ECE75F] via-white to-[#ECE75F] text-[#5A189A] pointer-events-auto hover:text-[#2D033F] font-extrabold
+  text-button-14 sm:text-button-16 md:text-headline-21 lg:text-headline-26
+  px-3 sm:px-4 md:px-6 lg:px-10 py-2 sm:py-2 md:py-3 lg:py-5 rounded-full mt-4 sm:mt-6 md:mt-10
+  w-[140px] sm:w-[180px] md:w-[240px] lg:w-[400px] h-[40px] sm:h-[45px] md:h-[55px] lg:h-[90px]
+  shadow-[0_1px_0_#cc9900] hover:shadow-[0_2px_0_#b58000]
+  transition duration-150 ease-in-out hover:scale-105"
+/>
+
     </a>
     {/* <a href="https://drive.google.com/drive/folders/1KqRmYs4pWwd1FdzOBi-lsSSichVc2vMw?usp=drive_link" passHref target="_blank" rel="noopener noreferrer">
     <Button
@@ -180,20 +179,15 @@ style={{ transform: "translateY(-50px)" }}>
   >
     <Link href="/sponsor" passHref>
       <Button
-        text="Explore our 2025 season sponsors."
-        isPrimary={false}
-        className="
-          !bg-[#ECE75F] !text-[#5A189A] font-extrabold
-          rounded-full
-          px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3
-          text-lg sm:text-xl md:text-2xl
-          min-w-[150px] sm:min-w-[180px] md:min-w-[800px]
-          max-w-[250px]
-          shadow-md
-          hover:scale-105 transition-transform duration-300
-          pointer-events-auto
-        "
-      />
+  text="Explore our 2025 season sponsors."
+  isPrimary={false}
+  className="!bg-[#ECE75F] !text-[#5A189A] font-extrabold rounded-full
+  px-3 py-2 sm:px-4 sm:py-2 md:px-5 md:py-3 lg:px-6 lg:py-3
+  text-button-14 sm:text-button-16 md:text-headline-21 lg:text-headline-26
+  w-[180px] sm:w-[220px] md:w-[300px] lg:w-[800px]
+  shadow-md hover:scale-105 transition-transform duration-300 pointer-events-auto"
+/>
+
     </Link>
   </div>
 </section>

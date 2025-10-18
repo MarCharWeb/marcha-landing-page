@@ -94,7 +94,7 @@ const Footer = () => {
               {/* TikTok */}
               <a href="https://www.tiktok.com/@marketingchallengers" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center">
                 <img src="/season13/CONTACT/tik.png" alt="TikTok" className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-[#93089f] to-[#bb5cba] object-contain" />
-                <span className="text-tiny-10 md:text-small-16 lg:text-headline-21 mt-0.5 lg:mt-1">TikTok</span>
+                <span className="text-tiny-10 md:text-tiny-10 lg:text-headline-21 mt-0.5 lg:mt-1">TikTok</span>
               </a>
             </div>
           </div>
