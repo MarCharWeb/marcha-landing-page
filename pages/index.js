@@ -165,7 +165,7 @@ style={{ transform: "translateY(-50px)" }}>
       {/* Sponsor Page */}
       <section className="relative w-full">
   <img
-    src="/season13/IMAGE/SPONSORHOME.png"
+    src="/season13/IMAGE/SPONSORHOME1.png"
     alt="sponsorship background"
     className="w-screen h-auto object-contain block"
   />
