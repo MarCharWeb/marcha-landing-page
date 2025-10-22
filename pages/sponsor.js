@@ -53,24 +53,24 @@ const Sponsor = ({ hideFooter = false }) => {
     className="w-screen h-auto object-contain block"
     style={{ objectFit: "contain" }}
   />
-  <div className="absolute inset-0 flex flex-col justify-center items-center gap-y-4 translate-y-[8%]">
+  <div className="absolute inset-0 flex flex-col justify-center items-center gap-y-3 translate-y-[8%]">
     <div className="flex justify-center items-center gap-[3%] flex-wrap">
       <img src="/season13/LOGO/Mermar.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://www.mermarcourse.com/", "_blank")} />
-      <img src="/season13/LOGO/Anymind.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://anymindgroup.com/", "_blank")} />
+      <img src="/season13/LOGO/Anymind.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[11%] lg:max-w-[13%] h-auto object-contain" onClick={() => window.open("https://anymindgroup.com/", "_blank")} />
       <img src="/season13/LOGO/Lebros.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain"  onClick={() => window.open("https://lebros.vn/", "_blank")}/>
       <img src="/season13/LOGO/Wisdom.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://wisdomagency.com/", "_blank")}/>
     </div>
 
     <div className="flex justify-center items-center gap-[3%] flex-wrap">
-      <img src="/season13/LOGO/TBWA.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://www.tbwa.com.vn/", "_blank")}/>
-      <img src="/season13/LOGO/Greent.png" className="max-w-[12%] sm:max-w-[12%] md:max-w-[12%] lg:max-w-[12%] h-auto object-contain" onClick={() => window.open("https://greentransition.asia/", "_blank")}/>
-      <img src="/season13/LOGO/Soldo.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://soldo.vn/", "_blank")}/>
+      <img src="/season13/LOGO/TBWA.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[10%] lg:max-w-[13%] h-auto object-contain" onClick={() => window.open("https://www.tbwa.com.vn/", "_blank")}/>
+      <img src="/season13/LOGO/Greent.png" className="max-w-[12%] sm:max-w-[12%] md:max-w-[13%] lg:max-w-[18%] h-auto object-contain" onClick={() => window.open("https://greentransition.asia/", "_blank")}/>
+      <img src="/season13/LOGO/Soldo.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[10%] lg:max-w-[12%] h-auto object-contain" onClick={() => window.open("https://soldo.vn/", "_blank")}/>
     </div>
 
     <div className="flex justify-center items-center gap-[3%] flex-wrap">
-      <img src="/season13/LOGO/VTC.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://vtc.edu.vn/", "_blank")} />
-      <img src="/season13/LOGO/Ematic.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://www.ematicsolutions.com/vn/", "_blank")} />
-      <img src="/season13/LOGO/Pmax.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[9%] lg:max-w-[10%] h-auto object-contain" onClick={() => window.open("https://pmax.com.vn/", "_blank")} />
+      <img src="/season13/LOGO/VTC.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[11%] lg:max-w-[13%] h-auto object-contain" onClick={() => window.open("https://vtc.edu.vn/", "_blank")} />
+      <img src="/season13/LOGO/Ematic.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[11%] lg:max-w-[13%] h-auto object-contain" onClick={() => window.open("https://www.ematicsolutions.com/vn/", "_blank")} />
+      <img src="/season13/LOGO/Pmax.png" className="max-w-[8%] sm:max-w-[8%] md:max-w-[10%] lg:max-w-[12%] h-auto object-contain" onClick={() => window.open("https://pmax.com.vn/", "_blank")} />
     </div>
   </div>
 </div>
@@ -81,8 +81,8 @@ const Sponsor = ({ hideFooter = false }) => {
     className="w-screen h-auto object-contain block"
     style={{ objectFit: "contain", display: "block" }}
   />
-<div className="absolute inset-0 flex top-[20%] flex-col items-center justify-center space-y-[-4%] sm:space-y-[-7%] md:space-y-[-10%] ">
-  <div className="flex justify-center space-x-[6%]">
+<div className="absolute inset-0 flex top-[24%] flex-col items-center justify-center space-y-[-4%] sm:space-y-[-7%] md:space-y-[-13%] ">
+  <div className="flex justify-center space-x-[7%]">
     <img src="/season13/LOGO/ACFC.png" alt="ACFC" className="max-w-[12%] sm:max-w-[13%] md:max-w-[13%] object-contain" onClick={() => window.open("https://www.acfc.com.vn/", "_blank")}/>
     <img src="/season13/LOGO/Owndays.png" alt="Owndays" className="max-w-[13%] sm:max-w-[15%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.owndays.com/vn/vi", "_blank")}/>
     <img src="/season13/LOGO/Tomorrow.png" alt="Tomorrow" className="max-w-[12%] sm:max-w-[15%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.tomorrowmarketers.org/", "_blank")}/>
@@ -132,9 +132,9 @@ const Sponsor = ({ hideFooter = false }) => {
     style={{ objectFit: "contain", display: "block" }}
   />
 
-  <div className="absolute inset-0 flex justify-center top-[25%] items-center space-x-[23%]">
-    <img src="/season13/LOGO/Hepmil.png" alt="Hepmil" className="max-w-[8%] sm:max-w-[10%] md:max-w-[13%] object-contain" onClick={() => window.open("https://www.hepmil.com/vi", "_blank")}/>
-    <img src="/season13/LOGO/Ame.png" alt="Ame" className="max-w-[8%] sm:max-w-[10%] md:max-w-[13%] object-contain" onClick={() => window.open("https://www.facebook.com/amecafenbrunch/?locale=vi_VN", "_blank")}/>
+  <div className="absolute inset-0 flex justify-center top-[25%] items-center space-x-[22%]">
+    <img src="/season13/LOGO/Hepmil.png" alt="Hepmil" className="max-w-[8%] sm:max-w-[10%] md:max-w-[16%] object-contain" onClick={() => window.open("https://www.hepmil.com/vi", "_blank")}/>
+    <img src="/season13/LOGO/Ame.png" alt="Ame" className="max-w-[8%] sm:max-w-[10%] md:max-w-[15%] object-contain" onClick={() => window.open("https://www.facebook.com/amecafenbrunch/?locale=vi_VN", "_blank")}/>
   </div>
 </div>
 <div className="relative w-screen h-auto">
