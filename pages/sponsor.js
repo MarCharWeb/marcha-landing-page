@@ -200,9 +200,9 @@ const Sponsor = ({ hideFooter = false }) => {
   </div>
 
   <div className="flex justify-center space-x-[5%]">
-    <img src="/season13/LOGO/Eni.jpg" alt="Eni" className="max-w-[12%] xs:max-w-[12%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://enijobs.vn/", "_blank")}/>
-    <img src="/season13/LOGO/Mark.png" alt="Mark" className="max-w-[12%] xs:max-w-[12%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://marketingtrips.com/", "_blank")}/>
-    <img src="/season13/LOGO/Hi.JPG" alt="Hi" className="max-w-[12%] xs:max-w-[12%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.facebook.com/p/Hi-Fen-Marketing-61554799268384/", "_blank")}/>
+    <img src="/season13/LOGO/Eni.jpg" alt="Eni" className="max-w-[10%] xs:max-w-[10%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://enijobs.vn/", "_blank")}/>
+    <img src="/season13/LOGO/Mark.png" alt="Mark" className="max-w-[10%] xs:max-w-[10%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://marketingtrips.com/", "_blank")}/>
+    <img src="/season13/LOGO/Hi.JPG" alt="Hi" className="max-w-[10%] xs:max-w-[10%] sm:max-w-[14%] md:max-w-[18%] object-contain" onClick={() => window.open("https://www.facebook.com/p/Hi-Fen-Marketing-61554799268384/", "_blank")}/>
   </div>
 </div>
 </div>
