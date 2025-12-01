@@ -36,7 +36,7 @@ const Sponsor = ({ hideFooter = false }) => {
       src="/season13/LOGO/BuzzMetrics.png"
       alt="BuzzMetrics logo"
       className="max-w-[30%] sm:max-w-[25%] md:max-w-[22%] lg:max-w-[18%] h-auto object-contain"
-      onClick={() => window.open("https://buzzmetrics.com", "_blank")}
+      onClick={() => window.open("https://www.buzzmetrics.com/", "_blank")}
     />    
     <img
       src="/season13/LOGO/Z15.png"
